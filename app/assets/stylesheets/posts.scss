@@ -462,9 +462,36 @@ h2 {
 }
 
 
+/*------------------------------------------Form-----------------------------------------*/
 
+.new-header {
+  text-align: center;
+  line-height: 80px;
+  font-size: 2rem;
+}
 
+.add-url  {
+  label {
+      color:red;
+    }
+  input {
+      border-radius: 10px;
+  }
+}
 
+.add-desc {
+  label {
+    text-align: center;
+  }
+  input { 
+    border-radius: 10px;
+  }
+}
 
-  
+.add-actions input {
+  text-align: center;
+}
 
+.container {
+  text-align: center;
+}
