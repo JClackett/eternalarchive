@@ -93,16 +93,15 @@
     </div>
 
 
-	  <div id="contentBox">
+	
       <%= yield %>
-      </div>
+      
       
     <div id="footer"> 
-      <h6 id="conserv">Conservatory Party &#174; </h6>
       <a href="footer/copyrightpolicy.html" id="copyright"> Copyright Policy </a>       
     </div>
 
-    </div>
+  </div>
 
 
 
@@ -110,8 +109,8 @@
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 <script>
- $("#overlay").click(function(){
-  $("#overlay").hide();
+ $(".overlay").click(function(){
+  $(".overlay").hide();
   $(".video")[0].src += "&autoplay=1";
   $(this).unbind("click");//or some other way to make sure that this only happens once
  });

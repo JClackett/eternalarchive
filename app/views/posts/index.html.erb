@@ -1,8 +1,9 @@
+<div class="contentBox">
 <% @posts.each do |post| %>
 
     <div class="group1">
       <div onclick="play(this)">
-        <div id="overlay" onclick="play(this)"> 
+        <div class="overlay" onclick="play(this)"> 
           <span>
             <%= post.description %>
           </span>
@@ -12,3 +13,4 @@
     </div>
 
 <% end %>
+</div>
