@@ -1,3 +1,458 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/*-------------------------------------Main Style---------------------------------------*/
+
+body {
+  background:black;
+  color :white;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+#wrapper {
+  margin: 0px auto;
+  width:1190px; 
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+/*--------------------------------------Cover pic---------------------------------------*/
+
+.fadein { 
+  position:absolute; 
+  width:1190px;
+  max-height:396px;
+  top:0px;
+  overflow:hidden;
+  opacity:0.7;
+  -moz-border-radius: 3px;
+  -webkit-border-radius:3px;
+  border-radius: 3px;
+}
+  
+.fadein img { 
+  position:relative;  
+  top:-75px;
+  width:100%; 
+}
+
+
+/*----------------------------------------Search----------------------------------------*/
+
+
+
+
+/*------------------------------------------Tab-----------------------------------------*/
+
+#home, #about, #help, #votw { 
+  position: fixed;
+  left:0px;
+  height:50px;
+  width:50px;
+  background-color:white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 0px 2px 1px black;
+}
+
+#home {
+  top:50px;
+  z-index:5;
+}
+
+#votw {
+  top:98px;
+  z-index:4;
+}
+
+#help {
+  top:146px;
+  z-index:3;
+}
+
+#about {
+  top:194px;
+  z-index:2;
+}
+  
+#home img {
+  position:relative;
+  height:40px;
+  width:40px;
+  left:6px;
+  top:4px;
+}
+
+#votw img {
+  position:relative;
+  height:40px;
+  width:40px;
+  left:6px;
+  top:5px;
+}
+
+#help img {
+  position:relative;
+  height:32px;
+  width:32px;
+  left:10px;
+  top:9px;
+}
+
+#about img {
+  position:relative;
+  height:35px;
+  width:35px;
+  left:8px;
+  top:8px;
+}
+
+#votw:hover {
+      z-index:10;
+}
+
+#about:hover {
+      z-index:10;
+}
+
+#help:hover {
+      z-index:10; 
+}
+
+
+#help1 {
+  position: absolute;
+  top:0px;
+  width:1190px;
+  z-index:9;
+  -webkit-transition:ease-in all 600ms;
+}
+
+
+
+/*--------------------------------------Main Title--------------------------------------*/
+
+#header {                         
+  margin-top: 90px;
+  margin-bottom: 100px;
+  min-width:1190px;
+} 
+
+#header h3 {
+  color:orange;
+  position:relative;
+  text-align: center;
+  font-size:23px;
+  font-weight:100;
+  z-index:1;
+  top:40px;
+}
+
+
+/*------------------------------------Title Bar/Drop Down--------------------------------*/
+
+nav {
+  height:163px;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul {
+  padding: 0px 0px; 
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  left:10px;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block; 
+  color:white;
+  text-decoration: none;
+  padding-top:10px;
+  padding-bottom:10px;  
+  font-size: 65px;
+  font-weight: 100;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  text-decoration: none;
+}
+
+nav ul ul li {
+  float: none; 
+}
+
+nav ul ul li a {
+  position: relative;
+  font-size:20px;
+  text-align:center;
+  color:white;
+  font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+nav ul li section:hover a {
+  color: #dddddd;
+  transition:ease-in all 200ms;
+  -webkit-transition:ease-in all 200ms;
+}
+
+nav ul ul li:hover a {
+  padding-top:10px;
+  padding-bottom: 10px; 
+  color: orange;
+  transition:ease-in all 200ms;
+  -webkit-transition:ease-in all 200ms;
+}
+
+#scrollUp img{
+  height:15px;
+  width:15px;
+  position:absolute;
+  right:40px;
+  top:20px;
+  font-size:12px;
+  z-index:10;
+} 
+
+#scrollDown img {
+  height:15px;
+  width:15px;
+  position :absolute;
+  right:40px;
+  top:90px;
+  font-size:12px;
+  z-index:10;
+} 
+
+/*---------------------------------Title Drop Scrollers---------------------------------*/
+
+#scrollbar1 {
+  width:200px;
+  height:125px;
+  background-color:rgba(0, 0, 0,0);
+  margin-top:0px;
+  margin-left:25px;
+  overflow:auto;
+  float:left;
+}
+
+#scrollbar2{
+  width:200px;
+  height:125px;
+  background-color:rgba(0, 0, 0,0);
+  margin-top:0px;
+  margin-left:45px;
+  overflow:auto;
+  float:left;
+}
+ 
+#scrollbar3{
+  width:200px;
+  height:125px;
+  background-color:rgba(0, 0, 0,0);
+  margin-top:0px;
+  margin-left:-5px;
+  overflow-y:auto;
+  float:left;
+}
+
+/*--------------------------------------- Buttons ------------------ */
+
+#buttons {
+  position: absolute;
+  margin-top: 50px;
+  margin-left:-25px;
+  font-size:15px;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+#buttons ul li {
+  display: inline;
+  padding-right:20px;
+}
+
+#buttons ul li a {
+  text-align:center;
+}
+
+#mostrecent {
+  color: orange;
+  text-decoration: overline;
+}
+
+#randomize {
+  text-decoration: none;
+  color: white;
+}
+
+#mostrecent:hover {
+  opacity:0.85;
+}
+
+#randomize:hover {
+  opacity:0.85;
+}
+/*--------------------------------------- Content --------------------------------------*/
+
+#contentBox {
+  width:1190px;
+  display:inline-block;
+  float:left;
+}
+
+
+.group1 { 
+  display:inline-block;
+  width:590px;
+  position:relative;
+  overflow: hidden;
+  height: 332px;
+  margin:0 0 1px 2px;
+  text-decoration: none;
+}
+
+
+.group1 img {
+  width:100%;
+}
+
+.group1 a {
+  text-decoration: none;
+}
+
+iframe {
+  width:100%;
+  height: 332px;
+  position:relative; 
+  border:0px;
+}
+
+
+#icon {
+  width: 83px; 
+  height: 90px;
+  position: absolute;
+    left: 252.5px;
+    top: 126px;
+    opacity: 0.8;
+}
+
+#overlay {
+  position:absolute;
+  cursor: pointer;
+  height:332px;
+  width:590px;
+  opacity: 0;
+  transition:all 100ms ease-in;
+  z-index:1;
+  font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  color:orange;
+  font-size: 23px;
+  line-height: 332px;
+  text-align: center;
+}
+
+#overlay:hover {
+  background-image:url('images/overlay.png');
+  opacity: 1;
+  /*background-color: black;*/
+  /*opacity: 0.8;*/
+}
+span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+      width:450px;
+}
+
+h2 {
+  font-size:50px;
+  color:orange;
+  top:20px;
+  position:relative;
+  z-index:2;  
+  cursor:pointer;
+}
+
+
+      /*About Page */
+
+#about2 {
+  width: 1190px;
+  background-color: #101010;
+}
+
+.group2 { 
+  position:relative;
+  padding: 10px;
+  width :750px;
+}
+
+
+      /*  VOTW Page */
+
+
+.editorsdescript {
+  width:1190px;
+  margin-bottom:20px;
+  margin-top:1px;
+  color:orange;
+}
+
+.votw2 { 
+  position:relative;
+  width: 100%;
+  height:614px;
+  
+}
+/*.group3 { 
+  position:relative;
+  width :450px;
+  float:right;
+}*/
+
+#iframe2 {
+  width:100%;
+  height: 100%;
+  position:relative; 
+  border:0px;
+}
+
+
+/*------------------------------------------Footer--------------------------------------*/
+
+#footer {
+  height:20px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  position:fixed;
+    background-color: rgba(0,0,0,0.7);
+    z-index:2;
+}
+
+#footer #conserv {  
+  padding-left:5px;             
+  font-size:8px;
+  position:fixed;
+  bottom:-14px;
+  color:orange;
+}
+
+#footer a {                 
+  font-size:8px;
+  position:fixed;
+  bottom:5px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  right:10px;
+}
