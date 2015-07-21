@@ -1,7 +1,7 @@
 /*-------------------------------------Main Style---------------------------------------*/
 
 body {
-  background:black;
+  background:#222;
   color :white;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
@@ -300,6 +300,11 @@ nav ul ul li:hover a {
 #randomize:hover {
   opacity:0.85;
 }
+
+.new-post {
+  text-decoration: none;
+  color: #fff;
+}
 /*--------------------------------------- Content --------------------------------------*/
 
 #contentBox {
@@ -312,6 +317,7 @@ nav ul ul li:hover a {
 .group1 { 
   display:inline-block;
   width:590px;
+  float: left;
   position:relative;
   overflow: hidden;
   height: 332px;
@@ -361,10 +367,8 @@ iframe {
 }
 
 #overlay:hover {
-  background-image:url('images/overlay.png');
-  opacity: 1;
-  /*background-color: black;*/
-  /*opacity: 0.8;*/
+  background-color: black;
+  opacity: 0.8;
 }
 span {
       display: inline-block;
@@ -456,3 +460,11 @@ h2 {
   font-weight:bold;
   right:10px;
 }
+
+
+
+
+
+
+  
+

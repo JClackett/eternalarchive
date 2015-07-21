@@ -111,6 +111,7 @@
                          document.getElementById('randomize').style.textDecoration = 'overline';
                          return false;">
                          Randomise</a></li>
+                <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
             </ul>
         </div>             
     </div>
@@ -118,13 +119,14 @@
 
 
       <%= yield %>
-
-
-     </section>
+      
+    <div id="footer"> 
+      <h6 id="conserv">Conservatory Party &#174; </h6>
+      <a href="footer/copyrightpolicy.html" id="copyright"> Copyright Policy </a>       
+    </div>
 
     </div>
 
-  </main>
 
 
 <!-- - - - - - - - -  - - - - - - - - - - - - - - java - - - - - - - - - - - - - - - - - - - - - - - - -->    

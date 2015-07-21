@@ -1,31 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Source</th>
-      <th>Url</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.source %></td>
-        <td><%= post.url %></td>
-        <td><%= post.description %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<% @posts.each do |post| %>
+  <div id="contentBox">
+    <div class="group1">
+      <div onclick="play(this)">
+        <div id="overlay" onclick="play(this)"> 
+          <span>
+            <%= post.description %>
+          </span>
+        </div>
+        <%= embed(post.url) %>
+      </div>        
+    </div>
+  </div>
+<% end %>
