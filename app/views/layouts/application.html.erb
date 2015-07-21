@@ -210,13 +210,12 @@ $(function () {
   })
 </script>
 
-
 <script>
-function play(object){
-  object.querySelector('#overlay').style.display ='none';
-  object.querySelector('iframe').src =
-  object.querySelector('iframe').src.replace('autoplay=0','autoplay=1');return false;
-}
+ $("#overlay").click(function(){
+  $("#overlay").hide();
+  $(".video")[0].src += "&autoplay=1";
+  $(this).unbind("click");//or some other way to make sure that this only happens once
+ });
 </script>
 
 <script>
