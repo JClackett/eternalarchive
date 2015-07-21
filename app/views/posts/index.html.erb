@@ -1,5 +1,5 @@
 <% @posts.each do |post| %>
-  <div id="contentBox">
+
     <div class="group1">
       <div onclick="play(this)">
         <div id="overlay" onclick="play(this)"> 
@@ -10,5 +10,5 @@
         <%= embed(post.url) %>
       </div>        
     </div>
-  </div>
+
 <% end %>
