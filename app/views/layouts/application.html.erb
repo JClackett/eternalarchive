@@ -130,87 +130,7 @@
 
 
 <!-- - - - - - - - -  - - - - - - - - - - - - - - java - - - - - - - - - - - - - - - - - - - - - - - - -->    
-
-
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-<script src="java/jquery.sleepyHead.js"></script>
-<script src="java/random.js"></script>
-<script src="java/shuffle.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-61689013-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<script>
-  $(window).on('beforeunload', function() {
-      $(window).scrollTop(0);
-  });
-
-</script>
-
-<script>
-  $(document).ready(function() {
-    $('iframe').sleepyHead();
-    $('img').sleepyHead();
-  });
-</script>
-
-<script>
-  $(document).ready(function() {
-    $("#mostrecent").click(function() {
-     $("#contentBox").load("index.html #contentBox", function() {
-        $('iframe').sleepyHead();
-        $('img').sleepyHead();
-          $(window).trigger('scroll');
-    })
-    })
-  });
-</script>
-
-<script>
-$(function () {
-            $('div.fadein img').shuffle();
-        });
-</script>
-
-
-<script>  
-  $(document).ready(function() {
-      $('#randomize').click(function() {
-        $("#contentBox").load("index.html #contentBox", function() {    
-          randomizeContent('group1');
-           $(function() {
-            $('iframe').sleepyHead();
-            $('img').sleepyHead();
-            $(window).trigger('scroll');
-                        })
-          })
-        })    
-      })  ; 
-</script> 
-
-
-<script>
-  $(function(){
-      $('.fadein img:gt(0)').hide();
-         setInterval(function(){
-            $('.fadein :first-child').fadeOut(2000, function(){
-              $(this).next('img').fadeIn(2000)
-              .end().appendTo('.fadein');
-              }
-            )}, 
-          30000);
-  })
-</script>
-
-
 <script>
 function play(object){
   object.querySelector('#overlay').style.display ='none';
@@ -218,24 +138,8 @@ function play(object){
   object.querySelector('iframe').src.replace('autoplay=0','autoplay=1');return false;
 }
 </script>
-
-<script>
-$(document).ready(function() {
-$(".hide").hide();
-$('#help').hover(function() {
-var img = '#'+$(this).data('image1');
-    $(img).show();
-}, function() {
-    var img = '#'+$(this).data('image1');
-     $(img).hide();
-} ); 
-
-});
-</script>
-
 </body>
 </html>
 
 
 
-  
