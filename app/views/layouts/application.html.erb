@@ -1,14 +1,239 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tea</title>
+  <title>The Eternal Archive</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+<meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
+                        TEA is a nearly endless supply of enlightening content. We believe there is no limit to the ability of online media to inspire, educate and make people Healthier Wealthier and Wiser.">
+    
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,900,700italic,400italic,300italic,300,500' rel='stylesheet' type='text/css'>
+
+
+  <!--<script src="http://use.typekit.net/koq1kyb.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>-->
+</head>  
+  
+<body>
+    
+  <div id="wrapper">
+        <img id="help1" class="hide" src="images/overhelp.png" alt="help1" style="display:none"/>
+    <div id="search">
+      
+    </div>
+    <div id="tab">
+        <a id="home" href="#" title="Home"><img src="images/tab/home.png" alt="Home"/></a>
+        <a id="votw" href="votw.html" title="Video Of The Week"><img src="images/tab/votw.png" alt="VOTW"/></a>
+        <a id="help" href="#" title="How It Works" data-image1="help1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';"><img src="images/tab/help.png" alt="Help"/></a>
+        <a id="about" href="about.html" title="About"><img src="images/tab/about.png" alt="About"/></a>
+    </div>
+
+    <div id="header">
+        
+          <h3>The Eternal Archive.</h3>
+                <div class="fadein">
+                <img src="https://ununsplash.imgix.net/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?q=75&amp;fm=jpg&amp;s=440edea0dacbf61ee20f8ff106573fb3" alt="Cover 1"/>
+                <img src="https://unsplash.imgix.net/reserve/OQx70jjBSLOMI5ackhxm_urbex-ppc-030.jpg?q=75&amp;fm=jpg&amp;s=a0a7ff653fa7e21c2dd006f75933c778" alt="Cover 2"/>
+                <img src="https://ununsplash.imgix.net/uploads/141223808515744db9995/3361b5e1?q=75&amp;fm=jpg&amp;s=04607c34357b70db74394f2fd8a6db7f" alt="Cover 3"/>
+                <img src="https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?q=75&amp;fm=jpg&amp;s=6e5127e797feb9b5a72f7ae4a0f3a89b" alt="Cover 4"/>
+                <img src="https://ununsplash.imgix.net/reserve/wPCyys8TPCHY3GXm2N2D_ssp_inthewoods_1.jpg?q=75&amp;fm=jpg&amp;s=3b3d9ee14e903890db2ebe5962a8b72f" alt="Cover 5"/>
+                <img src="https://unsplash.imgix.net/reserve/vof4H8A1S02iWcK6mSAd_sarahmachtsachen.com_TheBeach.jpg?q=75&amp;fm=jpg&amp;s=992e28f0751267625026c5a18b66953c" alt="Cover 6"/> 
+                <img src="https://unsplash.imgix.net/reserve/NxxLccbqQdGtNc7xJ43e_ancestral-home.jpg?q=75&amp;fm=jpg&amp;s=f20accdc67997ab19731ec0faa5ea1e7" alt="Cover 7"/>
+                <img src="https://unsplash.imgix.net/41/pHyYeNZMRFOIRpYeW7X3_manacloseup%20copy.jpg?q=75&amp;fm=jpg&amp;s=0a6620cdcbc6576e17752c7c6cd108b6" alt="Cover 8"/>
+                <img src="https://ununsplash.imgix.net/photo-1414849424631-8b18529a81ca?q=75&amp;fm=jpg&amp;s=0e993004a2f3704e8f2ad5469315ccb7" alt="Cover 9"/>
+                <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover 10"/>
+                <img src="https://unsplash.imgix.net/16/unsplash_525b54bcc32ba_1.JPG?q=75&amp;fm=jpg&amp;s=018e2501064e7cc8f7cb49ca5a2e4c0b" alt="Cover 11"/>
+                <img src="https://unsplash.imgix.net/photo-1418226970361-9f1f7227d638?q=75&amp;fm=jpg&amp;s=4a5f190c7499eff6f7c77d88d8abf57e" alt="Cover 12"/>
+                <img src="https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&amp;fm=jpg&amp;s=07faf9fb6409579bda59881970b284d1" alt="Cover 13"/>
+                <img src="https://unsplash.imgix.net/reserve/O7A9fAvYSXC7NTdz8gLQ_IMGP1039.jpg?q=75&amp;fm=jpg &amp;s=1c8ca9d98820d104e2ea7da571698ffd" alt="Cover 14"/>
+                <img src="https://ununsplash.imgix.net/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=75&amp;fm=jpg&amp;s=885ca6be349e07eacd820b8f585c355f"alt="Cover 15"/>
+              </div>
+          
+      <center><nav>
+        <ul>
+          <li>
+            <section style="width:240px"><a href="healthy/healthy.html">Healthy</a></section>
+              <ul>            
+                <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                  <li><a href="healthy/fitness.html">Fitness</a></li>
+                  <li><a href="healthy/nutrition.html">Nutrition</a></li>
+                </div>
+              </ul>
+          </li>
+          <li>
+            <section style="width:280px"><a href="wealthy/wealthy.html">Wealthy</a></section>
+              <ul>
+            
+                <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                  <li><a href="wealthy/investing.html">Investing</a></li>
+                  <li><a href="wealthy/business.html">Business</a></li>
+                </div>  
+              </ul>
+          </li>
+          <li>
+            <a style="width:100px">and</a>
+          </li>
+          <li>
+            <section style="width:220px"><a href="wise/wise.html">Wise</a></section>
+              <ul>
+                <div id="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                  <li><a href="wise/science.html">Science</a></li>
+                  <li><a href="wise/philo.html">Philosophy</a></li>
+                  <li><a href="wise/politics.html">Politics</a></li>
+                  <li><a href="wise/culture.html">Culture</a></li>
+                  <li><a href="wise/sociology.html">Sociology</a></li>
+                  
+                </div>
+                  <a href="#" id="scrollUp" title="Scroll Up"><img src="images/arrowup.jpg" alt="arrup"></a>
+                  <a href="#" id="scrollDown" title="Scroll Down"><img src="images/arrowdown.jpg" alt="arrdwn"></a>
+              </ul>
+          </li> 
+        </ul>
+      </nav></center>
+      
+        <div id="buttons">
+            <ul>
+               <li><a href="" id="mostrecent" onclick="document.getElementById('mostrecent').style.color = 'orange'; 
+                         document.getElementById('randomize').style.color = 'white';
+                         document.getElementById('randomize').style.textDecoration = 'none';
+                         document.getElementById('mostrecent').style.textDecoration = 'overline';
+                         return false">
+                         Most Recent</a></li>  
+               
+               <li><a href="" id="randomize"  onclick="document.getElementById('mostrecent').style.color = 'white'; 
+                         document.getElementById('randomize').style.color = 'orange';
+                         document.getElementById('mostrecent').style.textDecoration = 'none';
+                         document.getElementById('randomize').style.textDecoration = 'overline';
+                         return false;">
+                         Randomise</a></li>
+            </ul>
+        </div>             
+    </div>
+
+
+
+      <%= yield %>
+
+
+     </section>
+
+    </div>
+
+  </main>
+
+
+<!-- - - - - - - - -  - - - - - - - - - - - - - - java - - - - - - - - - - - - - - - - - - - - - - - - -->    
+
+
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="java/jquery.sleepyHead.js"></script>
+<script src="java/random.js"></script>
+<script src="java/shuffle.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61689013-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  $(window).on('beforeunload', function() {
+      $(window).scrollTop(0);
+  });
+
+</script>
+
+<script>
+  $(document).ready(function() {
+    $('iframe').sleepyHead();
+    $('img').sleepyHead();
+  });
+</script>
+
+<script>
+  $(document).ready(function() {
+    $("#mostrecent").click(function() {
+     $("#contentBox").load("index.html #contentBox", function() {
+        $('iframe').sleepyHead();
+        $('img').sleepyHead();
+          $(window).trigger('scroll');
+    })
+    })
+  });
+</script>
+
+<script>
+$(function () {
+            $('div.fadein img').shuffle();
+        });
+</script>
+
+
+<script>  
+  $(document).ready(function() {
+      $('#randomize').click(function() {
+        $("#contentBox").load("index.html #contentBox", function() {    
+          randomizeContent('group1');
+           $(function() {
+            $('iframe').sleepyHead();
+            $('img').sleepyHead();
+            $(window).trigger('scroll');
+                        })
+          })
+        })    
+      })  ; 
+</script> 
+
+
+<script>
+  $(function(){
+      $('.fadein img:gt(0)').hide();
+         setInterval(function(){
+            $('.fadein :first-child').fadeOut(2000, function(){
+              $(this).next('img').fadeIn(2000)
+              .end().appendTo('.fadein');
+              }
+            )}, 
+          30000);
+  })
+</script>
+
+
+<script>
+function play(object){
+  object.querySelector('#overlay').style.display ='none';
+  object.querySelector('iframe').src =
+  object.querySelector('iframe').src.replace('autoplay=0','autoplay=1');return false;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+$(".hide").hide();
+$('#help').hover(function() {
+var img = '#'+$(this).data('image1');
+    $(img).show();
+}, function() {
+    var img = '#'+$(this).data('image1');
+     $(img).hide();
+} ); 
+
+});
+</script>
 
 </body>
 </html>
+
+
+
+  
