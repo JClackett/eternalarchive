@@ -462,9 +462,31 @@ h2 {
 }
 
 
+/*------------------------------------------Form-----------------------------------------*/
 
+.new_header {
+  text-align: center;
+  line-height: 80px;
+  font-size: 2rem;
+}
 
+.add_url label {
+  text-align: center;
+}
 
+.add_url input {
+  border-radius: 10px;
+}
 
-  
+.add_desc label {
+  text-align: center;
+}
+
+.add_desc input {
+  border-radius: 10px;
+}
+
+.add_actions input {
+  text-align: center;
+}
 
