@@ -11,20 +11,21 @@
     </div>
   <% end %>
 
-<div class="container">
+<div class="add-container">
   <div class="add-url">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <br>
+    <%= f.text_field :url, placeholder:'e.g. https://www.youtube.com/watch?v=30ruBtLIvJM' %>
   </div>
   <div class="add-desc">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <br>
+    <%= f.text_field :description, placeholder:'Put your description here ...' %>
   </div>
    <div class="field">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
   </div>
   <div class="add-actions">
-    <%= f.submit %>
+    <br>
+    <%= f.submit "Send to the admins" %>
   </div>
 </div>
 

@@ -324,30 +324,49 @@ span {
   text-align: center;
   line-height: 80px;
   font-size: 2rem;
+  margin-bottom: 0;
+  height: 70px;
 }
 
-.add-url  {
-  label {
-      color:red;
-    }
-  input {
-      border-radius: 10px;
-  }
+.add-url input {
+  border-radius: 10px;
+  width: 600px;
+  line-height: 2rem;
+  padding: 1px 10px;
 }
 
-.add-desc {
-  label {
-    text-align: center;
-  }
-  input { 
-    border-radius: 10px;
-  }
+.add-desc input {
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+  line-height: 1rem;
+  padding: 1px 10px;
+}
+
+.add-actions {
+  margin: 20px 0 0 0;
 }
 
 .add-actions input {
   text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.container {
+.add-container {
   text-align: center;
 }
+
+.back-container {
+  text-align: center;
+  margin: 20px 0 50px 0;
+}
+
+a.new-back {
+  color: white;
+  text-decoration: none;
+}
+
