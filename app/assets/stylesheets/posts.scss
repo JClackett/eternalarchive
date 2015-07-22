@@ -46,7 +46,7 @@ body {
 
 #header {                         
   margin-top: 90px;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
   min-width:1190px;
 } 
 
@@ -181,7 +181,7 @@ nav ul ul li:hover a {
 
 #buttons {
   position: absolute;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-left:-25px;
   font-size:15px;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -224,18 +224,18 @@ nav ul ul li:hover a {
   width:100%;
   display:inline-block;
   float:left;
+  margin: 0;
   padding: 0;
 }
 
 
 .group1 { 
   display:inline-block;
-  width:50%;
+  width:49.2%;
   float: left;
   position:relative;
   overflow: hidden;
-  margin:0;
-  padding: 0;
+  margin:0.4%;
   text-decoration: none;
 }
 
@@ -253,8 +253,6 @@ iframe {
   height: 332px;
   position:relative; 
   border:0px;
-  padding: 0;
-  margin: 0;
 }
 
 
