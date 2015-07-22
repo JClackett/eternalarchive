@@ -6,6 +6,9 @@
         <div class="overlay" onclick="play(this)"> 
           <span>
             <%= post.description %>
+            <% post.categories.each do |categories| %>
+          <li><%= categories.name %> </li> 
+        <%end%>  
           </span>
         </div>
         <%= embed(post.url) %>
