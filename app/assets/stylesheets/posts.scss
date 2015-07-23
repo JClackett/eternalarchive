@@ -14,6 +14,39 @@ body {
 .wrapper {
   width:100%;
 }
+
+/*--------------------------------------Top Nav---------------------------------------*/
+
+.top-nav ul {
+  position: fixed;
+  top: -16px;
+  height: 50px;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 2;
+  padding: 0;
+  opacity: 0.7;
+}
+
+.top-nav ul li {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  width: 15%;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.top-nav ul li.healthy {
+  margin: 0 0 0 27.5%;
+}
+
+.top-nav ul li.hover {
+  color: #AAA;
+}
+
 /*--------------------------------------Cover pic---------------------------------------*/
 
 .fadein { 
@@ -214,10 +247,31 @@ nav ul ul li:hover a {
   opacity:0.85;
 }
 
-.new-post {
+.new-post-link {
   text-decoration: none;
   color: #fff;
 }
+
+.new-button-text {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 0 0 8px;
+}
+
+.new-button {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background-color: #FFBD45;
+  border-radius: 100%;
+  z-index: 3;
+  margin: 0 0 0 5px;
+  top: 5px;
+}
+
 /*--------------------------------------- Content --------------------------------------*/
 
 .contentBox {
@@ -357,7 +411,6 @@ span {
   font-weight: bold;
   font-size: 1.2rem;
 }
-
 
 .add-container {
   text-align: center;
