@@ -62,11 +62,8 @@
                   <li><%= link_to 'Philosophy', root_path(name: 'philosophy')%></li>
                   <li><%= link_to 'Politics', root_path(name: 'politics')%></li>
                   <li><%= link_to 'Culture', root_path(name: 'culture')%></li>
-                  <li><%= link_to 'Sociology', root_path(name: 'sociology')%></li>
-                  
+                  <li><%= link_to 'Sociology', root_path(name: 'sociology')%></li>          
                 </div>
-                  <a href="#" id="scrollUp" title="Scroll Up"><img src="images/arrowup.jpg" alt="arrup"></a>
-                  <a href="#" id="scrollDown" title="Scroll Down"><img src="images/arrowdown.jpg" alt="arrdwn"></a>
               </ul>
           </li> 
         </ul>
@@ -74,20 +71,12 @@
       
         <div id="buttons">
             <ul>
-               <li><a href="" id="mostrecent" onclick="document.getElementById('mostrecent').style.color = 'orange'; 
-                         document.getElementById('randomize').style.color = 'white';
-                         document.getElementById('randomize').style.textDecoration = 'none';
-                         document.getElementById('mostrecent').style.textDecoration = 'overline';
-                         return false">
-                         Most Recent</a></li>  
-               
-               <li><a href="" id="randomize"  onclick="document.getElementById('mostrecent').style.color = 'white'; 
-                         document.getElementById('randomize').style.color = 'orange';
-                         document.getElementById('mostrecent').style.textDecoration = 'none';
-                         document.getElementById('randomize').style.textDecoration = 'overline';
-                         return false;">
-                         Randomise</a></li>
-                <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
+                 <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
+                      <% if user_signed_in? %>
+                          <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
+                      <% else %>
+                          <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
+                      <% end %>
             </ul>
         </div>             
     </div>
