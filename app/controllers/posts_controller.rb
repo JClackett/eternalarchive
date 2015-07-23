@@ -6,9 +6,9 @@ class PostsController < ApplicationController
   def index
 
     if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } )
+      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).reverse
     else
-      @posts = Post.all
+      @posts = Post.all.reverse
     end
 
   end
