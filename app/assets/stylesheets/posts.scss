@@ -52,13 +52,17 @@ body {
 } 
 
 #header h3 {
-  color:orange;
   position:relative;
   text-align: center;
   font-size:23px;
   font-weight:100;
   z-index:1;
   top:40px;
+}
+
+#header h3 a {
+  text-decoration: none;
+  color:orange;
 }
 
 
