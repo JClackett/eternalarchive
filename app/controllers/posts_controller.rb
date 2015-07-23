@@ -1,9 +1,11 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :authenticate_user!, except: [:index]
 
   # GET /posts
   # GET /posts.json
   def index
+    if params[:category_ids].present?
     @posts = Post.all.reverse
   end
 
