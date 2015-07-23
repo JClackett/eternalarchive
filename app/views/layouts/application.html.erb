@@ -33,21 +33,21 @@
       <center><nav>
         <ul>
           <li>
-            <section style="width:240px"><a href="healthy/healthy.html">Healthy</a></section>
+            <section style="width:240px"><a href="#">Healthy</a></section>
               <ul>            
                 <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-                  <li><a href="healthy/fitness.html">Fitness</a></li>
-                  <li><a href="healthy/nutrition.html">Nutrition</a></li>
+                  <li><%= link_to 'Fitness', root_path(name: 'fitness')%></li>
+                  <li><%= link_to 'Nutrition', root_path(name: 'nutrition')%></li>
                 </div>
               </ul>
           </li>
           <li>
-            <section style="width:280px"><a href="wealthy/wealthy.html">Wealthy</a></section>
+            <section style="width:280px"><a href="#">Wealthy</a></section>
               <ul>
             
                 <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-                  <li><a href="wealthy/investing.html">Investing</a></li>
-                  <li><a href="wealthy/business.html">Business</a></li>
+                  <li><%= link_to 'Investing', root_path(name: 'investing')%></li>
+                  <li><%= link_to 'Business', root_path(name: 'business')%></li>
                 </div>  
               </ul>
           </li>
@@ -55,14 +55,14 @@
             <a style="width:100px">and</a>
           </li>
           <li>
-            <section style="width:220px"><a href="wise/wise.html">Wise</a></section>
+            <section style="width:220px"><a href="#">Wise</a></section>
               <ul>
                 <div id="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-                  <li><a href="wise/science.html">Science</a></li>
-                  <li><a href="wise/philo.html">Philosophy</a></li>
-                  <li><a href="wise/politics.html">Politics</a></li>
-                  <li><a href="wise/culture.html">Culture</a></li>
-                  <li><a href="wise/sociology.html">Sociology</a></li>
+                  <li><%= link_to 'Science', root_path(name: 'science')%></li>
+                  <li><%= link_to 'Philosophy', root_path(name: 'philosophy')%></li>
+                  <li><%= link_to 'Politics', root_path(name: 'politics')%></li>
+                  <li><%= link_to 'Culture', root_path(name: 'culture')%></li>
+                  <li><%= link_to 'Sociology', root_path(name: 'sociology')%></li>
                   
                 </div>
                   <a href="#" id="scrollUp" title="Scroll Up"><img src="images/arrowup.jpg" alt="arrup"></a>
