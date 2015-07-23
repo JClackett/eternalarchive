@@ -23,6 +23,18 @@
     
   <div id="wrapper">
 
+    <div class="top-nav">
+      <ul>
+        <li class="healthy">Healthy</li>
+        <li class="wealthy">Wealthy</li>
+        <li class="wise">Wise</li>
+      </ul>
+    </div>
+
+    <div class="new-button">
+      <%= link_to '+' , new_post_path , class: 'new-button-text' %>
+    </div>
+
     <div id="header">
         
           <h3>The Eternal Archive.</h3>
@@ -71,25 +83,7 @@
           </li> 
         </ul>
       </nav></center>
-      
-        <div id="buttons">
-            <ul>
-               <li><a href="" id="mostrecent" onclick="document.getElementById('mostrecent').style.color = 'orange'; 
-                         document.getElementById('randomize').style.color = 'white';
-                         document.getElementById('randomize').style.textDecoration = 'none';
-                         document.getElementById('mostrecent').style.textDecoration = 'overline';
-                         return false">
-                         Most Recent</a></li>  
-               
-               <li><a href="" id="randomize"  onclick="document.getElementById('mostrecent').style.color = 'white'; 
-                         document.getElementById('randomize').style.color = 'orange';
-                         document.getElementById('mostrecent').style.textDecoration = 'none';
-                         document.getElementById('randomize').style.textDecoration = 'overline';
-                         return false;">
-                         Randomise</a></li>
-                <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
-            </ul>
-        </div>             
+
     </div>
 
 
