@@ -5,7 +5,6 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    if params[:category_ids].present?
     @posts = Post.all.reverse
   end
 
