@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     before_action :authenticate_user!, except: [:index]
+    before_action :parents
 
   # GET /posts
   def index
@@ -11,6 +12,12 @@ class PostsController < ApplicationController
       @posts = Post.all.reverse
     end
 
+  end
+
+  def parents
+    @healthy = 'fitness', 'nutrition'
+    @wealthy = 'investing', 'business'
+    @wise = 'science', 'philosophy', 'politics', 'culture', 'sociology'
   end
 
   # GET /posts/1

@@ -33,7 +33,7 @@
       <center><nav>
         <ul>
           <li>
-            <section style="width:240px"><a href="#">Healthy</a></section>
+            <section style="width:240px"><%= link_to 'Healthy', root_path(name: @healthy)%></section>
               <ul>            
                 <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Fitness', root_path(name: 'fitness')%></li>
@@ -42,7 +42,7 @@
               </ul>
           </li>
           <li>
-            <section style="width:280px"><a href="#">Wealthy</a></section>
+            <section style="width:280px"><%= link_to 'Wealthy', root_path(name: @wealthy)%></section>
               <ul>
             
                 <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
@@ -55,7 +55,7 @@
             <a style="width:100px">and</a>
           </li>
           <li>
-            <section style="width:220px"><a href="#">Wise</a></section>
+            <section style="width:220px"><%= link_to 'Wise', root_path(name: @wise)%></section>
               <ul>
                 <div id="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Science', root_path(name: 'science')%></li>
@@ -73,7 +73,7 @@
             <ul>
                  <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
                       <% if user_signed_in? %>
-                          <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
+                          <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post' %></li>        
                       <% else %>
                           <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
                       <% end %>
