@@ -20,20 +20,22 @@
 </head>  
   
 <body>
-          
-  <div id="wrapper">
 
-    <div id="header">
+    
+  <div class="wrapper">
+
+
+    <div class="header">
         
-          <h3><%= link_to 'The Eternal Archive.', root_path %></h3>
+          <h3><%= link_to 'TEA.', root_path %></h3>
                 <div class="fadein">
                 <img src="https://ununsplash.imgix.net/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?q=75&amp;fm=jpg&amp;s=440edea0dacbf61ee20f8ff106573fb3" alt="Cover 1"/>
-              </div>
+                </div>
           
-      <center><nav>
+     <nav class="main-header">
         <ul>
           <li>
-            <section style="width:240px"><%= link_to 'Healthy', root_path(name: @healthy)%></section>
+            <section class="healthy-header"><%= link_to 'Healthy', root_path(name: @healthy)%></section>
               <ul>            
                 <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <% if Category.parent.present?%>
@@ -46,9 +48,8 @@
               </ul>
           </li>
           <li>
-            <section style="width:280px"><%= link_to 'Wealthy', root_path(name: @wealthy)%></section>
+            <section class="wealthy-header"><%= link_to 'Wealthy', root_path(name: @wealthy)%></section>
               <ul>
-            
                 <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <% if Category.parent.present?%>
                     <% @category_wealthy.each do |category|%>
@@ -60,12 +61,9 @@
               </ul>
           </li>
           <li>
-            <a style="width:100px">and</a>
-          </li>
-          <li>
-            <section style="width:220px"><%= link_to 'Wise', root_path(name: @wise)%></section>
+            <section class="wise-header"><%= link_to 'Wise', root_path(name: @wise)%></section>
               <ul>
-                <div id="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                <div class="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Science', root_path(name: 'science')%></li>
                   <li><%= link_to 'Philosophy', root_path(name: 'philosophy')%></li>
                   <li><%= link_to 'Politics', root_path(name: 'politics')%></li>
@@ -75,12 +73,13 @@
               </ul>
           </li> 
         </ul>
-      </nav></center>
+      </nav>
       
-        <div id="buttons">
+        <div class="buttons">
             <ul>
                  <% if current_user.try(:admin?) %>
                       <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
+                      <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
                   <%end%>
                   <% if user_signed_in? %>
                       <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
@@ -96,8 +95,8 @@
       <%= yield %>
       
       
-    <div id="footer"> 
-      <a href="footer/copyrightpolicy.html" id="copyright"> Copyright Policy </a>       
+    <div class="footer"> 
+      <a href="footer/copyrightpolicy.html" class="copyright"> Copyright Policy </a>       
     </div>
 
   </div>

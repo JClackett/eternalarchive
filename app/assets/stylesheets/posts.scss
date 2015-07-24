@@ -1,7 +1,7 @@
 /*-------------------------------------Main Style---------------------------------------*/
 
 body {
-  background:#222;
+  background: #000C17;
   color :white;
   margin: 0;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -18,13 +18,11 @@ body {
 /*--------------------------------------Cover pic---------------------------------------*/
 
 .fadein { 
-  position:absolute; 
   width:100%;
   margin: 0;  
   max-height:396px;
   float: left;
-  top:0px;
-  left: 0px;
+  position: relative;
   overflow:hidden;
   opacity:0.7;
   -moz-border-radius: 3px;
@@ -45,28 +43,39 @@ body {
 
 /*--------------------------------------Main Title--------------------------------------*/
 
-#header {                         
-  margin-top: 90px;
-  margin-bottom: 95px;
-  min-width:1190px;
+.header {                         
+  width:100%;
+  height: 396px;
+  position: relative;
 } 
 
-#header h3 {
-  position:relative;
+.header h3 {
+  position:absolute;
   text-align: center;
-  font-size:23px;
+  font-size:20px;
   font-weight:100;
   z-index:1;
-  top:40px;
+  top:0;
+  left: 0;
+  padding: 10px;
 }
 
-#header h3 a {
+.header h3 a {
   text-decoration: none;
   color:orange;
 }
 
 
 /*------------------------------------Title Bar/Drop Down--------------------------------*/
+
+.main-header {
+  position: absolute;
+  top:0;
+}
+
+.healthy-header, .wealthy-header, .wise-header {
+  width:250px;
+}
 
 nav {
   height:163px;
@@ -81,7 +90,7 @@ nav ul li:hover ul {
 }
 
 nav ul {
-  padding: 0px 0px; 
+  padding: 0; 
   list-style: none;
   position: relative;
   display: inline-table;
@@ -98,7 +107,7 @@ nav ul li a {
   text-decoration: none;
   padding-top:10px;
   padding-bottom:10px;  
-  font-size: 65px;
+  font-size: 30px;
   font-weight: 100;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   text-decoration: none;
@@ -110,7 +119,7 @@ nav ul ul li {
 
 nav ul ul li a {
   position: relative;
-  font-size:20px;
+  font-size:15px;
   text-align:center;
   color:white;
   font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -130,29 +139,10 @@ nav ul ul li:hover a {
   -webkit-transition:ease-in all 200ms;
 }
 
-#scrollUp img{
-  height:15px;
-  width:15px;
-  position:absolute;
-  right:40px;
-  top:20px;
-  font-size:12px;
-  z-index:10;
-} 
-
-#scrollDown img {
-  height:15px;
-  width:15px;
-  position :absolute;
-  right:40px;
-  top:90px;
-  font-size:12px;
-  z-index:10;
-} 
 
 /*---------------------------------Title Drop Scrollers---------------------------------*/
 
-#scrollbar1 {
+.scrollbar1 {
   width:200px;
   height:125px;
   background-color:rgba(0, 0, 0,0);
@@ -162,7 +152,7 @@ nav ul ul li:hover a {
   float:left;
 }
 
-#scrollbar2{
+.scrollbar2{
   width:200px;
   height:125px;
   background-color:rgba(0, 0, 0,0);
@@ -172,7 +162,7 @@ nav ul ul li:hover a {
   float:left;
 }
  
-#scrollbar3{
+.scrollbar3{
   width:200px;
   height:125px;
   background-color:rgba(0, 0, 0,0);
@@ -184,39 +174,23 @@ nav ul ul li:hover a {
 
 /*--------------------------------------- Buttons ------------------ */
 
-#buttons {
+.buttons {
   position: absolute;
-  margin-top: 40px;
-  margin-left:-25px;
+  float: right;
+  right:0;
+  top: 0;
+  margin:10px;
   font-size:15px;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
-#buttons ul li {
+.buttons ul li {
   display: inline;
-  padding-right:20px;
+  padding-right:10px;
 }
 
-#buttons ul li a {
+.buttons ul li a {
   text-align:center;
-}
-
-#mostrecent {
-  color: orange;
-  text-decoration: overline;
-}
-
-#randomize {
-  text-decoration: none;
-  color: white;
-}
-
-#mostrecent:hover {
-  opacity:0.85;
-}
-
-#randomize:hover {
-  opacity:0.85;
 }
 
 .new-post {
@@ -235,7 +209,7 @@ nav ul ul li:hover a {
 }
 
 
-.group1 { 
+.vid-container { 
   display:inline-block;
   width:49.2%;
   float: left;
@@ -243,14 +217,15 @@ nav ul ul li:hover a {
   overflow: hidden;
   margin:0.4%;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 
-.group1 img {
+.vid-container img {
   width:100%;
 }
 
-.group1 a {
+.vid-container a {
   text-decoration: none;
 }
 
@@ -292,7 +267,7 @@ iframe {
   opacity: 0.8;
 }
 
-span {
+.post-desc {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
@@ -303,7 +278,7 @@ span {
 
 /*------------------------------------------Footer--------------------------------------*/
 
-#footer {
+.footer {
   height:20px;
   bottom:0px;
   left:0px;
@@ -313,7 +288,7 @@ span {
   z-index:2;
 } 
 
-#footer a {                 
+.footer a {                 
   font-size:8px;
   position:fixed;
   bottom:5px;
@@ -324,7 +299,7 @@ span {
 }
 
 
-/*------------------------------------------Form-----------------------------------------*/
+/*------------------------------------------New Post Form-----------------------------------------*/
 
 .new-header {
   text-align: center;
@@ -373,7 +348,7 @@ span {
   margin: 20px 0 50px 0;
 }
 
-a.new-back {
+.back-button {
   color: white;
   text-decoration: none;
 }
