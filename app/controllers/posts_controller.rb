@@ -3,6 +3,7 @@ class PostsController < ApplicationController
     before_action :authenticate_user!, except: [:index]
     before_action :parents
 
+    
   # GET /posts
   def index
 
@@ -26,7 +27,11 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    if current_user.try(:admin?)
+      @post = Post.new
+    else
+      redirect_to posts_path
+    end
   end
 
   # GET /posts/1/edit
