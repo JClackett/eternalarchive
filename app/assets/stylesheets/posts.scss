@@ -91,6 +91,8 @@ nav {
 
 nav ul ul {
   display: none;
+  position: absolute;
+  width: 100%;
 }
 
 nav ul li:hover ul {
@@ -99,6 +101,7 @@ nav ul li:hover ul {
 
 nav ul {
   padding: 0; 
+  height: 20px;
   list-style: none;
 }
 
