@@ -71,12 +71,14 @@
       
         <div id="buttons">
             <ul>
-                 <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
-                      <% if user_signed_in? %>
-                          <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
-                      <% else %>
-                          <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
-                      <% end %>
+                 <% if current_user.try(:admin?) %>
+                      <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
+                  <%end%>
+                  <% if user_signed_in? %>
+                      <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
+                  <% else %>
+                      <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
+                  <% end %>
             </ul>
         </div>             
     </div>
