@@ -21,9 +21,9 @@
   
 <body>
     
-  <div id="wrapper">
+  <div class="wrapper">
 
-    <div id="header">
+    <div class="header">
         
           <h3><%= link_to 'The Eternal Archive.', root_path %></h3>
                 <div class="fadein">
@@ -35,7 +35,7 @@
           <li>
             <section style="width:240px"><%= link_to 'Healthy', root_path(name: @healthy)%></section>
               <ul>            
-                <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                <div class="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Fitness', root_path(name: 'fitness')%></li>
                   <li><%= link_to 'Nutrition', root_path(name: 'nutrition')%></li>
                 </div>
@@ -45,7 +45,7 @@
             <section style="width:280px"><%= link_to 'Wealthy', root_path(name: @wealthy)%></section>
               <ul>
             
-                <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                <div class="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Investing', root_path(name: 'investing')%></li>
                   <li><%= link_to 'Business', root_path(name: 'business')%></li>
                 </div>  
@@ -57,7 +57,7 @@
           <li>
             <section style="width:220px"><%= link_to 'Wise', root_path(name: @wise)%></section>
               <ul>
-                <div id="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+                <div class="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <li><%= link_to 'Science', root_path(name: 'science')%></li>
                   <li><%= link_to 'Philosophy', root_path(name: 'philosophy')%></li>
                   <li><%= link_to 'Politics', root_path(name: 'politics')%></li>
@@ -69,10 +69,11 @@
         </ul>
       </nav></center>
       
-        <div id="buttons">
+        <div class="buttons">
             <ul>
                  <% if current_user.try(:admin?) %>
                       <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
+                      <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
                   <%end%>
                   <% if user_signed_in? %>
                       <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'new-post'  %></li>        
@@ -88,8 +89,8 @@
       <%= yield %>
       
       
-    <div id="footer"> 
-      <a href="footer/copyrightpolicy.html" id="copyright"> Copyright Policy </a>       
+    <div class="footer"> 
+      <a href="footer/copyrightpolicy.html" class="copyright"> Copyright Policy </a>       
     </div>
 
   </div>

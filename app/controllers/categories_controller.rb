@@ -14,7 +14,11 @@ class CategoriesController < ApplicationController
 
   # GET /categories/new
   def new
-    @category = Category.new
+    if current_user.try(:admin?)
+      @category = Category.new
+    else
+      redirect_to posts_path
+    end
   end
 
   # GET /categories/1/edit
