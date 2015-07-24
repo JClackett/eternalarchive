@@ -20,7 +20,7 @@
 </head>  
   
 <body>
-    
+          
   <div id="wrapper">
 
     <div id="header">
@@ -36,8 +36,12 @@
             <section style="width:240px"><%= link_to 'Healthy', root_path(name: @healthy)%></section>
               <ul>            
                 <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-                  <li><%= link_to 'Fitness', root_path(name: 'fitness')%></li>
-                  <li><%= link_to 'Nutrition', root_path(name: 'nutrition')%></li>
+                  <% if Category.parent.present?%>
+                    <% @category_healthy.each do |category|%>
+                    <li><%= link_to category.name, root_path(name: category.name)%></li>
+                    <%end%>
+                  <%else%>
+                  <%end%>
                 </div>
               </ul>
           </li>
@@ -46,8 +50,12 @@
               <ul>
             
                 <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-                  <li><%= link_to 'Investing', root_path(name: 'investing')%></li>
-                  <li><%= link_to 'Business', root_path(name: 'business')%></li>
+                  <% if Category.parent.present?%>
+                    <% @category_wealthy.each do |category|%>
+                    <li><%= link_to category.name, root_path(name: category.name)%></li>
+                    <%end%>
+                  <%else%>
+                  <%end%>
                 </div>  
               </ul>
           </li>
