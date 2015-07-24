@@ -13,16 +13,6 @@ class PostsController < ApplicationController
     end
   end
 
-  def parents
-    @category_healthy = Category.where(categories: { parent: "healthy" } )
-    @category_wealthy = Category.where(categories: { parent: "wealthy" } )
-    @category_wise = Category.where(categories: { parent: "wise" } )
-    
-    @healthy = 'fitness', 'nutrition'
-    @wealthy = 'investing', 'business'
-    @wise = 'science', 'philosophy', 'politics', 'culture', 'sociology'
-  end
-
   # GET /posts/1
   def show
   end
