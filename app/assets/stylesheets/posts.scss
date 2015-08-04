@@ -19,7 +19,7 @@ body {
 
 .cover-photo { 
   width:100%;
-  margin: 0;  
+  margin: 0 0 4px 0;  
   max-height:396px;
   float: left;
   position: relative;
@@ -49,6 +49,7 @@ body {
   position: fixed;
   background-color: rgba(0,0,0,0.7);
   z-index: 999;
+  box-shadow:0 0 10px 0 black;
 } 
 
 /*--------------------------------------Home button--------------------------------------*/
@@ -162,7 +163,6 @@ nav ul ul li:hover a {
   top: 0;
   margin:10px;
   font-size:15px;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 }
 
 .buttons ul li {
@@ -231,19 +231,22 @@ iframe {
   position:absolute;
   cursor: pointer;
   padding: 0;
+  bottom:-100px;
   margin: 0;
+  height: 50%;
   width:100%;
   opacity: 0;
-  transition:all 100ms ease-in;
-  z-index:1;
-  font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  color:orange;
+  transition: ease-in all 100ms;
+  z-index:9999;
+  color: orange;
   font-size: 23px;
-  line-height: 332px;
+  line-height: 166px;
   text-align: center;
 }
 
-.overlay:hover {
+.vid-container:hover .overlay{
+  -webkit-transform: translate(0,-100px); /* Safari */
+  transform: translate(0,-100px);
   background-color: black;
   opacity: 0.8;
 }
