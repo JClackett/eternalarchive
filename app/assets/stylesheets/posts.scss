@@ -20,7 +20,7 @@ body {
 .cover-photo { 
   width:100%;
   margin: 0 0 4px 0;  
-  max-height:396px;
+  max-height:300px;
   float: left;
   position: relative;
   overflow:hidden;
@@ -189,6 +189,9 @@ nav ul ul li:hover a {
   padding: 0;
 }
 
+.video {
+  border-radius:3px;
+}
 
 .vid-container { 
   display:inline-block;
@@ -198,7 +201,7 @@ nav ul ul li:hover a {
   overflow: hidden;
   margin:0.4%;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 0px;
 }
 
 
@@ -236,7 +239,7 @@ iframe {
   height: 50%;
   width:100%;
   opacity: 0;
-  transition: ease-in all 100ms;
+  transition: ease-in all 200ms;
   z-index:9999;
   color: orange;
   font-size: 23px;
