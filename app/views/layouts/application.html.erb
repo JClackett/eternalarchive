@@ -17,6 +17,7 @@
 
   <!--<script src="http://use.typekit.net/koq1kyb.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>-->
+
 </head>  
   
 <body>
@@ -108,11 +109,11 @@
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 <script>
- $(".overlay").click(function(){
-  $(".overlay").hide();
-  $(".video")[0].src += "&autoplay=1";
-  $(this).unbind("click");//or some other way to make sure that this only happens once
- });
+function play(object){
+  object.querySelector('.overlay').style.display ='none';
+  object.querySelector('.video').src =
+  object.querySelector('.video').src.replace('autoplay=0','autoplay=1');return false;
+}
 </script>
 
 </body>
