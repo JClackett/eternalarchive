@@ -109,12 +109,16 @@
 
 <script>
    $(".overlay").click(function(){
-    $(".overlay").hide();
-    $(".video")[0].src += "&autoplay=1";
+    var a = $(".overlay").indexOf(this);
+    window.alert(a);
+    $(this).hide();
+    $("iframe")[a].src += "&autoplay=1";
     $(this).unbind("click"); 
-    return false ;//or some other way to make sure that this only happens once
+    //or some other way to make sure that this only happens once
    });
-// </script>
+
+
+</script>
 
 </body>
 </html>
