@@ -228,7 +228,7 @@ iframe {
   opacity: 0.8;
 }
 
-#overlay {
+.overlay {
   position:absolute;
   cursor: pointer;
   padding: 0;
@@ -245,7 +245,7 @@ iframe {
   text-align: center;
 }
 
-.vid-container:hover #overlay{
+.vid-container:hover .overlay{
   -webkit-transform: translate(0,-100px); /* Safari */
   transform: translate(0,-100px);
   background-color: black;
