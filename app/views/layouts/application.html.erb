@@ -109,16 +109,15 @@
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 <script>
-function play(object){
-  object.querySelector('.overlay').style.display ='none';
-  object.querySelector('.video').src =
-  object.querySelector('.video').src.replace('autoplay=0','autoplay=1');
-  return false;
-}
+  function play(object){
+    $(object.querySelector('.overlay')).hide(400);
+    object.querySelector('iframe').src =
+    object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
+
+    return false;
+  }
 </script>
+
 
 </body>
 </html>
-
-
-
