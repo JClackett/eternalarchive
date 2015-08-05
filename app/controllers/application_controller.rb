@@ -37,6 +37,4 @@ class ApplicationController < ActionController::Base
     	@category_wise_name = "none"
   	end
   end
-
-
 end

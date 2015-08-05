@@ -2,8 +2,8 @@
 
 <% @posts.each do |post| %>
 
-    <div class="vid-container">
-        <div class="overlay" onclick="play(this)"> 
+    <div class="vid-container" onclick="play(this)">
+        <div class="overlay"> 
           <span class="post-desc">
             <%= post.description %>
           </span>
