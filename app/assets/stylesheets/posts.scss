@@ -129,7 +129,7 @@ nav ul ul li {
 
 nav ul ul li a {
   font-size:15px;
-  color:white;
+  color:white;  
 }
 
 nav ul li section:hover a {
@@ -204,7 +204,6 @@ nav ul ul li:hover a {
   border-radius: 0px;
 }
 
-
 .vid-container img {
   width:100%;
 }
@@ -220,7 +219,6 @@ iframe {
   border:0px;
 }
 
-
 #icon {
   width: 83px; 
   height: 90px;
@@ -230,7 +228,7 @@ iframe {
   opacity: 0.8;
 }
 
-.overlay {
+#overlay {
   position:absolute;
   cursor: pointer;
   padding: 0;
@@ -247,7 +245,7 @@ iframe {
   text-align: center;
 }
 
-.vid-container:hover .overlay{
+.vid-container:hover #overlay{
   -webkit-transform: translate(0,-100px); /* Safari */
   transform: translate(0,-100px);
   background-color: black;
