@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,900,700italic,400italic,300italic,300,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,300,600,700' rel='stylesheet' type='text/css'>
 
 
   <!--<script src="http://use.typekit.net/koq1kyb.js"></script>
@@ -29,7 +30,7 @@
                 <img src="https://ununsplash.imgix.net/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?q=75&amp;fm=jpg&amp;s=440edea0dacbf61ee20f8ff106573fb3" alt="Cover 1"/>
   </div>
 
-    <div class="header">
+    <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
         
           <div class="logo"><%= link_to 'TEA.', root_path %></div>
                   
@@ -38,40 +39,34 @@
           <li>
             <section class="healthy-header"><%= link_to 'Healthy', root_path(name: @category_healthy_name)%></section>
               <ul class="healthy-scroll">            
-                <div id="scrollbar1" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <% if Category.parent.present?%>
                     <% @category_healthy.each do |category|%>
                     <li><%= link_to category.name, root_path(name: category.name)%></li>
                     <%end%>
                   <%else%>
                   <%end%>
-                </div>
               </ul>
           </li>
           <li>
             <section class="wealthy-header"><%= link_to 'Wealthy', root_path(name: @category_wealthy_name)%></section>
               <ul class="wealthy-scroll">
-                <div id="scrollbar2" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <% if Category.parent.present?%>
                     <% @category_wealthy.each do |category|%>
                     <li><%= link_to category.name, root_path(name: category.name)%></li>
                     <%end%>
                   <%else%>
                   <%end%>
-                </div>  
               </ul>
           </li>
           <li>
             <section class="wise-header"><%= link_to 'Wise', root_path(name: @category_wise_name)%></section>
               <ul class="wise-scroll">
-                <div class="scrollbar3" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
                   <% if Category.parent.present?%>
                     <% @category_wise.each do |category|%>
                     <li><%= link_to category.name, root_path(name: category.name)%></li>
                     <%end%>
                   <%else%>
                   <%end%>        
-                </div>
               </ul>
           </li> 
         </ul>
@@ -117,24 +112,25 @@
   }
 </script>
 
-<script  type="text/javascript">
+<script>
      $(window).on('scroll', function () {
         var scrollTop = $(window).scrollTop();
-        if (scrollTop > 300) {
-            $('.logo a').stop().animate({fontsize: "20px"},100);
-            $('.header').stop().animate({height: "50px"},100);
-            $('.logo a').stop().animate({padding: "18px"},100);
-            $('.logo a').stop().animate({lineHeight: "50px"},100);
-            $('.main-header').stop().animate({lineHeight: "50px"},100);
-            $('.buttons').stop().animate({lineHeight: "50px"},100);
+        var timedure = 200
+        if (scrollTop > 250) {
+            $('.logo a').stop().animate({fontWeight: "400"},timedure);
+            $('.header').stop().animate({height: "50px"},timedure);
+            $('.logo a').stop().animate({padding: "18px"},timedure);
+            $('.logo a').stop().animate({lineHeight: "50px"},timedure);
+            $('.main-header').stop().animate({lineHeight: "50px"},timedure);
+            $('.buttons').stop().animate({lineHeight: "50px"},timedure);
         }
         else {
-             $('.logo a').stop().animate({fontsize: "30px"},100);
-             $('.header').stop().animate({height: "80px"},100);  
-             $('.logo a').stop().animate({padding: "25px"},100);
-             $('.logo a').stop().animate({lineHeight: "80px"},100);
-             $('.main-header').stop().animate({lineHeight: "80px"},100);
-             $('.buttons').stop().animate({lineHeight: "80px"},100);
+             $('.logo a').stop().animate({fontWeight: "500"},timedure);
+             $('.header').stop().animate({height: "100px"},timedure);  
+             $('.logo a').stop().animate({padding: "30px"},timedure);
+             $('.logo a').stop().animate({lineHeight: "100px"},timedure);
+             $('.main-header').stop().animate({lineHeight: "100px"},timedure);
+             $('.buttons').stop().animate({lineHeight: "100px"},timedure);
         }
      });
      </script>

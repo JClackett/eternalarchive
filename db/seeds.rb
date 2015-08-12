@@ -21,3 +21,5 @@ category_list = [
 category_list.each do |name, parent|
   Category.create( name: name, parent: parent )
 end
+
+
