@@ -73,11 +73,11 @@ body {
 /*------------------------------------Title Bar/Drop Down--------------------------------*/
 
 .main-header {
-  position: fixed;
-  top:0px;
   line-height: 100px;
+  float: left;
   z-index: 1000;
-  left:250px;
+  margin-left: 170px;
+  
 }
 
 .healthy-header, .wealthy-header, .wise-header {
