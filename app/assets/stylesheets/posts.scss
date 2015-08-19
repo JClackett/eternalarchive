@@ -114,7 +114,7 @@ nav ul ul {
   display: none;
   position: absolute;
   background-color: rgba(0,0,0,0.6);
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .healthy-scroll {
@@ -195,6 +195,14 @@ nav ul ul li:hover a {
   color: #ccc;
 }
 
+.random-button{
+  margin: 50px;
+  float: left;
+  top:100px;
+  left:100px;
+  position: absolute;
+}
+
 /*--------------------------------------- Content --------------------------------------*/
 
 .contentBox {
@@ -229,6 +237,7 @@ nav ul ul li:hover a {
   text-decoration: none;
 }
 
+
 iframe {
   width:100%;
   height: 332px;
@@ -249,22 +258,21 @@ iframe {
   position:absolute;
   cursor: pointer;
   padding: 0;
-  bottom:-300px;
+  bottom:-166px;
   margin: 0;
-  height: 100%;
+  height: 166px;
   width:100%;
   opacity: 0;
-  transition: ease-in all 200ms;
+  transition: ease-in all 100ms;
   z-index:9999;
   color: orange;
   font-size: 23px;
-  line-height: 336px;
+  line-height: 166px;
   text-align: center;
 }
 
 .vid-container:hover .overlay{
-  -webkit-transform: translate(0,-300px); /* Safari */
-  transform: translate(0,-300px);
+  -webkit-transform: translate(0,-166px); /* Safari */
   background-color: black;
   opacity: 0.8;
 }

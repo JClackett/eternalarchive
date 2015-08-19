@@ -16,6 +16,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
   end
+  
 
   # GET /posts/new
   def new
@@ -58,6 +59,8 @@ class PostsController < ApplicationController
   end
 
   private
+
+
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
