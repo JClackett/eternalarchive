@@ -258,22 +258,22 @@ iframe {
   position:absolute;
   cursor: pointer;
   padding: 0;
-  bottom:-166px;
+  bottom:-332px;
   margin: 0;
-  height: 166px;
+  height: 100%;
   width:100%;
   opacity: 0;
-  transition: ease-in all 100ms;
+  /*transition: ease-in all 100ms;*/
   z-index:9999;
   color: orange;
   font-size: 23px;
-  line-height: 166px;
+  line-height: 490px;
   text-align: center;
 }
 
 .vid-container:hover .overlay{
-  -webkit-transform: translate(0,-166px); /* Safari */
-  background-color: black;
+  -webkit-transform: translate(0,-332px); /* Safari */
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);
   opacity: 0.8;
 }
 
@@ -282,6 +282,7 @@ iframe {
   vertical-align: middle;
   line-height: normal;
   width:450px;
+  opacity: 1;
 }
 
 
