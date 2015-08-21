@@ -263,7 +263,7 @@ iframe {
   height: 100%;
   width:100%;
   opacity: 0;
-  /*transition: ease-in all 100ms;*/
+  transition: ease-in all 200ms;
   z-index:9999;
   color: orange;
   font-size: 23px;
@@ -273,7 +273,7 @@ iframe {
 
 .vid-container:hover .overlay{
   -webkit-transform: translate(0,-332px); /* Safari */
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 50%,rgba(0,0,0,0) 70%);
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%);
   opacity: 0.8;
 }
 
