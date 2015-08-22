@@ -1,8 +1,5 @@
 module ApplicationHelper
 
-<<<<<<< HEAD
-
-=======
   def embed(url)
   	if url.include?("youtube")
     		youtube_id = url.split("=").last
@@ -18,7 +15,6 @@ module ApplicationHelper
   def javascript(*args)
   content_for(:head) { javascript_include_tag(*args) }
 end
->>>>>>> 56e2a4f5907d1deb8b6d6cefdea8f3ca1f756637
    
 end
 
