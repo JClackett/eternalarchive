@@ -7,10 +7,12 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).reverse
+      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.reverse
     else
       @posts = Post.all.reverse
     end
+
+    
   end
 
   # GET /posts/1

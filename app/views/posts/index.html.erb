@@ -1,5 +1,4 @@
 <div class="contentBox">
-
 <% @posts.each do |post| %>
 
     <div class="vid-container" onclick="play(this)">
@@ -8,9 +7,7 @@
             <%= post.description %>
           </span>
         </div>
-        <%= embed(post.url) %>
-    </div>        
-  
-
+		<%= youtube_video( post.url ) %>    
+	</div>    
 <% end %>
 </div>
