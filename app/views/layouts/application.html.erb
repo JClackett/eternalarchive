@@ -26,7 +26,7 @@
   <div class="wrapper">
   
   <div class="cover-photo">
-                <img src="https://ununsplash.imgix.net/33/hBd6EPoQT2C8VQYv65ys_White%20Sands.jpg?q=75&amp;fm=jpg&amp;s=440edea0dacbf61ee20f8ff106573fb3" alt="Cover 1"/>
+                <img src="https://images.unsplash.com/photo-1428278953961-a8bc45e05f72?q=80&amp;fm=jpg&amp;s=24f29a71c4de9b922e7ee2cb5ee46f4b" alt="Cover 1"/>
   </div>
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
@@ -83,13 +83,16 @@
                       <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
                   <% end %>
             </ul>
-        </div>             
+        </div>   
+
     </div>
 
-
-	
+	<div class="content">
       <%= yield %>
-      
+      </div>
+      <div class="breaker">
+        
+      </div>
       
     <div class="footer"> 
       <a href="footer/copyrightpolicy.html" class="copyright"> Copyright Policy </a>       
@@ -110,6 +113,7 @@
     return false;
   }
 </script>
+
 
 <script>
      $(window).on('scroll', function () {

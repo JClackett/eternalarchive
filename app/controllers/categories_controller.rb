@@ -3,14 +3,12 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!
 
   # GET /categories
-  # GET /categories.json
   def index
     @categories = Category.all
   end
 
 
   # GET /categories/1
-  # GET /categories/1.json
   def show
   end
 
@@ -28,18 +26,20 @@ class CategoriesController < ApplicationController
   end
 
   # POST /categories
-  # POST /categories.json
   def create
+    if current_user.try(:admin?)
     @category = Category.new(category_params)
       if @category.save
        redirect_to posts_path
       else
          render :new 
       end
+    else
+      redirect_to posts_path
+    end
   end
 
   # PATCH/PUT /categories/1
-  # PATCH/PUT /categories/1.json
   def update
       if @category.update(category_params)
         redirect_to posts_path

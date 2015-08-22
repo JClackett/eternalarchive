@@ -33,7 +33,7 @@ body {
   
 .cover-photo img { 
   position:relative;  
-  top:-100px;
+  top:-250px;
   width:100%; 
 }
 
@@ -114,7 +114,7 @@ nav ul ul {
   display: none;
   position: absolute;
   background-color: rgba(0,0,0,0.6);
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .healthy-scroll {
@@ -195,8 +195,19 @@ nav ul ul li:hover a {
   color: #ccc;
 }
 
-/*--------------------------------------- Content --------------------------------------*/
 
+
+/*--------------------------------------- Content --------------------------------------*/
+.content {
+  padding-bottom: 30px;
+}
+
+.breaker {
+  height:50px;
+  width: 100%;
+  position: relative;
+  display:inline-block;
+}
 .contentBox {
   width:100%;
   display:inline-block;
@@ -209,8 +220,9 @@ nav ul ul li:hover a {
   border-radius:3px;
 }
 
-.vid-container { 
+.post-container { 
   display:inline-block;
+  cursor: pointer;
   width:49.2%;
   float: left;
   position:relative;
@@ -221,12 +233,20 @@ nav ul ul li:hover a {
   z-index: 50;
 }
 
-.vid-container img {
+.post-container img {
   width:100%;
 }
 
-.vid-container a {
+.post-container a {
   text-decoration: none;
+}
+
+
+.link-container {
+  width:100%;
+  height: 332px;
+  position:relative; 
+  border:0px;
 }
 
 iframe {
@@ -249,7 +269,7 @@ iframe {
   position:absolute;
   cursor: pointer;
   padding: 0;
-  bottom:-300px;
+  bottom:-332px;
   margin: 0;
   height: 100%;
   width:100%;
@@ -258,14 +278,13 @@ iframe {
   z-index:9999;
   color: orange;
   font-size: 23px;
-  line-height: 336px;
+  line-height: 490px;
   text-align: center;
 }
 
-.vid-container:hover .overlay{
-  -webkit-transform: translate(0,-300px); /* Safari */
-  transform: translate(0,-300px);
-  background-color: black;
+.post-container:hover .overlay{
+  -webkit-transform: translate(0,-332px); /* Safari */
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%);
   opacity: 0.8;
 }
 
@@ -274,8 +293,8 @@ iframe {
   vertical-align: middle;
   line-height: normal;
   width:450px;
+  opacity: 1;
 }
-
 
 
 /*------------------------------------------Footer--------------------------------------*/

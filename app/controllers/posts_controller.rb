@@ -7,9 +7,15 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.reverse
+
+      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 6).reverse_order
+
     else
-      @posts = Post.all.reverse
+      @posts = Post.paginate(:page => params[:page], :per_page =>6).reverse_order
+      respond_to do |format|
+      format.html # index.html.erb
+      format.js
+      end
     end
 
     
@@ -18,6 +24,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
   end
+  
 
   # GET /posts/new
   def new
@@ -60,6 +67,7 @@ class PostsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
@@ -67,6 +75,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:source, :url, :description,  category_ids: [] )
+      params.require(:post).permit(:source, :url, :description, :article_url, category_ids: [] )
     end
 end

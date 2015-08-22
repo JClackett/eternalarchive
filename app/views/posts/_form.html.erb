@@ -14,11 +14,15 @@
 <div class="add-container">
   <div class="add-url">
     <br>
-    <%= f.text_field :url, placeholder:'e.g. https://www.youtube.com/watch?v=30ruBtLIvJM' %>
+    <%= f.text_field :url, placeholder:'Youtube/Vimeo/Article-Image URL' %>
+  </div>
+  <div class="add-url">
+    <br>
+    <%= f.text_field :article_url, placeholder:'Article URL' %>
   </div>
   <div class="add-desc">
     <br>
-    <%= f.text_field :description, placeholder:'Put your description here ...' %>
+    <%= f.text_field :description, placeholder:'Description' %>
   </div>
   <div class="field">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>

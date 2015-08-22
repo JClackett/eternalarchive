@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150724133346) do
     t.string   "source"
     t.string   "url"
     t.string   "description"
+    t.string   "article_url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
