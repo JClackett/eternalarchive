@@ -8,14 +8,18 @@ class PostsController < ApplicationController
   def index
     if params[:name].present?
 
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 6).reverse_order
-
-    else
-      @posts = Post.paginate(:page => params[:page], :per_page =>6).reverse_order
+      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 4).reverse_order
       respond_to do |format|
-      format.html # index.html.erb
-      format.js
-      end
+        format.html
+        format.js
+      end 
+    else
+      @posts = Post.paginate(:page => params[:page], :per_page => 4).reverse_order
+      respond_to do |format|
+        format.html
+        format.js
+      end 
+      
     end
 
     

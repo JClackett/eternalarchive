@@ -1,49 +1,8 @@
-<% javascript :defaults, 'endless_page' %>
 <div class="contentBox">
-<% @posts.each do |post| %>
-
-<<<<<<< HEAD
-    <div class="vid-container" onclick="play(this)">
-        <div class="overlay"> 
-          <span class="post-desc">
-            <%= post.description %>
-          </span>
-        </div>
-		<%= youtube_video( post.url ) %>    
-	</div>    
-=======
-<div class="post-container" onclick="play(this)">
-
-	<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-		<div class="overlay" > 
-			<span class="post-desc">
-				<%= post.description %>
-			</span>
-		</div>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>
-	<%else%>
-		<a class="overlay" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
-			<span class="post-desc">
-				<%= post.description %>
-			</span>
-		</a>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>  
-	<% end %>
+	<%= render 'post' %>
 </div>
 
 
-
-
->>>>>>> 56e2a4f5907d1deb8b6d6cefdea8f3ca1f756637
-<% end %>
-
-<%= will_paginate @posts, :page_links => false %>
-
-
+<div id="infinite-scrolling">
+  <%= will_paginate %>
 </div>
-
-
