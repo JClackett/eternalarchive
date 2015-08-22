@@ -11,6 +11,10 @@ module ApplicationHelper
     		content_tag(:img, nil, class: "video", src: url )
     	end
   end
+
+  def javascript(*args)
+  content_for(:head) { javascript_include_tag(*args) }
+end
    
 end
 

@@ -7,9 +7,13 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.reverse
+      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 6).reverse_order
     else
-      @posts = Post.all.reverse
+      @posts = Post.paginate(:page => params[:page], :per_page =>6).reverse_order
+      respond_to do |format|
+      format.html # index.html.erb
+      format.js
+      end
     end
   end
 
@@ -59,7 +63,6 @@ class PostsController < ApplicationController
   end
 
   private
-
 
     # Use callbacks to share common setup or constraints between actions.
     def set_post
