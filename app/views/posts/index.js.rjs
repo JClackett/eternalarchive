@@ -1,0 +1,4 @@
+page.insert_html :bottom, :posts
+
+@posts.total_pages > @posts.current_page
+  page.call 'checkScroll'
