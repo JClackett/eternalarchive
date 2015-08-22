@@ -4,7 +4,7 @@ gem 'devise'
 
 gem 'will_paginate'
 
-gem 'jquery-infinite-pages'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
