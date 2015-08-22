@@ -1,8 +1,8 @@
+
 <div class="contentBox">
-	<%= render 'post' %>
+
+	<%= render @posts %>
+
 </div>
 
-
-<div id="infinite-scrolling">
-  <%= will_paginate %>
-</div>
+<%= will_paginate @posts %>
