@@ -203,9 +203,8 @@ nav ul ul li:hover a {
 }
 
 .breaker {
-  height:50px;
+  height:20px;
   width: 100%;
-  position: relative;
   display:inline-block;
 }
 .contentBox {
@@ -296,6 +295,10 @@ iframe {
   opacity: 1;
 }
 
+.pagination a, .pagination em , .pagination span {
+  display:none;
+}
+
 
 /*------------------------------------------Footer--------------------------------------*/
 
@@ -306,7 +309,7 @@ iframe {
   right:0px;
   position:fixed;
   background-color: rgba(0,0,0,0.7);
-  z-index:2;
+  z-index:99999;
 } 
 
 .footer a {                 

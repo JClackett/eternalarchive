@@ -1,39 +1,11 @@
+
 <% javascript :defaults, 'endless_page' %>
 <div class="contentBox">
 
-<% @posts.each do |post| %>
-
-<div class="post-container" onclick="play(this)">
-
-	<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-		<div class="overlay" > 
-			<span class="post-desc">
-				<%= post.description %>
-			</span>
-		</div>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>
-	<%else%>
-		<a class="overlay" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
-			<span class="post-desc">
-				<%= post.description %>
-			</span>
-		</a>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>  
-	<% end %>
-</div>
-
-
-
-
-<% end %>
-
-<%= will_paginate @posts, :page_links => false %>
-
+	<%= render @posts %>
 
 </div>
+
+<%= will_paginate @posts %>
 
 
