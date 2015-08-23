@@ -31,3 +31,56 @@ $(document).ready(function() {
   }
 });
 
+
+$(document).ready(function() {
+    // show sidebar and dimmer
+    function showSidebar() {
+        sidebar.css('margin-right', '200px');
+
+        dimmer.show(0, function() {
+            dimmer.fadeTo('200', 0.4);
+        });   
+    }
+
+    // hide sidebar and dimmer
+    function hideSidebar() {
+        sidebar.css('margin-right', sidebar.width() * -1 + 'px');
+
+        dimmer.fadeTo('200', 0, function() {
+            dimmer.hide();
+        });;
+    }
+
+    // selectors
+    var sidebar = $('[data-sidebar]');
+    var button = $('[data-sidebar-button]');
+    var dimmer = $('[data-sidebar-dimmer]');
+
+    // add height to content area
+    dimmer.parent().css('min-height', 'inherit');
+
+    // hide sidebar on load
+    sidebar.css('margin-right ', sidebar.width() * -1 + 'px');
+
+    sidebar.show(0, function() {
+        sidebar.css('transition', 'all 0.5s ease');
+    });
+
+    // toggle sidebar on click
+    button.click(function() {
+        if (dimmer.is(':visible')) {
+            hideSidebar();
+        } else {
+            showSidebar();
+        }
+
+        return false;
+    });
+
+    // hide sidebar on dimmer click
+    dimmer.click(function() {
+        hideSidebar();
+    });
+});
+
+

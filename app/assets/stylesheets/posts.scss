@@ -160,37 +160,41 @@ nav ul ul li:hover a {
 }
 
 /*--------------------------------------- Side Bar ------------------ */
-.sidebar {
-  position: fixed;
-  float: right;
-  top:0px;
-  margin-top:100px;
-  right:0px;
-  z-index: 6;
-  background-color: #000C17;
-}
-
 
 .extra-button {
-  margin-right: 20px;
-  margin-top: 21px;
-  padding: 5px;
+  position: fixed;
+  top:0;
+  right: 0;
+  margin-right: 25px;
+  margin-top: 25px;
+  height: 50px;
   cursor: pointer;
   float: right;
-  z-index: 9;
+  z-index: 13;
 }
 
-.extra:hover {
+.extra-button:hover {
   color:orange;
 }
 
-/*--------------------------------------- Buttons ------------------ */
+#sidebar {
+  height: 100%;
+  right:-200px;
+  margin-top:100px;
+  background-color: #000C17;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+[data-sidebar] {
+ display: none;
+ position: fixed;
+ height: 100%;
+ width:200px;
+ z-index: 11;
+}
 
 .buttons {
-  display: none;
-  height: 1000px;
   line-height: 75px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
 .buttons ul {
@@ -214,6 +218,27 @@ nav ul ul li:hover a {
 .buttons ul li a:hover {
   color: orange;
 }
+
+
+.clicked {
+   /*-webkit-transform: translate(200px,200px);*/
+}
+
+[data-sidebar-dimmer] {
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ bottom:0;
+ opacity: 0;  
+ width: 100%;
+ z-index: 11;
+}
+
+.dimmer { 
+  background-color: #000; 
+}
+
 
 
 
@@ -284,7 +309,7 @@ iframe {
   opacity: 0.8;
 }
 
-.overlay {
+.overlay2 {
   position:absolute;
   cursor: pointer;
   padding: 0;
@@ -299,7 +324,7 @@ iframe {
   /*text-align: center;*/
 }
 
-.post-container:hover .overlay{
+.post-container:hover .overlay2{
   -webkit-transform: translate(0,-332px); /* Safari */
   /*background: -webkit-linear-gradient(60deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%);*/
   background: -webkit-radial-gradient( center,ellipse cover, rgba(0,0,0,0.05) 0%,rgba(0,0,0,1) 100%);

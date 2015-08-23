@@ -26,6 +26,8 @@
 
     
   <div class="wrapper">
+  <div class="dimmer" data-sidebar-dimmer></div>
+
   
   <div class="cover-photo">
                 <img src="https://images.unsplash.com/photo-1428278953961-a8bc45e05f72?q=80&amp;fm=jpg&amp;s=24f29a71c4de9b922e7ee2cb5ee46f4b" alt="Cover 1"/>
@@ -72,14 +74,13 @@
           </li> 
         </ul>
       </nav>
-
-      <div class="extra-button" >
-        <%= evil_icon 'ei-navicon', size: :m, class: "extra" %>
-      </div>
-      
     </div>
 
-    <div class="sidebar" >
+     <div class="extra-button" data-sidebar-button>
+        <%= evil_icon 'ei-navicon', size: :m, class: "extra" %>
+      </div>
+
+    <div id="sidebar" data-sidebar>
 
         <div class="buttons">
             <ul>
@@ -103,13 +104,15 @@
 
       <div class="breaker">
       </div>
-      
+  
+  
+
     <div class="footer"> 
       <a href="footer/copyrightpolicy.html" class="copyright"> Copyright Policy </a>       
     </div>
 
 
-
+  
   </div>
 
 
@@ -117,12 +120,6 @@
 <!-- - - - - - - - -  - - - - - - - - - - - - - - java - - - - - - - - - - - - - - - - - - - - - - - - -->    
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
-<script>
-$('.extra-button').click(function(){
-   $('.buttons').toggle();
-   // $('.buttons').toggleClass('clicked');
-});
-</script>
 
 <script>
   function play(object){
@@ -146,16 +143,16 @@ $('.extra-button').click(function(){
             $('.logo a').stop().animate({padding: "18px"},timedure);
             $('.logo a').stop().animate({lineHeight: "50px"},timedure);
             $('.main-header').stop().animate({lineHeight: "50px"},timedure);
-            $('.sidebar').stop().animate({marginTop: "50px"},timedure);
+            // $('.sidebar').stop().animate({marginTop: "50px"},timedure);
         }
         else {
-             $('.extra-button').stop().animate({marginTop: "21px"},timedure);
+             $('.extra-button').stop().animate({marginTop: "25px"},timedure);
              $('.logo a').stop().animate({fontWeight: "500"},timedure);
              $('.header').stop().animate({height: "100px"},timedure);  
              $('.logo a').stop().animate({padding: "30px"},timedure);
              $('.logo a').stop().animate({lineHeight: "100px"},timedure);
              $('.main-header').stop().animate({lineHeight: "100px"},timedure);
-             $('.sidebar').stop().animate(marginTop: "100px"},timedure);
+             // $('.sidebar').stop().animate(marginTop: "100px"},timedure);
         }
      });
 //      </script>

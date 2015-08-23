@@ -2,7 +2,7 @@
 <div class="post-container" onclick="play(this)">
 
 	<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-		<div class="overlay" > 
+		<div class="overlay2" > 
 			<span class="post-information">
 				<h5 class="post-description"><%= post.description %></h5>
 				<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
@@ -12,7 +12,7 @@
 			<%= embed(post.url) %>
 		</div>
 	<%else%>
-		<a class="overlay" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
+		<a class="overlay2" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
 			<span class="post-information">
 				<h5 class="post-description"><%= post.description %></h5>
 				<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
