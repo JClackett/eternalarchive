@@ -165,8 +165,7 @@ nav ul ul li:hover a {
   position: fixed;
   top:0;
   right: 0;
-  margin-right: 25px;
-  margin-top: 25px;
+  margin:25px;
   height: 50px;
   cursor: pointer;
   float: right;
@@ -177,7 +176,7 @@ nav ul ul li:hover a {
   color:orange;
 }
 
-#sidebar {
+.sidebar {
   height: 100%;
   right:-200px;
   margin-top:100px;
@@ -219,10 +218,6 @@ nav ul ul li:hover a {
   color: orange;
 }
 
-
-.clicked {
-   /*-webkit-transform: translate(200px,200px);*/
-}
 
 [data-sidebar-dimmer] {
  display: none;

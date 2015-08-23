@@ -80,7 +80,7 @@
         <%= evil_icon 'ei-navicon', size: :m, class: "extra" %>
       </div>
 
-    <div id="sidebar" data-sidebar>
+    <div class="sidebar" data-sidebar>
 
         <div class="buttons">
             <ul>
@@ -137,13 +137,13 @@
         var scrollTop = $(window).scrollTop();
         var timedure = 400
         if (scrollTop > 250) {
-            $('.extra-button').stop().animate({marginTop: "-5px"},timedure);
+            $('.extra-button').stop().animate({marginTop: "0px"},timedure);
             $('.logo a').stop().animate({fontWeight: "400"},timedure);
             $('.header').stop().animate({height: "50px"},timedure);
             $('.logo a').stop().animate({padding: "18px"},timedure);
             $('.logo a').stop().animate({lineHeight: "50px"},timedure);
             $('.main-header').stop().animate({lineHeight: "50px"},timedure);
-            // $('.sidebar').stop().animate({marginTop: "50px"},timedure);
+            $('.sidebar').stop().animate({marginTop: "50px"},timedure);
         }
         else {
              $('.extra-button').stop().animate({marginTop: "25px"},timedure);
@@ -152,7 +152,7 @@
              $('.logo a').stop().animate({padding: "30px"},timedure);
              $('.logo a').stop().animate({lineHeight: "100px"},timedure);
              $('.main-header').stop().animate({lineHeight: "100px"},timedure);
-             // $('.sidebar').stop().animate(marginTop: "100px"},timedure);
+             $('.sidebar').stop().animate({marginTop: "100px"},timedure);
         }
      });
 //      </script>
