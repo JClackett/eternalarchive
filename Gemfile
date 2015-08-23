@@ -4,6 +4,8 @@ gem 'devise'
 
 gem 'will_paginate'
 
+gem 'evil_icons'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
