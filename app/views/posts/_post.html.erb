@@ -3,11 +3,9 @@
 
 	<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
 		<div class="overlay" > 
-			<span class="post-desc">
-				<%= post.description %>
-				<span class="created-at">
-					<%= post.created_at %>
-				</span>
+			<span class="post-information">
+				<h5 class="post-description"><%= post.description %></h5>
+				<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
 			</span>
 		</div>
 		<div class="link-container">
@@ -18,7 +16,7 @@
 			<span class="post-desc">
 				<%= post.description %>
 				<span class="created-at">
-					<%= post.created_at %>
+					<%= time_ago_in_words(post.created_at) %> ago
 				</span>
 			</span>
 		</a>
