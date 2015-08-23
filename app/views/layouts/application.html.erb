@@ -86,7 +86,7 @@
         </div>   
 
     </div>
-
+    <div id="button">Random</div>
 	<div class="content">
       <%= yield %>
       </div>
@@ -142,6 +142,22 @@
      });
      </script>
 
+<script>
+$(document).ready(function() {
 
+$("#button").click(function() {
+
+//get list of divs
+var div = $(".post-container").toArray();
+
+//randomly print them back out.
+while(div.length > 0) {
+    var idx = Math.floor((Math.random() * (div.length-1)));
+    var element = div.splice(idx, 1);
+    $(".contentBox").append(element[0]);
+}
+})
+});
+</script>
 </body>
 </html>
