@@ -6,7 +6,7 @@ gem 'will_paginate'
 
 gem 'evil_icons'
 
-
+gem 'jquery-turbolinks'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
