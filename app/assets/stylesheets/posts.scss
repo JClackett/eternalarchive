@@ -235,6 +235,14 @@ nav ul ul li:hover a {
   color:  $primarycolor;
 }
 
+#button {
+    font-size: 400%;
+    position: absolute;
+    z-index: 100;
+    margin-top: 200px;
+    margin-left: 550px;
+    cursor: pointer;
+}
 
 [data-sidebar-dimmer] {
  display: none;
