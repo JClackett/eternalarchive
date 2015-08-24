@@ -98,8 +98,9 @@
                       <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
                   <% end %>
                   <div class="static">
-                    <li><%= link_to 'About', new_user_session_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Contact Us', new_user_session_path, class: 'static-pages'  %> </li>
+                    <li><%= link_to 'About', static_pages_about_path, class: 'static-pages'  %> </li>
+                    <li><%= link_to 'Help', static_pages_help_path, class: 'static-pages'  %> </li>
+                    <li><%= link_to 'Contact Us', static_pages_contact_us_path, class: 'static-pages'  %> </li>
                   </div>
             </ul>
         </div>  
