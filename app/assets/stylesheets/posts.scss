@@ -167,29 +167,47 @@ nav ul ul li:hover a {
   -webkit-transition:ease-in all 200ms;
 }
 
+
+/*  --------------------------------------- SearchBar ------------------ */
+ .search-container {
+  position: fixed;
+  margin-top:27.5px;
+  cursor: pointer;
+  right:90px;
+  float: right;
+  padding: 10px;
+  z-index: 10;
+ }
+
+ .search-container i {
+  font-size: 1.5rem;
+}
+
+.search-container:hover {
+  color: $primarycolor;
+}
 /*--------------------------------------- Side Bar ------------------ */
 .header-icon-container {
   position: fixed;
   top:0;
   right: 0;
   height: 100px;
-  cursor: pointer;
   float: right;
   z-index: 13;
 }
 
-.extra-button, .search-container  {
+.extra-button {
   margin:25px;
+  cursor: pointer;
   float: right;
-  height: 50px;
   padding: 5px;
 }
 
-.extra-button i, .search-container i {
+.extra-button i {
   font-size: 2.5rem;
 }
 
-.extra-button:hover {
+.extra-button:hover{
   color: $primarycolor;
 }
 
@@ -235,10 +253,10 @@ nav ul ul li:hover a {
   color:  $primarycolor;
 }
 
-#button {
-    font-size: 400%;
+#random-button {
+    font-size: 3rem;
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     margin-top: 200px;
     margin-left: 550px;
     cursor: pointer;
