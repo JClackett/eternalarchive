@@ -2,7 +2,7 @@
  /*-------------------------------------Constants---------------------------------------*/
 
  $primarycolor: #FFA436;
- $backgroundcolor: #000B1E;
+ $backgroundcolor: #001F25;
 
 
 /*-------------------------------------Main Style---------------------------------------*/
@@ -245,8 +245,9 @@ nav ul ul li:hover a {
   color:#fff;
 }
 
-.static {
-  margin-top: 100px;
+.static-links {
+  position: absolute;
+  bottom:110px;
 }
 .static-pages {
   text-decoration: none;
@@ -260,10 +261,17 @@ nav ul ul li:hover a {
 #random-button {
     font-size: 3rem;
     position: absolute;
-    z-index: 10;
-    left:200px;
-    top:200px;
+    z-index: 7;
+    padding: 5px;
+    left:435px;
+    top:145px;
     cursor: pointer;
+    color:$backgroundcolor;
+    border:2px solid $backgroundcolor;
+}
+
+#random-button:hover {
+  background-color: rgba(0,0,0,0.1);
 }
 
 [data-sidebar-dimmer] {
@@ -362,13 +370,10 @@ iframe {
   opacity: 0;
   transition: ease-in all 100ms;
   z-index:4;
-  /*line-height: 490px;*/
-  /*text-align: center;*/
 }
 
 .post-container:hover .overlay{
-  -webkit-transform: translate(0,-332px); /* Safari */
-  /*background: -webkit-linear-gradient(60deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%);*/
+  -webkit-transform: translate(0,-332px); 
   background: -webkit-radial-gradient( center,ellipse cover, rgba(0,0,0,0.05) 0%,rgba(0,0,0,1) 100%);
   opacity: 0.99;
 }

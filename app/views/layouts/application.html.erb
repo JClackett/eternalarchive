@@ -97,7 +97,9 @@
                   <% else %>
                       <li><%= link_to 'Login', new_user_session_path, class: 'new-post'  %> </li>
                   <% end %>
-                  <div class="static">
+            </ul>
+            <ul>
+                  <div class="static-links">
                     <li><%= link_to 'About', static_pages_about_path, class: 'static-pages'  %> </li>
                     <li><%= link_to 'Help', static_pages_help_path, class: 'static-pages'  %> </li>
                     <li><%= link_to 'Contact Us', static_pages_contact_us_path, class: 'static-pages'  %> </li>
@@ -147,8 +149,9 @@
  <script>
      $(window).on('scroll', function () {
         var scrollTop = $(window).scrollTop();
-        var timedure = 400
+        var timedure = 500
         if (scrollTop > 250) {
+           $('.static-links').stop().animate({bottom: "60px"},timedure);
            $('.search-button').stop().animate({marginTop: "0px"},timedure);
            $('.extra-button').stop().animate({marginTop: "0px"},timedure);
            $('.sidebar').stop().animate({marginTop: "50px"},timedure);
@@ -158,6 +161,7 @@
            $('.main-header').stop().animate({lineHeight: "50px"},timedure);
         }
         else {
+           $('.static-links').stop().animate({bottom: "110px"},timedure);
            $('.search-button').stop().animate({marginTop: "27px"},timedure);
            $('.extra-button').stop().animate({marginTop: "25px"},timedure);
            $('.sidebar').stop().animate({marginTop: "100px"},timedure);
