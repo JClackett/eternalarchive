@@ -1,7 +1,15 @@
+
+
+ /*-------------------------------------Constants---------------------------------------*/
+
+ $primarycolor: #FFA436;
+ $backgroundcolor: #000B1E;
+
+
 /*-------------------------------------Main Style---------------------------------------*/
 
 body {
-  background: #000C17;
+  background: $backgroundcolor;
   color :white;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -48,7 +56,7 @@ body {
   height: 100px;
   position: fixed;
   background-color: rgba(0,0,0,0.6);
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
   z-index: 8;
 } 
 
@@ -64,14 +72,14 @@ body {
   line-height: 100px;
   font-weight:500;
   text-decoration: none;
-  color:orange;
+  color: $primarycolor;
   padding: 40px;
 }
 
 
 /*------------------------------------Title Bar/Drop Down--------------------------------*/
 
-.main-header {
+.main-header {	
   line-height: 100px;
   float: left;
   z-index: 5;
@@ -154,44 +162,37 @@ nav ul li section:hover a {
 
 nav ul ul li:hover a {
   margin: 0;
-  color: orange;
+  color:  $primarycolor;
   transition:ease-in all 200ms;
   -webkit-transition:ease-in all 200ms;
 }
 
 /*--------------------------------------- Side Bar ------------------ */
-.header-icon-container{
+.header-icon-container {
   position: fixed;
   top:0;
   right: 0;
-  height: 50px;
+  height: 100px;
   cursor: pointer;
   float: right;
   z-index: 13;
-  
 }
 
-.extra-button {
+.extra-button , .search-container  {
   margin:25px;
   float: right;
-  z-index: 13;
+  height: 50px;
 }
-.search-container {
-  float: right;
-  z-index: 8;
-  margin-top: 25px;
-}
-
 
 .extra-button:hover {
-  color:orange;
+  color: $primarycolor;
 }
 
 .sidebar {
   height: 100%;
   right:-200px;
   margin-top:100px;
-  background-color: #000C17;
+  background-color: $backgroundcolor;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
@@ -200,7 +201,7 @@ nav ul ul li:hover a {
  position: fixed;
  height: 100%;
  width:200px;
- z-index: 11;
+ z-index: 12;
 }
 
 .sidebar-buttons {
@@ -226,7 +227,7 @@ nav ul ul li:hover a {
 }
 
 .sidebar-buttons ul li a:hover {
-  color: orange;
+  color:  $primarycolor;
 }
 
 
@@ -343,7 +344,7 @@ iframe {
   margin-left: 70px;
   margin-top: 220px;
   opacity: 1;
-  color: orange;
+  color:  $primarycolor;
 }
 
 .post-description {
@@ -373,14 +374,14 @@ iframe {
   right:0px;
   position:fixed;
   background-color: rgba(0,0,0,0.7);
-  z-index:7;
+  z-index:15;
 } 
 
 .footer a {                 
   font-size:0.5rem;
   position:fixed;
   bottom:5px;
-  color:orange;
+  color: $primarycolor;
   text-decoration:none;
   font-weight:400;
   right:10px;
@@ -415,7 +416,7 @@ iframe {
   height: 200px;
   line-height: 1.5rem;
   font-size: 1.5rem;
-  color:orange;
+  color: $primarycolor;
   padding: 1px 10px;
 }
 

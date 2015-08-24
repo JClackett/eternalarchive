@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/evil-icons/1.7.2/evil-icons.min.css">
-<script src="//cdn.jsdelivr.net/evil-icons/1.7.2/evil-icons.min.js"></script>
+
+
 
 
   <!--<script src="http://use.typekit.net/koq1kyb.js"></script>
@@ -75,14 +75,14 @@
       </nav>
     </div>
 
-    <div class="header-icon-container">
+      <div class="header-icon-container">
           
           <div class="extra-button" data-sidebar-button>
-              <%= evil_icon 'ei-navicon', size: :m, class: "extra-icon" %>
+
           </div>
 
           <div class="search-container">
-            <%= evil_icon 'ei-search', size: :m, class: "search-icon" %>
+
           </div>
 
       </div>
@@ -144,22 +144,24 @@
         var scrollTop = $(window).scrollTop();
         var timedure = 400
         if (scrollTop > 250) {
-            $('.extra-button').stop().animate({marginTop: "0px"},timedure);
-            $('.logo a').stop().animate({fontWeight: "400"},timedure);
-            $('.header').stop().animate({height: "50px"},timedure);
-            $('.logo a').stop().animate({padding: "18px"},timedure);
-            $('.logo a').stop().animate({lineHeight: "50px"},timedure);
-            $('.main-header').stop().animate({lineHeight: "50px"},timedure);
-            $('.sidebar').stop().animate({marginTop: "50px"},timedure);
+           $('.header-icon-container').stop().animate({height: "50px"},timedure);
+           $('.search-container').stop().animate({margin: "0px"},timedure);
+           $('.extra-button').stop().animate({margin: "0px"},timedure);
+           $('.header').stop().animate({height: "50px"},timedure);
+           $('.logo a').stop().animate({padding: "18px"},timedure);
+           $('.logo a').stop().animate({lineHeight: "50px"},timedure);
+           $('.main-header').stop().animate({lineHeight: "50px"},timedure);
+           $('.sidebar').stop().animate({marginTop: "50px"},timedure);
         }
         else {
-             $('.extra-button').stop().animate({marginTop: "25px"},timedure);
-             $('.logo a').stop().animate({fontWeight: "500"},timedure);
-             $('.header').stop().animate({height: "100px"},timedure);  
-             $('.logo a').stop().animate({padding: "30px"},timedure);
-             $('.logo a').stop().animate({lineHeight: "100px"},timedure);
-             $('.main-header').stop().animate({lineHeight: "100px"},timedure);
-             $('.sidebar').stop().animate({marginTop: "100px"},timedure);
+           $('.header-icon-container').stop().animate({height: "100px"},timedure);
+           $('.search-container').stop().animate({margin: "25px"},timedure);
+           $('.extra-button').stop().animate({margin: "25px"},timedure);
+           $('.header').stop().animate({height: "100px"},timedure);  
+           $('.logo a').stop().animate({padding: "30px"},timedure);
+           $('.logo a').stop().animate({lineHeight: "100px"},timedure);
+           $('.main-header').stop().animate({lineHeight: "100px"},timedure);
+           $('.sidebar').stop().animate({marginTop: "100px"},timedure);
         }
      });
 //      </script>

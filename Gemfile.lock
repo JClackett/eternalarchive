@@ -41,6 +41,8 @@ GEM
     bcrypt (3.1.10-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.1.1.1)
+      sass (~> 3.2)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -61,11 +63,13 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     erubis (2.7.0)
-    evil_icons (1.7.7)
     execjs (2.5.2)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    icomoon-rails (0.1.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -164,10 +168,11 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bootstrap-sass (~> 3.1.1)
   byebug
   coffee-rails (~> 4.1.0)
   devise
-  evil_icons
+  icomoon-rails
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.1)
