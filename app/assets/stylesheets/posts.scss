@@ -1,5 +1,4 @@
 
-
  /*-------------------------------------Constants---------------------------------------*/
 
  $primarycolor: #FFA436;
@@ -246,6 +245,14 @@ nav ul ul li:hover a {
   color:#fff;
 }
 
+.static {
+  margin-top: 100px;
+}
+.static-pages {
+  text-decoration: none;
+  color:#fff;
+}
+
 .sidebar-buttons ul li a:hover {
   color:  $primarycolor;
 }
@@ -344,7 +351,7 @@ iframe {
   opacity: 0.8;
 }
 
-.overlay2 {
+.overlay {
   position:absolute;
   cursor: pointer;
   padding: 0;
@@ -359,7 +366,7 @@ iframe {
   /*text-align: center;*/
 }
 
-.post-container:hover .overlay2{
+.post-container:hover .overlay{
   -webkit-transform: translate(0,-332px); /* Safari */
   /*background: -webkit-linear-gradient(60deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%);*/
   background: -webkit-radial-gradient( center,ellipse cover, rgba(0,0,0,0.05) 0%,rgba(0,0,0,1) 100%);
