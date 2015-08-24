@@ -284,10 +284,22 @@ nav ul ul li:hover a {
   border-radius:3px;
 }
 
+.container {
+  cursor: pointer;
+  width:49.2%;
+  float: left;
+  position:relative;
+  overflow: hidden;
+  margin:0.4%;
+  text-decoration: none;
+  border-radius: 0px;
+  z-index: 3;
+}
+
 .post-container { 
   display:inline-block;
   cursor: pointer;
-  width:49.2%;
+  width:100%;
   float: left;
   position:relative;
   overflow: hidden;
@@ -329,7 +341,7 @@ iframe {
   opacity: 0.8;
 }
 
-.overlay2 {
+.overlay {
   position:absolute;
   cursor: pointer;
   padding: 0;
@@ -344,7 +356,7 @@ iframe {
   /*text-align: center;*/
 }
 
-.post-container:hover .overlay2{
+.post-container:hover .overlay{
   -webkit-transform: translate(0,-332px); /* Safari */
   /*background: -webkit-linear-gradient(60deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.05) 100%);*/
   background: -webkit-radial-gradient( center,ellipse cover, rgba(0,0,0,0.05) 0%,rgba(0,0,0,1) 100%);
@@ -375,6 +387,15 @@ iframe {
 
 .pagination a, .pagination em , .pagination span {
   display:none;
+}
+
+.vote-wrap {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  z-index: 5;
+  margin: 50px;
+  float: right;
 }
 
 

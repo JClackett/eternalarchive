@@ -134,11 +134,12 @@
 
 <script>
   function play(object){
-    $(object.querySelector('.overlay')).hide(200);
-    object.querySelector('iframe').src =
-    object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
-    return false;
+      $(object.querySelector('.overlay')).hide(200);
+      object.querySelector('iframe').src =
+      object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
+      return false;
   }
+
 </script>
 
 

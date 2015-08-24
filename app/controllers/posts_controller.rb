@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-    before_action :set_post, only: [:show, :edit, :update, :destroy]
+    before_action :set_post, only: [:show, :edit, :update, :destroy, :upvote]
     before_action :authenticate_user!, except: [:index]
     before_action :parents
 
@@ -59,6 +59,15 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
       redirect_to posts_path
+  end
+
+  def upvote
+    @vote = @post.votes.new(user: current_user)
+    if @vote.save
+      redirect_to posts_path
+    else
+      redirect_to posts_path
+    end
   end
 
   private
