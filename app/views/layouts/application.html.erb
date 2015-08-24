@@ -140,24 +140,20 @@
              $('.buttons').stop().animate({lineHeight: "100px"},timedure);
         }
      });
-     </script>
+</script>
 
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
+    $("#button").click(function() {
 
-$("#button").click(function() {
-
-//get list of divs
-var div = $(".post-container").toArray();
-
-//randomly print them back out.
-while(div.length > 0) {
-    var idx = Math.floor((Math.random() * (div.length-1)));
-    var element = div.splice(idx, 1);
-    $(".contentBox").append(element[0]);
-}
-})
-});
+        var parent = $(".contentBox");
+        var divs = parent.children();
+        while (divs.length) {
+            parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+        }
+    })
+  });
 </script>
+
 </body>
 </html>
