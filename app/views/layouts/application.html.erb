@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+
 <meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
                         TEA is a nearly endless supply of enlightening content. We believe there is no limit to the ability of online media to inspire, educate and make people Healthier Wealthier and Wiser.">
     
@@ -78,11 +79,11 @@
       <div class="header-icon-container">
           
           <div class="extra-button" data-sidebar-button>
-
+            <i class="fa fa-bars"></i>
           </div>
 
           <div class="search-container">
-
+            <i class="fa fa-search search-icon"></i>
           </div>
 
       </div>
@@ -147,21 +148,21 @@
            $('.header-icon-container').stop().animate({height: "50px"},timedure);
            $('.search-container').stop().animate({margin: "0px"},timedure);
            $('.extra-button').stop().animate({margin: "0px"},timedure);
+           $('.sidebar').stop().animate({marginTop: "50px"},timedure);
            $('.header').stop().animate({height: "50px"},timedure);
            $('.logo a').stop().animate({padding: "18px"},timedure);
            $('.logo a').stop().animate({lineHeight: "50px"},timedure);
            $('.main-header').stop().animate({lineHeight: "50px"},timedure);
-           $('.sidebar').stop().animate({marginTop: "50px"},timedure);
         }
         else {
            $('.header-icon-container').stop().animate({height: "100px"},timedure);
            $('.search-container').stop().animate({margin: "25px"},timedure);
            $('.extra-button').stop().animate({margin: "25px"},timedure);
+           $('.sidebar').stop().animate({marginTop: "100px"},timedure);
            $('.header').stop().animate({height: "100px"},timedure);  
            $('.logo a').stop().animate({padding: "30px"},timedure);
            $('.logo a').stop().animate({lineHeight: "100px"},timedure);
            $('.main-header').stop().animate({lineHeight: "100px"},timedure);
-           $('.sidebar').stop().animate({marginTop: "100px"},timedure);
         }
      });
 //      </script>

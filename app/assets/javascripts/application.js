@@ -32,7 +32,8 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
+
     // show sidebar and dimmer
     function showSidebar() {
         sidebar.css('margin-right', '200px');

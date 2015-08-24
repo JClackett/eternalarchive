@@ -14,7 +14,7 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
-  font-size: 67.5%
+  font-size: 67.5%;
 }
 
 ::-webkit-scrollbar {
@@ -178,10 +178,15 @@ nav ul ul li:hover a {
   z-index: 13;
 }
 
-.extra-button , .search-container  {
+.extra-button, .search-container  {
   margin:25px;
   float: right;
   height: 50px;
+  padding: 5px;
+}
+
+.extra-button i, .search-container i {
+  font-size: 2.5rem;
 }
 
 .extra-button:hover {
