@@ -9,12 +9,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :categories
   
-  resources :posts do
-    member do
-      post 'upvote'
-    end
-  end
-  
+  resources :posts 
 
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.

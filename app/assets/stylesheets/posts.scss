@@ -314,22 +314,10 @@ nav ul ul li:hover a {
   border-radius:3px;
 }
 
-.container {
-  cursor: pointer;
-  width:49.2%;
-  float: left;
-  position:relative;
-  overflow: hidden;
-  margin:0.4%;
-  text-decoration: none;
-  border-radius: 0px;
-  z-index: 3;
-}
-
 .post-container { 
   display:inline-block;
   cursor: pointer;
-  width:100%;
+  width:49.2%;
   float: left;
   position:relative;
   overflow: hidden;
@@ -385,9 +373,7 @@ iframe {
 }
 
 .post-container:hover .overlay{
-
   -webkit-transform: translate(0,-332px); 
-
   background: -webkit-radial-gradient( center,ellipse cover, rgba(0,0,0,0.05) 0%,rgba(0,0,0,1) 100%);
   opacity: 0.99;
 }
@@ -416,15 +402,6 @@ iframe {
 
 .pagination a, .pagination em , .pagination span {
   display:none;
-}
-
-.vote-wrap {
-  height: 5px;
-  width: 5px;
-  position: absolute;
-  z-index: 5;
-  margin: 50px;
-  float: right;
 }
 
 
