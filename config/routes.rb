@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  get 'static_pages/help' ,:path => "help"
+
+  get 'static_pages/about', :path => "about"
+
+  get 'static_pages/contact_us', :path => "contact_us"
+
   devise_for :users
   resources :categories
   
