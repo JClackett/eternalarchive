@@ -10,10 +10,7 @@ class PostsController < ApplicationController
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
-
-    end
-
-    
+    end    
   end
 
   # GET /posts/1
@@ -65,10 +62,17 @@ class PostsController < ApplicationController
     if current_user.voted_up_on? @post
       @post.downvote_by current_user
     else
-    @post.upvote_by current_user
-  end
+      @post.upvote_by current_user
+    end
     redirect_to :back
+  end
 
+  def bookmark
+    @post = Post.find(params[:id])
+
+    @bookmark = @post.bookmark.new(user_id: current_user)
+
+    @bookmark.save
   end
 
   private

@@ -7,4 +7,7 @@ class User < ActiveRecord::Base
   acts_as_voter
   has_many :posts
 
+  has_many :users_posts, dependent: :destroy
+  has_many :posts, through: :users_posts
+
 end
