@@ -202,40 +202,99 @@ nav ul ul li:hover a {
   background-color: rgba(0,0,0,0.1);
 }
 
-/*  --------------------------------------- SearchBar ------------------ */
- .search-button {
+/*  --------------------------------------- Icon Bar ------------------ */
+ .search-button, .login-button {
   position: fixed;
   margin-top:27px;
   cursor: pointer;
-  right:90px;
   float: right;
-  padding: 10px;
+  padding: 10px;  
   z-index: 10;
+ } 
+
+ .search-button {
+  right:180px;
  }
 
- .search-button i {
+ .search-button i, .login-button i {
   font-size: 1.5rem;
 }
 
-.search-button:hover {
+.search-button:hover, .login-button:hover {
   color: $primarycolor;
 }
+
+.login-button {
+  right:72px;
+  text-align: center;
+  width: 90px;
+}
+
+.user-pop-up {
+  position: fixed;
+  top:50px;
+  right:8px;
+  display: none;  
+}
+
+.user-login {
+  text-decoration: none;
+  color: #fff;
+}
+
+.current-user {
+  text-align: center;
+  color: #fff;
+  display:block;
+  padding: 3px;
+  font-weight: 400;
+  font-size: 1rem; 
+  text-decoration: none;
+}
+
+.user-logout {
+  display:none;
+  position:relative;
+  margin-right: 4px;
+  text-align:center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-button:hover .user-logout {
+  display: block;
+}
+
+.current-user:hover {
+  color:$primarycolor;
+}
+
+.user-login:hover {
+  color:$primarycolor;
+}
+.user-logout:hover {
+  color:$primarycolor;
+  }
+
+
+
+
 /*--------------------------------------- Side Bar ------------------ */
 
-.extra-button {
+.extra-button, {
   position: fixed;
   top:0;
   right: 0;
-  margin-top:25px;
-  margin-right: 25px;
+  margin-top:27px;
+  margin-right: 27px;
   cursor: pointer;
   float: right;
-  padding: 5px;
+  padding: 10px;
   z-index: 13;
 }
 
 .extra-button i {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .extra-button:hover{
