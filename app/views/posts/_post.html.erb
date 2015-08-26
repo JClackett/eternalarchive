@@ -1,7 +1,7 @@
 <div class="main-container">
 	<div class="vote-wrapper">
-		<%= link_to 'like post', like_post_path(post), method: :put	%>
-	    <%= post.get_upvotes.size %>
+		<%= link_to 'like post', like_post_path(post), method: :put %>
+	    	<%= post.get_upvotes.size %>
 	</div>
 	<div class="post-container" onclick="play(this)">
 
