@@ -10,10 +10,7 @@ class PostsController < ApplicationController
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
-
     end
-
-    
   end
 
   # GET /posts/1
