@@ -13,8 +13,11 @@ Rails.application.routes.draw do
   resources :posts do
     member do
       put 'like', to: 'posts#upvote'
+      post 'bookmark' 
     end
   end
+
+  get 'profile' => 'posts#profile'
 
   resources :users, only: [:show]
 

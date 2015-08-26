@@ -421,6 +421,15 @@ color: white;
 width: 100%;
 }
 
+.bookmark-wrapper {
+  float:right;
+  position: absolute;
+  font-size: 2.5rem;
+  z-index: 10;
+  text-align: center;
+  width: 100px;
+  background: grey;
+}
 .video {
   border-radius:3px;
 }

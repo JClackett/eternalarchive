@@ -3,6 +3,14 @@
 		<%= link_to 'like post', like_post_path(post), method: :put	%>
 	    <%= post.get_upvotes.size %>
 	</div>
+	<div class="bookmark-wrapper">
+		<%= button_to bookmark_post_path(post), class: 'bookmark' do %>
+	        &#9650;
+	        <br>
+	        <span class="bookmarks"><%= post.bookmarks.count %></span>
+	    <% end %>
+    </div>
+
 	<div class="post-container" onclick="play(this)">
 
 		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
