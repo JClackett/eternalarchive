@@ -7,9 +7,16 @@ Rails.application.routes.draw do
   get 'static_pages/contact_us', :path => "contact_us"
 
   devise_for :users
+
   resources :categories
   
-  resources :posts 
+  resources :posts do
+    member do
+      put 'like', to: 'posts#upvote'
+    end
+  end
+
+  resources :users, only: [:show]
 
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.

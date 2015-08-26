@@ -19,7 +19,6 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
   end
-  
 
   # GET /posts/new
   def new
@@ -59,6 +58,17 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
       redirect_to posts_path
+  end
+
+  def upvote
+    @post = Post.find(params[:id])
+    if current_user.voted_up_on? @post
+      @post.downvote_by current_user
+    else
+    @post.upvote_by current_user
+  end
+    redirect_to :back
+
   end
 
   private

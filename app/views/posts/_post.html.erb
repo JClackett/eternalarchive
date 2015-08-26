@@ -1,29 +1,31 @@
+<div class="main-container">
+	<div class="vote-wrapper">
+		<%= link_to 'like post', like_post_path(post), method: :put	%>
+	    <%= post.get_upvotes.size %>
+	</div>
+	<div class="post-container" onclick="play(this)">
 
-<div class="post-container" onclick="play(this)">
+		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
+			<div class="overlay" > 
+				<span class="post-information">
+					<h5 class="post-description"><%= post.description %></h5>
+					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
+				</span>
+			</div>
+			<div class="link-container">
+				<%= embed(post.url) %>
+			</div>
+		<%else%>
+			<a class="overlay" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
+				<span class="post-information">
+					<h5 class="post-description"><%= post.description %></h5>
+					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
+				</span>
+			</a>
+			<div class="link-container">
+				<%= embed(post.url) %>
+			</div>  
+		<% end %>
+	</div>
 
-	<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-		<div class="overlay" > 
-			<span class="post-information">
-				<h5 class="post-description"><%= post.description %></h5>
-				<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
-			</span>
-		</div>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>
-	<%else%>
-		<a class="overlay" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
-			<span class="post-information">
-				<h5 class="post-description"><%= post.description %></h5>
-				<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
-			</span>
-		</a>
-		<div class="link-container">
-			<%= embed(post.url) %>
-		</div>  
-	<% end %>
 </div>
-
-
-
-
