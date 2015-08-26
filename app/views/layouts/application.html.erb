@@ -83,7 +83,7 @@
 
       <div class="login-button">
         <% if user_signed_in? %>
-                 <%= link_to  "#{current_user.username}", root_path ,  class: 'current-user' %>
+                 <%= link_to  "#{current_user.username}", profile_path ,  class: 'current-user' %>
                  <%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'user-logout'  %> 
           <%else%>
             <%= link_to new_user_session_path,  class: 'user-login' do %>
@@ -107,7 +107,7 @@
                  <% if current_user.try(:admin?) %>
                       <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
                       <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
-                      <li><%= link_to "Profile", root_path, class: 'new-post'  %></li>
+                      <li><%= link_to "Profile", profile_path, class: 'new-post'  %></li>
                   <%end%>
                   
 
