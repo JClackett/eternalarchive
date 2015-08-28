@@ -7,5 +7,5 @@ class Post < ActiveRecord::Base
 	belongs_to :user  
 
 	validates_format_of :url, with: URI::regexp(%w(http https))
-	validates_presence_of :description, :url, :category_id
+	validates_presence_of :description, :url, :category_ids
 end	
