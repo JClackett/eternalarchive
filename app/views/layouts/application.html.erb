@@ -80,7 +80,6 @@
             <i class="fa fa-bars extra-icon"></i>
       </div>
 
-
       <div class="login-button">
         <% if user_signed_in? %>
                  <%= link_to  "#{current_user.username}", profile_path ,  class: 'current-user' %>
@@ -91,9 +90,6 @@
                   <% end %>
           <% end %>
         </div>  
-
-
-
 
       <div class="search-button">
             <i class="fa fa-search search-icon"></i>
@@ -124,7 +120,7 @@
       </div>
 
 
-    <div id="random-button">Randomise Videos</div>
+    <%= link_to 'Randomize' , randomize_posts_path , id: 'random-button' %>
     <div class="hero-phrase">Self-educate.</div>
     <div class="mostrecent-button" onclick="window.location.reload(true)">Latest Videos</div>
 
@@ -159,39 +155,6 @@
     object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
     return false;
   }
-</script>
-
-
-
- <script>
-     $(window).on('scroll', function () {
-        var scrollTop = $(window).scrollTop();
-        var timedure = 500
-        if (scrollTop > 250) {
-           $('.static-links').stop().animate({bottom: "60px"},timedure);
-           $('.search-button').stop().animate({marginTop: "0px"},timedure);
-           $('.login-button').stop().animate({marginTop: "0px"},timedure);
-           $('.extra-button').stop().animate({marginTop: "0px"},timedure);
-           $('.sidebar').stop().animate({marginTop: "50px"},timedure);
-           $('.header').stop().animate({height: "50px"},timedure);
-           $('.logo a').stop().animate({padding: "18px"},timedure);
-           $('.logo a').stop().animate({lineHeight: "50px"},timedure);
-           $('.main-header').stop().animate({lineHeight: "50px"},timedure);
-        }
-        else {
-           $('.static-links').stop().animate({bottom: "110px"},timedure);
-           $('.search-button').stop().animate({marginTop: "27px"},timedure);
-           $('.login-button').stop().animate({marginTop: "27px"},timedure);
-           $('.extra-button').stop().animate({marginTop: "27px"},timedure);
-           $('.sidebar').stop().animate({marginTop: "100px"},timedure);
-           $('.header').stop().animate({height: "100px"},timedure);  
-           $('.logo a').stop().animate({padding: "30px"},timedure);
-           $('.logo a').stop().animate({lineHeight: "100px"},timedure);
-           $('.main-header').stop().animate({lineHeight: "100px"},timedure);
-        }
-     });
-</script>
-
 </script>
 
 <script>

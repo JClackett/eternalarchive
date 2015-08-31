@@ -8,6 +8,9 @@ gem 'jquery-infinite-pages'
 
 gem 'acts_as_votable', '~> 0.10.0'
 
+gem 'video_info'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use sqlite3 as the database for Active Record
@@ -36,7 +39,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # tzinfo gem to enable rails to run server
 gem 'tzinfo-data'
 
-gem 'video_info'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
