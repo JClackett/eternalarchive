@@ -20,7 +20,7 @@ class Post < ActiveRecord::Base
 
 	def add_information_from_video_info
 		if description.blank?
-			VideoInfo.provider_api_keys = { youtube: 'AIzaSyAXqfIaKFn-kb8YXb4CVIQjgn7TKxDjlNM', vimeo: 'fc31a8eb303853203d03a5cf2115a20a87c7ff71'}
+			VideoInfo.provider_api_keys = { youtube: 'AIzaSyB2FT5bQgIWCPBHJ1mWpwTdc_o2lqClrv8', vimeo: 'fc31a8eb303853203d03a5cf2115a20a87c7ff71'}
 		    video = VideoInfo.new(url)
 		    self.update_columns(description: video.title)
 		else
