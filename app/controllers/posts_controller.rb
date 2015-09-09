@@ -7,14 +7,8 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     if params[:name].present?
-      params.each do |key,value|
-      Rails.logger.warn "Param #{key}: #{value}"
-    end
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     else
-      params.each do |key,value|
-      Rails.logger.warn "Param #{key}: #{value}"
-    end
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
     end
   end
@@ -23,13 +17,6 @@ class PostsController < ApplicationController
     @posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
   end
 
-  def randomize 
-    if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order.shuffle
-    else
-      @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order.shuffle
-    end
-  end
 
   # GET /posts/1
   def show
