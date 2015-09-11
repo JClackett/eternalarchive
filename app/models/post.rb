@@ -1,5 +1,4 @@
 class Post < ActiveRecord::Base
-	after_create :add_information_from_video_info
 	acts_as_votable
 	has_many :posts_categories, dependent: :destroy
 	has_many :categories, through: :posts_categories
