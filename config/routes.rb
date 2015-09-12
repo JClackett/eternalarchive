@@ -6,6 +6,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/contact_us', :path => "contact_us"
 
+  get 'static_pages/copyright', :path => "copyright"
+
+
   devise_for :users
 
   resources :categories

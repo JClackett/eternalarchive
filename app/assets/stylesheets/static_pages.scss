@@ -2,14 +2,39 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+/*-------------------------------------Constants---------------------------------------*/
+$bluecolor: #81B6DB;  // blue  //
+$greencolor: #77DD77;    // green // 
+$redcolor: #FF4955;   // red //
+$orangecolor: #FFB246;   // orange //
+$whitecolor: #fff;     // white // 
+
+
+body {
+  background:$whitecolor;
+  color:#fff;
+  margin:0;
+  font-family:'Roboto',sans-serif;
+  font-weight:200;
+  font-size:67.5%
+}
+
+::-webkit-scrollbar {
+  display:none
+}
+
+.wrapper {
+  width:100%
+}
+
 .static-page-header {
 	margin-left: 570px;
 	font-size: 2.2rem;
 }
 
-/* 	-	-	-	-	-	-	 About 	-	-		-	-	-	*/
 
-.about-content, .contact-content, .help-content {
+.about-content, .contact-content, .help-content , .copyright-content{
 	position: fixed;
 	width:500px;
 	font-size: 1.25rem;
@@ -20,3 +45,12 @@
 	padding: 50px;
 }
 
+.static-links {
+  position:absolute;
+  bottom:110px
+}
+
+.static-pages {
+  text-decoration:none;
+  color:#fff
+}

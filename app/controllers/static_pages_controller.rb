@@ -11,4 +11,8 @@ class StaticPagesController < ApplicationController
   def contact_us
   	@title="Contact Us"
   end
+
+  def copyright
+    @title="Contact Us"
+  end
 end
