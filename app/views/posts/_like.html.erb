@@ -1,0 +1,2 @@
+	    	<%= link_to 'like post', like_post_path(post), remote: true, method: :put, id: dom_id(post) %>
+	    	<%= post.get_upvotes.size %>
