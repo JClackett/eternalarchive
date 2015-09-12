@@ -42,12 +42,16 @@ body {
   border-radius:3px
 }
 
-.cover-photo iframe{
+.cover-photo img {
   width:100%;
-  height: 120vh;
-  overflow-y:hidden;
-  z-index:-5;
 }
+
+// .cover-photo iframe{
+//   width:100%;
+//   height: 120vh;
+//   overflow-y:hidden;
+//   z-index:-5;
+// }
 
 .img-cover {
   position: absolute;
@@ -199,7 +203,7 @@ nav ul ul li:hover a {
 }
 
 .start-watching {
-   font-size:2rem;
+  font-size:2rem;
   width:100%;
   position:absolute;
   text-align:center;
@@ -211,6 +215,21 @@ nav ul ul li:hover a {
   padding: 0;
   top:500px;
   color:$whitecolor;
+}
+
+.scroll-to-content {
+  font-size:2rem;
+  width:100%;
+  position:absolute;
+  text-align:center;
+  cursor:default;
+  z-index:7;
+  padding:5px;
+  left:0;
+  margin: 0;
+  padding: 0;
+  top:550px;
+  color:$whitecolor; 
 }
 
 .mostrecent-button {
@@ -441,6 +460,7 @@ iframe {
   width:100%;
   height:45vh;
   position:relative;
+  volume: silent;
   border:0
 }
 
@@ -575,3 +595,5 @@ iframe {
   color:#fff;
   text-decoration:none
 }
+
+
