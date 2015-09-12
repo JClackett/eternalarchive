@@ -200,13 +200,13 @@ nav ul ul li:hover a {
 
 .hero-phrase {
   font-size:3rem;
-  width:300px;
+  width:100%;
   position:absolute;
   text-align:center;
   cursor:default;
   z-index:7;
   padding:5px;
-  left:490px;
+  left:0;
   top:150px;
   color:$whitecolor;
 }
