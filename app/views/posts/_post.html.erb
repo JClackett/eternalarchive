@@ -1,7 +1,6 @@
 <div class="main-container">
 	<div class="vote-wrapper">
-		<%= link_to 'like post', like_post_path(post), method: :put %>
-	    	<%= post.get_upvotes.size %>
+			<%= render 'like', post: post %>
 	</div>
 	<div class="bookmark-wrapper">
 		<%= button_to bookmark_post_path(post), class: 'bookmark' do %>

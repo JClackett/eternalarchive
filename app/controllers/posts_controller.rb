@@ -7,14 +7,8 @@ class PostsController < ApplicationController
   # GET /posts
   def index
     if params[:name].present?
-      params.each do |key,value|
-      Rails.logger.warn "Param #{key}: #{value}"
-    end
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     else
-      params.each do |key,value|
-      Rails.logger.warn "Param #{key}: #{value}"
-    end
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
     end
   end
@@ -72,7 +66,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-      redirect_to posts_path
+    redirect_to posts_path
   end
 
   def upvote
@@ -82,7 +76,12 @@ class PostsController < ApplicationController
     else
       @post.upvote_by current_user
     end
-    redirect_to :back
+    puts @post.id
+    respond_to do |format|
+        format.js
+    end
+
+    
   end
 
     # POST /posts/:id/upvote
