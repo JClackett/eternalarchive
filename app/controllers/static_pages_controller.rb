@@ -13,6 +13,6 @@ class StaticPagesController < ApplicationController
   end
 
   def copyright
-    @title="Contact Us"
+    @title="Copyright"
   end
 end
