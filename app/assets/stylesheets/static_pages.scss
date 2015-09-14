@@ -20,6 +20,11 @@ body {
   font-size:67.5%
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 ::-webkit-scrollbar {
   display:none
 }
@@ -29,12 +34,10 @@ body {
 }
 
 .static-page-header {
+      width:900px;
 	font-size: 2.2rem;
-      margin: 0 auto;
       padding: 0;
-}
-
-.static-page-header h1 {
+      margin: 2vh;
 }
 
 
