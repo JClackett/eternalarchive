@@ -473,7 +473,6 @@ iframe {
   width:100%;
   height:45vh;
   position:relative;
-  volume: silent;
   border:0
 }
 
@@ -609,4 +608,7 @@ iframe {
   text-decoration:none
 }
 
+.field {
+  color:$redcolor;
+}
 
