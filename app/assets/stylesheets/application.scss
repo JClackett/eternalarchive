@@ -119,96 +119,72 @@ body {
 }
 
 /*------------------------------------Title Bar/Drop Down--------------------------------*/
-.main-header {
+
+
+.tag-container {
   position: absolute;
-  top: 0;
-  left:0;
-  line-height:10vh;
-  z-index:5;
+  top:0;
+  left: 0;
   width:100%;
-  padding: 0;
-  margin: 0;
+  // height:10vh;
+  font-size: 2.5rem;
+}
+.tag-wrap {
+  cursor:pointer;
+}
+.tags-button {
+  padding:2.2vh;
+  float: left;
 }
 
-.healthy-header,.wealthy-header,.wise-header {
-  width:150px;
-  height: 10vh;
-  text-align:center
-}
-
-nav ul {
-  padding:0;
-  margin:0;
-  list-style:none
-}
-
-nav ul li {
-  float:left;
-  margin:0 30px;
-  position:relative
-}
-
-nav ul li:hover ul {
-  display:block
-}
-
-nav ul li a {
+.tag-wrap:hover + .category-tags, .category-tags:hover  {
   display:block;
-  color:#fff;
-  text-decoration:none;
-  font-size:2.5rem
 }
 
-nav ul ul {
+.tag-title {
+  font-size: 1.4rem;
+  float: left;
+  padding-left:10px;
+}
+
+
+.category-tags{
   display:none;
-  z-index: 2;
-  position:absolute;
-  background-color:$bluecolor;
-  border-radius:0 0 3px 3px; 
+  position: absolute;
+  top:10vh;
+  left:35vw;
+  float: left;
+  text-align: center;
+  z-index: 6;
+  
+  nav {
+    position: relative;
+    ul {
+      margin: 0;
+      padding: 10px;
+      width:30vw;
+      
+      li {
+        list-style:none;
+        display:inline-block;
+        margin: 5px;
+        
+        a {
+          font-size: 1.2rem;
+          padding: 10px;
+          border-radius: 3px; 
+          text-decoration:none;
+          color:$whitecolor;
+          background-color:$redcolor;
+        }
+      }
+    }
+  }
 }
 
-.healthy-scroll {
-  left:-15px;
-  width:190px
-}
-
-.wealthy-scroll {
-  left:-25px;
-  width:210px
-}
-
-.wise-scroll {
-  left:-150px;
-  width:500px
-}
-
-nav ul ul li {
-  text-align:center;
-  display:block;
-  padding:0;
-  margin:0
-}
-
-nav ul ul li a {
-  font-size:1rem;
-  padding:5px 20px;
-  margin:0;
-  height:25px;
-  line-height:25px;
-  color:#fff
-}
-
-nav ul li section:hover a {
-  color:$bluecolor;
-  transition:ease-in all 200ms;
-  -webkit-transition:ease-in all 200ms
-}
-
-nav ul ul li:hover a {
-  margin:0;
-  color:$redcolor;
-  transition:ease-in all 200ms;
-  -webkit-transition:ease-in all 200ms
+.category-tags a:hover {
+      color:$redcolor;
+      background-color:$whitecolor;
 }
 
 /*  --------------------------------------- Hero Buttons------------------ */
@@ -216,7 +192,7 @@ nav ul ul li:hover a {
 .hero-buttons{
   position: absolute;
   z-index:7;
-  top:350px;
+  top:450px;
   width: 100%;
 }
 #random-button,.mostrecent-button {
@@ -240,7 +216,7 @@ nav ul ul li:hover a {
   left:0;
   margin: 0;
   padding: 0;
-  top:500px;
+  top:550px;
   color:$whitecolor;
 }
 
@@ -254,7 +230,7 @@ nav ul ul li:hover a {
   left:0;
   margin: 0;
   padding: 0;
-  top:560px;
+  top:600px;
   color:$whitecolor; 
 }
 
@@ -288,12 +264,11 @@ nav ul ul li:hover a {
   position:absolute;
   cursor:default;
   width: 100%;
-  z-index:7;
   padding:5px;
   left:0;
   margin: 0;
   padding: 0;
-  top:200px;
+  top:300px;
   color:$whitecolor;
 }
 
@@ -419,7 +394,8 @@ nav ul ul li:hover a {
 .sidebar-buttons ul li a {
   text-align:center;
   padding:10px;
-  font-size:1rem
+  font-size:1rem;
+  z-index: 13;
 }
 
 .new-post {
