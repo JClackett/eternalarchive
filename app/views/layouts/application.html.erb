@@ -35,7 +35,7 @@
         
           <div class="logo"><%= link_to 'TEA.', root_path %></div>
                   
-     <nav class="main-header">
+     <nav class="main-header center">
         <ul>
           <li>
             <section class="healthy-header"><%= link_to 'Healthy', root_path(name: @category_healthy_name)%></section>
@@ -115,14 +115,14 @@
   
       </div>
 
-    <div class="hero-phrase"><%= @category_title %></div>
+    <div class="hero-phrase center"><%= @category_title %></div>
     
-    <div class="hero-buttons">
+    <div class="hero-buttons center">
       <div class="mostrecent-button" onclick="window.location.reload(true)">Latest Videos</div>
       <%= link_to 'Randomize' , randomize_posts_path , id: 'random-button' %>
     </div>
     
-      <div class="start-watching">Start watching now</div>
+      <div class="start-watching center">Start watching now</div>
       <div class="scroll-to-content">
         <i class="fa fa-angle-double-down scroll-arrow"></i>
       </div>
@@ -137,6 +137,7 @@
 
 <!-- - - - - - - - -  - - - - - - - - - - - - - - java - - - - - - - - - - - - - - - - - - - - - - - - -->    
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="assets/jquery.easing.1.3.js"></script>
 
 
 <script>
@@ -152,7 +153,7 @@
   $(".scroll-to-content").click(function() {
     $('html,body').animate({
         scrollTop: $(".main-container").offset().top},
-        'slow');
+        1000,'easeInQuart')
 });
 </script>
 

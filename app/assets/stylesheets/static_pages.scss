@@ -34,7 +34,8 @@ body {
 }
 
 .static-page-header {
-      width:900px;
+      position: absolute;
+      width:100%;
 	font-size: 2.2rem;
       padding: 0;
       margin: 2vh;
