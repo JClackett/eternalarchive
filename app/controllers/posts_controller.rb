@@ -71,7 +71,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-      redirect_to posts_path
+    redirect_to posts_path
   end
 
   def upvote
@@ -81,7 +81,12 @@ class PostsController < ApplicationController
     else
       @post.upvote_by current_user
     end
-    redirect_to :back
+    puts @post.id
+    respond_to do |format|
+        format.js
+    end
+
+    
   end
 
     # POST /posts/:id/upvote
