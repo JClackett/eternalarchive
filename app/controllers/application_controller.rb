@@ -6,40 +6,39 @@ class ApplicationController < ActionController::Base
 
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
+ #  def parents
+ #    @category_healthy = Category.where(categories: { parent: "healthy" } )
+ #    if @category_healthy.present?
+  #     @category_healthy_name = []
+  #     @category_healthy.each do |category|
+  #       @category_healthy_name.push(category.name)
+  #     end
+  # else
+  #   @category_healthy_name = "none"
+ #    end
 
-  def parents
-    @category_healthy = Category.where(categories: { parent: "healthy" } )
-    if @category_healthy.present?
-	    @category_healthy_name = []
-	    @category_healthy.each do |category|
-	      @category_healthy_name.push(category.name)
-	  	end
-	else
-	  @category_healthy_name = "none"
-    end
-
-    @category_wealthy = Category.where(categories: { parent: "wealthy" } )
+ #    @category_wealthy = Category.where(categories: { parent: "wealthy" } )
     
-    if @category_wealthy.present?
-	    @category_wealthy_name = []
-	    @category_wealthy.each do |category|
-	      @category_wealthy_name.push(category.name)
-	    end
-	else
-		@category_wealthy_name = "none"
-	end
+ #    if @category_wealthy.present?
+  #     @category_wealthy_name = []
+  #     @category_wealthy.each do |category|
+  #       @category_wealthy_name.push(category.name)
+  #     end
+  # else
+  #   @category_wealthy_name = "none"
+  # end
 
-    @category_wise = Category.where(categories: { parent: "wise" } )
+ #    @category_wise = Category.where(categories: { parent: "wise" } )
     
-    if @category_wise.present?
-    	@category_wise_name = []
-    	@category_wise.each do |category|
-      		@category_wise_name.push(category.name)
-    	end
-    else
-    	@category_wise_name = "none"
-  	end
-  end
+ #    if @category_wise.present?
+ #      @category_wise_name = []
+ #      @category_wise.each do |category|
+ #          @category_wise_name.push(category.name)
+ #      end
+ #    else
+ #      @category_wise_name = "none"
+ #    end
+ #  end
 
    protected
 
