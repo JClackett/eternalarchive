@@ -127,6 +127,8 @@
         <i class="fa fa-angle-double-down scroll-arrow"></i>
       </div>
 
+      <div class="breaker"></div>
+      
 	<div class="content">
       <%= yield %>
       </div>
@@ -152,8 +154,8 @@
 <script >
   $(".scroll-to-content").click(function() {
     $('html,body').animate({
-        scrollTop: $(".main-container").offset().top},
-        1000,'easeInQuart')
+        scrollTop: $(".breaker").offset().top},
+        1000,'easeOutBounce')
 });
 </script>
 
