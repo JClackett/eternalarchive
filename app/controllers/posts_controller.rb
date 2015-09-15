@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     before_action :authenticate_user!, except: [:index, :randomize]
-    before_action :parents
 
     
   # GET /posts
@@ -9,19 +8,11 @@ class PostsController < ApplicationController
     if params[:name].present?
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
       @category_title =  params[:name]
-        if @category_title.kind_of?(Array)
-          if @category_title.include?("Fitness")
-            @category_title = "Healthy"
-          elsif @category_title.include?("Business")
-            @category_title = "Wealthy"
-          else @category_title.include?("Culture")
-            @category_title = "Wise"
-          end
-        end
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
       @category_title =  "Self Educate"
     end
+    @categories = Category.all
   end
 
   def profile

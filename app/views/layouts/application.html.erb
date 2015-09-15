@@ -37,40 +37,10 @@
                   
      <nav class="main-header center">
         <ul>
-          <li>
-            <section class="healthy-header"><%= link_to 'Healthy', root_path(name: @category_healthy_name)%></section>
-              <ul class="healthy-scroll">            
-                  <% if Category.parent.present?%>
-                    <% @category_healthy.each do |category|%>
+                <% @category.each do |category|%>
                     <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
                   <%end%>
-              </ul>
-          </li>
-          <li>
-            <section class="wealthy-header"><%= link_to 'Wealthy', root_path(name: @category_wealthy_name)%></section>
-              <ul class="wealthy-scroll">
-                  <% if Category.parent.present?%>
-                    <% @category_wealthy.each do |category|%>
-                    <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
-                  <%end%>
-              </ul>
-          </li>
-          <li>
-            <section class="wise-header"><%= link_to 'Wise', root_path(name: @category_wise_name)%></section>
-              <ul class="wise-scroll">
-                  <% if Category.parent.present?%>
-                    <% @category_wise.each do |category|%>
-                    <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
-                  <%end%>        
-              </ul>
-          </li> 
-        </ul>
+          </ul>
       </nav>
     </div>
 
