@@ -5,7 +5,7 @@
 $bluecolor: #81B6DB;  // blue  //
 $greencolor: #77DD77;    // green // 
 $redcolor: #FF4955;   // red //
-$orangecolor: #FFB246;   // orange //
+$orangecolor: #FDC14B;   // orange //
 $whitecolor: #fff;     // white // 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -68,8 +68,8 @@ iframe {
 
 .post-container:hover .overlay {
   -webkit-transform:translate(0,-332px);
-  background:$redcolor;
-  opacity:.9
+  background:grey;
+  opacity:.2
 }
 
 .post-information {
@@ -97,13 +97,33 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Voting  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
+.vid-menu {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
+}
+
+.vid-menu i {
+  font-size: 3rem;
+  position: absolute;
+  color: $bluecolor;
+}
+
+
 .vote-wrapper {
   position:absolute;
   font-size:2.5rem;
   z-index:10;
   text-align:center;
-  bottom:20px;
+  top:20px;
   right:20px;
+  background-color: $bluecolor; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .vote-number {
@@ -112,19 +132,39 @@ iframe {
 
 .vote-wrapper a{
   text-decoration: none;
-  color:white;
+  line-height: 50px;
 }
+
+.vote-wrapper img{
+  height: 30px;
+  width: 30px;
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Bookark  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .bookmark-wrapper {
-  float:right;
   position:absolute;
-  font-size:3rem;
+  font-size:2.5rem;
   z-index:10;
-  color:black;
   text-align:center;
+  top:20px;
+  right:100px;
+  background-color: $bluecolor; 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.bookmark-wrapper:hover {
+  background-color: #8BAEC3;
+}
+
+.bookmark-wrapper img{
+  height: 30px;
+  width: 30px;
+  padding: 10px;
 }
 
