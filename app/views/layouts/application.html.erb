@@ -43,9 +43,9 @@
           <div class="category-tags center">  
               <nav >
                 <ul>  
-                      <li> <%= link_to 'All', root_path, class: 'categories'  %></li>
+                      <li> <%= nav_link_to 'All', root_path %></li>
                       <% Category.all.each do |category|%>
-                          <li><%= link_to category.name, root_path(name: category.name), class: 'categories' %></li>
+                          <li><%= nav_link_to category.name, root_path(name: category.name) %></li>
                         <%end%>
 
                 </ul>
@@ -86,10 +86,10 @@
             </ul>
             <ul>
                   <div class="static-links">
-                    <li><%= link_to 'About', static_pages_about_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Help', static_pages_help_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Contact Us', static_pages_contact_us_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Copyright', static_pages_copyright_path, class: 'static-pages'  %> </li>
+                    <li><div class="static-pages"><%= nav_link_to 'About', static_pages_about_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Help', static_pages_help_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Contact Us', static_pages_contact_us_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Copyright', static_pages_copyright_path %></div> </li>
                   </div>
             </ul>
         </div>  
@@ -140,6 +140,20 @@
 });
 </script>
 
+<script>
+  $(document).ready(function() {
+    $(".tag-wrap").click(function(e) {
+        $(".category-tags").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.category-tags, .category-tags*')) {
+            $(".category-tags").hide();
+        }
+    });
+});
+</script>
 
 </body>
 </html>

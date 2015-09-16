@@ -58,7 +58,11 @@ body {
   bottom:110px
 }
 
-.static-pages {
+.static-links .selected{
+  color:$redcolor;
+}
+
+.static-pages a{
   text-decoration:none;
   color:#fff
 }

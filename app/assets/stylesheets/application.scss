@@ -23,6 +23,7 @@ $greencolor: #77DD77;    // green //
 $redcolor: #FF4955;   // red //
 $orangecolor: #FFB246;   // orange //
 $whitecolor: #fff;     // white // 
+$blackcolor: #000;
 
 
 /*-------------------------------------Main Style---------------------------------------*/
@@ -126,25 +127,27 @@ body {
   top:0;
   left: 0;
   width:100%;
-  // height:10vh;
   font-size: 2.5rem;
 }
+
 .tag-wrap {
   cursor:pointer;
 }
+
+.tag-wrap:hover{
+  color:$bluecolor;
+}
+
 .tags-button {
   padding:2.2vh;
   float: left;
-}
-
-.tag-wrap:hover + .category-tags, .category-tags:hover  {
-  display:block;
 }
 
 .tag-title {
   font-size: 1.4rem;
   float: left;
   padding-left:10px;
+  font-weight:400;
 }
 
 
@@ -156,11 +159,14 @@ body {
   float: left;
   text-align: center;
   z-index: 6;
+  background-color: rgba(0,0,0,0.5);
+  border-radius:0 0 5px 5px;
+  box-shadow: 0px 6px 60px -5px $blackcolor;
   
   nav {
     position: relative;
     ul {
-      margin: 0;
+      margin: 0 0 10px 0;
       padding: 10px;
       width:30vw;
       
@@ -168,6 +174,11 @@ body {
         list-style:none;
         display:inline-block;
         margin: 5px;
+        
+         .selected {
+          color:$redcolor;
+          background-color:$whitecolor;
+      }
         
         a {
           font-size: 1.2rem;
@@ -408,7 +419,11 @@ body {
   bottom:110px
 }
 
-.static-pages {
+.static-links .selected{
+  color:$redcolor;
+}
+
+.static-pages a{
   text-decoration:none;
   color:#fff
 }
