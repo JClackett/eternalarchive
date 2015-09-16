@@ -4,34 +4,18 @@
 
 
 /*-------------------------------------Constants---------------------------------------*/
-$bluecolor: #81B6DB;  // blue  //
-$greencolor: #77DD77;    // green // 
-$redcolor: #FF4955;   // red //
-$orangecolor: #FFB246;   // orange //
-$whitecolor: #fff;     // white // 
 
+$blue: #81B6DB;  // blue  //
+$green: #77DD77;    // green // 
+$red: #FF4959;   // red //
+$darkred: #EE4558; // darker red //
+$lightred: #FFD8E8; // light red//
+$orange: #FFB246;   // orange //
+$white: #fff;     // white // 
+$black: #000; // black //
+$grey: #eee; // lightgrey //
+$purple: #8171B6; // lightgrey //
 
-body {
-  background:$whitecolor;
-  color:#fff;
-  margin:0;
-  font-family:'Roboto',sans-serif;
-  font-weight:200;
-  font-size:67.5%
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-::-webkit-scrollbar {
-  display:none
-}
-
-.wrapper {
-  width:100%
-}
 
 .static-page-header {
       position: absolute;
@@ -51,18 +35,4 @@ body {
 	float: left;
 	margin: 0;
 	padding: 50px;
-}
-
-.static-links {
-  position:absolute;
-  bottom:110px
-}
-
-.static-links .selected{
-  color:$redcolor;
-}
-
-.static-pages a{
-  text-decoration:none;
-  color:#fff
 }

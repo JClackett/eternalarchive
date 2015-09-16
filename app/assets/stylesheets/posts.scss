@@ -2,11 +2,17 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - Constants - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-$bluecolor: #81B6DB;  // blue  //
-$greencolor: #77DD77;    // green // 
-$redcolor: #FF4955;   // red //
-$orangecolor: #FFB246;   // orange //
-$whitecolor: #fff;     // white // 
+$blue: #81B6DB;  // blue  //
+$green: #77DD77;    // green // 
+$red: #FF4955;   // red //
+$darkred: #FF5567; // darker red //
+$lightred: #FFD8E8; // light red//
+$orange: #FFB246;   // orange //
+$white: #fff;     // white // 
+$black: #000; // black //
+$grey: #eee; // lightgrey //
+$purple: #8171B6; // lightgrey //
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Post  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -57,7 +63,6 @@ iframe {
   position:absolute;
   cursor:pointer;
   padding:0;
-  bottom:-332px;
   margin:0;
   height:100%;
   width:100%;
@@ -67,8 +72,7 @@ iframe {
 }
 
 .post-container:hover .overlay {
-  -webkit-transform:translate(0,-332px);
-  background:$redcolor;
+  background:$purple;
   opacity:.9
 }
 
@@ -77,7 +81,7 @@ iframe {
   margin-left:70px;
   margin-top:220px;
   opacity:1;
-  color:$bluecolor
+  color:$blue
 }
 
 .post-description {
@@ -114,7 +118,7 @@ iframe {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Bookark  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Bookmark  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .bookmark-wrapper {

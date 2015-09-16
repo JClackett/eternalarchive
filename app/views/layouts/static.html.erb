@@ -5,10 +5,16 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
- 
+
+
+<meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
+                        TEA is a nearly endless supply of enlightening content. We believe there is no limit to the ability of online media to inspire, educate and make people Healthier Wealthier and Wiser.">
+    
   <meta charset="UTF-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+
 </head>  
   
 <body>
@@ -17,17 +23,18 @@
   <div class="wrapper">
   <div class="dimmer" data-sidebar-dimmer></div>
 
-  <div class="cover-photo">
-  </div>
-
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-          <div class="logo"><%= link_to 'TEA.', root_path %></div>
-          <h1 class="static-page-header center"><%= @title %> </h1> 
-    </div>
-
+    
+      <div class="logo"><%= link_to 'TEA.', root_path %></div>
+  
+  
       <div class="extra-button" data-sidebar-button>
             <i class="fa fa-bars extra-icon"></i>
       </div>
+
+
+    </div>
+
 
     <div class="sidebar" data-sidebar>
 
@@ -50,14 +57,13 @@
   
       </div>
 
-
-	<div class="content">
-
-		<%= yield %>
-
+      
+  <div class="content">
+      <%= yield %>
       </div>
 
   </div>
+
 
 </body>
 </html>
