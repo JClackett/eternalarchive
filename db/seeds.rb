@@ -19,7 +19,7 @@ category_list = [
 ]
 
 category_list.each do |name, parent|
-  Category.create( name: name, parent: parent )
+  Category.create( name: name)
 end
 
 

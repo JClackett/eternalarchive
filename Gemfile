@@ -4,6 +4,8 @@ gem 'devise'
 
 gem 'will_paginate'
 
+gem 'nav_lynx'
+
 gem 'jquery-infinite-pages'
 
 gem 'acts_as_votable', '~> 0.10.0'

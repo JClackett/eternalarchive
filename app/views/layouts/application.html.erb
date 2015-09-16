@@ -33,47 +33,30 @@
   </div>
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-        
-          <div class="logo"><%= link_to 'TEA.', root_path %></div>
-                  
-     <nav class="main-header center">
-        <ul>
-          <li>
-            <section class="healthy-header"><%= link_to 'Healthy', root_path(name: @category_healthy_name)%></section>
-              <ul class="healthy-scroll">            
-                  <% if Category.parent.present?%>
-                    <% @category_healthy.each do |category|%>
-                    <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
-                  <%end%>
-              </ul>
-          </li>
-          <li>
-            <section class="wealthy-header"><%= link_to 'Wealthy', root_path(name: @category_wealthy_name)%></section>
-              <ul class="wealthy-scroll">
-                  <% if Category.parent.present?%>
-                    <% @category_wealthy.each do |category|%>
-                    <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
-                  <%end%>
-              </ul>
-          </li>
-          <li>
-            <section class="wise-header"><%= link_to 'Wise', root_path(name: @category_wise_name)%></section>
-              <ul class="wise-scroll">
-                  <% if Category.parent.present?%>
-                    <% @category_wise.each do |category|%>
-                    <li><%= link_to category.name, root_path(name: category.name)%></li>
-                    <%end%>
-                  <%else%>
-                  <%end%>        
-              </ul>
-          </li> 
-        </ul>
-      </nav>
-    </div>
+    
+      <div class="logo"><%= link_to 'TEA.', root_path %></div>
+      <div class="search-button">
+            <i class="fa fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search"></input>
+      </div>
+      
+      <div class="tag-container center">
+          <div class="tag-wrap">
+                <h3 class="tag-title">Tags</h3>
+                <i class="fa fa-tags tags-button"></i>
+          </div>
+          <div class="category-tags center">  
+              <nav >
+                <ul>  
+                      <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
+                      <% Category.all.each do |category|%>
+                          <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                        <%end%>
+
+                </ul>
+              </nav>
+          </div>
+      </div>
 
       <div class="extra-button" data-sidebar-button>
             <i class="fa fa-bars extra-icon"></i>
@@ -88,11 +71,9 @@
                   <i class="fa fa-user user-icon"></i>
                   <% end %>
           <% end %>
-        </div>  
+      </div>  
 
-      <div class="search-button">
-            <i class="fa fa-search search-icon"></i>
-      </div>
+    </div>
 
 
     <div class="sidebar" data-sidebar>
@@ -106,10 +87,10 @@
             </ul>
             <ul>
                   <div class="static-links">
-                    <li><%= link_to 'About', static_pages_about_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Help', static_pages_help_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Contact Us', static_pages_contact_us_path, class: 'static-pages'  %> </li>
-                    <li><%= link_to 'Copyright', static_pages_copyright_path, class: 'static-pages'  %> </li>
+                    <li><div class="static-pages"><%= nav_link_to 'About', static_pages_about_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Help', static_pages_help_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Contact Us', static_pages_contact_us_path %></div></li>
+                    <li><div class="static-pages"><%= nav_link_to 'Copyright', static_pages_copyright_path %></div> </li>
                   </div>
             </ul>
         </div>  
@@ -157,6 +138,21 @@
     $('html,body').animate({
         scrollTop: $(".breaker").offset().top},
         1000,'easeOutBounce')
+});
+</script>
+
+<script>
+  $(document).ready(function() {
+    $(".tag-wrap").click(function(e) {
+        $(".category-tags").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.category-tags, .category-tags*')) {
+            $(".category-tags").hide();
+        }
+    });
 });
 </script>
 

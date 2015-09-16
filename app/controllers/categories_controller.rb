@@ -2,6 +2,7 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
 
+
   # GET /categories
   def index
     @categories = Category.all
@@ -63,6 +64,6 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params.require(:category).permit(:name, :parent)
+      params.require(:category).permit(:name)
     end
 end
