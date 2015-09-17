@@ -23,7 +23,7 @@ Rails.application.routes.draw do
 
   get 'profile' => 'posts#profile'
 
-  resources :users, only: [:show]
+  # resources :users, only: [:show]
 
   root 'posts#index'
   # The priority is based upon order of creation: first created -> highest priority.

@@ -25,10 +25,8 @@
   <div class="dimmer" data-sidebar-dimmer></div>
 
   <div class="cover-photo">
-            <div class="img-cover">
-            </div>
-            <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover 10">
-              <!-- <iframe frameborder="0" allowfullscreen="" src="whttp://www.youtube.com/embed/S3fTw_D3l10?rel=0&amp;modestbranding=1&amp;loop=1&amp;autohide=1&amp;showinfo=0&amp;controls=1&amp;autoplay=1"></iframe> -->
+            <div class="img-cover"></div>
+            <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover">
             
   </div>
 
@@ -37,8 +35,8 @@
       <div class="logo"><%= link_to 'TEA.', root_path %></div>
       <div class="search-button">
             <i class="fa fa-search search-icon"></i>
-            <input type="text" class="search-input" placeholder="Search"></input>
-      </div>
+            <!-- <input type="text" class="search-input" name="search" placeholder="Search"></input> -->
+      </div> 
       
       <div class="tag-container center">
           <div class="tag-wrap">
@@ -62,18 +60,29 @@
             <i class="fa fa-bars extra-icon"></i>
       </div>
 
-      <div class="login-button">
+      <div class="login-section">
         <% if user_signed_in? %>
-                 <%= link_to  "#{current_user.username}", profile_path ,  class: 'current-user' %>
-                 <%= link_to 'Logout', destroy_user_session_path, :method => :delete, class: 'user-logout'  %> 
+                   <div class="current-user">
+                      <%= image_tag avatar_url(current_user) %>
+                    </div>
+                   <div class="user-popup">
+                      <div class="user-links">
+                          <ul>
+                              <li><%= link_to 'Profile', profile_path %></li>
+                              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'onion' %></li>
+                          </ul>
+                      </div>
+                    </div>
           <%else%>
-            <%= link_to new_user_session_path,  class: 'user-login' do %>
-                  <i class="fa fa-user user-icon"></i>
-                  <% end %>
+                <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>
           <% end %>
-      </div>  
-
+          
     </div>
+    </div>
+
+
+
+   
 
 
     <div class="sidebar" data-sidebar>
@@ -87,6 +96,7 @@
             </ul>
             <ul>
                   <div class="static-links">
+
                     <li><div class="static-pages"><%= nav_link_to 'About', static_pages_about_path %></div></li>
                     <li><div class="static-pages"><%= nav_link_to 'Help', static_pages_help_path %></div></li>
                     <li><div class="static-pages"><%= nav_link_to 'Contact Us', static_pages_contact_us_path %></div></li>
@@ -151,6 +161,21 @@
     $(document).click(function(e) {
         if (!$(e.target).is('.category-tags, .category-tags*')) {
             $(".category-tags").hide();
+        }
+    });
+});
+</script>
+
+<script>
+  $(document).ready(function() {
+    $(".login-section").click(function(e) {
+        $(".user-popup").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.user-popup, .user-popup*')) {
+            $(".user-popup").hide();
         }
     });
 });
