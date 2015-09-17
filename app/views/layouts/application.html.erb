@@ -35,7 +35,7 @@
       <div class="logo"><%= link_to 'TEA.', root_path %></div>
       <div class="search-button">
             <i class="fa fa-search search-icon"></i>
-            <!-- <input type="text" class="search-input" name="search" placeholder="Search"></input> -->
+            <input type="text" class="search-input" name="search" placeholder="Search"></input>
       </div> 
       
       <div class="tag-container center">
@@ -68,7 +68,7 @@
                    <div class="user-popup">
                       <div class="user-links">
                           <ul>
-                              <li><%= link_to 'Profile', profile_path %></li>
+                              <li><%= nav_link_to 'Profile', profile_path %></li>
                               <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'onion' %></li>
                           </ul>
                       </div>
