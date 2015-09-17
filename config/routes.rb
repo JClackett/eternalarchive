@@ -16,8 +16,8 @@ Rails.application.routes.draw do
   resources :posts do
       get 'randomize', on: :collection
     member do
-      put 'like', to: 'posts#upvote'
-      post 'bookmark' 
+      get 'like', to: 'posts#upvote'
+      get 'bookmark'
     end
   end
 

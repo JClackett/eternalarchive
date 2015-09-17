@@ -64,22 +64,27 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+      # POST /posts/:id/like
+
   def upvote
     @post = Post.find(params[:id])
     if current_user.voted_up_on? @post
       @post.downvote_by current_user
+      post = @post
+
+      respond_to do |format|
+        format.js
+      end
     else
       @post.upvote_by current_user
-    end
-    puts @post.id
-    respond_to do |format|
-        format.js
-    end
+      post = @post
 
-    
+      respond_to do |format|
+        format.js
+      end
+    end
   end
 
-    # POST /posts/:id/upvote
   def bookmark
     @post = Post.find(params[:id])
     @bookmark = @post.bookmarks.new(user: current_user)
