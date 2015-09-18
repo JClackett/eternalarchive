@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150826171506) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "source"
-    t.string   "url"
+    t.string   "url"                  # video url or article picture url...
     t.string   "description"
     t.string   "article_url"
     t.datetime "created_at",  null: false

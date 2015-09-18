@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :contributions
   get 'static_pages/help' ,:path => "help"
 
   get 'static_pages/about', :path => "about"
