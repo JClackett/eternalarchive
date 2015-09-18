@@ -83,13 +83,19 @@ class PostsController < ApplicationController
 
   def bookmark
     @post = Post.find(params[:id])
-    @bookmark = @post.bookmarks.new(user: current_user)
-    if @bookmark.save
+    if Bookmark.where(user_id: current_user.id, post_id: @post.id).present?
+      @bookmark = Bookmark.where(user_id: current_user.id, post_id: @post.id)
+      @bookmark.first.delete
+            respond_to do |format|
+        format.js
+      end
     else
-      @bookmark = Bookmark.where(params[:user_id => current_user.id, :post_id => @post.id])
-      @bookmark.first.destroy
-    end
-    redirect_to :back
+      @bookmark = @post.bookmarks.new(user: current_user)
+      @bookmark.save
+            respond_to do |format|
+        format.js
+      end
+    end 
   end
 
   private
