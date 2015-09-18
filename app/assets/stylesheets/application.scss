@@ -17,17 +17,18 @@
  */
 /*-------------------------------------Constants---------------------------------------*/
 
-
 $blue: #81B6DB;  // blue  //
 $green: #77DD77;    // green // 
-$red: #FF4959;   // red //
-$darkred: #EE4558; // darker red //
+$red: #FF4955;   // red //
+$darkred: #FF5567; // darker red //
 $lightred: #FFD8E8; // light red//
 $orange: #FFB246;   // orange //
-$white: #fff;     // white // 
+$white: #fff; // white // 
 $black: #000; // black //
 $grey: #eee; // lightgrey //
-$purple: #8171B6; // lightgrey //
+$purple: #8171B6; // purple //
+$yellow: #FFF5AC; // yellow //
+
 /*-------------------------------------Main Style---------------------------------------*/
 
 body {
@@ -576,6 +577,3 @@ body {
 .field {
   color:$red;
 }
-
-
-

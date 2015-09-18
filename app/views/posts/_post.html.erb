@@ -3,18 +3,18 @@
 		<i class="fa fa-twitter-square"></i>
 	</div>
 	<div class="vote-wrapper">
-			<%= render 'like', post: post %>
+		<%= render 'like', post: post %>
 	</div>
+
 	<div class="bookmark-wrapper">
-		<%= link_to bookmark_post_path(post), remote: true, method: :put, id: dom_id(post), class: 'bookmark' do %>
-    		<%= image_tag("1442420149_icon-18-bookmark.png")%>
-    	<%end%>
-    </div>
+		<%= render 'bookmark', post: post %>
+	</div>
+
 
 	<div class="post-container" onclick="play(this)">
 
 		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-			<div class="overlay <%= overlay_color()%>" > 
+			<div class="overlay <%= overlay_color %>" > 
 				<span class="post-information">
 					<h5 class="post-description"><%= post.description %></h5>
 					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
