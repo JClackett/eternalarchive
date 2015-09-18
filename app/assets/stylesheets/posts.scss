@@ -8,10 +8,12 @@ $red: #FF4955;   // red //
 $darkred: #FF5567; // darker red //
 $lightred: #FFD8E8; // light red//
 $orange: #FFB246;   // orange //
-$white: #fff;     // white // 
+$white: #fff; // white // 
 $black: #000; // black //
 $grey: #eee; // lightgrey //
 $purple: #8171B6; // lightgrey //
+$yellow: #FFF5AC; // yellow //
+
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -71,10 +73,33 @@ iframe {
   z-index:4
 }
 
-.post-container:hover .overlay {
-  background:$purple;
-  opacity:.9
+.post-container:hover {
+     .overlay {
+      opacity:.8;
+    }
+     .purple {
+      background-color: $purple;
+    }
+     .green {
+      background-color: $green;
+    }
+     .red {
+      background-color: $red;
+    }
+     .orange {
+      background-color: $orange;
+    }
+     .yellow {
+      background-color: $yellow;
+    }
+     .white {
+      background-color: $white;
+    }
+     .blue {
+      background-color: $blue;
+    }
 }
+
 
 .post-information {
   display:block;

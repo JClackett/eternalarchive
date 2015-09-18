@@ -28,12 +28,6 @@ $white: #fff;     // white //
 $black: #000; // black //
 $grey: #eee; // lightgrey //
 $purple: #8171B6; // lightgrey //
-
-
-
-
-
-
 /*-------------------------------------Main Style---------------------------------------*/
 
 body {
@@ -112,19 +106,20 @@ body {
   float:left;
   margin:0;
   padding:0;
+  
+    a {
+       z-index: 6;
+      position:relative;
+      font-size:2rem;
+      margin: 0;
+      line-height:10vh;
+      font-weight:500;
+      text-decoration:none;
+      color:$white;
+      padding:20px 30px 15px 40px
+    }
 }
 
-.header .logo a {
-  z-index: 6;
-  position:relative;
-  font-size:2rem;
-  margin: 0;
-  line-height:10vh;
-  font-weight:500;
-  text-decoration:none;
-  color:$white;
-  padding:20px 30px 15px 40px
-}
 
 /*------------------------------------Title Bar/Drop Down--------------------------------*/
 
@@ -187,8 +182,7 @@ body {
          .selected {
           color:$purple;
           background-color:$white;
-      }
-        
+        }
         a {
           font-size: 1.2rem;
           padding: 10px;
@@ -207,27 +201,22 @@ body {
       background-color:$white;
 }
 
-/*  --------------------------------------- Icon Bar ------------------ */
-.search-button {
-  cursor:pointer;
-  padding:10px;
-  z-index:12;
-}
+/*  --------------------------------------- Search ------------------ */
 
 .search-button {
   margin: 0 0 0 20px;
+  cursor:pointer;
   padding: 0;
   float: left;
   width:200px;
   height:10vh;
   line-height: 10vh;
   background-color:$darkred;
-}
-
-.search-button i {
-  margin-top:3vh;
-  font-size:1.5rem;
-  padding-left: 20px;
+    i {
+      margin-top:3vh;
+      font-size:1.5rem;
+      padding-left: 20px;
+    }
 }
 
 .search-input {
@@ -253,7 +242,6 @@ body {
 .search-input:focus {
   outline:none;
 }
-
 
 .search-button:hover{
   color:$lightred;
@@ -299,7 +287,7 @@ body {
 }
 
 .user-links {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
   border-radius:0 0 5px 5px;
   box-shadow: 0px 6px 60px -5px $black;
   
@@ -343,12 +331,13 @@ body {
   cursor:pointer;
   float:right;
   padding:10px;
-  z-index:13
+  z-index:13;
+    
+    i {
+      font-size:2.4rem;
+    }
 }
 
-.extra-button i {
-  font-size:2.4rem
-}
 
 .extra-button:hover , .current-user:hover , .user-logout:hover , .user-login:hover {
   color:$lightred
@@ -463,22 +452,19 @@ body {
 }
 
 .sidebar-buttons {
-  line-height:75px
-}
-
-.sidebar-buttons ul {
-  margin:0
-}
-
-.sidebar-buttons ul li {
-  list-style:none
-}
-
-.sidebar-buttons ul li a {
-  text-align:center;
-  padding:10px;
-  font-size:1rem;
-  z-index: 13;
+  line-height:75px;
+  ul {
+    margin:0;
+    li {
+      list-style:none;
+      a {
+        text-align:center;
+        padding:10px;
+        font-size:1rem;
+        z-index: 13;
+      }
+    }
+  }
 }
 
 .new-post {
@@ -561,16 +547,16 @@ body {
 }
 
 .add-actions {
-  margin:20px 0 0
-}
-
-.add-actions input {
-  text-align:center;
-  border-radius:10px;
-  width:200px;
-  height:50px;
-  font-weight:700;
-  font-size:1.2rem
+  margin:20px 0 0;
+  
+  input {
+    text-align:center;
+    border-radius:10px;
+    width:200px;
+    height:50px;
+    font-weight:700;
+    font-size:1.2rem
+  }
 }
 
 .add-container {
