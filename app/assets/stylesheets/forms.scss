@@ -1,5 +1,6 @@
-
-/*-------------------------------------Constants---------------------------------------*/
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - Constants - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 $blue: #81B6DB;  // blue  //
 $green: #77DD77;    // green // 
@@ -9,63 +10,34 @@ $lightred: #FFD8E8; // light red//
 $orange: #FFB246;   // orange //
 $white: #fff; // white // 
 $black: #000; // black //
-$lightgrey: #ddd; // lightgrey //
-$grey: #bbb; // grey //
+$lightgrey: #eee; // lightgrey //
+$grey: #888; // grey //
 $purple: #8171B6; // purple //
 $yellow: #FFF5AC; // yellow //
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .form {
 	background-color: rgba(0,0,0, 0.5);
 	width: 30%;
-	height: 400px;
+	// height: 400px;
 	position: absolute;
 	display:block;
 	top:30vh;
 	left:35%;
-	border-radius: 10px;
-	color: #FFF;
-	padding: 20px;
-  	-webkit-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
-
-	h3 {
-		text-align: center;
-	}
-}
-
-.field {
-	text-align: center;
-	padding: 10px;
-	font-weight: bold;
-}
-
-.contribution-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $blue;
-	margin: 15% 25% 5% 25%;
-	font-size: 1.3rem;
 	font-family: roboto;
-	border-radius: 5px;
-	border-style: none;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
 
-}
-
-.field ::-webkit-input-placeholder {
-    color:$grey;
-}
-
-.contribution-field-URL, .contribution-field-category {
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	border-radius: 5px;
-	border-style: none;
-	font-size: 1rem;
-	background-color: $lightgrey;
+		h3 {
+			text-align: center;
+			font-weight: 400;
+			font-size: 1rem;
+		}
 }
 
 .form-title {
@@ -78,13 +50,146 @@ $yellow: #FFF5AC; // yellow //
 	top: 10vh;
 
 	h1 {
-	font-weight: 400;
-	font-size: 2.5rem;
+		font-weight: 400;
+		font-size: 2.5rem;
 	}
+}
+
+.field {
+	text-align: center;
+	padding: 10px;
+}
+
+.field ::-webkit-input-placeholder {
+	color:$grey;
+	// padding-left: 10px;
+}
+
+.post-submit:hover , .contribution-submit:hover , .signin-submit:hover {
+	background-color: $white;
+	color:$red;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Post - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.post-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;
+	background-color: $red;
+	margin: 10% 25%;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.post-url-field, .post-article-url-field, .post-description-field {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
 }
 
 input.check-boxes {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - Category - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.category-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;
+	background-color: $red;
+	margin: 10% 25%;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.category-name-field {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - Contribution - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.contribution-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;
+	background-color: $red;
+	margin: 10% 25%;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.contribution-url-field, .contribution-category-field {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
+}
+
+input.check-boxes {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.signin-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;
+	background-color: $red;
+	margin: 5% 25%;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.password-field, .email-field {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
 }

@@ -1,38 +1,42 @@
-<%= form_for(@post) do |f| %>
-  <% if @post.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% @post.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-<div class="add-container">
-  <div class="add-url">
-    <br>
-    <%= f.text_field :url, placeholder:'Youtube/Vimeo/Article-Image URL' %>
-  </div>
-  <div class="add-url">
-    <br>
-    <%= f.text_field :article_url, placeholder:'Article URL' %>
-  </div>
-  <div class="add-desc">
-    <br>
-    <%= f.text_field :description, placeholder:'Description' %>
-  </div>
-  <div class="field">
-    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
-  </div>
-  <div class="add-actions">
-    <br>
-    <%= f.submit "Submit" %>
-  </div>
+<div class='form-title'>
+  <h1>Add to The Archive!</h1>
 </div>
 
-<% end %>
+<div class="form">
+  <%= form_for(@post) do |f| %>
+    <% if @post.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+        <ul>
+          <% @post.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.text_field :url, placeholder:'Youtube/Article Image/Vimeo URL' , class: 'post-url-field' %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :article_url, placeholder:'Article URL' , class: 'post-article-url-field' %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :description, placeholder:'Description' , class: 'post-description-field' %>
+  </div>
+
+  <div class="field">
+    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name , class: 'check-boxes' %>
+  </div>
+
+  <div class="actions">
+      <%= f.submit value: 'Submit', class: 'post-submit' %>
+  </div>
+
+  <% end %>
+</div>
 
 
