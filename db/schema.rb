@@ -34,10 +34,10 @@ ActiveRecord::Schema.define(version: 20150919004040) do
   end
 
   create_table "contributions_categories", force: :cascade do |t|
-    t.integer  "contributions_id"
+    t.integer  "contribution_id"
     t.integer  "category_id"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "posts", force: :cascade do |t|
