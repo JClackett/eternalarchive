@@ -21,6 +21,8 @@ Rails.application.routes.draw do
       get 'bookmark'
     end
   end
+  
+  resources :contributions
 
   get 'profile' => 'posts#profile'
 

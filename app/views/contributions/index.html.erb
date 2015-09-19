@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Contributions</h1>
 
 <table>
@@ -7,6 +5,8 @@
     <tr>
       <th>Url</th>
       <th>User</th>
+      <th>Category_Contribution</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +16,7 @@
       <tr>
         <td><%= contribution.url %></td>
         <td><%= contribution.user_id %></td>
+        <td><%= contribution.category_contribution %></td>
         <td><%= link_to 'Show', contribution %></td>
         <td><%= link_to 'Edit', edit_contribution_path(contribution) %></td>
         <td><%= link_to 'Destroy', contribution, method: :delete, data: { confirm: 'Are you sure?' } %></td>
