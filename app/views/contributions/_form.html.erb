@@ -1,3 +1,4 @@
+<div class="form">
 <%= form_for(@contribution) do |f| %>
   <% if @contribution.errors.any? %>
     <div id="error_explanation">
@@ -11,18 +12,21 @@
     </div>
   <% end %>
 
+<h2>Contribute to The Eternal Archive</h2>
+
   <div class="field">
-    <%= f.label :contribution_url %><br>
-    <%= f.text_field :contribution_url %>
+<!--     <%= f.label :contribution_url %><br> -->
+    <%= f.text_field :contribution_url, :placeholder => "enter the URL here" %>
   </div>
   <div class="field">
-    <%= f.label :contribution_category %><br>
-    <%= f.text_field :contribution_category%>
+<!--     <%= f.label :contribution_category %><br> -->
+    <%= f.text_field :contribution_category, :placeholder => "enter the category here" %>
   </div>
   <div class="field">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit value: 'Submit', class: 'contribution-submit' %>
   </div>
 <% end %>
+</div>

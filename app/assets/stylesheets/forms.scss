@@ -1,11 +1,57 @@
-.log-in-box {
-	background:#FFF;
-	width: 33.333%;
-	height: 200px;
-	border-style: solid;
-	border-width: 2px;
+
+
+/*-------------------------------------Constants---------------------------------------*/
+
+$blue: #81B6DB;  // blue  //
+$green: #77DD77;    // green // 
+$red: #FF4955;   // red //
+$darkred: #FF5567; // darker red //
+$lightred: #FFD8E8; // light red//
+$orange: #FFB246;   // orange //
+$white: #fff; // white // 
+$black: #000; // black //
+$lightgrey: #eee; // lightgrey //
+$grey: #ccc; // grey //
+$purple: #8171B6; // purple //
+$yellow: #FFF5AC; // yellow //
+
+
+
+
+.form {
+	background: $red;
+	width: 50%;
+	height: 400px;
+/*	border-style: solid;
+	border-width: 2px;*/
 	position: absolute;
 	display:block;
 	top:20vh;
-	left:33.333%
+	left:33.333%;
+	border-radius: 10px;
+	color: #FFF;
+	padding: 20px;
 }
+
+.form h2 {
+	text-align: center;
+}
+
+.field {
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+.contribution-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;	
+	background-color: $blue;
+	margin: 5% 25%;
+}
+
+.field ::-webkit-input-placeholder {
+    color:$grey;
+}
+
