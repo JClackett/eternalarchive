@@ -1,5 +1,4 @@
 
-
 /*-------------------------------------Constants---------------------------------------*/
 
 $blue: #81B6DB;  // blue  //
@@ -16,14 +15,10 @@ $purple: #8171B6; // purple //
 $yellow: #FFF5AC; // yellow //
 
 
-
-
 .form {
 	background: $red;
 	width: 50%;
 	height: 400px;
-/*	border-style: solid;
-	border-width: 2px;*/
 	position: absolute;
 	display:block;
 	top:20vh;
@@ -31,6 +26,9 @@ $yellow: #FFF5AC; // yellow //
 	border-radius: 10px;
 	color: #FFF;
 	padding: 20px;
+  	-webkit-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
 }
 
 .form h2 {
