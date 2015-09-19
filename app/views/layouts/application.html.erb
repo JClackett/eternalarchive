@@ -22,13 +22,16 @@
 
     
   <div class="wrapper">
-<!--   <div class="dimmer" data-sidebar-dimmer></div>
+  <div class="dimmer" data-sidebar-dimmer></div>
 
   <div class="cover-photo">
             <div class="img-cover"></div>
-            <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover"> -->
-            
-<!--   </div> -->
+            <% if current_page?('/') or current_page?('/posts') %>
+                <%= image_tag('cover-photo') %> 
+            <% else%>
+                <%= image_tag('blurred-cover-photo') %> 
+           <% end %>
+  </div>
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
     
