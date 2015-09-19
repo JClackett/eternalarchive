@@ -27,11 +27,10 @@ ActiveRecord::Schema.define(version: 20150919004040) do
   end
 
   create_table "contributions", force: :cascade do |t|
-    t.string   "url"
-    t.integer  "user_id"
+    t.string   "contribution_url"
+    t.string   "contribution_category"
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
-    t.string   "category_contribution"
   end
 
   create_table "contributions_categories", force: :cascade do |t|

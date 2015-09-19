@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%= f.label :contribution_url %><br>
+    <%= f.text_field :contribution_url %>
   </div>
   <div class="field">
-    <%= f.label :category_contribution %><br>
-    <%= f.text_field :category_contribution%>
+    <%= f.label :contribution_category %><br>
+    <%= f.text_field :contribution_category%>
   </div>
   <div class="field">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>

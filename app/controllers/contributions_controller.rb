@@ -60,6 +60,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contribution_params
-      params.require(:contribution).permit(:url, :category_contribution, :user_id, :username, category_ids: [] )
+      params.require(:contribution).permit(:contribution_url, :contribution_category, :user_id, :username, category_ids: [] )
     end
 end
