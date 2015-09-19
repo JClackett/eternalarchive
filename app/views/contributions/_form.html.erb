@@ -17,19 +17,19 @@
   <% end %>
 
     <div class="field">
-      <%= f.text_field :contribution_url, placeholder: 'enter the URL here', class: 'contribution-field-URL' %>
+      <%= f.text_field :contribution_url, placeholder: 'Enter the URL here!', class: 'contribution-field-URL' %>
     </div>
 
-    <h3>Choose the category form the below list</h3>
+    <h3>Choose the category from the list below</h3>
 
     <div class="field">
       <%= f.collection_check_boxes :category_ids, Category.all, :id, :name, class: 'check-boxes' %>
     </div>
 
-    <h3>Or, choose your own category</h3>
+    <h3>Or, recommened your own category!</h3>
 
     <div class="field">
-      <%= f.text_field :contribution_category, placeholder: 'enter the category here', class: 'contribution-field-category' %>
+      <%= f.text_field :contribution_category, placeholder: 'Enter the category here!', class: 'contribution-field-category' %>
     </div>
 
     <div class="actions">

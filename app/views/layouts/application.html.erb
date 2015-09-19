@@ -28,8 +28,11 @@
             <%= link_to root_path do %>
                 <div class="img-cover"></div>
              <% end %>
-                <%= image_tag('cover-photo-min' , class: 'nb-cover-photo')%> 
-                <%= image_tag('blurred-cover-photo' ,class: 'b-cover-photo')%> 
+            <% if current_page?('/') or current_page?('/posts') %>
+                <%= image_tag('cover-photo-min', class: 'nb-cover-photo') %> 
+            <% else%>
+                  <%= image_tag('blurred-cover-photo' ,class: 'b-cover-photo') %> 
+           <% end %>
   </div>
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
@@ -42,23 +45,25 @@
               <input type="text" class="search-input" name="search" placeholder="Search"></input>
         </div> 
         
-        <div class="tag-container center">
-            <div class="tag-wrap">
-                  <h3 class="tag-title">Tags</h3>
-                  <i class="fa fa-tags tags-button"></i>
-            </div>
-            <div class="category-tags center">  
-                <nav >
-                  <ul>  
-                        <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
-                        <% Category.all.each do |category|%>
-                            <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
-                          <%end%>
+        <% if current_page?('/') or current_page?('/posts') or current_page?('/profile')%>
+            <div class="tag-container center">
+                <div class="tag-wrap">
+                      <h3 class="tag-title">Tags</h3>
+                      <i class="fa fa-tags tags-button"></i>
+                </div>
+                <div class="category-tags center">  
+                    <nav >
+                      <ul>  
+                            <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
+                            <% Category.all.each do |category|%>
+                                <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                              <%end%>
 
-                  </ul>
-                </nav>
+                      </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
+           <% end %>
 
         <div class="extra-button" data-sidebar-button>
               <i class="fa fa-bars extra-icon"></i>
@@ -145,14 +150,12 @@
   $(document).ready(function() {
     $(".tag-wrap").click(function(e) {
         $(".category-tags").toggle();
-        $(".nb-cover-photo").toggle();
         e.stopPropagation();
     });
 
     $(document).click(function(e) {
         if (!$(e.target).is('.category-tags, .category-tags*')) {
             $(".category-tags").hide();
-            $(".nb-cover-photo").hide();
         }
     });
 });
@@ -162,14 +165,12 @@
   $(document).ready(function() {
     $(".login-section").click(function(e) {
         $(".user-popup").toggle();
-        $(".nb-cover-photo").toggle();
         e.stopPropagation();
     });
 
     $(document).click(function(e) {
         if (!$(e.target).is('.user-popup, .user-popup*')) {
             $(".user-popup").hide();
-            $(".nb-cover-photo").hide();
         }
     });
 });
