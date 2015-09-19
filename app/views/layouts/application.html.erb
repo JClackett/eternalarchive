@@ -22,67 +22,68 @@
 
     
   <div class="wrapper">
-  <div class="dimmer" data-sidebar-dimmer></div>
+<!--   <div class="dimmer" data-sidebar-dimmer></div>
 
   <div class="cover-photo">
             <div class="img-cover"></div>
-            <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover">
+            <img src="https://unsplash.imgix.net/reserve/oIpwxeeSPy1cnwYpqJ1w_Dufer%20Collateral%20test.jpg?q=75&amp;fm=jpg&amp;s=d8cce13e5d977aeec5bdbec256987adf" alt="Cover"> -->
             
-  </div>
+<!--   </div> -->
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
     
       <div class="logo"><%= link_to 'TEA.', root_path %></div>
-      <div class="search-button">
-            <i class="fa fa-search search-icon"></i>
-            <input type="text" class="search-input" name="search" placeholder="Search"></input>
-      </div> 
       
-      <div class="tag-container center">
-          <div class="tag-wrap">
-                <h3 class="tag-title">Tags</h3>
-                <i class="fa fa-tags tags-button"></i>
-          </div>
-          <div class="category-tags center">  
-              <nav >
-                <ul>  
-                      <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
-                      <% Category.all.each do |category|%>
-                          <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
-                        <%end%>
+      <% if current_page?('/') or current_page?('/posts') %>
 
-                </ul>
-              </nav>
-          </div>
-      </div>
+        <div class="search-button">
+              <i class="fa fa-search search-icon"></i>
+              <input type="text" class="search-input" name="search" placeholder="Search"></input>
+        </div> 
+        
+        <div class="tag-container center">
+            <div class="tag-wrap">
+                  <h3 class="tag-title">Tags</h3>
+                  <i class="fa fa-tags tags-button"></i>
+            </div>
+            <div class="category-tags center">  
+                <nav >
+                  <ul>  
+                        <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
+                        <% Category.all.each do |category|%>
+                            <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                          <%end%>
 
-      <div class="extra-button" data-sidebar-button>
-            <i class="fa fa-bars extra-icon"></i>
-      </div>
+                  </ul>
+                </nav>
+            </div>
+        </div>
 
-      <div class="login-section">
-        <% if user_signed_in? %>
-                   <div class="current-user">
-                      <%= image_tag avatar_url(current_user) %>
-                    </div>
-                   <div class="user-popup">
-                      <div class="user-links">
-                          <ul>
-                              <li><%= nav_link_to 'Profile', profile_path %></li>
-                              <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'onion' %></li>
-                          </ul>
+        <div class="extra-button" data-sidebar-button>
+              <i class="fa fa-bars extra-icon"></i>
+        </div>
+
+        <div class="login-section">
+          <% if user_signed_in? %>
+                     <div class="current-user">
+                        <%= image_tag avatar_url(current_user) %>
                       </div>
-                    </div>
-          <%else%>
-                <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>
-          <% end %>
-          
+                      <div class="user-popup">
+                        <div class="user-links">
+                            <ul>
+                                <li><%= nav_link_to 'Profile', profile_path %></li>
+                                <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'onion' %></li>
+                            </ul>
+                        </div>
+                      </div>
+            <%else%>
+                  <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>
+            <% end %>
+        </div>
+
+      <% end %>
+
     </div>
-    </div>
-
-
-
-   
 
 
     <div class="sidebar" data-sidebar>
@@ -107,7 +108,7 @@
   
       </div>
 
-    <div class="hero-phrase center"><%= @category_title %></div>
+<!--     <div class="hero-phrase center"><%= @category_title %></div>
     
     <div class="hero-buttons center">
       <div class="mostrecent-button" onclick="window.location.reload(true)">Latest Videos</div>
@@ -119,7 +120,7 @@
         <i class="fa fa-angle-double-down scroll-arrow"></i>
       </div>
 
-      <div class="breaker"></div>
+      <div class="breaker"></div> -->
       
 	<div class="content">
       <%= yield %>
