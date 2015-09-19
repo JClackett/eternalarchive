@@ -79,8 +79,12 @@
             <%else%>
                   <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>
             <% end %>
-        </div>
-
+        </div>          
+      
+      <div class="contribute-section">
+        <%= link_to 'Contribute', new_contribution_path, class: 'contribute-text' %>
+      </div>
+        
       <% end %>
 
     </div>
@@ -120,7 +124,9 @@
         <i class="fa fa-angle-double-down scroll-arrow"></i>
       </div>
 
-      <div class="breaker"></div> -->
+      -->
+
+      <!-- <div class="breaker"></div>  -->
       
 	<div class="content">
       <%= yield %>
