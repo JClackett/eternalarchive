@@ -9,47 +9,82 @@ $lightred: #FFD8E8; // light red//
 $orange: #FFB246;   // orange //
 $white: #fff; // white // 
 $black: #000; // black //
-$lightgrey: #eee; // lightgrey //
-$grey: #ccc; // grey //
+$lightgrey: #ddd; // lightgrey //
+$grey: #bbb; // grey //
 $purple: #8171B6; // purple //
 $yellow: #FFF5AC; // yellow //
 
 
 .form {
-	background: $red;
-	width: 50%;
+	background-color: rgba(0,0,0, 0.5);
+	width: 30%;
 	height: 400px;
 	position: absolute;
 	display:block;
-	top:20vh;
-	left:25%;
+	top:30vh;
+	left:35%;
 	border-radius: 10px;
 	color: #FFF;
 	padding: 20px;
   	-webkit-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 157px -34px rgba(0,0,0,0.75);
-}
 
-.form h2 {
-	text-align: center;
+	h3 {
+		text-align: center;
+	}
 }
 
 .field {
-	border-radius: 10px;
 	text-align: center;
 	padding: 10px;
+	font-weight: bold;
 }
 
 .contribution-submit {
 	left: 33.333%;
 	width: 50%;
-	height: 50px;	
+	height: 50px;
 	background-color: $blue;
-	margin: 5% 25%;
+	margin: 15% 25% 5% 25%;
+	font-size: 1.3rem;
+	font-family: roboto;
+	border-radius: 5px;
+	border-style: none;
+
 }
 
 .field ::-webkit-input-placeholder {
     color:$grey;
 }
 
+.contribution-field-URL, .contribution-field-category {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	border-radius: 5px;
+	border-style: none;
+	font-size: 1rem;
+	background-color: $lightgrey;
+}
+
+.form-title {
+	position: absolute;
+	width: 40%;
+	padding: 20px;
+	margin: 0 30%;
+	z-index: 100;
+	text-align: center;
+	top: 10vh;
+
+	h1 {
+	font-weight: 400;
+	font-size: 2.5rem;
+	}
+}
+
+input.check-boxes {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}

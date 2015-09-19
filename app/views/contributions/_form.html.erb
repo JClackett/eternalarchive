@@ -1,32 +1,39 @@
+
+<div class='form-title'>
+  <h1>Contribute to The Archive</h1>
+</div>
+
 <div class="form">
-<%= form_for(@contribution) do |f| %>
+  <%= form_for(@contribution) do |f| %>
   <% if @contribution.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@contribution.errors.count, "error") %> prohibited this contribution from being saved:</h2>
-
       <ul>
       <% @contribution.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+      <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
 
-<h2>Contribute to The Eternal Archive</h2>
+    <div class="field">
+      <%= f.text_field :contribution_url, placeholder: 'enter the URL here', class: 'contribution-field-URL' %>
+    </div>
 
-  <div class="field">
-<!--     <%= f.label :contribution_url %><br> -->
-    <%= f.text_field :contribution_url, :placeholder => "enter the URL here" %>
-  </div>
-  <div class="field">
-<!--     <%= f.label :contribution_category %><br> -->
-    <%= f.text_field :contribution_category, :placeholder => "enter the category here" %>
-  </div>
-  <div class="field">
-    <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit value: 'Submit', class: 'contribution-submit' %>
-  </div>
-<% end %>
+    <h3>Choose the category form the below list</h3>
+
+    <div class="field">
+      <%= f.collection_check_boxes :category_ids, Category.all, :id, :name, class: 'check-boxes' %>
+    </div>
+
+    <h3>Or, choose your own category</h3>
+
+    <div class="field">
+      <%= f.text_field :contribution_category, placeholder: 'enter the category here', class: 'contribution-field-category' %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit value: 'Submit', class: 'contribution-submit' %>
+    </div>
+  <% end %>
 </div>
