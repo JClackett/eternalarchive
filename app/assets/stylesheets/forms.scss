@@ -158,8 +158,8 @@ $yellow: #FFF5AC; // yellow //
 		color:$white;
 		font-family: roboto;
 		font-weight: 400;
-		font-size: 2rem;
-		padding:15px 62.7px;
+		font-size: 1.4rem;
+		padding: 15px 0px;
 		background-color: rgba(0,0,0,0.5);
 	}
 
@@ -168,8 +168,17 @@ $yellow: #FFF5AC; // yellow //
 	}
 }
 
+.login-header-form.login-a {
+	width: 220px;
+	position: absolute;
+	left: 0;
+}
 
-
+.login-header-form.login-b {
+	width: 220px;
+	position: absolute;
+	left: 50%;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign Up - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
