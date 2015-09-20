@@ -130,6 +130,27 @@ $yellow: #FFF5AC; // yellow //
 .contribution-url-field, .contribution-category-field {
 }
 
+input[type=checkbox] {
+	display:none;
+}
+
+.checkbox-field {
+	width:100%;
+}
+
+.field label {
+	margin: 10px;
+	padding: 5px;
+	position: relative;
+	cursor: pointer;
+	color:$white;
+	background-color: $red;
+}
+
+.field label:hover {
+	color:$red;
+	background-color: $white;
+}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */

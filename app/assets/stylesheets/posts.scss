@@ -10,7 +10,8 @@ $lightred: #FFD8E8; // light red//
 $orange: #FFB246;   // orange //
 $white: #fff; // white // 
 $black: #000; // black //
-$grey: #eee; // lightgrey //
+$lightgrey: #eee; // lightgrey //
+$grey: #888; // grey //
 $purple: #8171B6; // purple //
 $yellow: #FFF5AC; // yellow //
 
@@ -27,6 +28,13 @@ $yellow: #FFF5AC; // yellow //
   padding:0
 }
 
+.breaker {
+  height:10vh;
+  position: absolute;
+  top:90vh;
+  left: 0;
+  width: 100%;
+}
 .main-container {
   cursor:pointer;
   width:50%;

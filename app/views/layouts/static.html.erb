@@ -23,7 +23,9 @@
   <div class="wrapper">
   <div class="dimmer" data-sidebar-dimmer></div>
   <div class="cover-photo">
-            <div class="img-cover"></div>
+             <%= link_to root_path do %>
+                <div class="img-cover"></div>
+             <% end %>
             <%= image_tag('blurred-cover-photo' ,class: 'b-cover-photo') %> 
   </div>
 
