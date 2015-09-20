@@ -88,9 +88,9 @@ body {
   cursor:default;
 }
 
-      .nb-cover-photo, .b-cover-photo,  {
-       width:100%;
-     }
+.nb-cover-photo, .b-cover-photo,  {
+      width:100%;
+}
 
 /*--------------------------------------Main Title--------------------------------------*/
 .header {
@@ -98,7 +98,7 @@ body {
   height:10vh;
   position:fixed;
   background-color:$red;
-  /*box-shadow:0 0 10px 0 rgba(0,0,0,0.6);*/
+  box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
   z-index:8;
   opacity: 0.95;
 }
@@ -483,7 +483,7 @@ body {
       a {
         text-align:center;
         padding:10px;
-        font-size:1rem;
+        font-size:1.1rem;
         z-index: 13;
       }
     }
@@ -501,7 +501,6 @@ body {
 }
 
 .static-links .selected, .sidebar-buttons ul li a:hover {
-  color:$purple;
   font-weight:500;
 }
 

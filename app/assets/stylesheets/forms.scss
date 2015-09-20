@@ -21,12 +21,13 @@ $yellow: #FFF5AC; // yellow //
 
 .form {
 	background-color: rgba(0,0,0, 0.5);
-	width: 30%;
-	// height: 400px;
+	width: 400px;
 	position: absolute;
-	display:block;
 	top:30vh;
-	left:35%;
+	left:0;
+    	right:0;
+    	margin-left:auto;
+    	margin-right:auto;
 	font-family: roboto;
 	padding: 20px;
 	-webkit-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
@@ -42,10 +43,13 @@ $yellow: #FFF5AC; // yellow //
 
 .form-title {
 	position: absolute;
-	width: 40%;
+	width: 500px;
 	padding: 20px;
-	margin: 0 30%;
-	z-index: 100;
+	left:0;
+   	right:0;
+   	margin-left:auto;
+   	margin-right:auto;
+	z-index: 9;
 	text-align: center;
 	top: 10vh;
 
@@ -62,10 +66,9 @@ $yellow: #FFF5AC; // yellow //
 
 .field ::-webkit-input-placeholder {
 	color:$grey;
-	// padding-left: 10px;
 }
 
-.post-submit:hover , .contribution-submit:hover , .signin-submit:hover {
+.post-submit:hover , .contribution-submit:hover , .signin-submit:hover , .signup-submit:hover {
 	background-color: $white;
 	color:$red;
 }
@@ -183,6 +186,64 @@ input.check-boxes {
 }
 
 .password-field, .email-field {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Signup Tab - - - - - - - - - - - - - - -  - - - - - - - - - -  */
+
+.signup-form-title {
+	position: absolute;
+	width: 440px;
+	left:0;
+     right:0;
+     margin-left:auto;
+     margin-right:auto;
+	z-index: 9;
+	text-align: center;
+	top: 22.1vh;
+	
+	a {
+		text-decoration:none;
+		color:$white;
+		font-family: roboto;
+		font-weight: 400;
+		font-size: 2rem;
+		padding:15px 62.7px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.selected {
+		background-color:$red;	
+	}
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign Up - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.signup-submit {
+	left: 33.333%;
+	width: 50%;
+	height: 50px;
+	background-color: $red;
+	margin: 5% 25%;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.password-field, .email-field , .username-field{
 	width: 90%;
 	height: 30px;
 	padding: 8px;
