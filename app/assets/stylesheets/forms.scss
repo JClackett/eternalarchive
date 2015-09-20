@@ -164,18 +164,19 @@ $yellow: #FFF5AC; // yellow //
 		padding: 15px 0px;
 		background-color: rgba(0,0,0,0.5);
 	}
+	.login-a {
+		left: 0;
+	}
+	.login-b {
+		right: 0;
+	}	
 
 	.selected {
 		background-color:$red;	
 	}
 }
 
-.login-a {
-	left: 0;
-}
-.login-b {
-	right: 0;
-}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign Up - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
