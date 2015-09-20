@@ -68,71 +68,56 @@ $yellow: #FFF5AC; // yellow //
 	color:$grey;
 }
 
-.post-submit:hover , .contribution-submit:hover , .signin-submit:hover , .signup-submit:hover {
+.input {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	font-family: roboto;
+	border-style: none;
+	color:$darkred;
+	font-size: 1rem;
+	font-weight:400;
+	background-color: $lightgrey;
+}
+
+.submit {
+	width: 50%;
+	height: 50px;
+	display:block;
+	background-color: $red;
+	margin: 10% auto;
+	font-size: 1.3rem;
+	color:$white;
+	border-style: none;
+	font-family: roboto;
+}
+
+.submit:hover {
 	background-color: $white;
 	color:$red;
 }
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Post - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .post-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $red;
-	margin: 10% 25%;
-	font-size: 1.3rem;
-	color:$white;
-	border-style: none;
-	font-family: roboto;
 }
 
 .post-url-field, .post-article-url-field, .post-description-field {
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	font-family: roboto;
-	border-style: none;
-	color:$darkred;
-	font-size: 1rem;
-	font-weight:400;
-	background-color: $lightgrey;
 }
 
-input.check-boxes {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - Category - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .category-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $red;
-	margin: 10% 25%;
-	font-size: 1.3rem;
-	color:$white;
-	border-style: none;
-	font-family: roboto;
 }
 
 .category-name-field {
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	font-family: roboto;
-	border-style: none;
-	color:$darkred;
-	font-size: 1rem;
-	font-weight:400;
-	background-color: $lightgrey;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -140,61 +125,20 @@ input.check-boxes {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .contribution-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $red;
-	margin: 10% 25%;
-	font-size: 1.3rem;
-	color:$white;
-	border-style: none;
-	font-family: roboto;
 }
 
 .contribution-url-field, .contribution-category-field {
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	font-family: roboto;
-	border-style: none;
-	color:$darkred;
-	font-size: 1rem;
-	font-weight:400;
-	background-color: $lightgrey;
 }
 
-input.check-boxes {
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-}
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .signin-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $red;
-	margin: 5% 25%;
-	font-size: 1.3rem;
-	color:$white;
-	border-style: none;
-	font-family: roboto;
 }
 
 .password-field, .email-field {
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	font-family: roboto;
-	border-style: none;
-	color:$darkred;
-	font-size: 1rem;
-	font-weight:400;
-	background-color: $lightgrey;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Signup Tab - - - - - - - - - - - - - - -  - - - - - - - - - -  */
@@ -203,9 +147,8 @@ input.check-boxes {
 	position: absolute;
 	width: 440px;
 	left:0;
-     right:0;
-     margin-left:auto;
-     margin-right:auto;
+           right:0;
+           margin: 0 auto;
 	z-index: 9;
 	text-align: center;
 	top: 22.1vh;
@@ -227,30 +170,13 @@ input.check-boxes {
 
 
 
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign Up - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .signup-submit {
-	left: 33.333%;
-	width: 50%;
-	height: 50px;
-	background-color: $red;
-	margin: 5% 25%;
-	font-size: 1.3rem;
-	color:$white;
-	border-style: none;
-	font-family: roboto;
 }
 
 .password-field, .email-field , .username-field{
-	width: 90%;
-	height: 30px;
-	padding: 8px;
-	font-family: roboto;
-	border-style: none;
-	color:$darkred;
-	font-size: 1rem;
-	font-weight:400;
-	background-color: $lightgrey;
 }

@@ -9,23 +9,23 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.text_field :username, autofocus: true , placeholder: 'Username', class: 'username-field' %>
+    <%= f.text_field :username, autofocus: true , placeholder: 'Username', class: 'username-field input' %>
   </div>
 
   <div class="field">
-    <%= f.email_field :email , placeholder: 'Email', class: 'email-field' %>
+    <%= f.email_field :email , placeholder: 'Email', class: 'email-field input' %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "off", placeholder: 'Password (8 charaters minimum)', class: 'password-field'  %>
+    <%= f.password_field :password, autocomplete: "off", placeholder: 'Password (8 charaters minimum)', class: 'password-field input'  %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password Confirmation', class: 'password-field'  %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Password Confirmation', class: 'password-field input'  %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" , class: 'signup-submit' %>
+    <%= f.submit "Sign up" , class: 'signup-submit submit' %>
   </div>
 <% end %>
 
