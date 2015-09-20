@@ -19,7 +19,7 @@
       <%= f.text_field :contribution_url, placeholder: 'Enter the URL here!', class: 'contribution-url-field input' %>
     </div>
 
-    <h3>Choose the tag from the list below</h3>
+    <h3>Choose a tag from the list below</h3>
 
     <div class="field">
       <%= f.collection_check_boxes :category_ids, Category.all, :id, :name, class: 'check-boxes' %>
