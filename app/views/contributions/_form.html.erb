@@ -25,7 +25,7 @@
       <%= f.collection_check_boxes :category_ids, Category.all, :id, :name, class: 'check-boxes' %>
     </div>
 
-    <h3>Or, recommened your own tag!</h3>
+    <h3>Or, recommend your own tag!</h3>
 
     <div class="field">
       <%= f.text_field :contribution_category, placeholder: 'Enter the tag here!', class: 'contribution-category-field input' %>
