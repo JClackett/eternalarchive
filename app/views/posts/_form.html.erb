@@ -28,7 +28,7 @@
     <%= f.text_field :description, placeholder:'Description' , class: 'post-description-field input' %>
   </div>
 
-  <div class="field">
+  <div class="field checkbox-field">
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name , class: 'check-boxes' %>
   </div>
 

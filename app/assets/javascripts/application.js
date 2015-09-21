@@ -17,6 +17,9 @@
 //= require_tree .
 
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - -   Pagenation JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 $(document).ready(function() {
   if ($('.pagination').length) {
@@ -31,6 +34,9 @@ $(document).ready(function() {
   }
 });
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - -  Side Bar JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 $(document).on('ready page:load', function () {
 
@@ -84,4 +90,66 @@ $(document).on('ready page:load', function () {
     });
 });
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - Ovelay JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
+  function play(object){
+    $(object.querySelector('.overlay')).hide(200);
+    object.querySelector('iframe').src =
+    object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
+    return false;
+  }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - Scrolling JS - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+$(document).ready(function() {
+  $(".scroll-to-content").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".breaker").offset().top},
+        1000,'easeOutBounce')
+    });
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - -  Popup JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+$(document).ready(function() {
+    $(".tag-wrap").click(function(e) {
+        $(".category-tags").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.category-tags, .category-tags*')) {
+            $(".category-tags").hide();
+        }
+    });
+});
+
+
+$(document).ready(function() {
+    $(".login-section").click(function(e) {
+        $(".user-popup").toggle();
+        e.stopPropagation();
+    });
+
+    $(document).click(function(e) {
+        if (!$(e.target).is('.user-popup, .user-popup*')) {
+            $(".user-popup").hide();
+        }
+    });
+});
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - Form Tag JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+// $(document).on('ready page:load', function () {
+//     $("label").click(function(e) {
+//         e.toggleClass('tag-clicked');
+//     });
+// });

@@ -85,7 +85,7 @@ $yellow: #FFF5AC; // yellow //
 	height: 50px;
 	display:block;
 	background-color: $red;
-	margin: 10% auto;
+	margin: 5% auto;
 	font-size: 1.3rem;
 	color:$white;
 	border-style: none;
@@ -130,18 +130,27 @@ $yellow: #FFF5AC; // yellow //
 .contribution-url-field, .contribution-category-field {
 }
 
+.checkbox-field {
+	padding: 0;
+	margin-top: 10px;
+}
+
 input[type=checkbox] {
 	display:none;
 }
 
-.checkbox-field {
-	width:100%;
-}
-
 .field label {
-	margin: 10px;
-	padding: 5px;
-	position: relative;
+	display: inline-block;
+	height: 20px;
+	border-radius:3px;
+	line-height: 20px;
+	padding: 5px 10px;
+	margin: 5px;
+	font-family: roboto;
+	border-style: none;
+	color:$white;
+	font-size: 0.8rem;
+	font-weight:400;
 	cursor: pointer;
 	color:$white;
 	background-color: $red;
@@ -151,6 +160,12 @@ input[type=checkbox] {
 	color:$red;
 	background-color: $white;
 }
+
+.tag-clicked {
+	background-color: $white;
+}
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
