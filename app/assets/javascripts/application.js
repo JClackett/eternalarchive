@@ -18,10 +18,10 @@
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - -   Pagenation JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - -   Pagination JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
   if ($('.pagination').length) {
     $(window).scroll(function() {
       var url = $('.pagination .next_page').attr('href');
@@ -105,7 +105,7 @@ $(document).on('ready page:load', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - Scrolling JS - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
   $(".scroll-to-content").click(function() {
     $('html,body').animate({
         scrollTop: $(".breaker").offset().top},
@@ -117,7 +117,7 @@ $(document).ready(function() {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Popup JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
     $(".tag-wrap").click(function(e) {
         $(".category-tags").toggle();
         e.stopPropagation();
@@ -131,7 +131,7 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+$(document).on('ready page:load', function () {
     $(".login-section").click(function(e) {
         $(".user-popup").toggle();
         e.stopPropagation();
