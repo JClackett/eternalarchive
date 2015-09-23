@@ -7,5 +7,8 @@ class Contribution < ActiveRecord::Base
 
 	validates_presence_of :contribution_url 
 
+	validates :contribution_url, uniqueness: true
+
+
 
 end

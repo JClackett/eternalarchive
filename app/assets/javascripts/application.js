@@ -148,8 +148,8 @@ $(document).on('ready page:load', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - Form Tag JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-// $(document).on('ready page:load', function () {
-//     $("label").click(function(e) {
-//         e.toggleClass('tag-clicked');
-//     });
+// $(document).on('ready page:load', function () {                //run when the DOM is ready
+//      $("label").click(function() {    //use a class, since your ID gets mangled
+//         $(this).toggleClass("checked");      //add the class to the clicked element
+//      });
 // });

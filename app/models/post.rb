@@ -7,7 +7,11 @@ class Post < ActiveRecord::Base
 
 	validates_format_of :url, with: URI::regexp(%w(http https))
 
-	validates_presence_of :url, :category_ids
+	validates_presence_of :url, :description, :category_ids
+
+
+	validates :url, uniqueness: true
+
 
 
 

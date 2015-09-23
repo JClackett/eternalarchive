@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 
   has_many :bookmarks
   acts_as_voter
+
+  validates :username, uniqueness: true
+  validates_presence_of :username 
+
 end

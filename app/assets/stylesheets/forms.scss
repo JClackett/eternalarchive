@@ -87,6 +87,7 @@ $yellow: #FFF5AC; // yellow //
 	background-color: $red;
 	margin: 5% auto;
 	font-size: 1.3rem;
+	cursor: pointer;
 	color:$white;
 	border-style: none;
 	font-family: roboto;
@@ -135,11 +136,13 @@ $yellow: #FFF5AC; // yellow //
 	margin-top: 10px;
 }
 
-input[type=checkbox] {
+.field input[type=checkbox] {
 	display:none;
+	margin: 0;
+	padding: 0;
 }
 
-.field label {
+.field .checkbox_label {
 	display: inline-block;
 	height: 20px;
 	border-radius:3px;
@@ -154,18 +157,17 @@ input[type=checkbox] {
 	cursor: pointer;
 	color:$white;
 	background-color: $red;
+	
 }
 
-.field label:hover {
-	color:$red;
+.field .checkbox_label:hover {
+	background-color: $darkred;
+}
+
+.check_box:checked + .checkbox_label {
+  	color:$red;
 	background-color: $white;
 }
-
-.tag-clicked {
-	background-color: $white;
-}
-
-
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
