@@ -117,7 +117,17 @@ body {
   box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
   z-index:8;
   opacity: 0.95;
-  
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+    top: -15vh;
+}
+
+
+.header {
      .logo {
           float:left;
           margin:0;
@@ -551,5 +561,3 @@ body {
   width:100%;
   z-index:11
 }
-
-
