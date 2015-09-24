@@ -108,7 +108,7 @@ $(document).on('ready page:load', function () {
 $(document).on('ready page:load', function () {
   $(".scroll-to-content").click(function() {
     $('html,body').animate({
-        scrollTop: $(".breaker").offset().top},
+        scrollTop: $(".main-container").offset().top},
         1000,'easeOutBounce')
     });
 });
