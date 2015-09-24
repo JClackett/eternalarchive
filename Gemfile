@@ -6,6 +6,8 @@ gem 'will_paginate'
 
 gem 'nav_lynx'
 
+gem 'cancancan', '~> 1.10'	
+
 gem 'jquery-infinite-pages'
 
 gem 'acts_as_votable', '~> 0.10.0'

@@ -1,10 +1,14 @@
-<div class="hero-phrase center"><%= @category_title %></div>
+<div class="hero-phrase center">
+<%= @category_title %> 
+
+</div>
 
 <div class="hero-buttons center">
       <div class="mostrecent-button" onclick="window.location.reload(true)">Latest Videos</div>
       <%= link_to 'Randomize' , randomize_posts_path , id: 'random-button' %>
 </div>
-    
+
+
 <div class="start-watching center">Start watching now</div>
 <div class="scroll-to-content">
       <i class="fa fa-angle-double-down scroll-arrow"></i>
