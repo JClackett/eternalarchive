@@ -9,10 +9,6 @@ class CategoriesController < ApplicationController
   end
 
 
-  # GET /categories/1
-  def show
-  end
-
   # GET /categories/new
   def new
     if current_user.try(:admin?)

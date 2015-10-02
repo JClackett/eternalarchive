@@ -13,7 +13,12 @@ $black: #000; // black //
 $lightgrey: #eee; // lightgrey //
 $grey: #888; // grey //
 $purple: #8171B6; // purple //
+$lightpurple: #9181C6; // purple //
+$lighterpurple: #E1D1F9; // purple //
 $yellow: #FFF5AC; // yellow //
+$teal: #00AAA3; // teal //
+$lightteal: #30BAB3; // teal //
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -51,7 +56,7 @@ $yellow: #FFF5AC; // yellow //
    	margin-right:auto;
 	z-index: 9;
 	text-align: center;
-	top: 10vh;
+	top: 75px;
 
 	h1 {
 		font-weight: 400;
@@ -74,7 +79,7 @@ $yellow: #FFF5AC; // yellow //
 	padding: 8px;
 	font-family: roboto;
 	border-style: none;
-	color:$darkred;
+	color:$purple;
 	font-size: 1rem;
 	font-weight:400;
 	background-color: $lightgrey;
@@ -84,7 +89,7 @@ $yellow: #FFF5AC; // yellow //
 	width: 50%;
 	height: 50px;
 	display:block;
-	background-color: $red;
+	background-color: $purple;
 	margin: 5% auto;
 	font-size: 1.3rem;
 	cursor: pointer;
@@ -94,8 +99,7 @@ $yellow: #FFF5AC; // yellow //
 }
 
 .submit:hover {
-	background-color: $white;
-	color:$red;
+	background-color: $lightpurple;
 }
 
 
@@ -171,16 +175,16 @@ $yellow: #FFF5AC; // yellow //
 	font-weight:400;
 	cursor: pointer;
 	color:$white;
-	background-color: $red;
+	background-color: $teal;
 	
 }
 
 .field .checkbox_label:hover {
-	background-color: $darkred;
+	background-color: $lightteal;
 }
 
 .check_box:checked + .checkbox_label {
-  	color:$red;
+  	color:$teal;
 	background-color: $white;
 }
 

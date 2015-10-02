@@ -21,7 +21,7 @@
 
     
   <div class="wrapper">
-  <div class="dimmer" data-sidebar-dimmer></div>
+  <div class="dimmer area" data-sidebar-dimmer></div>
 
   <div class="cover-photo">
             <% if current_page?('/') or current_page?('/posts') %>
@@ -107,7 +107,7 @@
               <% end %>
           </div>          
         
-          <%= link_to new_contribution_path do %>
+          <%= link_to submit_path do %>
             <div class="contribute-section">
                   <i class="fa fa-plus contribute-button"></i>
             </div>
@@ -117,7 +117,7 @@
       </div>
     </div>
 
-    <div class="sidebar" data-sidebar>
+    <div class="sidebar area" data-sidebar >
 
         <div class="sidebar-buttons">
             <ul>

@@ -31,7 +31,12 @@ $black: #000; // black //
 $lightgrey: #eee; // lightgrey //
 $grey: #888; // grey //
 $purple: #8171B6; // purple //
+$lightpurple: #9181C6; // purple //
+$lighterpurple: #E1D1F9; // purple //
 $yellow: #FFF5AC; // yellow //
+$teal: #00AAA3; // teal //
+$lightteal: #30BAB3; // teal //
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  General  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -63,7 +68,13 @@ body {
 }
 
 .dimmer {
-  background-color:#000
+  background-color:$black;
+}
+
+.group:after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -71,8 +82,8 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .cover-photo {
-  width:100vw;
-  height: 100vh;
+  width:100%;
+  height: 100vh;                // Need to decide on using vh/vw ?????
   margin:0;
   float:left;
   position:relative;
@@ -95,7 +106,7 @@ body {
   margin: 0;
   padding: 0;
   width:100%;
-  height:100vh;
+  height:100%;
   background-color:$blue;
   opacity: 0.7;
   cursor:default;
@@ -103,6 +114,7 @@ body {
 
 .nb-cover-photo, .b-cover-photo,  {
       width:100%;
+      // visibility:hidden;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -111,9 +123,9 @@ body {
 
 .header {
   width:100%;
-  height:10vh;
+  height:65px;
   position:fixed;
-  background-color:$red;
+  background-color:$purple;
   box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
   z-index:8;
   opacity: 0.95;
@@ -123,7 +135,7 @@ body {
 }
 
 .nav-up {
-    top: -15vh;
+    top: -70px;
 }
 
 
@@ -138,7 +150,7 @@ body {
               position:relative;
               font-size:2rem;
               margin: 0;
-              line-height:10vh;
+              line-height:65px;
               font-weight:500;
               text-decoration:none;
               color:$white;
@@ -168,11 +180,11 @@ body {
 }
 
 .tag-wrap:hover{
-  color:$lightred;
+  color:$lighterpurple;
 }
 
 .tags-button {
-  padding:2.2vh;
+  padding:15px;
   float: left;
 }
 
@@ -187,8 +199,8 @@ body {
 .category-tags {
   display:none;
   position: absolute;
-  top:10vh;
-  left:35vw;
+  top:65px;
+  left:35%;
   float: left;
   text-align: center;
   z-index: 5;
@@ -202,7 +214,7 @@ body {
     ul {
       margin: 0 0 10px 0 ;
       padding: 10px;
-      width:30vw;
+      width:30vw;               // Need to decide on using vh/vw ?????
       
       li {
         list-style:none;
@@ -210,7 +222,7 @@ body {
         margin: 5px;
         
          .selected {
-          color:$purple;
+          color:$teal;
           background-color:$white;
         }
         a {
@@ -219,7 +231,7 @@ body {
           border-radius: 3px; 
           text-decoration:none;
           color:$white;
-          background-color:$purple;
+          background-color:$teal;
         }
       }
     }
@@ -227,8 +239,7 @@ body {
 }
 
 .category-tags a:hover {
-      color:$purple;
-      background-color:$white;
+      background-color:$lightteal;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -241,11 +252,11 @@ body {
   padding: 0;
   float: left;
   width:200px;
-  height:10vh;
-  line-height: 10vh;
-  background-color:$darkred;
+  height:65px;
+  line-height: 65px;
+  background-color:$lightpurple;
     i {
-      margin-top:3vh;
+      margin-top:20px;
       font-size:1.5rem;
       padding-left: 20px;
     }
@@ -259,10 +270,10 @@ body {
   font-family:'Roboto',sans-serif;
   background-color: rgba(0,0,0,0);
   font-size: 1.2rem;
-  height:10vh;
+  height:65px;
   width:130px;
   margin: 0;
-  line-height:10vh;
+  line-height:65px;
 }
 
 ::-webkit-input-placeholder {
@@ -276,7 +287,7 @@ body {
 }
 
 .search-button:hover{
-  color:$lightred;
+  color:$lighterpurple;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -287,13 +298,13 @@ body {
   float: right;
   margin-right: 5px;
   z-index:6;  
-  height: 10vh;
+  height: 65px;
 }
 
 .user-login {
   text-decoration:none;
   font-size: 1rem;
-  line-height: 10vh;
+  line-height: 65px;
   margin: 0;
   padding: 10px; 
   color:$white;
@@ -301,12 +312,12 @@ body {
 }
 
 .current-user {
-  margin-top: 1.9vh;
+  margin-top: 12px;
 
     img {
       cursor:pointer;
       display:block;
-      height: 6vh;
+      height: 40px;
       padding:0; 
       margin: 0;
       border-radius:50%;
@@ -317,7 +328,7 @@ body {
   display:none;
   position:absolute;
   z-index: 6;
-  top:10vh;
+  top:65px;
   right:50px;
 }
 
@@ -360,20 +371,20 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .contribute-section {
-  height:10vh;
+  height:65px;
   float: right;
   margin-right: 18px;
   cursor:pointer;
-  line-height: 10vh;
+  line-height: 65px;
   text-align: center;
     
     .contribute-button {
-      margin-top: 2vh;
+      margin-top: 12px;
       color:$white;
       font-size: 2.5rem;
       
             &:hover {
-              color:$lightred;
+              color:$lighterpurple;
             }
       }
 }  
@@ -387,8 +398,8 @@ body {
 .extra-button {
   top:0;
   right:0;
-  margin-top:0.5vh;
-  margin-right:3vh;
+  margin-top:2px;
+  margin-right:20px;
   cursor:pointer;
   float:right;
   padding:10px;
@@ -401,7 +412,7 @@ body {
 
 
 .extra-button:hover , .current-user:hover , .user-logout:hover , .user-login:hover {
-  color:$lightred
+  color:$lighterpurple
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -409,7 +420,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .hero-phrase {
-  font-size:3rem;
+  font-size:4rem;
   position:absolute;
   cursor:default;
   width: 100%;
@@ -417,14 +428,14 @@ body {
   left:0;
   margin: 0;
   padding: 0;
-  top:200px;
+  top:30%;
   color:$white;
 }
 
 .hero-buttons{
   position: absolute;
   z-index:7;
-  top:400px;
+  top:55%;
   width: 100%;
 }
 
@@ -449,7 +460,7 @@ body {
   left:0;
   margin: 0;
   padding: 0;
-  top:500px;
+  top:75%;
   color:$white;
 }
 
@@ -463,7 +474,7 @@ body {
   left:0;
   margin: 0;
   padding: 0;
-  top:550px;
+  top:80%;
   color:$white; 
 }
 
@@ -492,9 +503,9 @@ body {
   margin-left:20px
 }
 
-#random-button:hover , .mostrecent-button:hover {
+#random-button:hover, .mostrecent-button:hover {
   background-color: $white;
-  color: $blue;
+  color: $purple;
 }
 
 
@@ -506,11 +517,16 @@ body {
 .sidebar {
   height:100%;
   right:-200px;
-  margin-top:10vh;
-  background-color:$purple;
+  margin-top:65px;
+  background-color:$teal;
  -webkit-box-shadow:  -3px 0px 12px -2px rgba(0,0,0,0.4);
  -moz-box-shadow:  -3px 0px 12px -2px rgba(0,0,0,0.4);
  box-shadow:  -3px 0px 12px -2px rgba(0,0,0,0.4);
+ 
+
+   &:hover {
+     overflow-y: auto;
+   }
 }
 
 [data-sidebar] {
@@ -522,10 +538,11 @@ body {
 }
 
 .sidebar-buttons {
-  line-height:75px;
+  line-height:20px;
   ul {
     margin:0;
     li {
+      margin-top: 20px;
       list-style:none;
       a {
         text-align:center;
@@ -544,14 +561,14 @@ body {
 
 .static-links {
   position:absolute;
-  bottom:110px
+  bottom:100px
 }
 
 .static-links .selected, .sidebar-buttons ul li a:hover {
   font-weight:500;
 }
 
-.static-pages a{
+.static-pages a {
   text-decoration:none;
   color:#fff
 }

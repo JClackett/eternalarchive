@@ -1,19 +1,46 @@
-<div class="form">
-<% @contributions.each do |contribution| %>
+<div class='form-title'>
+  <h1>Contributions!</h1>
+</div>
 
-    <div class="field">
-        <%= link_to contribution.contribution_url %>
-        <%= contribution.contribution_category %>
-        <% @category_name = Category.joins(:contributions).where(contributions: { id: [ contribution.id]}).all %>
-        <% @category_name.each do |category| %>
-            <%= category.name %>
-        <% end %>
-  
+<div class="main-view ">
 
+  <div class="column-headers">
+    <div class="view-header-small">
+        <h2>Contributor</h2>
+      </div>
+      <div class="view-header">
+        <h2>URL</h2>
+      </div>
+      <div class="view-header-small">
+        <h2>New Category</h2>
+      </div>
+      <div class="view-header">
+        <h2>Current Categories</h2>
+      </div>
+  </div>
+
+  <div class="column-headers">
+      <% @contributions.each do |contribution| %>
+      <div class="table-wrap group">
+      <div class="view-column-small">
+            <a><%= contribution.user_id %></a>
+        </div>
+        <div class="view-column">
+            <a class="view-url" href="<%= contribution.contribution_url %>" target="_blank"><%= contribution.contribution_url %></a>
+        </div>
+        <div class="view-column-small">
+            <a><%= contribution.contribution_category %></a>
+        </div>
+
+      <div class="view-column">
+            <% @category_name = Category.joins(:contributions).where(contributions: { id: [ contribution.id]}).all %>
+            <% @category_name.each do |category| %>
+                <a><%= category.name %></a>
+            <% end %>
+      </div>
+
+      </div>
+
+      <% end %>
     </div>
-
-        <%= link_to 'Destroy', contribution, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-<% end %>
-
 </div>
