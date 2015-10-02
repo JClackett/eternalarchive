@@ -107,9 +107,12 @@
               <% end %>
           </div>          
         
-        <div class="contribute-section">
-          <%= link_to 'Contribute', new_contribution_path, class: 'contribute-text' %>
-        </div>
+          <%= link_to new_contribution_path do %>
+            <div class="contribute-section">
+                  <i class="fa fa-plus contribute-button"></i>
+            </div>
+          <% end %>
+        
 
       </div>
     </div>

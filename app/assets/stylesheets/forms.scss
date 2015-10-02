@@ -131,6 +131,21 @@ $yellow: #FFF5AC; // yellow //
 .contribution-url-field, .contribution-category-field {
 }
 
+.recommend-wrap{
+	text-align: center;
+	
+}
+.contribute-new-tag {
+	text-decoration:underline;
+	cursor:pointer;
+	width: 230px;
+	margin: 10px auto;
+	
+	&:hover {
+		color:$lightgrey;
+		text-decoration:none;
+	}
+}
 .checkbox-field {
 	padding: 0;
 	margin-top: 10px;

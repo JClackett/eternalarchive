@@ -30,6 +30,7 @@ end
   # POST /contributions
   def create
     @contribution = Contribution.new(contribution_params)
+
       if @contribution.save
         redirect_to root_path
       else
