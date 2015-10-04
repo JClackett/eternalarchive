@@ -5,15 +5,11 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tag %>
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4d15a0003f/UntitledProject/style.css">
-
-
   <meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
                         TEA is a nearly endless supply of enlightening content. We believe there is no limit to the ability of online media to inspire, educate and make people Healthier Wealthier and Wiser.">
     
   <meta charset="UTF-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 </head>  
   
@@ -39,27 +35,6 @@
       <div class="nav-down">
         <div class="logo"><%= link_to 'TEA.', root_path %></div>
         
-        <% if current_page?('/') or current_page?('/posts') or current_page?('/profile')%>
-            <div class="tag-container center">
-                <div class="tag-wrap">
-                      <h3 class="tag-title">Tags</h3>
-                      <i class="fa fa-tags tags-button"></i>
-                </div>
-                <div class="category-tags">  
-                    <nav >
-                      <ul>  
-                            <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
-                            <% Category.all.each do |category|%>
-                                <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
-                              <%end%>
-
-                      </ul>
-                    </nav>
-                </div>
-            </div>
-           <% end %>
-
-
           <div class="search-button">
                 <i class="fa fa-search search-icon"></i>
                 <input type="text" class="search-input" name="search" placeholder="Search"></input>
@@ -71,16 +46,14 @@
                         <h3 class="tag-title">Tags</h3>
                         <i class="fa fa-tags tags-button"></i>
                   </div>
-                  <div class="category-tags center">  
-                      <nav >
+                  <div class="category-tags center">   
+                        <h3>Click on a tag to filter content!</h3>
                         <ul>  
                               <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
                               <% Category.all.each do |category|%>
                                   <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
-                                <%end%>
-
+                              <%end%>
                         </ul>
-                      </nav>
                   </div>
               </div>
              <% end %>
@@ -95,12 +68,14 @@
                           <%= image_tag avatar_url(current_user) %>
                         </div>
                         <div class="user-popup">
-                          <div class="user-links">
                               <ul>
+                                  <div class="popup-text">
+                                      <li><p>Signed in as</p></li>
+                                      <li><p class="popup-username"><%= current_user.username %></p></li>
+                                  </div>
                                   <li><%= nav_link_to 'Profile', profile_path %></li>
-                                  <li><%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'onion' %></li>
+                                  <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
                               </ul>
-                          </div>
                         </div>
               <%else%>
                     <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>

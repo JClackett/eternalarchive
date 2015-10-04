@@ -204,17 +204,23 @@ body {
   float: left;
   text-align: center;
   z-index: 5;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,0,0,0.6);
   border-radius:0 0 5px 5px;
-  box-shadow: 0px 6px 60px -5px rgba(0,0,0,0.4);;
+  box-shadow: 0px 6px 60px -5px rgba(0,0,0,0.4);
   
-  nav {
-    position: relative;
-    
+
+    h3 {
+      font-size: 1rem;
+      margin: 10px 0 0 0;
+      padding: 0;
+      font-weight: 400;
+    }
+  
+  
     ul {
       margin: 0 0 10px 0 ;
-      padding: 10px;
-      width:30vw;               // Need to decide on using vh/vw ?????
+      padding: 0 10px 10px 10px;
+      width: 30vw;               // Need to decide on using vh/vw ?????
       
       li {
         list-style:none;
@@ -235,7 +241,6 @@ body {
         }
       }
     }
-  }
 }
 
 .category-tags a:hover {
@@ -299,72 +304,89 @@ body {
   margin-right: 5px;
   z-index:6;  
   height: 65px;
-}
 
-.user-login {
-  text-decoration:none;
-  font-size: 1rem;
-  line-height: 65px;
-  margin: 0;
-  padding: 10px; 
-  color:$white;
-  cursor:pointer;
-}
-
-.current-user {
-  margin-top: 12px;
-
-    img {
-      cursor:pointer;
-      display:block;
-      height: 40px;
-      padding:0; 
+    .user-login {
+      text-decoration:none;
+      font-size: 1rem;
+      line-height: 65px;
       margin: 0;
-      border-radius:50%;
+      padding: 10px; 
+      color:$white;
+      cursor:pointer;
     }
-}
 
-.user-popup {
-  display:none;
-  position:absolute;
-  z-index: 6;
-  top:65px;
-  right:50px;
-}
+    .current-user {
+         margin-top: 12px;
 
-.user-links {
-  background-color: rgba(0,0,0,0.6);
-  border-radius:0 0 5px 5px;
-  box-shadow: 0px 6px 60px -5px $black;
-  
-  ul {
-    margin: 0;
-    padding: 5px;
-    width:90px;
- 
-    li {
-      list-style:none;
-      margin: 10px;
-      
-      a {
-        text-decoration:none;
-        padding: 10px;
-        width: 100%;
-        color:$white;
-        font-size: 1rem;
-          
+          img {
+            cursor:pointer;
+            display:block;
+            height: 40px;
+            padding:0; 
+            margin: 0;
+            border-radius:50%;
+          }
       }
-    }
+
+    .user-popup {
+      display:none;
+      position:absolute;
+      z-index: 6;
+      top:65px;
+      right:50px;
+      background-color: rgba(0,0,0,0.6);
+      border-radius:0 0 5px 5px;
+      box-shadow: 0px 6px 60px -5px $black;
+      
+      ul {
+        margin: 0;
+        padding: 5px;
+        // width: 175px;
+        
+        .popup-text {
+          margin-bottom: 10px;
+          border-bottom: 1px solid $grey;
+        }
+     
+        li {
+          list-style:none;
+          margin: 10px;
+          
+          .popup-username {
+            font-weight: 500;
+          }
+          
+
+          p {
+            font-size: 0.8rem;
+            text-decoration:none;
+            width: 100%;
+            margin: 0;
+            color:$white;
+          }
+          
+          a {
+            text-decoration:none;
+            padding: 5px;
+            color:$white;
+            font-size: 1rem;
+            
+                &:hover {
+                      color:#ddd;
+                }
+           }
+
+            .selected {
+                font-weight:500;
+           }
+        }
+     }
   }
 }
 
-.user-links a:hover {
-  color:#ddd;
-}
 
-.user-links .selected {
-  font-weight:500;
-}
+
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Contribute  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -433,7 +455,7 @@ body {
   
        h1 {
            font-size: 3rem;
-           font-weight: 200;
+           font-weight: 300;
       }
 
       h3 {
