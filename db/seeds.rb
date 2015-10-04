@@ -7,16 +7,15 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 category_list = [
-  [ "Fitness"],
-  [ "Nutrition"],
-  [ "Business"],
-  [ "Investing"],
-  [ "Philosophy"],
-  [ "Science"],
-  [ "Culture"],
-  [ "Sociology"],
-  [ "Politics"],
-  [ "Music"],
+  "Fitness",
+  "Nutrition",
+  "Business",
+  "Investing",
+  "Philosophy",
+  "Science",
+  "Culture",
+  "Sociology",
+  "Politics",
 ]
 
 category_list.each do |name|

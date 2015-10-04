@@ -420,16 +420,27 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .hero-phrase {
-  font-size:4rem;
   position:absolute;
   cursor:default;
-  width: 100%;
+  text-align: center;
   padding:5px;
   left:0;
+  width: 100%;
   margin: 0;
   padding: 0;
-  top:30%;
+  top:20%;
   color:$white;
+  
+       h1 {
+           font-size: 3rem;
+           font-weight: 200;
+      }
+
+      h3 {
+          font-size: 2rem;
+          font-weight: 200;
+      }
+
 }
 
 .hero-buttons{
