@@ -10,7 +10,9 @@ class PostsController < ApplicationController
       @category_title =  params[:name]
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
-      @category_title =  "Self Educate"
+      @category_title =  "Welcome to The Eternal Archive"
+      @category_slogan =  "A collection of all the best videos and media across the internet"
+
     end
   end
 

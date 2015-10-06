@@ -10,10 +10,6 @@ class ContributionsController < ApplicationController
     end
   end
 
-  # GET /contributions/1
-  def show
-  end
-
   # GET /contributions/new
   def new
     if user_signed_in?
@@ -30,6 +26,8 @@ end
   # POST /contributions
   def create
     @contribution = Contribution.new(contribution_params)
+    @contribution.user_id = current_user.id
+
       if @contribution.save
         redirect_to root_path
       else

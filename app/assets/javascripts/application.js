@@ -45,7 +45,7 @@ $(document).on('ready page:load', function () {
         sidebar.css('margin-right', '200px');
 
         dimmer.show(0, function() {
-            dimmer.fadeTo('200', 0.4);
+            dimmer.fadeTo('200', 0.6);
         });   
     }
 
@@ -87,6 +87,23 @@ $(document).on('ready page:load', function () {
     // hide sidebar on dimmer click
     dimmer.click(function() {
         hideSidebar();
+    });
+
+
+ // Stop page scrolling when side bar is up
+
+    $.fn.scrollGuard = function() {
+        return this
+            .on( 'mousewheel', function ( e ) {
+                var event = e.originalEvent;
+                var d = event.wheelDelta || -event.detail;
+                this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
+                e.preventDefault();
+            });
+    };    
+
+    $(function(){
+        $( '.area' ).scrollGuard();
     });
 });
 
@@ -143,13 +160,3 @@ $(document).on('ready page:load', function () {
         }
     });
 });
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - Form Tag JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-// $(document).on('ready page:load', function () {                //run when the DOM is ready
-//      $("label").click(function() {    //use a class, since your ID gets mangled
-//         $(this).toggleClass("checked");      //add the class to the clicked element
-//      });
-// });

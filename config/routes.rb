@@ -11,8 +11,11 @@ Rails.application.routes.draw do
 
 
   devise_for :users
-  resources :contributions
-  resources :categories
+  resources :contributions, except: [:show, :new]
+  get 'submit' => 'contributions#new'
+
+
+  resources :categories, except: :show
   
   resources :posts do
       get 'randomize', on: :collection
