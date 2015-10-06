@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
 	validates :url, uniqueness: true
 
 
-  	VideoInfo.provider_api_keys = { youtube: 'AIzaSyDPvBi6drMNZULJqzUopd6rY9THrDi65Ew'}
+  	VideoInfo.provider_api_keys = { youtube: 'AIzaSyBDVbCw7zFhn-uXWXvSvP0Datyvh-lNfsg'}
 
 
 
