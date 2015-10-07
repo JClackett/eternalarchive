@@ -1,11 +1,5 @@
 <div class="main-container">
 	<div class="buttons">
-	
-		<!-- 		<div class="vid-menu">
-						<a href="http://twitter.com/home?status=I've read and recommend #Jerseywordfest" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter-square"></i></i></a>
-						 <! Facebook -->
-		<!-- 				<a href="https://www.facebook.com/sharer.php?u=&=I've read recommend " title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook-square"></i></a>
-				</div> --> 
 				<div class="vote-wrapper">
 					<%= render 'like', post: post %>
 				</div>
@@ -14,29 +8,33 @@
 					<%= render 'bookmark', post: post %>
 				</div>
 
-			</div>
+	</div>
 
-	<div class="post-container" onclick="play(this)">
+	<div class="post-container">
 
 		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-			<div class="overlay <%= overlay_color %>" > 
-				<span class="post-information">
-					<h5 class="post-description"><%= post.description %></h5>
-					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
-				</span>
-			</div>
-			<div class="link-container">
-				<%= embed(post.url) %>
+
+			<div class="post-player" onclick="play(this)">
+				<div class="overlay <%= overlay_color %>"> 
+					<span class="post-information">
+						<h5 class="post-description"><%= post_description_sanitize(post.description) %></h5>
+						<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
+					</span>
+				</div>
+				<div class="link-container">
+					<%= embed(post.url) %>
+				</div>
 			</div>
 		<%else%>
-			<a class="overlay <%= overlay_color  %>" href="<%= post.article_url %>" onclick="window.open(this.href); return false;"> 
+
+			<a class="overlay <%= overlay_color  %>" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
 				<span class="post-information">
-					<h5 class="post-description"><%= post.description %></h5>
+					<h5 class="post-description"><%= post_description_sanitize(post.description) %></h5>
 					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
 				</span>
 			</a>
 			<div class="link-container">
-				<%= embed(post.url) %>
+				<%= embed(post.image_url) %>
 			</div>  
 		<% end %>
 	</div>
