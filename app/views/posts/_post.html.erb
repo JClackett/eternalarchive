@@ -10,27 +10,30 @@
 
 	</div>
 
-	<div class="post-container" onclick="play(this)">
+	<div class="post-container">
 
 		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
-			<div class="overlay <%= overlay_color %>" > 
-				<span class="post-information">
-					<h5 class="post-description"><%= post.description.titleize %></h5>
-					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
-				</span>
-			</div>
-			<div class="link-container">
-				<%= embed(post.url) %>
+
+			<div class="post-player" onclick="play(this)">
+				<div class="overlay <%= overlay_color %>"> 
+					<span class="post-information">
+						<h5 class="post-description"><%= post_description_sanitize(post.description) %></h5>
+						<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
+					</span>
+				</div>
+				<div class="link-container">
+					<%= embed(post.url) %>
+				</div>
 			</div>
 		<%else%>
 			<a class="overlay <%= overlay_color  %>" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
 				<span class="post-information">
-					<h5 class="post-description"><%= article_description(post.url)	 %></h5>
+					<h5 class="post-description"><%= post_description_sanitize(post.description) %></h5>
 					<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
 				</span>
 			</a>
 			<div class="link-container">
-				<%= embed(post.url) %>
+				<%= embed(post.image_url) %>
 			</div>  
 		<% end %>
 	</div>

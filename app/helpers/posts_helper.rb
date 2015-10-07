@@ -12,17 +12,21 @@ module PostsHelper
 	    		content_tag(:iframe, nil, class: "video", src: "http://www.youtube.com/embed/#{youtube_id}?rel=0&amp;modestbranding=1&amp;autohide=1&amp;showinfo=0&amp;controls=1&amp;frameborder=0 autoplay=0" , allowfullscreen:0)
 	    	elsif url.include?("vimeo")
 	    		vimeo_id = url.split("/").last
-	    		content_tag(:iframe, nil, class: "video", src: "https://player.vimeo.com/video/#{vimeo_id}?autoplay=0&color=ff9933&title=0&byline=0&portrait=0", allowfullscreen:0 )
+	    		content_tag(:iframe, nil, class: "video", src: "https://player.vimeo.com/video/#{vimeo_id}?autoplay=0&color=8171B6&title=0&byline=0&portrait=0", allowfullscreen:0 )
 	    	else	
-	            	article = MetaInspector.new(url, faraday_options: { ssl: { verify: false } })
-	            	article_image = article.images.best
-	    		content_tag(:img, nil, class: "video", src: article_image )
+	    		content_tag(:img, nil, class: "video", src: url )
 	    	end
   	end
 
-	def article_description(url)
-	      		article = MetaInspector.new(url, faraday_options: { ssl: { verify: false } })
-	      		article_title = article.title.split(" — ").first.titleize
-	      		return article_title
+	def post_description_sanitize(description)
+			if description.include?(" — ") 
+	      			sanitized_description = description.split(" — ").first.titleize
+	      			return sanitized_description
+	      		elsif description.include?(" - ") 
+	      			sanitized_description = description.split(" - ").first.titleize
+	      			return sanitized_description
+	      		else 
+	      			return description.titleize
+	      		end
 	end
 end
