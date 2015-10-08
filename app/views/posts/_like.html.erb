@@ -1,6 +1,11 @@
 	    	<%= link_to like_post_path(post), id: dom_id(post), remote: true  do %>
-	    		<%= image_tag("bulb-icon-1005064002.png") %><br>
-	    		<div class="vote-number">
+	    		<% if current_user.voted_up_on? post %>
+					<%= image_tag("bulb-icon-1005064002-yellow.png") %><br>
+				<% else %>
+					<%= image_tag("bulb-icon-1005064002.png") %><br>
+				<% end %>
+
+	    		<!-- <div class="vote-number">
 	    			<%= post.get_upvotes.size %>
-	    		</div>	    		
+	    		</div>	  -->   		
 	    	<%end%>

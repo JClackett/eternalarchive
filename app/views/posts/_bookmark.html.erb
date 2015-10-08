@@ -1,3 +1,7 @@
-		<%= link_to bookmark_post_path(post), id: dom_id(post), :remote => true, class: 'bookmark' do %>
-    		<%= image_tag("1442420149_icon-18-bookmark.png")%>
+		<%= link_to bookmark_post_path(post), id: dom_id(post, :bookmark), remote: true  do %>
+    			<% if Bookmark.where(user_id: current_user.id, post_id: post.id).present? %>
+					<%= image_tag("1442420149_icon-18-bookmark-teal.png")%><br>
+				<% else %>
+					<%= image_tag("1442420149_icon-18-bookmark.png")%><br>
+				<% end %>
     	<%end%>

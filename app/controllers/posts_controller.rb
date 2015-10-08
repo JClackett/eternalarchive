@@ -94,7 +94,7 @@ class PostsController < ApplicationController
     else
       @bookmark = @post.bookmarks.new(user: current_user)
       @bookmark.save
-            respond_to do |format|
+      respond_to do |format|
         format.js
       end
     end 

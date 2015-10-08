@@ -160,3 +160,22 @@ $(document).on('ready page:load', function () {
         }
     });
 });
+
+
+$(document).on('ready page:load', function () {
+    $(".share-wrapper").click(function(e) {
+        $(this).find(".share").toggle();
+        e.stopPropagation();
+    });
+
+    $(".share-wrapper").click(function(e) {
+        $(this).toggleClass( "share-selected" )
+        e.stopPropagation();
+    });
+    
+    $(document).click(function(e) {
+        if (!$(e.target).is('.share, .share*')) {
+            $(".share").hide();
+        }
+    });
+});

@@ -1,1 +1,1 @@
-$('.contentBox').html("<%= escape_javascript(render @posts) %>"); 
+$('#<%= dom_id(@post, :bookmark) %>').html("<%= escape_javascript(render 'bookmark', post: @post) %>");  
