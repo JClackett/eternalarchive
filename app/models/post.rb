@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
 	acts_as_votable
+	before_save :add_missing_info_from_scraper
 	has_many :posts_categories, dependent: :destroy
 	has_many :categories, through: :posts_categories
 	has_many :bookmarks
@@ -7,13 +8,29 @@ class Post < ActiveRecord::Base
 
 	validates_format_of :url, with: URI::regexp(%w(http https))
 
-	validates_presence_of :url, :description, :category_ids
+	validates_presence_of :url, :category_ids
 
 
 	validates :url, uniqueness: true
 
 
-  	VideoInfo.provider_api_keys = { youtube: 'AIzaSyAXqfIaKFn-kb8YXb4CVIQjgn7TKxDjlNM'}
+
+  	VideoInfo.provider_api_keys = { youtube: 'AIzaSyBDVbCw7zFhn-uXWXvSvP0Datyvh-lNfsg'}
+
+
+  	def add_missing_info_from_scraper
+    		@article = MetaInspector.new(self.url, faraday_options: { ssl: { verify: false } })
+
+		if description.blank?
+		            self.assign_attributes(description: @article.title)
+		else
+		end
+
+   		if self.url.include?("youtube") || self.url.include?("vimeo") 
+ 		else
+		           self.assign_attributes(image_url: @article.images.best.to_s)
+    		end
+	end
 
 
 end	
