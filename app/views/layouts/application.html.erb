@@ -21,8 +21,13 @@
 
   <div class="cover-photo">
             <% if current_page?('/') or current_page?('/posts') %>
-                <div class="img-cover"></div>
-                <%= image_tag('cover-photo-min', class: 'nb-cover-photo') %> 
+                <div class="homepage-hero-module">
+                  <div class="video-container">
+                      <video autoplay loop class="fillWidth">
+                          <source src="assets/bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                      </video>
+                  </div>
+              </div>
             <% else %>
               <%= link_to root_path do %>
                 <div class="img-cover"></div>
