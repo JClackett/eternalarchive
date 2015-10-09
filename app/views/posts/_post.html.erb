@@ -20,7 +20,8 @@
 		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
 
 			<div class="post-player" onclick="play(this)">
-				<div class="overlay <%= overlay_color %>"> 
+				<div class="overlay"> 
+				<div class="onion"></div>
 					<span class="post-information">
 						<h5 class="post-description"><%= post_description_sanitize(post.description) %></h5>
 						<p class="created-at"><%= time_ago_in_words(post.created_at) %> ago</p>
