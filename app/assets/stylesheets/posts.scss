@@ -21,7 +21,6 @@ $yellow: #FFF5AC; // yellow //
 
 .contentBox {
   width:100%;
-  float:left;
   margin:0;
   padding:0
 }
@@ -37,6 +36,10 @@ $yellow: #FFF5AC; // yellow //
   border-radius:0;
   z-index:3;
 }
+
+// .main-container:nth-child(5n+0) {
+//   width:100%;
+// }
 
 .post-container img {
   width:100%
@@ -155,12 +158,14 @@ iframe {
   margin:0;
   height:100%;
   width:100%;
-  z-index:4
+  z-index:4;
+
+  &:hover .fader {
+     background-color: rgba(0,0,0,0.4);
+  }
 }
 
-.overlay:hover {
-  opacity: 0.7;
-}
+
 
 .fader {
   position:absolute;
