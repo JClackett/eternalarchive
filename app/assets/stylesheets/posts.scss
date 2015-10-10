@@ -125,7 +125,7 @@ iframe {
     position: absolute;
     top: -3px;
     left:50px;
-    color: white;
+    color: rgba(50,50,50,0.8);
 
     &:hover {
       color:$purple;
@@ -137,7 +137,7 @@ iframe {
     position: absolute;
     top: -3px;
     left:100px;
-    color: white;
+    color: rgba(50,50,50,0.8);
 
     &:hover {
       color:$purple;
