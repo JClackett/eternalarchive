@@ -1,7 +1,11 @@
-<div class="contentBox">
-
-	<%= render @posts %>
-
+<div class="header">
+	<%= image_tag avatar_url(current_user) %>
 </div>
 
-<%= will_paginate @posts %>
+<div class="contentBox">
+	
+		<%= render @bookmarked_posts %>
+
+		<%= will_paginate @bookmarked_posts %>
+</div>
+

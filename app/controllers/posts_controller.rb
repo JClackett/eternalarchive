@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!, except: [:index]
+    before_action :authenticate_user!, except: [:index, :upvote]
 
     
   # GET /posts
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   end
 
   def profile
-    @posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 12).reverse_order
+    @bookmarked_posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     @category_title =  current_user.username
   end
 
@@ -69,17 +69,28 @@ class PostsController < ApplicationController
       # POST /posts/:id/like
 
   def upvote
-    @post = Post.find(params[:id])
-    if current_user.voted_up_on? @post
-      @post.downvote_by current_user
-      respond_to do |format|
-        format.js
+    if user_signed_in?
+
+      @post = Post.find(params[:id])
+      if current_user.voted_up_on? @post
+        @post.downvote_by current_user
+        respond_to do |format|
+          format.js
+        end
+      else
+        @post.upvote_by current_user
+        respond_to do |format|
+          format.js
+        end
       end
+
     else
-      @post.upvote_by current_user
+
       respond_to do |format|
-        format.js
+          format.js
+          format.html { redirect_to(new_user_registration) }
       end
+
     end
   end
 
