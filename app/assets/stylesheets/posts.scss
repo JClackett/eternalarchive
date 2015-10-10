@@ -21,6 +21,7 @@ $yellow: #FFF5AC; // yellow //
 
 .contentBox {
   width:100%;
+  float:left;
   margin:0;
   padding:0
 }
@@ -37,9 +38,9 @@ $yellow: #FFF5AC; // yellow //
   z-index:3;
 }
 
-// .main-container:nth-child(5n+0) {
-//   width:100%;
-// }
+.main-container:nth-child(7n) {
+  width:100%;
+}
 
 .post-container img {
   width:100%

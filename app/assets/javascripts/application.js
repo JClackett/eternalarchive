@@ -126,7 +126,7 @@ $(document).on('ready page:load', function () {
   $(".scroll-to-content").click(function() {
     $('html,body').animate({
         scrollTop: $(".main-container").offset().top},
-        1000,'easeOutBounce')
+        1000,'easeOutQuart')
     });
 });
 
