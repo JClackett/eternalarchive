@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   end
 
   def profile
-    @posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
+    @bookmarked_posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
     @category_title =  current_user.username
   end
 
