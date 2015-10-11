@@ -130,6 +130,12 @@ $(document).on('ready page:load', function () {
     });
 });
 
+$(document).on('ready page:load', function () {
+  $(".category-links").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".main-container").offset().top},1000,'easeOutQuart')
+    });
+});
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Popup JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

@@ -52,9 +52,9 @@
                   <div class="category-tags center">   
                         <h3>Click on a tag to filter content!</h3>
                         <ul>  
-                              <li> <%= nav_link_to 'All', root_path, class: 'category-links'  %></li>
+                              <li> <%= nav_link_to 'All', root_path(anchor: "content-anchor"), class: 'category-links'  %></li>
                               <% Category.all.each do |category|%>
-                                  <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                                  <li><%= nav_link_to category.name, root_path(name: category.name, anchor: "content-anchor"), class: 'category-links' %></li>
                               <%end%>
                         </ul>
                   </div>
@@ -118,7 +118,7 @@
   
       </div>
       
-	<div class="content group">
+	<div class="content group" id="content-anchor">
       <%= yield %>
       </div>
 
