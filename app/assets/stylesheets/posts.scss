@@ -12,6 +12,7 @@ $white: #fff; // white //
 $black: #000; // black //
 $lightgrey: #eee; // lightgrey //
 $grey: #888; // grey //
+$darkgrey: #444; // grey //
 $purple: #8171B6; // purple //
 $yellow: #FFF5AC; // yellow //
 
@@ -24,6 +25,7 @@ $yellow: #FFF5AC; // yellow //
   float:left;
   margin:0;
   padding:0;
+  background-color: $black;
 }
 
 .main-container {
