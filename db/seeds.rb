@@ -22,4 +22,12 @@ category_list.each do |name|
   Category.create( name: name)
 end
 
+users_list = [
+  { email: 'jclackett@gmail.com', password: 'password', username: 'MacClayzon', admin: true },
+  { email: 'georgeborg00@hotmail.com', password: 'password', username: 'MacBlazin', admin: true },
+  { email: 'tester@gmail.com', password: 'password', username: 'MacBlazin', admin: false },
+]
 
+users_list.each do |user|
+  User.create(user)
+end
