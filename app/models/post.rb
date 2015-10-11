@@ -30,7 +30,12 @@ class Post < ActiveRecord::Base
  		else
 		           self.assign_attributes(image_url: @article.images.best.to_s)
     		end
+
+    		self.assign_attributes(keywords: @articlemeta_tag['name']['keywords'])
 	end
 
+	def self.search(query)
+  		where("email like ?", "%#{query}%") 
+	end
 
 end	

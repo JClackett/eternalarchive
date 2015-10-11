@@ -5,15 +5,14 @@ class PostsController < ApplicationController
     
   # GET /posts
   def index
-    if params[:name].present?
+     if params[:name].present?
       @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
       @category_title =  params[:name]
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
       @category_title =  "Welcome to The Eternal Archive"
       @category_slogan =  "A collection of all the best videos and media across the internet"
-
-    end
+    end   
   end
 
   def profile
