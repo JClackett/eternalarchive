@@ -259,6 +259,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .search-button {
+  display:none;
   margin: 0 0 0 20px;
   cursor:pointer;
   padding: 0;
@@ -272,6 +273,10 @@ body {
       font-size:1.5rem;
       padding-left: 20px;
     }
+
+  @include breakpoint(medium) {
+    display:block;
+  }
 }
 
 .search-input {
