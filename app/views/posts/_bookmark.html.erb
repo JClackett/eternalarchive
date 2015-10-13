@@ -1,4 +1,4 @@
-		<%= link_to_if(current_user.nil?, image_tag('1442420149_icon-18-bookmark.png'), new_user_registration_path) do %>
+		<%= link_to_if(current_user.nil?, image_tag('1442420149_icon-18-bookmark.png'), new_user_session_path) do %>
 			<%= link_to bookmark_post_path(post), id: dom_id(post, :bookmark), remote: true  do %>
 	    			<% if Bookmark.where(user_id: current_user.id, post_id: post.id).present? %>
 						<%= image_tag("1442420149_icon-18-bookmark-teal.png")%><br>

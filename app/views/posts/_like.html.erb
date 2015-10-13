@@ -1,4 +1,4 @@
-	<%= link_to_if(current_user.nil?, image_tag('bulb-icon-1005064002.png'), new_user_registration_path) do %>
+	<%= link_to_if(current_user.nil?, image_tag('bulb-icon-1005064002.png'), new_user_session_path) do %>
 	    	<%= link_to like_post_path(post), id: dom_id(post), remote: true  do %>
 		    		<% if current_user.voted_up_on? post %>
 					<%= image_tag("bulb-icon-1005064002-yellow.png") %><br>
