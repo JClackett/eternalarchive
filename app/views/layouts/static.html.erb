@@ -21,12 +21,20 @@
 
     
   <div class="wrapper">
-  <div class="dimmer" data-sidebar-dimmer></div>
-  <div class="cover-photo">
-             <%= link_to root_path do %>
+  <div class="dimmer area" data-sidebar-dimmer></div>
+   <div class="cover-photo">
+            <% if current_page?('/') or current_page?('/posts') %>
                 <div class="img-cover"></div>
-             <% end %>
-            <%= image_tag('blurred-cover-photo' ,class: 'b-cover-photo') %> 
+                <%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
+            <% elsif current_page?('/profile') %>
+                <div class="img-cover"></div>
+                <%= image_tag('blurred-cover-photo', class: 'cover-photo-img') %> 
+            <% else %>
+              <%= link_to root_path do %>
+                <div class="img-cover"></div>
+              <% end %>
+                  <%= image_tag('blurred-cover-photo' ,class: 'cover-photo-img') %> 
+           <% end %>
   </div>
 
     <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">

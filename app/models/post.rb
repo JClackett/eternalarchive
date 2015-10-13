@@ -31,7 +31,7 @@ class Post < ActiveRecord::Base
 		           self.assign_attributes(image_url: @article.images.best.to_s)
     		end
 
-    		self.assign_attributes(keywords: @articlemeta_tag['name']['keywords'])
+    		self.assign_attributes(keywords: @article.meta_tag['name']['keywords'])
 	end
 
 	def self.search(query)

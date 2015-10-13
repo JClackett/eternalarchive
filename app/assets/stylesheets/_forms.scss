@@ -140,15 +140,9 @@ $lightteal: #30BAB3; // teal //
 	
 }
 .contribute-new-tag {
-	text-decoration:underline;
-	cursor:pointer;
+	text-decoration:none;
 	width: 230px;
 	margin: 10px auto;
-	
-	&:hover {
-		color:$lightgrey;
-		text-decoration:none;
-	}
 }
 .checkbox-field {
 	padding: 0;

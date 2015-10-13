@@ -12,9 +12,11 @@ $white: #fff; // white //
 $black: #000; // black //
 $lightgrey: #eee; // lightgrey //
 $grey: #888; // grey //
-$darkgrey: #444; // grey //
 $purple: #8171B6; // purple //
+$lightpurple: #9181C6; // purple //
+$lighterpurple: #E1D1F9; // purple //
 $yellow: #FFF5AC; // yellow //
+$teal: #00AAA3; // teal //
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Post  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -138,7 +140,7 @@ iframe {
   height: 40px;
   border-radius: 8px;
 
-  &:hover{
+  &:hover {
     background-color:$purple;
   }
 }
@@ -163,7 +165,7 @@ iframe {
   color:$blue;
 }
 
-.vote-wrapper a{
+.vote-wrapper a {
   text-align: right;
   text-decoration: none;
 }
@@ -195,6 +197,7 @@ iframe {
     }
 
   }
+
   .fa-twitter-square {
     font-size: 46.67px;
     position: absolute;
@@ -226,11 +229,8 @@ iframe {
   &:hover .fader {
      background-color: rgba(0,0,0,0.4);
   }
-}
 
-
-
-.fader {
+  .fader {
   position:absolute;
   cursor:pointer;
   padding:0;
@@ -239,37 +239,66 @@ iframe {
   width:100%;
   z-index:0;
   background-color: rgba(0,0,0,0.6);
+  }
 }
-
 
 .post-information {
   display:block;
   position: absolute;
-  bottom:7.5%;
-  left:5%;
-  width: 90%;
+  bottom:10%;
+  left:10%;
+  width: 80%;
   opacity:1;
   color:$white;
 }
 
 .post-description {
   font-weight:500;
-  margin:0;
+  margin: 0;
   padding:0;
   font-size:1.5em
 }
 
 .created-at {
-  margin:0;
   padding:0;
   font-size:1em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Voting  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - -  - - - -  Post Panel  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
+.panel-container {
+  background-color: $teal;
+}
+
+.panel-information {
+  display:block;
+  position: absolute;
+  text-align:center;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  opacity:1;
+  color:$white;
   
+  .panel-description {
+  font-weight:200;
+  margin: 0;
+  line-height: 3rem;
+  padding:0;
+  font-size:1.5rem
+  }
+  .panel-description-two {
+  font-weight:200;
+  margin: 0;
+  line-height: 3rem;
+  padding:0;
+  font-size:2rem
+  }
+}
+  
+
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -277,7 +306,6 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .bookmark-wrapper {
-
   top:108px;
   left:10px;
   
