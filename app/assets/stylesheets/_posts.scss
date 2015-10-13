@@ -30,7 +30,7 @@ $yellow: #FFF5AC; // yellow //
 
 .main-container {
   cursor:pointer;
-  width:50%;
+  width:100%;
   float:left;
   position:relative;
   overflow:hidden;
@@ -38,31 +38,66 @@ $yellow: #FFF5AC; // yellow //
   text-decoration:none;
   border-radius:0;
   z-index:3;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
 }
-
-// .main-container:nth-child(7n) {
-//   width:99%;
-// }
 
 .main-container:nth-child(9n) {
-  width:66.6666666666667%;
+  width:100%;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 66.6666666666667%;
+  }
 }
 .main-container:nth-child(9n+10) {
-  width:33.3333333333333%;
+  width:100%;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 33.3333333333333%;
+  }
 }
 .main-container:nth-child(9n+11) {
-  width:33.3333333333333%;
+  width:100%;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 33.3333333333333%;
+  }
 }
 
 .main-container:nth-child(9n+5) {
-  width:66.6666666666667%;
+  width:100%;
   float:right;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 66.6666666666667%;
+  }
 }
 .main-container:nth-child(9n+4) {
-  width:33.3333333333333%;
+  width:100%;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 33.3333333333333%;
+  }
 }
 .main-container:nth-child(9n+6) {
-  width:33.3333333333333%;
+  width:100%;
+  @include breakpoint(medium) {
+    width: 50%;
+  }
+  @include breakpoint(large) {
+    width: 33.3333333333333%;
+  }
 }
 
 .main-container:nth-child(9n+3) {
@@ -221,13 +256,13 @@ iframe {
   font-weight:500;
   margin:0;
   padding:0;
-  font-size:1.5rem
+  font-size:1.5em
 }
 
 .created-at {
   margin:0;
   padding:0;
-  font-size:1rem
+  font-size:1em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

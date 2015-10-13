@@ -1,0 +1,26 @@
+@mixin breakpoint($point) {
+
+  // Default layout is 1 col with top nav
+  @if $point == small {
+      @media (min-width: 37.5em) { @content; }
+  }
+  @else if $point == medium {
+      @media (min-width: 50em) { @content; }
+  }
+  @else if $point == medium-large {
+      @media (min-width: 56em) { @content; }
+  }
+  @else if $point == large {
+      @media (min-width: 64em) { @content; }
+  }
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
