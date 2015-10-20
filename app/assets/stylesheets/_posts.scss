@@ -269,14 +269,15 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .panel-container {
-  background-color: $teal;
+  background-color: $purple;
 }
 
 .panel-information {
   display:block;
   position: absolute;
   text-align:center;
-  top: 70px;
+  top: 0;
+  margin-top: 22%;
   left: 0;
   width: 100%;
   opacity:1;
