@@ -73,14 +73,14 @@ class PostsController < ApplicationController
       @post = Post.find(params[:id])
       if current_user.voted_up_on? @post
         @post.downvote_by current_user
-        respond_to do |format|
-          format.js
-        end
+        # respond_to do |format|
+        #   format.js
+        # end
       else
         @post.upvote_by current_user
-        respond_to do |format|
-          format.js
-        end
+        # respond_to do |format|
+        #   format.js
+        # end
       end
 
     else
