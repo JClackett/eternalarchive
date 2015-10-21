@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
 
   # GET /categories
   def index
-    @categories = Category.all
+    @categories = Category.titleize.all
   end
 
 

@@ -6,8 +6,13 @@ class PostsController < ApplicationController
   # GET /posts
   def index
      if params[:name].present?
-      @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
-      @category_title =  params[:name]
+        if params[:name] == "all" 
+          @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
+          @category_title =  "All Content"
+        else
+         @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
+         @category_title =  params[:name]
+       end
     else
       @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
       @category_title =  "Welcome to The Eternal Archive"
@@ -44,7 +49,6 @@ class PostsController < ApplicationController
       if @post.save
         redirect_to posts_path 
         flash[:notice] = "Post successfully created"
-
       else
         render :new 
       end
@@ -80,7 +84,6 @@ class PostsController < ApplicationController
       end
 
     else
-
       respond_to do |format|
           format.js
           format.html { redirect_to(new_user_registration) }

@@ -4,80 +4,31 @@
   <title>The Eternal Archive</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-
-
-<meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
-                        TEA is a nearly endless supply of enlightening content. We believe there is no limit to the ability of online media to inspire, educate and make people Healthier Wealthier and Wiser.">
+  <%= csrf_meta_tag %>
+  <meta name="description=" content="A library of inspiring, engaging and informative media, bringing together the very best of the freely available sources of education from all corners of the web (Mostly YouTube.)
+                        TEA is a nearly endless supply of enlightening content. We believe there is no limit knowledge.">
     
   <meta charset="UTF-8">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
-
 </head>  
   
 <body>
 
-    
   <div class="wrapper">
   <div class="dimmer area" data-sidebar-dimmer></div>
-   <div class="cover-photo">
-            <% if current_page?('/') or current_page?('/posts') %>
-                <div class="img-cover"></div>
-                <%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
-            <% elsif current_page?('/profile') %>
-                <div class="img-cover"></div>
-                <%= image_tag('blurred-cover-photo', class: 'cover-photo-img') %> 
-            <% else %>
-              <%= link_to root_path do %>
-                <div class="img-cover"></div>
-              <% end %>
-                  <%= image_tag('blurred-cover-photo' ,class: 'cover-photo-img') %> 
-           <% end %>
-  </div>
 
-    <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
-    
-      <div class="logo"><%= link_to 'TEA.', root_path %></div>
+    <%= render 'static_header' %>
+    <%= render 'sidebar' %>
+    <%= render 'static_cover' %>
 
-      <h2 class="static-page-header"><%= @title %></h2>
-
-      <div class="extra-button" data-sidebar-button>
-            <i class="fa fa-bars extra-icon"></i>
-      </div>
-    </div>
-
-
-
-    <div class="sidebar" data-sidebar>
-
-        <div class="sidebar-buttons">
-            <ul>
-                 <% if current_user.try(:admin?) %>
-                      <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
-                      <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
-                  <%end%>            
-            </ul>
-            <ul>
-                  <div class="static-links">
-                    <li><div class="static-pages"><%= nav_link_to 'About', static_pages_about_path %></div></li>
-                    <li><div class="static-pages"><%= nav_link_to 'Help', static_pages_help_path %></div></li>
-                    <li><div class="static-pages"><%= nav_link_to 'Contact Us', static_pages_contact_us_path %></div></li>
-                    <li><div class="static-pages"><%= nav_link_to 'Copyright', static_pages_copyright_path %></div> </li>
-                  </div>
-            </ul>
-        </div>  
-  
-      </div>
 
       
-  <div class="content">
-      <%= yield %>
+  <div class="content group">
+          <%= yield %>
       </div>
 
   </div>
-
 
 </body>
 </html>
