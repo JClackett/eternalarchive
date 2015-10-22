@@ -520,7 +520,7 @@ body {
   width: 100%;
 }
 
-#random-button,.mostrecent-button {
+.topvid-button,.mostrecent-button {
   font-size:1.5rem;
   position:relative;
   padding:10px;
@@ -578,13 +578,13 @@ body {
   margin-right:25px
 }
 
-#random-button {
+.topvid-button {
   display:inline-block;
   float: right;
   margin-left:20px
 }
 
-#random-button:hover, .mostrecent-button:hover {
+.topvid-button:hover, .mostrecent-button:hover {
   background-color: $white;
   color: $purple;
 }

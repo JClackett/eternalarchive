@@ -18,12 +18,15 @@ Rails.application.routes.draw do
   resources :categories, except: :show
   
   resources :posts do
-      get 'randomize', on: :collection
     member do
       get 'like', to: 'posts#upvote'
       get 'bookmark'
     end
   end
+
+  get 'posts/topvids', :path => "top_videos"
+  get 'posts/mostrecent', :path => "latest"
+
 
   get 'profile' => 'posts#profile'
 

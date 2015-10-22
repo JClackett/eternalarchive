@@ -23,12 +23,12 @@
       <%= render 'static_header' %>
       <%= render 'static_cover' %>
       <% else %>
-      <%= render 'header' %>
-      <% if params[:name].present? %>
-         <%= render 'short_cover' %>
-      <% else %>
-         <%= render 'cover' %>
-      <% end  %>
+          <%= render 'header' %>
+          <% if params[:name].present? || current_page?("/top_videos") || current_page?("/latest") %>
+                <%= render 'short_cover' %>
+          <% else %>
+                <%= render 'cover' %>
+          <% end  %>
     <% end %>
 
     <%= render 'sidebar' %>
