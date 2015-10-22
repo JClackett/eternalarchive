@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   
 
-  get 'static_pages/help' ,:path => "help"
+  get 'application/help' ,:path => "help"
 
-  get 'static_pages/about', :path => "about"
+  get 'application/about', :path => "about"
 
-  get 'static_pages/contact_us', :path => "contact_us"
+  get 'application/contact_us', :path => "contact_us"
 
-  get 'static_pages/copyright', :path => "copyright"
+  get 'application/copyright', :path => "copyright"
 
 
   devise_for :users

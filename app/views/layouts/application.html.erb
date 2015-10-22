@@ -18,14 +18,22 @@
   <div class="wrapper">
   <div class="dimmer area" data-sidebar-dimmer></div>
 
-    <%= render 'header' %>
+
+    <% if current_page?("/about") || current_page?("/contact_us") || current_page?("/help") || current_page?("/copyright") %>
+      <%= render 'static_header' %>
+      <%= render 'static_cover' %>
+      <% else %>
+      <%= render 'header' %>
+      <% if params[:name].present? %>
+         <%= render 'short_cover' %>
+      <% else %>
+         <%= render 'cover' %>
+      <% end  %>
+    <% end %>
+
     <%= render 'sidebar' %>
 
-    <% if params[:name].present? %>
-         <%= render 'short_cover' %>
-    <% else %>
-         <%= render 'cover' %>
-    <% end  %>
+    
 
 
       
