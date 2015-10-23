@@ -187,4 +187,30 @@ $(document).on('ready page:load', function () {
     });
 });
 
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// $(document).on('ready page:load', function () {
 
+//             $('.main-container:nth-child(9n)').after('
+            
+//                     <div class="main-container panel-wrapper">
+//     <div class="post-container panel-container">
+//             <a class="overlay" href="/submit"> 
+//                 <div class="fader"></div>
+//                 <span class="panel-information">
+//                     <h5 class="panel-description">Seen something worth sharing?</h5>
+//                     <h4 class="panel-description-two">Contribute it to the Archive!</h4>
+//                 </span>
+//             </a>
+//             <div class="link-container">
+//             </div>  
+//     </div>
+
+// </div>
+
+
+//                 ');
+
+    
+// });
