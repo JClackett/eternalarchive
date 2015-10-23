@@ -2,6 +2,9 @@
                 <div class="catgeory-img-cover"></div>
                 <%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
            <div class="hero-phrase">
+           <% if current_page?('/profile') %>
+           <% else %>
               <h1><%= @title %> </h1>
+            <% end %>
           </div>
 </div>

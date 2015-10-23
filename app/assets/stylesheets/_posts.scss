@@ -257,7 +257,7 @@ iframe {
   position: absolute;
   text-align:center;
   top: 0;
-  margin-top: 20%;
+  margin-top:20%;
   left: 0;
   width: 100%;
   opacity:1;
@@ -265,13 +265,15 @@ iframe {
   
   .panel-description {
   font-weight:200;
+  position: relative;
   margin: 0;
-  line-height: 3rem;
+  line-height: 2rem;
   padding:0;
   font-size:1.5rem
   }
   .panel-description-two {
   font-weight:200;
+  position: relative;
   margin: 0;
   line-height: 3rem;
   padding:0;
