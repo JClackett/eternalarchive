@@ -20,6 +20,11 @@
   text-decoration:none;
   border-radius:0;
   z-index:3;
+  font-size: 2em;
+
+  p {
+    font-size: 1em;
+  }
   @include breakpoint(medium) {
     width: 50%;
   }
@@ -174,8 +179,8 @@ iframe {
   .fa-facebook-square {
     font-size:46.67px;
     position: absolute;
-    top: -3px;
-    left:50px;
+    top: 2%;
+    left:20%;
     color: #3b5998;
 
     &:hover {
@@ -187,8 +192,8 @@ iframe {
   .fa-twitter-square {
     font-size: 46.67px;
     position: absolute;
-    top: -3px;
-    left:100px;
+    top: 2%;
+    left:60%;
     color: #4099FF;
 
     &:hover {
