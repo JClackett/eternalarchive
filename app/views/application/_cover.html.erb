@@ -23,11 +23,11 @@
                         <i class="fa fa-angle-double-down scroll-arrow"></i>
                   </div>
             <% elsif current_page?('/profile') %>
-                <div class="img-cover"></div>
+                <div class="category-img-cover"></div>
                 <%= image_tag('blurred-cover-photo', class: 'cover-photo-img') %> 
             <% else %>
               <%= link_to root_path do %>
-                <div class="img-cover"></div>
+                <div class="category-img-cover"></div>
                 <%= image_tag('blurred-cover-photo' ,class: 'cover-photo-img') %> 
               <% end %>
            <% end %>

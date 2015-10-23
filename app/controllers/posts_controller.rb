@@ -48,7 +48,6 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
       if @post.save
         redirect_to posts_path 
-        flash[:notice] = "Post successfully created"
       else
         render :new 
       end
@@ -129,6 +128,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit( :url, :description, :user_id, :username, ids: [] )
+      params.require(:post).permit( :url, :description, :user_id, :username, category_ids: [] )
     end
 end
