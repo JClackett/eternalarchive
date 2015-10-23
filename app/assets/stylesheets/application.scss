@@ -203,7 +203,7 @@ body {
         margin: 5px;
         
          .selected {
-          color:$teal;
+          color:$purple;
           background-color:$white;
         }
         a {
@@ -212,14 +212,14 @@ body {
           border-radius: 3px; 
           text-decoration:none;
           color:$white;
-          background-color:$teal;
+          background-color:$purple;
         }
       }
     }
 }
 
 .category-tags a:hover {
-      background-color:$lightteal;
+      background-color:$lightpurple;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -234,7 +234,7 @@ body {
   width:200px;
   height:65px;
   line-height: 65px;
-  background-color:$lightgrey;
+  background-color:$lighterpurple;
     i {
       margin-top:20px;
       font-size:1.5rem;
@@ -287,7 +287,7 @@ body {
       line-height: 65px;
       margin: 0;
       padding: 10px; 
-      color:$white;
+      color:$black;
       cursor:pointer;
     }
 
@@ -379,7 +379,7 @@ body {
           text-decoration:none;
           color:$black;
           font-size: 1.2rem;
-          font-weight: 200;
+          font-weight: 300;
           padding: 10px;
           cursor:pointer;
         }
