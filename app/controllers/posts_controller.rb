@@ -7,14 +7,14 @@ class PostsController < ApplicationController
   def index
      if params[:name].present?
         if params[:name] == "all" 
-          @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
+          @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
           @title =  "All Content"
         else
          @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
          @title =  params[:name]
        end
     else
-      @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
+      @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
       @title =  "Welcome to The Eternal Archive"
       @slogan =  "A collection of all the best videos and content from across the internet"
     end   
@@ -110,12 +110,12 @@ class PostsController < ApplicationController
 
   def topvids 
     @title = "Most liked of the Week"
-    @posts = Post.where('created_at >= ?', 7.days.ago).order(:cached_votes_total => :desc)
+    @posts = Post.uniq.where('created_at >= ?', 7.days.ago).order(:cached_votes_total => :desc)
   end
 
   def mostrecent
       @title = "Latest Content"
-      @posts = Post.paginate(:page => params[:page], :per_page =>10).reverse_order
+      @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
   end
 
 
