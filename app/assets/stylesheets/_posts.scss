@@ -20,76 +20,245 @@
   text-decoration:none;
   border-radius:0;
   z-index:3;
-  font-size: 2em;
-
-  p {
-    font-size: 1em;
+  
+  .post-description {
+   font-size: 2.6rem;
   }
+
+  .created-at {
+    font-size: 1rem;
+  }
+
   @include breakpoint(medium) {
+
     width: 50%;
+  
+    .post-description  {
+     font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
 }
 
 .main-container:nth-child(9n) {
   width:100%;
+
+  .post-description {
+   font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
+
   @include breakpoint(medium) {
     width: 50%;
+
+    .post-description {
+     font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 66.6666666666667%;
+
+    .post-description {
+     font-size: 1.73rem;
+    }
+
+    .created-at {
+      font-size: 1.06rem;
+    }
   }
 }
 .main-container:nth-child(9n+10) {
   width:100%;
+
+  .post-description {
+   font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
+
   @include breakpoint(medium) {
+
     width: 50%;
+
+    .post-description {
+     font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 33.3333333333333%;
+
+    .post-description {
+     font-size: 0.87rem;
+    }
+
+    .created-at {
+      font-size: 0.53rem;
+    }
   }
 }
 .main-container:nth-child(9n+11) {
   width:100%;
 
+  .post-description {
+   font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
+
   @include breakpoint(medium) {
     width: 50%;
+
+    .post-description {
+     font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 33.3333333333333%;
+
+    .post-description {
+     font-size: 0.87rem;
+    }
+
+    .created-at {
+      font-size: 0.53rem;
+    }
   }
 }
 
 .main-container:nth-child(9n+5) {
   width:100%;
   float:right;
+
+  .post-description {
+   font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
+
   @include breakpoint(medium) {
     width: 50%;
+
+    .post-description {
+     font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 66.6666666666667%;
+
+    .post-description {
+     font-size: 1.73rem;
+    }
+
+    .created-at {
+      font-size: 1.06rem;
+    }
   }
 }
 .main-container:nth-child(9n+4) {
   width:100%;
+    .post-description {
+      font-size: 2.6rem;
+    }
+
+    .created-at {
+      font-size: 1.6rem;
+    }
+
   @include breakpoint(medium) {
     width: 50%;
+
+    .post-description {
+      font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 33.3333333333333%;
+
+    .post-description {
+      font-size: 0.87rem;
+    }
+
+    .created-at {
+      font-size: 0.53rem;
+    }
   }
 }
 .main-container:nth-child(9n+6) {
   width:100%;
+
+  .post-description {
+    font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
+
   @include breakpoint(medium) {
     width: 50%;
+    .post-description {
+      font-size: 1.3rem;
+    }
+
+    .created-at {
+      font-size: 0.8rem;
+    }
   }
   @include breakpoint(large) {
     width: 33.3333333333333%;
+
+    .post-description {
+      font-size: 0.87rem;
+    }
+
+    .created-at {
+      font-size: 0.53rem;
+    }
   }
 }
 
 .main-container:nth-child(9n+3) {
   width:100%;
+
+  .post-description {
+    font-size: 2.6rem;
+  }
+
+  .created-at {
+    font-size: 1.6rem;
+  }
 }
 
 
@@ -242,7 +411,6 @@ iframe {
   width: 80%;
   opacity:1;
   color:$white;
-  font-size: 2em;
   line-height: 0.6em;
 }
 
