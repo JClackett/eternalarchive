@@ -65,6 +65,7 @@ $teal: #00AAA3; // teal //
 }
 .main-container:nth-child(9n+11) {
   width:100%;
+
   @include breakpoint(medium) {
     width: 50%;
   }
@@ -106,6 +107,11 @@ $teal: #00AAA3; // teal //
   width:100%;
 }
 
+.post-information {
+  font-size: 0.83em;
+  line-height: 0.6em;
+}
+
 .post-container img {
   width:100%
 }
@@ -131,14 +137,15 @@ iframe {
   top: 0;
 }
 
+
 .button {
   position:absolute;
   z-index:10;
   text-align:center;
   background-color: rgba(50,50,50,0.8); 
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 5.4%;
+  height: 9.82%;
+  border-radius: 14%;
 
   &:hover {
     background-color:$purple;
@@ -146,15 +153,15 @@ iframe {
 }
 
 .vote-wrapper {
-  top:58px;
-  left:10px;
+  top:13%;
+  left:2%;
 
   img{
     position: absolute;
-    top:2px;
-    right:2px;
-    height: 35px;
-    width: 35px;
+    top:1.5%;
+    right:4%;
+    height: 90%;
+    width: 90%;
   }
 }
 
@@ -171,13 +178,16 @@ iframe {
 }
 
 .share-wrapper {
-  top:10px;
-  left:10px;
+  top:2%;
+  left:2%;
 
   img {
     position: absolute;
-    top:8px;
-    right:8px;
+    top:8%;
+    right:8%;
+    fill:white;
+    height: 80%;
+    width: 80%;
   }
 
   .share  {
@@ -225,6 +235,7 @@ iframe {
   height:100%;
   width:100%;
   z-index:4;
+  line-height: 1em;
 
   &:hover .fader {
      background-color: rgba(0,0,0,0.4);
@@ -256,12 +267,10 @@ iframe {
   font-weight:500;
   margin: 0;
   padding:0;
-  font-size:1.5em
 }
 
 .created-at {
   padding:0;
-  font-size:1em
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -306,15 +315,15 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .bookmark-wrapper {
-  top:108px;
-  left:10px;
+  top:24%;
+  left:2%;
   
   img {
-    height: 35px;
-    width: 35px;
+    height: 90%;
+    width: 90%;
     position: absolute;
-    top:3px;
-    right:2px;
+    top:1%;
+    right:4%;
   }
 
 }

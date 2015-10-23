@@ -16,6 +16,7 @@ gem 'video_info'
 
 gem 'metainspector'
 
+gem 'flowtype-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

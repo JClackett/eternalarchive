@@ -13,8 +13,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require flowtype
 //= require turbolinks
 //= require_tree .
+
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -166,7 +168,7 @@ $(document).on('ready page:load', function () {
         }
     });
 });
-
+ 
 
 $(document).on('ready page:load', function () {
     $(".share-wrapper").click(function(e) {
@@ -185,3 +187,30 @@ $(document).on('ready page:load', function () {
         }
     });
 });
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - -  Scale Text  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+
+function setScale(object){
+
+    var $maincontainer = $('.overlay'); //Cache this for performance
+
+    var scaleFactor = 0.2,
+        scaleSource = $maincontainer.width(),
+
+    fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+
+     console.log("dick");
+
+    $('h5').css('font-size', fontSize + '%');
+    return false;
+};
+
+
+
+    
+
+
+
