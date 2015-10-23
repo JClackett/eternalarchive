@@ -9,6 +9,6 @@ class Contribution < ActiveRecord::Base
 
 	validates :contribution_url, uniqueness: true
 
-
+	validates :contribution_category, format: { with: /[a-zA-Z]/}
 
 end

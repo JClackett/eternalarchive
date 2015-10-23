@@ -1,8 +1,9 @@
-<div class="header">
+<div class="profile-header">
+	<h4><%= current_user.username %></h4>
 	<%= image_tag avatar_url(current_user) %>
 </div>
 
-<div class="contentBox">
+<div class="profile-content">
 	
 		<%= render @bookmarked_posts %>
 

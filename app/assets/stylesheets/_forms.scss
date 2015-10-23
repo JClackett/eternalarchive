@@ -1,26 +1,4 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - Constants - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-$blue: #81B6DB;  // blue  //
-$green: #77DD77;    // green // 
-$red: #FF4955;   // red //
-$darkred: #FF5567; // darker red //
-$lightred: #FFD8E8; // light red//
-$orange: #FFB246;   // orange //
-$white: #fff; // white // 
-$black: #000; // black //
-$lightgrey: #eee; // lightgrey //
-$grey: #888; // grey //
-$purple: #8171B6; // purple //
-$lightpurple: #9181C6; // purple //
-$lighterpurple: #E1D1F9; // purple //
-$yellow: #FFF5AC; // yellow //
-$teal: #00AAA3; // teal //
-$lightteal: #30BAB3; // teal //
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
@@ -33,7 +11,6 @@ $lightteal: #30BAB3; // teal //
     	right:0;
     	margin-left:auto;
     	margin-right:auto;
-	font-family: roboto;
 	padding: 20px;
 	-webkit-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
@@ -41,7 +18,7 @@ $lightteal: #30BAB3; // teal //
 
 		h3 {
 			text-align: center;
-			font-weight: 400;
+			font-weight: 300;
 			font-size: 1rem;
 		}
 }
@@ -56,10 +33,10 @@ $lightteal: #30BAB3; // teal //
    	margin-right:auto;
 	z-index: 9;
 	text-align: center;
-	top: 75px;
+	top: 60px;
 
 	h1 {
-		font-weight: 400;
+		font-weight: 300;
 		font-size: 2.5rem;
 	}
 }
@@ -77,7 +54,6 @@ $lightteal: #30BAB3; // teal //
 	width: 90%;
 	height: 30px;
 	padding: 8px;
-	font-family: roboto;
 	border-style: none;
 	color:$purple;
 	font-size: 1rem;
@@ -89,13 +65,13 @@ $lightteal: #30BAB3; // teal //
 	width: 50%;
 	height: 50px;
 	display:block;
+	font-weight: 200;
 	background-color: $purple;
 	margin: 5% auto;
 	font-size: 1.3rem;
 	cursor: pointer;
 	color:$white;
 	border-style: none;
-	font-family: roboto;
 }
 
 .submit:hover {
@@ -114,7 +90,10 @@ $lightteal: #30BAB3; // teal //
 .post-url-field, .post-article-url-field, .post-description-field {
 }
 
-
+// .field-error { 
+// 	display: inline-block;
+// 	border: 2px solid red;
+// }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - Category - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -162,11 +141,10 @@ $lightteal: #30BAB3; // teal //
 	line-height: 20px;
 	padding: 5px 10px;
 	margin: 5px;
-	font-family: roboto;
 	border-style: none;
 	color:$white;
 	font-size: 0.8rem;
-	font-weight:400;
+	font-weight:200;
 	cursor: pointer;
 	color:$white;
 	background-color: $teal;
@@ -178,9 +156,10 @@ $lightteal: #30BAB3; // teal //
 }
 
 .check_box:checked + .checkbox_label {
-  	color:$teal;
+  	color:$purple;
 	background-color: $white;
 }
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
@@ -207,7 +186,6 @@ $lightteal: #30BAB3; // teal //
 	a {
 		text-decoration:none;
 		color:$white;
-		font-family: roboto;
 		position: absolute;
 		font-weight: 400;
 		font-size: 1.4rem;

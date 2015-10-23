@@ -15,6 +15,7 @@ class Post < ActiveRecord::Base
 
 
 
+
   	VideoInfo.provider_api_keys = { youtube: 'AIzaSyBDVbCw7zFhn-uXWXvSvP0Datyvh-lNfsg'}
 
 

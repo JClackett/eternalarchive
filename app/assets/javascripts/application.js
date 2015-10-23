@@ -132,12 +132,13 @@ $(document).on('ready page:load', function () {
     });
 });
 
-$(document).on('ready page:load', function () {
-  $(".category-links").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".main-container").offset().top},1000,'easeOutQuart')
-    });
-});
+// $(document).on('ready page:load', function () {
+//   $(".category-links").click(function() {
+//     $('html,body').animate({
+//         scrollTop: $(".main-container").offset().top},1000,'easeOutQuart')
+//     });
+// });
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Popup JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -188,29 +189,25 @@ $(document).on('ready page:load', function () {
     });
 });
 
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Scale Text  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 
-function setScale(object){
+// function setScale(object){
 
-    var $maincontainer = $('.overlay'); //Cache this for performance
+//     var $maincontainer = $('.overlay'); //Cache this for performance
 
-    var scaleFactor = 0.2,
-        scaleSource = $maincontainer.width(),
+//     var scaleFactor = 0.2,
+//         scaleSource = $maincontainer.width(),
 
-    fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
-
-     console.log("dick");
-
-    $('h5').css('font-size', fontSize + '%');
-    return false;
-};
+//     fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
 
 
-
-    
+//     $('h5').css('font-size', fontSize + '%');
+//     return false;
+// };
 
 
 

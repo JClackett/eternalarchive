@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151011203358) do
+ActiveRecord::Schema.define(version: 20151022144641) do
 
   create_table "bookmarks", force: :cascade do |t|
     t.integer  "post_id"
@@ -44,11 +44,26 @@ ActiveRecord::Schema.define(version: 20151011203358) do
   create_table "posts", force: :cascade do |t|
     t.string   "url"
     t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
     t.string   "image_url"
     t.string   "keywords"
+    t.integer  "cached_votes_total",      default: 0
+    t.integer  "cached_votes_score",      default: 0
+    t.integer  "cached_votes_up",         default: 0
+    t.integer  "cached_votes_down",       default: 0
+    t.integer  "cached_weighted_score",   default: 0
+    t.integer  "cached_weighted_total",   default: 0
+    t.float    "cached_weighted_average", default: 0.0
   end
+
+  add_index "posts", ["cached_votes_down"], name: "index_posts_on_cached_votes_down"
+  add_index "posts", ["cached_votes_score"], name: "index_posts_on_cached_votes_score"
+  add_index "posts", ["cached_votes_total"], name: "index_posts_on_cached_votes_total"
+  add_index "posts", ["cached_votes_up"], name: "index_posts_on_cached_votes_up"
+  add_index "posts", ["cached_weighted_average"], name: "index_posts_on_cached_weighted_average"
+  add_index "posts", ["cached_weighted_score"], name: "index_posts_on_cached_weighted_score"
+  add_index "posts", ["cached_weighted_total"], name: "index_posts_on_cached_weighted_total"
 
   create_table "posts_categories", force: :cascade do |t|
     t.integer  "category_id"
