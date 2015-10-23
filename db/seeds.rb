@@ -25,7 +25,8 @@ end
 users_list = [
   { email: 'jclackett@gmail.com', password: 'password', username: 'MacClayzon', admin: true },
   { email: 'georgeborg00@hotmail.com', password: 'password', username: 'MacBlazin', admin: true },
-  { email: 'tester@gmail.com', password: 'password', username: 'MacBlazin', admin: false },
+  { email: 'tester@gmail.com', password: 'password', username: 'Tester', admin: false },
+  { email: 'dlec2@gmail.com', password: 'password', username: 'MacStump', admin: true },
 ]
 
 users_list.each do |user|

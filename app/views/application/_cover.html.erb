@@ -3,7 +3,9 @@
                 <div class="img-cover"></div>
                 <div class="homepage-hero-module">
                   <div class="video-container">
-                      <video autoplay loop preload='true' muted='true' class="fillWidth" src="assets/bulbs.mp4"></video>
+                      <video autoplay loop preload='true' class="fillWidth">
+                          <source src="assets/bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                      </video>
                   </div>
               </div>
                   <div class="hero-title">
@@ -21,11 +23,11 @@
                         <i class="fa fa-angle-double-down scroll-arrow"></i>
                   </div>
             <% elsif current_page?('/profile') %>
-                <div class="img-cover"></div>
+                <div class="category-img-cover"></div>
                 <%= image_tag('blurred-cover-photo', class: 'cover-photo-img') %> 
             <% else %>
               <%= link_to root_path do %>
-                <div class="img-cover"></div>
+                <div class="category-img-cover"></div>
                 <%= image_tag('blurred-cover-photo' ,class: 'cover-photo-img') %> 
               <% end %>
            <% end %>

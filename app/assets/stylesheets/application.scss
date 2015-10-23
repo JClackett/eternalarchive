@@ -99,8 +99,8 @@ body {
   width:100%;
   height:65px;
   position:fixed;
-  background-color:$white;
-  // box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
+  background-color:$purple;
+  box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
   z-index:8;
   opacity: 0.98;
   top: 0;
@@ -127,7 +127,7 @@ body {
               line-height:65px;
               font-weight:500;
               text-decoration:none;
-              color:$black;
+              color:$white;
               padding:20px 30px 15px 40px
             }
       }
@@ -147,7 +147,7 @@ body {
   width:100%;
   font-size: 2.5rem;
   z-index: -1;
-  color:$black;
+  color:$white;
 }
 
 .tag-wrap {
@@ -155,7 +155,7 @@ body {
 }
 
 .tag-wrap:hover{
-  color:$darkgrey;
+  color:$lighterpurple;
 }
 
 .tags-button {
@@ -204,7 +204,7 @@ body {
         margin: 5px;
         
          .selected {
-          color:$teal;
+          color:$purple;
           background-color:$white;
         }
         a {
@@ -213,14 +213,14 @@ body {
           border-radius: 3px; 
           text-decoration:none;
           color:$white;
-          background-color:$teal;
+          background-color:$purple;
         }
       }
     }
 }
 
 .category-tags a:hover {
-      background-color:$lightteal;
+      background-color:$lightpurple;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -236,12 +236,12 @@ body {
   width:200px;
   height:65px;
   line-height: 65px;
-  background-color:$lightgrey;
+  background-color:$lightpurple;
     i {
       margin-top:20px;
       font-size:1.5rem;
       padding-left: 20px;
-      color:$black;
+      color:$white;
     }
 
   @include breakpoint(medium) {
@@ -251,7 +251,7 @@ body {
 
 .search-input {
   position: absolute;
-  color:$purple;
+  color:$white;
   padding-left:10px;
   border:none;
   font-family:'Roboto',sans-serif;
@@ -265,7 +265,7 @@ body {
 
 ::-webkit-input-placeholder {
    font-family:'Roboto',sans-serif;
-   color: $black;
+   color: $white;
    font-weight:200;
 }
 
@@ -274,7 +274,7 @@ body {
 }
 
 .search-button:hover{
-  color:$darkgrey;
+  color:$white;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -383,15 +383,15 @@ body {
   
       a {
           text-decoration:none;
-          color:$black;
+          color:$white;
           font-size: 1.2rem;
-          font-weight: 200;
+          font-weight: 300;
           padding: 10px;
           cursor:pointer;
         }
 
         &:hover a {
-          color:$darkgrey;
+          color:$lighterpurple;
         }
         
     // .contribute-button {
@@ -420,7 +420,7 @@ body {
   float:right;
   padding:10px;
   z-index:13;
-  color:$black;
+  color:$white;
     
     i {
       font-size:2.4rem;
@@ -429,7 +429,7 @@ body {
 
 
 .extra-button:hover , .current-user:hover , .user-logout:hover , .user-login:hover {
-  color:$darkgrey
+  color:$lighterpurple;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -454,7 +454,7 @@ body {
   overflow:hidden;
 }
 
-.img-cover , .catgeory-img-cover {
+.img-cover , .category-img-cover {
   position: absolute;
   top:0;
   left:0;
@@ -464,14 +464,13 @@ body {
   height:100%;
   opacity: 0.4;
   cursor:default;
-  z-index:1;
 }
 
 .img-cover {
   background-color:$black;
 }
 
-.catgeory-img-cover {
+.category-img-cover {
   background-color:$blue;
 }
 
@@ -485,6 +484,8 @@ body {
     border-left: none;
     position: relative;
     height: 100%;
+    z-index:-1;
+
 }
 .no-video .video-container video,
 .touch .video-container video {
@@ -654,7 +655,7 @@ body {
   right:-200px;
   font-weight:300;
   margin-top:65px;
-  background-color:$white;
+  background-color:$teal;
 
    &:hover {
      overflow-y: auto;
@@ -688,7 +689,7 @@ body {
 
 .new-post {
   text-decoration:none;
-  color:$black;
+  color:$white;
 }
 
 .static-links {
@@ -702,7 +703,7 @@ body {
 
 .static-pages a {
   text-decoration:none;
-  color:$black;
+  color:$white;
 }
 
 [data-sidebar-dimmer] {
