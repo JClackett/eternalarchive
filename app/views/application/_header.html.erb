@@ -1,61 +1,16 @@
 <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
       <div class="nav-down">
-        <div class="logo"><%= link_to 'TEA.', root_path %></div>
+          <%= render 'logo' %>
         
-          <div class="search-button">
-                <i class="fa fa-search search-icon"></i>
-                <input type="text" class="search-input" name="search" placeholder="Search"></input>
-          </div> 
+          <%#= render 'search' %> 
           
-          <% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') %>
-              <div class="tag-container center">
-                  <div class="tag-wrap">
-                        <h3 class="tag-title">Tags</h3>
-                        <i class="fa fa-tags tags-button"></i>
-                  </div>
-                  <div class="category-tags center">   
-                        <h3>Click on a tag to filter content!</h3>
-                        <ul>  
-                              <li> <%= nav_link_to 'All', root_path(name: 'all'), class: 'category-links'  %></li>
-                              <% Category.all.each do |category|%>
-                                  <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
-                              <%end%>
-                        </ul>
-                  </div>
-              </div>
-             <% end %>
+          <%= render 'tags' %>
 
-          <div class="extra-button" data-sidebar-button>
-                <i class="fa fa-bars extra-icon"></i>
-          </div>
+          <%= render 'extra' %>
 
-          <div class="login-section">
-            <% if user_signed_in? %>
-                       <div class="current-user">
-                          <%= image_tag avatar_url(current_user) %>
-                        </div>
-                        <div class="user-popup">
-                              <ul>
-                                  <div class="popup-text">
-                                      <li><p>Signed in as</p></li>
-                                      <li><p class="popup-username"><%= current_user.username %></p></li>
-                                  </div>
-                                  <li><%= nav_link_to 'Profile', profile_path %></li>
-                                  <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-                              </ul>
-                        </div>
-              <%else%>
-                    <%= link_to "Sign in / Sign up" , new_user_session_path,  class: 'user-login' %>
-              <% end %>
-          </div>          
+          <%= render 'login' %>         
         
-          <%= link_to submit_path do %>
-            <div class="contribute-section">
-                  <%= link_to 'Contribute', submit_path, class: 'contribute-text' %>
-                  <!-- <i class="fa fa-plus contribute-button"></i> -->
-            </div>
-          <% end %>
-        
-
+          <%= render 'submit' %>
+      
       </div>
-    </div>
+</div>

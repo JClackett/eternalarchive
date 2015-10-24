@@ -17,6 +17,7 @@
 //= require_tree .
 
 
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -   Pagination JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -167,7 +168,7 @@ $(document).on('ready page:load', function () {
         }
     });
 });
-
+ 
 
 $(document).on('ready page:load', function () {
     $(".share-wrapper").click(function(e) {
@@ -210,7 +211,3 @@ $(document).on('ready page:load', function () {
 // </div>
 
 
-//                 ');
-
-    
-// });

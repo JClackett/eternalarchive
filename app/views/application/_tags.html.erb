@@ -1,0 +1,17 @@
+<% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') %>
+    <div class="tag-container center">
+        <div class="tag-wrap">
+              <h3 class="tag-title">Tags</h3>
+              <i class="fa fa-tags tags-button"></i>
+        </div>
+        <div class="category-tags center">   
+              <h3>Click on a tag to filter content!</h3>
+              <ul>  
+                    <li> <%= nav_link_to 'All', root_path(name: 'all'), class: 'category-links'  %></li>
+                    <% Category.all.each do |category|%>
+                        <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                    <%end%>
+              </ul>
+        </div>
+    </div>
+  <% end %>

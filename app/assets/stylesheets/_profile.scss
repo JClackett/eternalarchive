@@ -1,8 +1,20 @@
 .profile-header {
 
+	img {
+	    position: absolute;
+	    top: 15%;
+	    left: 0;
+	    width: 100px;
+	    height: 100px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    right: 0;
+	    border-radius: 50%;
+	}
+
 	h4 {
 		position: absolute;
-	    	top: 150px;
+	    	top: 22%;
 	   	left: 0;
 	   	width:300px;
 	   	text-align:center;
@@ -11,17 +23,45 @@
 		right: 0;
 		font-size: 3rem;
 		font-weight:300;
-		color:white;
+		color:$white;
+		border-bottom:2px solid $white;
+		border-top:2px solid $white;
+		
+		
 	}
+	
+	.profile-small-header {
+		position: absolute;
+	    	top: 43%;
+	   	left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		right: 0;
+		color:$white;
 
-	img {
-	    position: absolute;
-	    top: 100px;
-	    left: 0;
-	    width: 100px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    right: 0;
-	    border-radius: 50%;
+
+		h6 {
+			font-size: 1.5rem;
+			font-weight:300;
+			margin: 0;
+		}
+	}
+}
+
+.profile-content {
+	
+	h2 {
+		position: absolute;
+	    	top: 60%;
+	   	left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		right: 0;
+		color:$purple;
+		font-size: 2rem;
+		font-weight: 300;
+		
 	}
 }

@@ -1,11 +1,16 @@
 <div class="profile-header">
 	<h4><%= current_user.username %></h4>
-	<%= image_tag avatar_url(current_user) %>
+	<%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.username) %>
+	<div class="profile-small-header"><h6> Bookmarked </h6></div>
 </div>
 
 <div class="profile-content">
-	
+
 		<%= render @bookmarked_posts %>
+
+		<% if @bookmarked_posts == [] %>
+			<h2>Nothing Bookmarked yet!</h2>
+		<% end %>
 
 		<%= will_paginate @bookmarked_posts %>
 </div>
