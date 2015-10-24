@@ -483,6 +483,10 @@ body {
       position: relative;
       top:-200px;
       z-index: -1;
+
+      @include breakpoint(medium) {
+        width:1500px;
+      }
 }
 
 .category-cover {
@@ -565,8 +569,6 @@ body {
 
            @include breakpoint(small) {
               font-size: 3rem;
-              padding-right: 0;
-              padding-left: 0;
               padding-top: 5%;
             }
 
@@ -590,7 +592,7 @@ body {
             font-size: 2rem;
             padding-right: 0;
             padding-left: 0;
-            padding-top: 0;
+            padding-top: 30px;
             display: inline-block;
           }
       }
@@ -617,16 +619,16 @@ body {
 .hero-buttons{
   position: absolute;
   z-index:7;
-  top:70%;
+  top:75%;
   width: 100%;
 
   @include breakpoint(medium) {
-    top:55%;
+    top:65%;
   }
 }
 
 .topvid-button,.mostrecent-button {
-  font-size:1.25rem;
+  font-size:1.2rem;
   position:relative;
   padding:10px;
   cursor:pointer;
@@ -634,9 +636,11 @@ body {
   color:$white;
   border:2px solid $white;
   border-radius: 3px;
+  margin-left: 0;
 
   @include breakpoint(small) {
     font-size:1.5rem;
+    margin-left: -30px;
   }
 }
 
@@ -650,7 +654,7 @@ body {
   left:0;
   margin: 0;
   padding: 0;
-  top:75%;
+  top:80%;
   color:$white;
   display: none;
 
@@ -669,7 +673,7 @@ body {
   left:0;
   margin: 0;
   padding: 0;
-  top:80%;
+  top:85%;
   color:$white; 
   display: none;
 
@@ -695,14 +699,9 @@ body {
 .mostrecent-button {
   display:inline-block;
   float: left;
-  margin-right:25px
+  margin-right:70px
 }
 
-.topvid-button {
-  display:inline-block;
-  float: right;
-  margin-left:20px
-}
 
 .topvid-button:hover, .mostrecent-button:hover {
   background-color: $white;
