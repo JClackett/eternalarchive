@@ -5,9 +5,12 @@
 </div>
 
 <div class="profile-content">
-		
 
 		<%= render @bookmarked_posts %>
+
+		<% if @bookmarked_posts == [] %>
+			<h2>Nothing Bookmarked yet!</h2>
+		<% end %>
 
 		<%= will_paginate @bookmarked_posts %>
 </div>

@@ -23,9 +23,9 @@
 		right: 0;
 		font-size: 3rem;
 		font-weight:300;
-		color:white;
-		border-bottom:2px solid white;
-		border-top:2px solid white;
+		color:$white;
+		border-bottom:2px solid $white;
+		border-top:2px solid $white;
 		
 		
 	}
@@ -38,7 +38,7 @@
 		margin-right: auto;
 		text-align: center;
 		right: 0;
-		color:white;
+		color:$white;
 
 
 		h5 {
@@ -46,5 +46,21 @@
 			font-weight:300;
 			margin: 0;
 		}
+	}
+}
+
+.profile-content {
+	position: absolute;
+    	top: 400px;
+   	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	right: 0;
+	color:$purple;
+	h2 {
+		font-size: 2rem;
+		font-weight: 300;
+		
 	}
 }
