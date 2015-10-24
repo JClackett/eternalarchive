@@ -110,12 +110,12 @@ class PostsController < ApplicationController
 
   def topvids 
     @title = "Most liked of the Week"
-    @posts = Post.uniq.where('created_at >= ?', 7.days.ago).order(:cached_votes_total => :desc)
+    @posts = Post.uniq.where('created_at >= ?', 7.days.ago).order(:cached_votes_total => :desc).paginate(:page => params[:page], :per_page => 10)
   end
 
   def mostrecent
       @title = "Latest Content"
-      @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
+      @posts = Post.uniq.limit(11).reverse_order
   end
 
 
