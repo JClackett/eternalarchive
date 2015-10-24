@@ -80,10 +80,9 @@ GEM
       faraday (>= 0.7.4, < 0.10)
     fastimage (1.7.0)
       addressable (~> 2.3, >= 2.3.5)
-    flowtype-rails (1.1.1)
-      railties (>= 3.1)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    gravatar_image_tag (1.2.0)
     htmlentities (4.3.4)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -228,7 +227,7 @@ DEPENDENCIES
   cancancan (~> 1.10)
   coffee-rails (~> 4.1.0)
   devise
-  flowtype-rails
+  gravatar_image_tag
   jbuilder (~> 2.0)
   jquery-infinite-pages
   jquery-rails
@@ -246,6 +245,3 @@ DEPENDENCIES
   video_info
   web-console (~> 2.0)
   will_paginate
-
-BUNDLED WITH
-   1.10.6
