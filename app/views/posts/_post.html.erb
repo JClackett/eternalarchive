@@ -32,6 +32,7 @@
 					<%= embed(post.url) %>
 				</div>
 			</div>
+
 		<%else%>
 
 			<a class="overlay" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
@@ -44,7 +45,9 @@
 			<div class="link-container">
 				<%= embed(post.image_url) %>
 			</div>  
-		<% end %>
+
+		<%end%>
+		
 	</div>
 
 </div>
