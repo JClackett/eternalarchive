@@ -497,7 +497,7 @@ iframe {
   top:2%;
   left:2%;
 
-  img {
+  .share-network img {
     position: absolute;
     top:8%;
     right:8%;
@@ -508,33 +508,25 @@ iframe {
 
   .share  {
     display: none;
-
   }
 
-  .fa-facebook-square {
-    font-size:46.67px;
+  .btn-facebook {
     position: absolute;
-    top: 2%;
-    left:20%;
-    color: #3b5998;
+    left:111%;
+    width: 100%;
 
-    &:hover {
-      color:$purple;
+    img {
+      width: 100%;
     }
-
   }
 
-  .fa-twitter-square {
-    font-size: 46.67px;
+  .btn-twitter {
     position: absolute;
-    top: 2%;
-    left:60%;
-    color: #4099FF;
-
-    &:hover {
-      color:$purple;
+    left:222%;
+    width: 100%;
+    img {
+      width: 100%;
     }
-
   }
 }
 
