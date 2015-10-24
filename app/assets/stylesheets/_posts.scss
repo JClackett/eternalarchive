@@ -462,6 +462,7 @@ iframe {
   width: 5.4%;
   height: 9.82%;
   border-radius: 14%;
+  left:1.5%;
 
   &:hover {
     background-color:$purple;
@@ -470,7 +471,6 @@ iframe {
 
 .vote-wrapper {
   top:13%;
-  left:2%;
 
   img{
     position: absolute;
@@ -495,7 +495,6 @@ iframe {
 
 .share-wrapper {
   top:2%;
-  left:2%;
 
   .share-network img {
     position: absolute;
@@ -629,7 +628,6 @@ iframe {
 
 .bookmark-wrapper {
   top:24%;
-  left:2%;
   
   img {
     height: 90%;
