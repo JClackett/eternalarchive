@@ -61,8 +61,8 @@ body {
   padding: 0;
   font-family:'Roboto';
   font-weight:300;
-  font-size:67.5%
 }
+
 
 ::-webkit-scrollbar {
   display:none
@@ -70,7 +70,7 @@ body {
 
 .wrapper {
   margin: 0;
-  width:100%
+  width:100%;
 }
 
 .center {
@@ -227,6 +227,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .search-button {
+  display:none;
   margin: 0 0 0 20px;
   cursor:pointer;
   padding: 0;
@@ -241,6 +242,10 @@ body {
       padding-left: 20px;
       color:$white;
     }
+
+  @include breakpoint(medium) {
+    display:block;
+  }
 }
 
 .search-input {
@@ -483,7 +488,9 @@ body {
     border-right: none;
     border-left: none;
     position: relative;
+    height: 100%;
     z-index:-1;
+
 }
 .no-video .video-container video,
 .touch .video-container video {
@@ -515,6 +522,7 @@ body {
     height: 100%;
 }
 .video-container video.fillWidth {
+    height: 100%;
     width: 100%;
 }
 
@@ -713,3 +721,8 @@ body {
   width:100%;
   z-index:11
 }
+
+
+
+
+
