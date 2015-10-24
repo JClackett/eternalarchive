@@ -188,25 +188,26 @@ $(document).on('ready page:load', function () {
     });
 });
 
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// $(document).on('ready page:load', function () {
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - -  Scale Text  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+//             $('.main-container:nth-child(9n)').after('
+            
+//                     <div class="main-container panel-wrapper">
+//     <div class="post-container panel-container">
+//             <a class="overlay" href="/submit"> 
+//                 <div class="fader"></div>
+//                 <span class="panel-information">
+//                     <h5 class="panel-description">Seen something worth sharing?</h5>
+//                     <h4 class="panel-description-two">Contribute it to the Archive!</h4>
+//                 </span>
+//             </a>
+//             <div class="link-container">
+//             </div>  
+//     </div>
 
-
-// function setScale(object){
-
-//     var $maincontainer = $('.overlay'); //Cache this for performance
-
-//     var scaleFactor = 0.2,
-//         scaleSource = $maincontainer.width(),
-
-//     fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
-
-
-//     $('h5').css('font-size', fontSize + '%');
-//     return false;
-// };
-
+// </div>
 
 

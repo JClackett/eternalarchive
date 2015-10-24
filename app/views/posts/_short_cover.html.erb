@@ -1,10 +1,17 @@
 <div class="short-hero-cover">
-                <div class="category-img-cover"></div>
-                <%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
-           <div class="hero-phrase">
+                <div class="blue-img-cover"></div>
+                
            <% if current_page?('/profile') %>
-           <% else %>
-              <h1><%= @title %> </h1>
+           	<%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
+           <% elsif params[:name].present?%>
+           	<%= image_tag(params[:name].downcase , class: 'cover-photo-img category-cover') %> 
+	           <div class="hero-phrase">
+	              <h1><%= @title %> </h1>
+	          </div>
+	 <% else %>
+           	<%= image_tag('cover-photo-min', class: 'cover-photo-img') %> 
+	           <div class="hero-phrase">
+	           	<h1><%= @title %> </h1>
+	          	</div>
             <% end %>
-          </div>
 </div>
