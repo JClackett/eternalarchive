@@ -3,7 +3,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .form {
-
 	width: 80%;
 	background-color: rgba(0,0,0, 0.5);
 	position: absolute;
@@ -195,11 +194,11 @@
 	position: absolute;
 	width: 100%;
 	left:0;
-    right:0;
-    margin: 0 auto;
+    	right:0;
+    	margin: 0 auto;
 	z-index: 9;
 	text-align: center;
-	top: 134px;
+	top: 20%;
 	
 	a {
 		text-decoration:none;
@@ -208,7 +207,7 @@
 		font-weight: 400;
 		font-size: 1.4rem;
 		width: 50%;
-		padding: 15px 0px;
+		padding: 3.2% 0;
 		background-color: rgba(0,0,0,0.5);
 		
 		@include breakpoint(small) {
