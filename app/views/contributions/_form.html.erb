@@ -5,8 +5,6 @@
   <% if @contribution.errors.any? %>
     <% @contribution.errors.full_messages.each do |message| %>
 
-        <%= message %>
-
         <% if message.include? 'Contribution url is invalid' %>
           <div class="error-triangle"></div>
           <li class="error-message url-error">Your URL is invalid</li>
