@@ -423,6 +423,35 @@
       font-size: 1.6rem;
       line-height: 1.6rem;
     }
+
+    .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 101%;
+    bottom: 11px;  
+}
+
+.vote-number {
+    position: relative;
+    bottom: 28px;
+    left: 108%;
+    color: $white;
+    font-size: 1rem;
+    background-color: #333;
+    text-align: center;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    border-radius: 5px;
+}
   }
 
 }
@@ -481,15 +510,36 @@ iframe {
   }
 }
 
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid #333;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 103%;
+    bottom: 11px;  
+}
+
 .vote-number {
-  position: relative;
-  bottom: 0px;
-  right:3px;
-  color:$blue;
+    position: relative;
+    bottom: 28px;
+    left: 112%;
+    color: $white;
+    font-size: 0.8rem;
+    background-color: #333;
+    text-align: center;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    border-radius: 4px;
 }
 
 .vote-wrapper a {
-  text-align: right;
   text-decoration: none;
 }
 
