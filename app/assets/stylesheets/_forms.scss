@@ -3,7 +3,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .form {
-
 	width: 80%;
 	background-color: rgba(0,0,0, 0.5);
 	position: absolute;
@@ -143,7 +142,8 @@
 }
 .checkbox-field {
 	padding: 0;
-	margin-top: 10px;
+	margin: 10px 0 30px 0
+	
 }
 
 .field input[type=checkbox] {
@@ -195,8 +195,8 @@
 	position: absolute;
 	width: 100%;
 	left:0;
-    right:0;
-    margin: 0 auto;
+    	right:0;
+    	margin: 0 auto;
 	z-index: 9;
 	text-align: center;
 	top: 130px;
@@ -208,7 +208,7 @@
 		font-weight: 400;
 		font-size: 1.4rem;
 		width: 50%;
-		padding: 15px 0px;
+		padding: 3.2% 0;
 		background-color: rgba(0,0,0,0.5);
 		
 		@include breakpoint(small) {
@@ -259,21 +259,59 @@
 .error-message {
 	display: inline-block;
 	position: absolute;
-	color: red;
-	font-size: .8rem;
+	color: $black;
+	font-size: 1rem;
 	text-align: center;
+
 }
 
-.url-error {
+.url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
+	background-color: $white;
+	left:38vw;
+	padding: 5px 10px ;
+	z-index: 5;
 	border-style: solid;
-	border-width: 2px;
-	border-color: red;
-	background-color: rgba(255,0,0,0.2);
-	height: 30px;
-	width: 150px;
-	top: 230px;
-	right: 200px;
-	padding: 5px;
+	border-width: 0;
+	border-radius: 2px;
 }
 
+.url-error, .url-error-duplicate {
+	top: 26.5vh;
+}
+
+.tag-error {
+	top: 65.9vh;
+}
+
+.tag-error-blank {
+	top: 43vh;
+}
+
+
+.error-triangle, .error-triangle2, .error-triangle3 {
+	width: 0; 
+	height: 0; 
+	z-index: 5;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-top: 11px solid $white;
+}
+	
+.error-triangle {
+	top: 30.8vh;
+	left: 40vw;
+	position: absolute;
+}
+
+.error-triangle2 {
+	top: 70.2vh;
+	left: 40vw;
+	position: absolute;
+}
+
+.error-triangle3 {
+	top: 47.3vh;
+	left: 40vw;
+	position: absolute;
+}
 

@@ -5,10 +5,20 @@
   <% if @contribution.errors.any? %>
     <% @contribution.errors.full_messages.each do |message| %>
 
-        <% if message.include? "url" %>
+        <%= message %>
+
+        <% if message.include? 'Contribution url is invalid' %>
+          <div class="error-triangle"></div>
           <li class="error-message url-error">Your URL is invalid</li>
-        <% elsif %>
+        <% elsif message.include? 'Contribution url has already been taken' %>
+          <div class="error-triangle"></div>
+          <li class="error-message url-error-duplicate">Your URL has already been submitted</li>
+        <% elsif message.include? 'category' %>
+          <div class="error-triangle2"></div>
           <li class="error-message tag-error">Your tag is invalid</li>
+        <% elsif message.include? "Category ids can't be blank" %>
+          <div class="error-triangle3"></div>
+          <li class="error-message tag-error-blank">Choose a tag or recommend your own!</li>
         <% end %>
 
     <% end %>
@@ -30,10 +40,8 @@
         <% end %>
       </div>
 
-      <div class="recommend-wrap"><h3 class="contribute-new-tag">Or, recommend your own tag!</h3></div>
-
       <div class="field">
-        <%= f.text_field :contribution_category, placeholder: 'Enter the tag here!', class: 'contribution-category-field input' %>
+        <%= f.text_field :contribution_category, placeholder: 'Or, recommend your own tag!', class: 'contribution-category-field input' %>
       </div>
 
       <div class="actions">
