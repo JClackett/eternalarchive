@@ -1,0 +1,26 @@
+<div class="hero-cover">
+                <div class="img-cover"></div>
+                <div class="homepage-hero-module">
+                  <div class="video-container">
+                      <video autoplay loop preload='true' class="fillWidth">
+                          <source src="assets/bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                      </video>
+                  </div>
+                </div>
+                  <div class="hero-title">
+                    <h1><%= @title %> </h1>
+                    <h3><%= @slogan %> </h3>
+                  </div>
+
+                  <div class="hero-buttons center">
+                        <%= link_to 'Latest Content' , posts_mostrecent_path , class: 'mostrecent-button' %>
+                        <%= link_to 'Most Liked' , posts_topvids_path , class: 'topvid-button' %>
+                  </div>
+
+                  <div class="start-watching center">Start watching now</div>
+                  <div class="scroll-to-content">
+                        <i class="fa fa-angle-double-down scroll-arrow"></i>
+                  </div>
+</div>
+
+

@@ -863,7 +863,6 @@ body {
 
 .hero-cover {
   width:100%;
-  
   height: 60vh;                // Need to decide on using vh/vw ?????
   margin:0;
   float:left;
@@ -873,7 +872,15 @@ body {
   @include breakpoint(medium) {
     height: 100vh;
   }
+}
 
+.hero-cover-other {
+  width:100%;
+  height: 100vh;                // Need to decide on using vh/vw ?????
+  margin:0;
+  float:left;
+  position:relative;
+  overflow:hidden;
 }
 
 .short-hero-cover {
