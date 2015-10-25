@@ -1,0 +1,53 @@
+<div class="show-main-container">
+
+	<div class="buttons group">
+
+				<div class="vote-wrapper button">
+					<%= render 'like', post: @post %>
+				</div>
+
+				<div class="share-wrapper button">
+					<%= render 'share', post: @post %>
+				</div>
+
+				<div class="bookmark-wrapper button">
+					<%= render 'bookmark', post: @post %>
+				</div>
+
+	</div>
+
+	<div class="post-container">
+
+		<% if @post.url.include?("youtube") || @post.url.include?("vimeo") %>
+
+			<div class="post-player" onclick="play(this)">
+				<div class="overlay"> 
+					<span class="post-information">
+						<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>
+						<p class="show-created-at"><%= time_ago_in_words(@post.created_at) %> ago</p>
+					</span>
+				</div>
+				<div class="link-container">
+					<%= embed(@post.url) %>
+				</div>
+			</div>
+
+		<%else%>
+
+			<a class="overlay" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
+				<span class="post-information">
+					<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>
+					<p class="show-created-at"><%= time_ago_in_words(@post.created_at) %> ago</p>
+				</span>
+			</a>
+			<div class="link-container">
+				<%= embed(@post.image_url) %>
+			</div>  
+
+		<%end%>
+		
+	</div>
+
+</div>
+
+
