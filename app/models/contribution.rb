@@ -3,11 +3,7 @@ class Contribution < ActiveRecord::Base
 	has_many :contributions_categories, dependent: :destroy
 	has_many :categories, through: :contributions_categories
 
-	validates_format_of :contribution_url, with: URI::regexp(%w(http https))
-
-	validates_presence_of :contribution_url 
-
-	validates :contribution_url, uniqueness: true
+	validates_format_of :contribution_url, with: URI::regexp(%w(http https)), :presence => true, uniqueness: true
 
 	validates :contribution_category, format: { with: /[a-zA-Z]/}
 

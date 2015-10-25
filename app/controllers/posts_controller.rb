@@ -51,6 +51,7 @@ class PostsController < ApplicationController
       else
         render :new 
       end
+
   end
 
   # PATCH/PUT /posts/1

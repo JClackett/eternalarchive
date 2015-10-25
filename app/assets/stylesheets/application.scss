@@ -118,21 +118,16 @@ body {
           margin:0;
           padding:0;
           
-            a {
+            img {
+              height: 30px;
+              padding: 18px 15px;
               z-index: 6;
-              position:relative;
-              font-size:2rem;
+              position: relative;
               margin: 0;
-              line-height:65px;
-              font-weight:500;
-              text-decoration:none;
-              color:$white;
-              padding:20px 15px 15px 10px
-            }
 
-            @include breakpoint(medium) {
-              a {
-                padding:20px 15px 15px 40px
+              @include breakpoint(small) {
+                height: 40px;
+                padding: 13px 15px;
               }
             }
       }
@@ -305,14 +300,24 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .login-section {
-  float: right;
-  margin-right: 5px;
+  margin-top: 10%;
   z-index:6;  
-  height: 65px;
   display: none;
 
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 36%;
+  }
+
   @include breakpoint(small) {
-    display: block;    
+    display: block;  
+    float: right;
+    margin-top: 0px;
+    margin-right: 5px; 
+      height: 65px;
+
   } 
 
     .user-login {
@@ -320,9 +325,13 @@ body {
       font-size: 1.2rem;
       line-height: 65px;
       margin: 0;
-      padding: 10px; 
+      padding: 0px; 
       color:$white;
       cursor:pointer;
+
+        @include breakpoint(small) {
+          padding: 10px; 
+        } 
     }
 
     .current-user {
@@ -338,53 +347,418 @@ body {
             border-radius:50%;
           }
       }
-
+    
     .user-popup {
-      display:none;
-      position:absolute;
-      z-index: 6;
-      top:65px;
-      right:50px;
-      background-color: rgba(0,0,0,0.6);
-      border-radius:0 0 5px 5px;
-      box-shadow: 0px 6px 60px -5px $black;
+
+      display: block;
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-top: -10px;
+
+      @include breakpoint(small) {
+        display:none;
+        position:absolute;
+        z-index: 6;
+        top:65px;
+        margin: 0;
+        right:50px;
+        background-color: rgba(0,0,0,0.6);
+        border-radius:0 0 5px 5px;
+        box-shadow: 0px 6px 60px -5px $black;
+      } 
       
       ul {
+        display: block;
         margin: 0;
-        padding: 5px;
-        // width: 175px;
+        padding: 0;
+        float: left;
         
         .popup-text {
           margin-bottom: 10px;
           border-bottom: 1px solid $grey;
+          float:none;
         }
      
         li {
           list-style:none;
-          margin: 10px;
+          margin-top: 35%;
+
+          @include breakpoint(small) {
+            margin: 10px;    
+          }
           
           .popup-username {
             font-weight: 500;
+            margin:0px;
+            margin-left: 25%;
+            line-height: 10%;
+
+            @include breakpoint(small) {
+              margin-top: 30px;
+              margin-bottom: 10px; 
+            }
           }
           
 
           p {
-            font-size: 0.8rem;
-            text-decoration:none;
-            width: 100%;
-            margin: 0;
-            color:$white;
+            text-decoration: none;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+
+            @include breakpoint(small) {
+              font-size: 0.8rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+            }
           }
           
           a {
             text-decoration:none;
-            padding: 5px;
             color:$white;
-            font-size: 1rem;
-            
-                &:hover {
-                      color:#ddd;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+            margin-top: 10%;
+
+            @include breakpoint(small) {
+              font-size: 1rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+
+              &:hover {
+                color:#ddd;
+              }
+            }
+                
+                &:hover a {
+                  font-weight:500;
                 }
+
+           }
+
+            .selected {
+                font-weight:500;
+           }
+        }
+     }
+  }
+
+    .user-popup-sidebar {
+      
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-top: -10px;
+        
+        @include breakpoint(small) {
+          margin: 0;
+        }
+
+        .popup-text {
+          margin-bottom: 10px;
+          border-bottom: 1px solid $grey;
+          float:none;
+        }
+     
+        li {
+          list-style:none;
+          margin-top: 35%;
+
+          @include breakpoint(small) {
+            margin: 10px;    
+          }
+          
+          .popup-username {
+            font-weight: 500;
+            margin:0px;
+            margin-left: 44%;
+            line-height: 10%;
+
+            @include breakpoint(small) {
+              margin-top: 30px;
+              margin-bottom: 10px;
+            }
+          }
+          
+
+          p {
+            text-decoration: none;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+
+            @include breakpoint(small) {
+              font-size: 0.8rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+            }
+          }
+          
+          a {
+            text-decoration:none;
+            color:$white;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+            margin-top: 10%;
+
+            @include breakpoint(small) {
+              font-size: 1rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+
+              &:hover {
+                color:#ddd;
+              }
+            }
+                
+                &:hover a {
+                  font-weight:500;
+                }
+
+           }
+
+            .selected {
+                font-weight:500;
+           }
+        }
+     }
+  }
+}
+
+.login-section-sidebar {
+  margin-top: 10%;
+  z-index:6;  
+  display: none;
+
+  img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 36%;
+  }
+
+  @include breakpoint(small) {
+    display: block;  
+    float: right;
+    margin-top: 0px;
+    margin-right: 5px; 
+      height: 65px;
+
+  } 
+
+    .user-login {
+      text-decoration:none;
+      font-size: 1.2rem;
+      line-height: 65px;
+      margin: 0;
+      padding: 0px; 
+      color:$white;
+      cursor:pointer;
+
+        @include breakpoint(small) {
+          padding: 10px; 
+        } 
+    }
+
+    .current-user {
+         margin-top: 12px;
+
+          img {
+            cursor:pointer;
+            display:block;
+            height: 40px;
+            width: 40px;
+            padding:0; 
+            margin: 0;
+            border-radius:50%;
+          }
+      }
+    
+    .user-popup {
+
+      display: block;
+      margin: 0;
+      padding: 0;
+      float: left;
+      margin-top: -10px;
+
+      @include breakpoint(small) {
+        display:none;
+        position:absolute;
+        z-index: 6;
+        top:65px;
+        margin: 0;
+        right:50px;
+        background-color: rgba(0,0,0,0.6);
+        border-radius:0 0 5px 5px;
+        box-shadow: 0px 6px 60px -5px $black;
+      } 
+      
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        float: left;
+        
+        .popup-text {
+          margin-bottom: 10px;
+          border-bottom: 1px solid $grey;
+          float:none;
+        }
+     
+        li {
+          list-style:none;
+          margin-top: 35%;
+
+          @include breakpoint(small) {
+            margin: 10px;    
+          }
+          
+          .popup-username {
+            font-weight: 500;
+            margin:0px;
+            margin-left: 25%;
+            line-height: 10%;
+
+            @include breakpoint(small) {
+              margin-top: 30px;
+              margin-bottom: 10px; 
+            }
+          }
+          
+
+          p {
+            text-decoration: none;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+
+            @include breakpoint(small) {
+              font-size: 0.8rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+            }
+          }
+          
+          a {
+            text-decoration:none;
+            color:$white;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+            margin-top: 10%;
+
+            @include breakpoint(small) {
+              font-size: 1rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+
+              &:hover {
+                color:#ddd;
+              }
+            }
+                
+                &:hover a {
+                  font-weight:500;
+                }
+
+           }
+
+            .selected {
+                font-weight:500;
+           }
+        }
+     }
+  }
+
+    .user-popup-sidebar {
+      
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        float: left;
+        margin-top: -10px;
+        
+        @include breakpoint(small) {
+          margin: 0;
+        }
+
+        .popup-text {
+          margin-bottom: 10px;
+          border-bottom: 1px solid $grey;
+          float:none;
+        }
+     
+        li {
+          list-style:none;
+          margin-top: 35%;
+
+          @include breakpoint(small) {
+            margin: 10px;    
+          }
+          
+          .popup-username {
+            font-weight: 500;
+            margin:0px;
+            margin-left: 44%;
+            line-height: 10%;
+
+            @include breakpoint(small) {
+              margin-top: 30px;
+              margin-bottom: 10px;
+            }
+          }
+          
+
+          p {
+            text-decoration: none;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+
+            @include breakpoint(small) {
+              font-size: 0.8rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+            }
+          }
+          
+          a {
+            text-decoration:none;
+            color:$white;
+            padding: 0;
+            color: #FFF;
+            font-size: 1.2rem;
+            margin-top: 10%;
+
+            @include breakpoint(small) {
+              font-size: 1rem;
+              width: 100%;
+              margin: 0;
+              padding: 5px;
+
+              &:hover {
+                color:#ddd;
+              }
+            }
+                
+                &:hover a {
+                  font-weight:500;
+                }
+
            }
 
             .selected {
@@ -398,21 +772,24 @@ body {
 
 
 
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Contribute  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .contribute-section {
-  height:65px;
   float: left;
   margin-right: 5px;
-  line-height: 65px;
   text-align: center;
   display: none;
+  margin-top: 25%;
+  margin-bottom: 5%;
 
   @include breakpoint(small) {
+    height:65px;
+    line-height: 65px;
     display: block;
+    margin-top: 0;
+    margin-bottom: 0;
   } 
   
       a {
@@ -420,12 +797,20 @@ body {
           color:$white;
           font-size: 1.2rem;
           font-weight: 300;
-          padding: 10px;
+          padding: 0px;
           cursor:pointer;
+
+          @include breakpoint(small) {
+            padding: 10px;
+
+            &:hover a {
+              color:$lighterpurple;
+            }
+          } 
         }
 
         &:hover a {
-          color:$lighterpurple;
+          font-weight:500;
         }
         
     // .contribute-button {
@@ -477,6 +862,7 @@ body {
 
 .hero-cover {
   width:100%;
+  
   height: 60vh;                // Need to decide on using vh/vw ?????
   margin:0;
   float:left;
@@ -554,7 +940,6 @@ body {
     bottom: 0%;
     left: 0%;
     height: 100%;
-    width: 100%;
     overflow: hidden;
     background: #000;
 }
@@ -572,7 +957,6 @@ body {
 }
 .video-container video.fillWidth {
     height: 100%;
-    width: 100%;
 }
 
 
@@ -739,7 +1123,7 @@ body {
 .mostrecent-button {
   display:inline-block;
   float: left;
-  margin-right:40px
+  margin-right:20px
 }
 
 
@@ -779,13 +1163,25 @@ body {
 }
 
 .sidebar-buttons {
-  line-height:20px;
+  line-height: 10%;
+  
+  @include breakpoint(small) {
+    line-height:20px;
+  }
+
   ul {
     margin:0;
+    margin-left:-8%; 
+
+    
+    @include breakpoint(small) {
+      float: none;
+    }
+
     
     .login-section {
       display: block;
-      
+    
       
       @include breakpoint(small) {
         display: none;
@@ -805,19 +1201,28 @@ body {
     
 
     li {
-      margin-top: 20px;
+      margin-top: 30%;
       list-style:none;
       a {
         text-align:center;
-        padding:10px;
+        padding:0px;
         font-size:1.1rem;
         z-index: 13;
+
+        @include breakpoint(small) {
+        padding: 10px;
+        } 
       }
     }
   }
 }
 
+.admin {
+  float: left;
 
+  @include breakpoint(small) {
+  } 
+}
 .new-post {
   text-decoration:none;
   color:$white;

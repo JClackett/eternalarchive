@@ -2,11 +2,11 @@
 
         <div class="sidebar-buttons">
             <ul>
-              <%= render 'login' %>         
+              <%= render 'login_sidebar' %>         
         
               <%= render 'submit' %>  
             </ul>
-            <ul>
+            <ul class="admin">
                  <% if current_user.try(:admin?) %>
                       <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
                       <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
