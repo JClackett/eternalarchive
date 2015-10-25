@@ -390,12 +390,13 @@ body {
           
           .popup-username {
             font-weight: 500;
-            margin:0px;
-            margin-left: 25%;
+            margin:0;
+            left: 0;
             line-height: 10%;
+            height:10%;
 
             @include breakpoint(small) {
-              margin-top: 30px;
+              margin-top: 10px;
               margin-bottom: 10px; 
             }
           }
@@ -477,8 +478,8 @@ body {
           .popup-username {
             font-weight: 500;
             margin:0px;
-            margin-left: 44%;
             line-height: 10%;
+            height:10%;
 
             @include breakpoint(small) {
               margin-top: 30px;
