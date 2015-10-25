@@ -493,9 +493,20 @@ iframe {
   border-radius: 14%;
   left:1.5%;
 
+  
+  @include breakpoint(medium) {
+  
   &:hover {
     background-color:$purple;
   }
+
+
+  @include ipad(landscape) {
+    &:hover {
+      background-color: rgba(50,50,50,0.8); 
+    }
+  }
+}
 }
 
 .vote-wrapper {
