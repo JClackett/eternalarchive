@@ -1,0 +1,45 @@
+//-----------------------------------------------------------------------------
+// Flash Messages
+//-----------------------------------------------------------------------------
+
+.flash {
+  padding: 15px;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.flash-cont {
+    background-color: rgba(0,170,163,0.5);
+    position: absolute;
+    top: 65px;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.flash-notice {
+  display:none;
+}
+
+
+.flash-alert {
+    background-color: rgba(0,170,163,0.5);
+    position: absolute;
+    top: 65px;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    text-align: center;
+}

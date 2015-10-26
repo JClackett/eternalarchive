@@ -28,6 +28,11 @@
       <%= render 'cover' %>
       <% else %>
           <%= render 'header' %>
+          <% if flash.any? %>
+              <div class="content-wrap">
+                  <%= render 'shared/flash_messages' %>
+              </div>
+        <% end %>
           <% if params[:name].present? || current_page?("/top_videos") || current_page?("/latest") || current_page?('/profile') %>
                 <%= render 'short_cover' %>
           <% elsif current_page?("/") || current_page?("/posts") %>
