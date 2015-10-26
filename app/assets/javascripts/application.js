@@ -16,7 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
-
+window.addEventListener('orientationchange', function ()
+{
+    if (window.innerHeight > window.innerWidth)
+    {
+        document.getElementsByTagName('body').style.transform = "rotate(90deg)";
+    }
+});
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -   Pagination JS - - - - - - - - - - - - - - - - - - - - - - - - - -  */
