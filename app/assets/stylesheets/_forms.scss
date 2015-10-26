@@ -252,7 +252,7 @@
 
 
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Errors - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Errors - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
@@ -267,24 +267,61 @@
 
 .url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
 	background-color: $white;
-	left:38%;
+	left:20%;
 	padding: 5px 10px ;
 	z-index: 5;
 	border-style: solid;
 	border-width: 0;
 	border-radius: 2px;
+	
+	@include breakpoint(small) {
+		left:28%;
+	}
+
+	@include breakpoint(medium) {
+		left:36%;
+	}
 }
 
 .url-error, .url-error-duplicate {
-	top: 176px;
+	top: 210px;
+	
+	@include breakpoint(small) {
+		top: 176px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 176px;
+	}
 }
 
 .tag-error {
-	top: 443px;
+	top: 470px;
+	
+	@include breakpoint(small) {
+		top: 443px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 443px;
+	}
+	
+
 }
 
 .tag-error-blank {
-	top: 288px;
+	top: 318px;
+	
+	@include breakpoint(small) {
+		top: 288px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 288px;
+	}
 }
 
 
@@ -296,18 +333,53 @@
 	border-right: 11px solid transparent;
 	border-top: 11px solid $white;
 	position: absolute;
-	left: 40%;
+	left: 25%;
+	
+	@include breakpoint(small) {
+		left:35%;
+	}
+
+	@include breakpoint(medium) {
+		left:41%;
+	}
 }
 	
 .error-triangle {
-	top: 205px;
+	top: 235px;
+	
+	@include breakpoint(small) {
+		top: 205px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 205px;
+	}
 }
 
 .error-triangle2 {
-	top: 472px;
+	top: 498px;
+	
+	
+	@include breakpoint(small) {
+		top: 472px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 472px;
+	}
 }
 
 .error-triangle3 {
-	top: 317px
+	top: 340px;
+	@include breakpoint(small) {
+		top: 317px;
+		
+	}
+
+	@include breakpoint(medium) {
+		top: 317px;
+	}
 }
 
