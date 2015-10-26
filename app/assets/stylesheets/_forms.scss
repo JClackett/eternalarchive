@@ -199,7 +199,7 @@
     	margin: 0 auto;
 	z-index: 9;
 	text-align: center;
-	top: 130px;
+	top: 132px;
 	
 	a {
 		text-decoration:none;
@@ -208,7 +208,7 @@
 		font-weight: 400;
 		font-size: 1.4rem;
 		width: 50%;
-		padding: 3.2% 0;
+		padding: 14px 0;
 		background-color: rgba(0,0,0,0.5);
 		
 		@include breakpoint(small) {
@@ -259,7 +259,7 @@
 .error-message {
 	display: inline-block;
 	position: absolute;
-	color: $black;
+	color: #666;
 	font-size: 1rem;
 	text-align: center;
 
