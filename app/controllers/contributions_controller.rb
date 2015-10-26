@@ -29,6 +29,7 @@ end
     @contribution.user_id = current_user.id
 
       if @contribution.save
+        flash[:cont] = "Thank you for contributing, we are checking it out now!"
         redirect_to root_path
       else
           
