@@ -38,8 +38,6 @@
 
   ul {
     margin:0;
-    margin-left:-8%; 
-
     
     @include breakpoint(small) {
       float: none;
@@ -83,6 +81,7 @@
 
 .admin {
   float: left;
+  line-height: 5px;
 }
 .new-post {
   text-decoration:none;

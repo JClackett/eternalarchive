@@ -13,61 +13,21 @@
  * require_tree .
  *= require_self 
  */
-
+@import 'general/constants';
+@import 'general/general';
 @import 'general/media-queries';
 @import 'general/mixins';
-@import 'general/constants';
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - -  General  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-body {
-  background-color:$white;
-  color:$white;
-  margin:0;
-  padding: 0;
-  font-family:'Roboto';
-  font-weight:300;
-}
-
-::-webkit-scrollbar {
-  display:none
-}
-
-.wrapper {
-  margin: 0;
-  width:100%;
-}
-
-.center {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.dimmer {
-  background-color:$black;
-}
-
-.group:after {
-  display: table;
-  content: "";
-  clear: both;
-}
+@import 'contributions';
+@import 'shared/forms';
+@import 'shared/flash_messages';
+@import 'tags';
+@import 'posts';
+@import 'hero';
+@import 'cover';
+@import 'sidebar';
+@import 'login';
+@import 'profile';
+@import 'static_pages';
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -78,7 +38,7 @@ body {
   width:100%;
   height:65px;
   position:fixed;
-  background-color:$purple;
+  background-color:rgba(129,113,182,0.5);
   box-shadow:0 0 90px 0 rgba(0,0,0,0.4);
   z-index:10;
   opacity: 0.98;
@@ -199,14 +159,16 @@ body {
       font-weight: 300;
       padding: 0px;
       cursor:pointer;
+      
+      &:hover  {
+          color:$lighterpurple;
+        }
 
       @include breakpoint(small) {
         padding: 10px;
         font-size: 1rem;
 
-        &:hover  {
-          color:$lighterpurple;
-        }
+        
       } 
     }
 }  
@@ -242,17 +204,3 @@ body {
 .extra-button:hover , .current-user:hover , .user-logout:hover , .user-login:hover {
   color:$lighterpurple;
 }
-
-
-@import 'contributions';
-@import 'shared/forms';
-@import 'shared/flash_messages';
-@import 'tags';
-@import 'posts';
-@import 'hero';
-@import 'cover';
-@import 'sidebar';
-@import 'login';
-@import 'profile';
-@import 'static_pages';
-
