@@ -96,7 +96,6 @@ $(document).on('ready page:load', function () {
         } else {
             showSidebar();
         }
-
         return false;
     });
 
@@ -196,15 +195,15 @@ $(document).on('ready page:load', function () {
 
 $(document).on('page:load ready', function () {
     $('body').on('click','.share-wrapper',function(e){
-     e.preventDefault();
      $(this).find(".share").toggle();
+     e.stopPropagation();
     });
 });
 
 // $(document).on('page:load ready', function () {
 //     $(".share-wrapper").click(function(e) {
 //         $(this).find(".share").toggle();
-//         e.stopPropagation();
+//         
 //     });
 
 //     $(".share-wrapper").click(function(e) {
