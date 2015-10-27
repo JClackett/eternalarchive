@@ -23,14 +23,31 @@
 $(document).on('ready page:load', function () {
   if ($('.pagination').length) {
     $(window).scroll(function() {
+        var html = [
+            '<div class="main-container panel-wrapper">',
+            '   <div class="post-container panel-container">',
+            '           <a class="overlay" href="/submit"> ',
+            '               <div class="fader"></div>',
+            '               <span class="panel-information">',
+            '                   <h5 class="panel-description">Seen something worth sharing?</h5>',
+            '                   <h4 class="panel-description-two">Contribute it to the Archive!</h4>',
+            '               </span>',
+            '           </a>',
+            '           <div class="link-container">',
+            '           </div>  ',
+            '   </div>',
+            '</div>'
+        ].join('');
       var url = $('.pagination .next_page').attr('href');
       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 100) {
-        $('.pagination').text("");
-        return $.getScript(url);
-      }
+        $('.pagination').text("");  
+
+        return $.getScript(url) && $('.main-container:last').after(html);
+
+      };
     });
     return $(window).scroll();
-  }
+  };
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -79,7 +96,6 @@ $(document).on('ready page:load', function () {
         } else {
             showSidebar();
         }
-
         return false;
     });
 
@@ -122,11 +138,11 @@ $(document).on('ready page:load', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 $(document).on('ready page:load', function () {
-  $(".scroll-to-content").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".main-container").offset().top},
-        1000,'easeOutQuart')
-    });
+      $(".scroll-to-content").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".main-container").offset().top},
+            1000,'easeOutQuart')
+        });
 });
 
 // $(document).on('ready page:load', function () {
@@ -166,45 +182,62 @@ $(document).on('ready page:load', function () {
         }
     });
 });
- 
 
-$(document).on('ready page:load', function () {
-    $(".share-wrapper").click(function(e) {
-        $(this).find(".share").toggle();
-        e.stopPropagation();
-    });
+/* Toggle category item */
+// $('#category-wrapper').load(link.attr('href'),function(responseText, textStatus, XMLHttpRequest){
+//  $('#category-nav a').removeClass('active');
+//  link.addClass('active');
+//     $('.share-network').on('click','.toggle-item',function(e){
+//          e.preventDefault();
+//         $(this).parent().next('.share').toggle();
+//     });
+// });
 
-    $(".share-wrapper").click(function(e) {
-        $(this).toggleClass( "share-selected" )
-        e.stopPropagation();
-    });
-    
-    $(document).click(function(e) {
-        if (!$(e.target).is('.share, .share*')) {
-            $(".share").hide();
-        }
+$(document).on('page:load ready', function () {
+    $('body').on('click','.share-wrapper',function(e){
+     $(this).find(".share").toggle();
+     e.stopPropagation();
     });
 });
+
+// $(document).on('page:load ready', function () {
+//     $(".share-wrapper").click(function(e) {
+//         $(this).find(".share").toggle();
+//         
+//     });
+
+//     $(".share-wrapper").click(function(e) {
+//         $(this).toggleClass( "share-selected" )
+//         e.stopPropagation();
+//     });
+    
+//     $(document).click(function(e) {
+//         if (!$(e.target).is('.share, .share*')) {
+//             $(".share").hide();
+//         }
+//     });
+// });
 
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 // ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
+
 // $(document).on('ready page:load', function () {
 
-//             $('.main-container:nth-child(9n)').after('
+    //         $('.main-container:nth-child(9n)').after('
             
-//                     <div class="main-container panel-wrapper">
-//     <div class="post-container panel-container">
-//             <a class="overlay" href="/submit"> 
-//                 <div class="fader"></div>
-//                 <span class="panel-information">
-//                     <h5 class="panel-description">Seen something worth sharing?</h5>
-//                     <h4 class="panel-description-two">Contribute it to the Archive!</h4>
-//                 </span>
-//             </a>
-//             <div class="link-container">
-//             </div>  
-//     </div>
+    //                 <div class="main-container panel-wrapper">
+    // <div class="post-container panel-container">
+    //         <a class="overlay" href="/submit"> 
+    //             <div class="fader"></div>
+    //             <span class="panel-information">
+    //                 <h5 class="panel-description">Seen something worth sharing?</h5>
+    //                 <h4 class="panel-description-two">Contribute it to the Archive!</h4>
+    //             </span>
+    //         </a>
+    //         <div class="link-container">
+    //         </div>  
+    // </div>
 
 // </div>
 

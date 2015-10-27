@@ -93,7 +93,6 @@
 	cursor: pointer;
 	color:$white;
 	border-style: none;
-	-webkit-appearance: none;
 }
 
 .submit:hover {
@@ -391,9 +390,9 @@
 	}
 }
 
-// triangle for login - invalid surname/password error message box
+// triangle for login - invalid sername/password error message box
 .error-triangle4 {
-	top: 72px;
+	top: 39px;
 
 	@include breakpoint(small) {
 		top: 39px;
