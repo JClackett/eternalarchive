@@ -133,7 +133,7 @@
 
 .recommend-wrap{
 	text-align: center;
-	
+
 }
 .contribute-new-tag {
 	text-decoration:none;
@@ -143,7 +143,7 @@
 .checkbox-field {
 	padding: 0;
 	margin: 10px 0 30px 0
-	
+
 }
 
 .field input[type=checkbox] {
@@ -166,7 +166,7 @@
 	cursor: pointer;
 	color:$white;
 	background-color: $teal;
-	
+
 }
 
 .field .checkbox_label:hover {
@@ -189,6 +189,10 @@
 .password-field, .email-field {
 }
 
+.new_user {
+	margin-top: 20px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Signup Tab - - - - - - - - - - - - - - -  - - - - - - - - - -  */
 
 .signup-form-title {
@@ -200,7 +204,7 @@
 	z-index: 9;
 	text-align: center;
 	top: 132px;
-	
+
 	a {
 		text-decoration:none;
 		color:$white;
@@ -210,7 +214,7 @@
 		width: 50%;
 		padding: 14px 0;
 		background-color: rgba(0,0,0,0.5);
-		
+
 		@include breakpoint(small) {
 
 		width: 220px;
@@ -224,10 +228,10 @@
 	}
 	.login-b {
 		right: 0;
-	}	
+	}
 
 	.selected {
-		background-color:$teal;	
+		background-color:$teal;
 	}
 
 	@include breakpoint(small) {
@@ -273,7 +277,7 @@
 	border-style: solid;
 	border-width: 0;
 	border-radius: 2px;
-	
+
 	@include breakpoint(small) {
 		left:28%;
 	}
@@ -285,10 +289,10 @@
 
 .url-error, .url-error-duplicate {
 	top: 210px;
-	
+
 	@include breakpoint(small) {
 		top: 176px;
-		
+
 	}
 
 	@include breakpoint(medium) {
@@ -298,25 +302,25 @@
 
 .tag-error {
 	top: 470px;
-	
+
 	@include breakpoint(small) {
 		top: 443px;
-		
+
 	}
 
 	@include breakpoint(medium) {
 		top: 443px;
 	}
-	
+
 
 }
 
 .tag-error-blank {
 	top: 318px;
-	
+
 	@include breakpoint(small) {
 		top: 288px;
-		
+
 	}
 
 	@include breakpoint(medium) {
@@ -325,7 +329,7 @@
 }
 
 
-.error-triangle, .error-triangle2, .error-triangle3 {
+.error-triangle, .error-triangle2, .error-triangle3, .error-triangle4 {
 	width: 0;
 	height: 0;
 	z-index: 5;
@@ -334,7 +338,7 @@
 	border-top: 11px solid $white;
 	position: absolute;
 	left: 25%;
-	
+
 	@include breakpoint(small) {
 		left:35%;
 	}
@@ -343,13 +347,14 @@
 		left:41%;
 	}
 }
-	
+
+// triangle for contributions - URL error message boxes
 .error-triangle {
 	top: 235px;
-	
+
 	@include breakpoint(small) {
 		top: 205px;
-		
+
 	}
 
 	@include breakpoint(medium) {
@@ -357,13 +362,14 @@
 	}
 }
 
+// triangle for contributions - invalid tag error message box
 .error-triangle2 {
 	top: 498px;
-	
-	
+
+
 	@include breakpoint(small) {
 		top: 472px;
-		
+
 	}
 
 	@include breakpoint(medium) {
@@ -371,15 +377,30 @@
 	}
 }
 
+// triangle for contributions - missing tag error message box
 .error-triangle3 {
 	top: 340px;
 	@include breakpoint(small) {
 		top: 317px;
-		
+
 	}
 
 	@include breakpoint(medium) {
 		top: 317px;
+	}
+}
+
+// triangle for login - invalid sername/password error message box
+.error-triangle4 {
+	top: 39px;
+
+	@include breakpoint(small) {
+		top: 39px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 39px;
 	}
 }
 
