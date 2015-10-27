@@ -1,0 +1,105 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  Tag Section - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+
+.tag-container {
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  font-size: 2.5rem;
+  z-index: -1;
+  color:$white;
+}
+
+.tag-wrap {
+  cursor:pointer;
+}
+
+.tag-wrap:hover{
+  color:$lighterpurple;
+}
+
+.tags-button {
+  padding:15px;
+  float: left;
+}
+
+.tag-title {
+  font-size: 1.4rem;
+  float: left;
+  padding-left:10px;
+  font-weight:300;
+  display: none;
+
+  @include breakpoint(small) {
+    display: block;
+  } 
+}
+
+
+.category-tags {
+  display: block;
+  position: absolute;
+  top:65px;
+  left:0;
+  right: 0;
+  float: left;
+  text-align: center;
+  z-index: 5;
+  background-color: rgba(0,0,0,0.6);
+  border-radius:0 0 5px 5px;
+  box-shadow: 0px 6px 60px -5px rgba(0,0,0,0.4);
+  
+  @include breakpoint(small) {
+    left: 20%;
+    right: 20%;    
+  } 
+
+  @include breakpoint(medium-large) {
+    left: 30%;
+    right: 30%;    
+  } 
+
+    h3 {
+      font-size: 1rem;
+      margin: 10px 0 0 0;
+      padding: 0;
+      font-weight: 300;
+      color:$white;
+    }
+  
+  
+    ul {
+      margin: 0 0 10px 0 ;
+      padding: 0 2% 2% 2%;
+      width: 96%;               // Need to decide on using vh/vw ?????
+      
+      @include breakpoint(small) {
+
+      } 
+      li {
+        list-style:none;
+        display:inline-block;
+        margin: 5px;
+        
+         .selected {
+          color:$teal;
+          background-color:$white;
+        }
+        a {
+          font-size: 1.2rem;
+          padding: 10px;
+          border-radius: 3px; 
+          text-decoration:none;
+          color:$white;
+          background-color:$teal;
+        }
+      }
+    }
+}
+
+.category-tags a:hover {
+      background-color:$lightteal;
+}

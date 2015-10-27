@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
 
-   def help
+  def help
     @title="Help"
   end
 
