@@ -1,11 +1,13 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
-
 
   # GET /categories
   def index
-    @categories = Category.titleize.all
+    if current_user.try(:admin?)
+      @categories = Category.all
+    else
+      redirect_to root_path 
+    end
   end
 
 
@@ -14,7 +16,7 @@ class CategoriesController < ApplicationController
     if current_user.try(:admin?)
       @category = Category.new
     else
-      redirect_to posts_path
+      redirect_to root_path 
     end
   end
 
@@ -27,19 +29,19 @@ class CategoriesController < ApplicationController
     if current_user.try(:admin?)
     @category = Category.new(category_params)
       if @category.save
-       redirect_to posts_path
+       redirect_to root_path 
       else
          render :new 
       end
     else
-      redirect_to posts_path
+      redirect_to root_path 
     end
   end
 
   # PATCH/PUT /categories/1
   def update
       if @category.update(category_params)
-        redirect_to posts_path
+        redirect_to root_path 
       else
         render :edit 
     end
@@ -49,7 +51,7 @@ class CategoriesController < ApplicationController
   # DELETE /categories/1.json
   def destroy
     @category.destroy
-       redirect_to posts_path
+       redirect_to root_path 
   end
 
   private

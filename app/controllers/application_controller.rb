@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   include CanCan::ControllerAdditions
+  before_action :authenticate_user!
 
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
@@ -22,6 +23,10 @@ class ApplicationController < ActionController::Base
 
   def copyright
     @title="Copyright"
+  end
+
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url, :alert => exception.message
   end
 
    protected
