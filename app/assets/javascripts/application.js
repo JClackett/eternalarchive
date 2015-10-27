@@ -23,14 +23,31 @@
 $(document).on('ready page:load', function () {
   if ($('.pagination').length) {
     $(window).scroll(function() {
+        var html = [
+            '<div class="main-container panel-wrapper">',
+            '   <div class="post-container panel-container">',
+            '           <a class="overlay" href="/submit"> ',
+            '               <div class="fader"></div>',
+            '               <span class="panel-information">',
+            '                   <h5 class="panel-description">Seen something worth sharing?</h5>',
+            '                   <h4 class="panel-description-two">Contribute it to the Archive!</h4>',
+            '               </span>',
+            '           </a>',
+            '           <div class="link-container">',
+            '           </div>  ',
+            '   </div>',
+            '</div>'
+        ].join('');
       var url = $('.pagination .next_page').attr('href');
       if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 100) {
-        $('.pagination').text("");
-        return $.getScript(url);
-      }
+        $('.pagination').text("");  
+
+        return $.getScript(url) && $('.main-container:last').after(html);
+
+      };
     });
     return $(window).scroll();
-  }
+  };
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -205,22 +222,23 @@ $(document).on('page:load ready', function () {
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 // ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
+
 // $(document).on('ready page:load', function () {
 
-//             $('.main-container:nth-child(9n)').after('
+    //         $('.main-container:nth-child(9n)').after('
             
-//                     <div class="main-container panel-wrapper">
-//     <div class="post-container panel-container">
-//             <a class="overlay" href="/submit"> 
-//                 <div class="fader"></div>
-//                 <span class="panel-information">
-//                     <h5 class="panel-description">Seen something worth sharing?</h5>
-//                     <h4 class="panel-description-two">Contribute it to the Archive!</h4>
-//                 </span>
-//             </a>
-//             <div class="link-container">
-//             </div>  
-//     </div>
+    //                 <div class="main-container panel-wrapper">
+    // <div class="post-container panel-container">
+    //         <a class="overlay" href="/submit"> 
+    //             <div class="fader"></div>
+    //             <span class="panel-information">
+    //                 <h5 class="panel-description">Seen something worth sharing?</h5>
+    //                 <h4 class="panel-description-two">Contribute it to the Archive!</h4>
+    //             </span>
+    //         </a>
+    //         <div class="link-container">
+    //         </div>  
+    // </div>
 
 // </div>
 
