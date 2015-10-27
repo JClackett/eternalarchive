@@ -29,6 +29,8 @@
 
 .sidebar-buttons {
   line-height: 10%;
+  font-size:1rem;
+  
   
   @include breakpoint(small) {
     line-height:20px;
@@ -63,15 +65,12 @@
 
     }
 
-    
-
     li {
       margin-top: 30%;
       list-style:none;
       a {
         text-align:center;
         padding:0px;
-        font-size:1.1rem;
         z-index: 13;
 
         @include breakpoint(small) {
@@ -84,9 +83,6 @@
 
 .admin {
   float: left;
-
-  @include breakpoint(small) {
-  } 
 }
 .new-post {
   text-decoration:none;
@@ -98,7 +94,11 @@
   bottom:100px
 }
 
-.static-links .selected, .sidebar-buttons ul li a:hover {
+.static-links, .sidebar-buttons ul li a:hover {
+          color:$lighterpurple;
+}
+
+.selected {
   font-weight:500;
 }
 

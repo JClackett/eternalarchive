@@ -1,4 +1,4 @@
-<div class="login-section" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+<div class="login-section">
   <% if user_signed_in? %>
              <div class="current-user" >
                 <%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.username) %>
