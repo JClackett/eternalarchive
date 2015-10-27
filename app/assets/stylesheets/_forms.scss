@@ -1,0 +1,406 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.form {
+	width: 80%;
+	background-color: rgba(0,0,0, 0.5);
+	position: absolute;
+	top:186px;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10%;
+	-webkit-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 180px -34px rgba(0,0,0,0.75);
+
+		h3 {
+			text-align: center;
+			font-weight: 300;
+			font-size: 1rem;
+		}
+
+	@include breakpoint(small) {
+
+		width: 400px;
+		padding: 20px;
+
+	}
+
+}
+
+.form-title {
+	position: absolute;
+	width: 80%;
+	padding-bottom: 20px;
+	padding-top:20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	left:0;
+   	right:0;
+   	margin-left:auto;
+   	margin-right:auto;
+	z-index: 9;
+	text-align: center;
+	top: 9%;
+
+	h1 {
+		font-weight: 300;
+		font-size: 2rem;
+	}
+
+	@include breakpoint(small) {
+
+		width: 500px;
+		padding: 20px;
+
+		h1{
+			font-size:2.5rem;
+		}
+	}
+}
+
+.field {
+	text-align: center;
+	padding: 10px;
+}
+
+.field ::-webkit-input-placeholder {
+	color:$grey;
+}
+
+.input {
+	width: 90%;
+	height: 30px;
+	padding: 8px;
+	border-style: none;
+	color:$purple;
+	font-size: 1rem;
+	font-weight:500;
+	background-color: $lightgrey;
+}
+
+.submit {
+	width: 50%;
+	height: 50px;
+	display:block;
+	font-weight: 200;
+	background-color: $purple;
+	margin: 5% auto;
+	font-size: 1.3rem;
+	cursor: pointer;
+	color:$white;
+	border-style: none;
+}
+
+.submit:hover {
+	background-color: $lightpurple;
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Post - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.post-submit {
+}
+
+.post-url-field, .post-article-url-field, .post-description-field {
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - Category - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.category-submit {
+}
+
+.category-name-field {
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - Contribution - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.contribution-submit {
+}
+
+.contribution-url-field, .contribution-category-field {
+}
+
+.recommend-wrap{
+	text-align: center;
+
+}
+.contribute-new-tag {
+	text-decoration:none;
+	width: 230px;
+	margin: 10px auto;
+}
+.checkbox-field {
+	padding: 0;
+	margin: 10px 0 30px 0
+
+}
+
+.field input[type=checkbox] {
+	display:none;
+	margin: 0;
+	padding: 0;
+}
+
+.field .checkbox_label {
+	display: inline-block;
+	height: 20px;
+	border-radius:3px;
+	line-height: 20px;
+	padding: 5px 10px;
+	margin: 5px;
+	border-style: none;
+	color:$white;
+	font-size: 0.8rem;
+	font-weight:200;
+	cursor: pointer;
+	color:$white;
+	background-color: $teal;
+
+}
+
+.field .checkbox_label:hover {
+	background-color: $lightteal;
+}
+
+.check_box:checked + .checkbox_label {
+  	color:$purple;
+	background-color: $white;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.signin-submit {
+}
+
+.password-field, .email-field {
+}
+
+.new_user {
+	margin-top: 20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Signup Tab - - - - - - - - - - - - - - -  - - - - - - - - - -  */
+
+.signup-form-title {
+	position: absolute;
+	width: 100%;
+	left:0;
+    	right:0;
+    	margin: 0 auto;
+	z-index: 9;
+	text-align: center;
+	top: 132px;
+
+	a {
+		text-decoration:none;
+		color:$white;
+		position: absolute;
+		font-weight: 400;
+		font-size: 1.4rem;
+		width: 50%;
+		padding: 14px 0;
+		background-color: rgba(0,0,0,0.5);
+
+		@include breakpoint(small) {
+
+		width: 220px;
+
+	}
+
+	}
+
+	.login-a {
+		left: 0;
+	}
+	.login-b {
+		right: 0;
+	}
+
+	.selected {
+		background-color:$teal;
+	}
+
+	@include breakpoint(small) {
+
+		width: 440px;
+
+	}
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign Up - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.signup-submit {
+}
+
+.password-field, .email-field , .username-field{
+}
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Errors - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.error-message {
+	display: inline-block;
+	position: absolute;
+	color: #666;
+	font-size: 1rem;
+	text-align: center;
+
+}
+
+.url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
+	background-color: $white;
+	left:20%;
+	padding: 5px 10px ;
+	z-index: 5;
+	border-style: solid;
+	border-width: 0;
+	border-radius: 2px;
+
+	@include breakpoint(small) {
+		left:28%;
+	}
+
+	@include breakpoint(medium) {
+		left:36%;
+	}
+}
+
+.url-error, .url-error-duplicate {
+	top: 210px;
+
+	@include breakpoint(small) {
+		top: 176px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 176px;
+	}
+}
+
+.tag-error {
+	top: 470px;
+
+	@include breakpoint(small) {
+		top: 443px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 443px;
+	}
+
+
+}
+
+.tag-error-blank {
+	top: 318px;
+
+	@include breakpoint(small) {
+		top: 288px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 288px;
+	}
+}
+
+// triangles for for error message boxes
+.error-triangle, .error-triangle2, .error-triangle3, .error-triangle4 {
+	width: 0;
+	height: 0;
+	z-index: 5;
+	border-left: 11px solid transparent;
+	border-right: 11px solid transparent;
+	border-top: 11px solid $white;
+	position: absolute;
+	left: 25%;
+
+	@include breakpoint(small) {
+		left:35%;
+	}
+
+	@include breakpoint(medium) {
+		left:41%;
+	}
+}
+
+// triangles for contributions - URL error message boxes
+.error-triangle {
+	top: 235px;
+
+	@include breakpoint(small) {
+		top: 205px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 205px;
+	}
+}
+
+// triangle for contributions - invalid tag error message box
+.error-triangle2 {
+	top: 498px;
+
+
+	@include breakpoint(small) {
+		top: 472px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 472px;
+	}
+}
+
+// triangle for contributions - missing tag error message box
+.error-triangle3 {
+	top: 340px;
+	@include breakpoint(small) {
+		top: 317px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 317px;
+	}
+}
+
+// triangle for login - invalid sername/password error message box
+.error-triangle4 {
+	top: 39px;
+
+	@include breakpoint(small) {
+		top: 39px;
+
+	}
+
+	@include breakpoint(medium) {
+		top: 39px;
+	}
+}
+
