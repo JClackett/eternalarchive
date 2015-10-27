@@ -1,0 +1,118 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - Sidebar Section - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+
+.sidebar {
+  height:100%;
+  right:-200px;
+  font-weight:300;
+  margin-top:65px;
+  background-color: $teal;
+
+   &:hover {
+     overflow-y: auto;
+   }
+
+  @include breakpoint(small) {
+    display: block;
+  } 
+}
+
+[data-sidebar] {
+  display:none;
+  position:fixed;
+  height:100%;
+  width:200px;
+  z-index:12
+}
+
+.sidebar-buttons {
+  line-height: 10%;
+  font-size:1rem;
+  
+  
+  @include breakpoint(small) {
+    line-height:20px;
+  }
+
+  ul {
+    margin:0;
+    
+    @include breakpoint(small) {
+      float: none;
+    }
+
+    
+    .login-section {
+      display: block;
+    
+      
+      @include breakpoint(small) {
+        display: none;
+      } 
+
+    }
+
+    .contribute-section {
+      display: block;
+      
+      @include breakpoint(small) {
+        display: none;
+      } 
+
+    }
+
+    li {
+      margin-top: 30%;
+      list-style:none;
+      a {
+        text-align:center;
+        padding:0px;
+        z-index: 13;
+
+        @include breakpoint(small) {
+        padding: 10px;
+        } 
+      }
+    }
+  }
+}
+
+.admin {
+  float: left;
+  line-height: 5px;
+}
+.new-post {
+  text-decoration:none;
+  color:$white;
+}
+
+.static-links {
+  position:absolute;
+  bottom:100px
+}
+
+.static-links, .sidebar-buttons ul li a:hover {
+          color:$lighterpurple;
+}
+
+.selected {
+  font-weight:500;
+}
+
+.static-pages a {
+  text-decoration:none;
+  color:$white;
+}
+
+[data-sidebar-dimmer] {
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  opacity:0;
+  width:100%;
+  z-index:11
+}
