@@ -42,11 +42,12 @@
     border-style: solid;
     border-width: 0;
     border-radius: 2px;
-    top: 196px;
+    top: 230px;
     color: $black;
 
     @include breakpoint(small) {
         left:28%;
+        top: 196px;
     }
 
     @include breakpoint(medium) {

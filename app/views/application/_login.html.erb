@@ -1,6 +1,6 @@
 <div class="login-section">
   <% if user_signed_in? %>
-             <div class="current-user">
+             <div class="current-user" >
                 <%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.username) %>
               </div>
               <div class="user-popup">

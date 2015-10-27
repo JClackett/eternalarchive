@@ -1,8 +1,7 @@
-<div class='form-title'>
+<!-- <div class='form-title'>
   <h1>Contributions!</h1>
-</div>
-
-<div class="main-view ">
+</div> -->
+<div class="main-view">
 
   <div class="column-headers">
     <div class="view-header-small">
@@ -23,7 +22,8 @@
       <% @contributions.each do |contribution| %>
       <div class="table-wrap group">
       <div class="view-column-small">
-            <a><%= contribution.user_id %></a>
+            <% @contributor = User.joins(:contributions).where(users: { id: contribution.user_id }).first %>
+            <a><%= @contributor.username %></a>
         </div>
         <div class="view-column">
             <a class="view-url" href="<%= contribution.contribution_url %>" target="_blank"><%= contribution.contribution_url %></a>
