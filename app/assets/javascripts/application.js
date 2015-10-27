@@ -122,11 +122,11 @@ $(document).on('ready page:load', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 $(document).on('ready page:load', function () {
-  $(".scroll-to-content").click(function() {
-    $('html,body').animate({
-        scrollTop: $(".main-container").offset().top},
-        1000,'easeOutQuart')
-    });
+      $(".scroll-to-content").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".main-container").offset().top},
+            1000,'easeOutQuart')
+        });
 });
 
 // $(document).on('ready page:load', function () {
@@ -166,25 +166,40 @@ $(document).on('ready page:load', function () {
         }
     });
 });
- 
 
-$(document).on('ready page:load', function () {
-    $(".share-wrapper").click(function(e) {
-        $(this).find(".share").toggle();
-        e.stopPropagation();
-    });
-
-    $(".share-wrapper").click(function(e) {
-        $(this).toggleClass( "share-selected" )
-        e.stopPropagation();
-    });
-    
-    $(document).click(function(e) {
-        if (!$(e.target).is('.share, .share*')) {
-            $(".share").hide();
-        }
-    });
+/* Toggle category item */
+// $('#category-wrapper').load(link.attr('href'),function(responseText, textStatus, XMLHttpRequest){
+//  $('#category-nav a').removeClass('active');
+//  link.addClass('active');
+//     $('.share-network').on('click','.toggle-item',function(e){
+//          e.preventDefault();
+//         $(this).parent().next('.share').toggle();
+//     });
+// });
+$(document).on('page:load ready', function () {
+$('body').on('click','.share-wrapper',function(e){
+ e.preventDefault();
+ $(this).find(".share").toggle();
 });
+});
+
+// $(document).on('page:load ready', function () {
+//     $(".share-wrapper").click(function(e) {
+//         $(this).find(".share").toggle();
+//         e.stopPropagation();
+//     });
+
+//     $(".share-wrapper").click(function(e) {
+//         $(this).toggleClass( "share-selected" )
+//         e.stopPropagation();
+//     });
+    
+//     $(document).click(function(e) {
+//         if (!$(e.target).is('.share, .share*')) {
+//             $(".share").hide();
+//         }
+//     });
+// });
 
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 // ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
