@@ -176,11 +176,12 @@ $(document).on('ready page:load', function () {
 //         $(this).parent().next('.share').toggle();
 //     });
 // });
+
 $(document).on('page:load ready', function () {
-$('body').on('click','.share-wrapper',function(e){
- e.preventDefault();
- $(this).find(".share").toggle();
-});
+    $('body').on('click','.share-wrapper',function(e){
+     e.preventDefault();
+     $(this).find(".share").toggle();
+    });
 });
 
 // $(document).on('page:load ready', function () {
