@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
   
 
-  get 'application/help' ,:path => "help"
+  # get 'application/help' ,:path => "help"
 
   get 'application/about', :path => "about"
 
-  get 'application/contact_us', :path => "contact_us"
+  # get 'application/contact_us', :path => "contact_us"
 
   get 'application/copyright', :path => "copyright"
 

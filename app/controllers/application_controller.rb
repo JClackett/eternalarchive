@@ -9,17 +9,17 @@ class ApplicationController < ActionController::Base
   before_action :configure_devise_permitted_parameters, if: :devise_controller?
 
 
-  def help
-    @title="Help"
-  end
+  # def help
+  #   @title="Help"
+  # end
 
   def about
     @title="About"
   end
 
-  def contact_us
-    @title="Contact Us"
-  end
+  # def contact_us
+  #   @title="Contact Us"
+  # end
 
   def copyright
     @title="Copyright"
