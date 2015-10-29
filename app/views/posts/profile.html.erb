@@ -1,5 +1,5 @@
 <div class="profile-header">
-	<h4><%= current_user.username %></h4>
+	<h4><%= current_user.username.titleize %></h4>
 	<%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.username) %>
 	<div class="profile-small-header"><h6> Bookmarked </h6></div>
 </div>

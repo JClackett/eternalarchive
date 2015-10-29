@@ -8,7 +8,7 @@
               <ul>  
                     <li> <%= nav_link_to 'All', root_path(name: 'all'), class: 'category-links'  %></li>
                     <% Category.all.each do |category|%>
-                        <li><%= nav_link_to category.name, root_path(name: category.name), class: 'category-links' %></li>
+                        <li><%= nav_link_to category.name.titleize, root_path(name: category.name), class: 'category-links' %></li>
                     <%end%>
               </ul>
         </div>
