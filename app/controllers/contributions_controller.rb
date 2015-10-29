@@ -1,5 +1,7 @@
 class ContributionsController < ApplicationController
   before_action :set_contribution, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
+  
 
   # GET /contributions
   def index
