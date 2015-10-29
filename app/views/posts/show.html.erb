@@ -22,6 +22,7 @@
 
 			<div class="post-player" onclick="play(this)">
 				<div class="overlay"> 
+					<div class="fader"></div>
 					<span class="post-information">
 						<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>
 						<p class="show-created-at"><%= time_ago_in_words(@post.created_at) %> ago</p>
@@ -35,6 +36,7 @@
 		<%else%>
 
 			<a class="overlay" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
+				<div class="fader"></div>
 				<span class="post-information">
 					<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>
 					<p class="show-created-at"><%= time_ago_in_words(@post.created_at) %> ago</p>
