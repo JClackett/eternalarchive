@@ -4,15 +4,11 @@
 				<%= image_tag("bulb-icon-1005064002-yellow.png") %><br>
 			<% else %>
 				<%= image_tag("bulb-icon-1005064002.png") %><br>
-			<% end %>
-			<div class="arrow-left"></div>
-	    		<div class="vote-number">
-	    			<%= post.get_upvotes.size %>
-	    		</div>	  		
+			<% end %>	
 	    	<%end%>
 	<%end%>
 
 	<div class="arrow-left"></div>
-	    		<div class="vote-number">
-	    			<%= post.get_upvotes.size %>
-	    		</div>	  
+	<div class="vote-number">
+	    	<%= post.get_upvotes.size %>
+	</div>	  
