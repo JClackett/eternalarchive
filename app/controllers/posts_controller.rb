@@ -11,7 +11,7 @@ class PostsController < ApplicationController
           @title =  "All Content"
         else
          @posts = Post.joins(:categories).where(categories: { name: params[:name] } ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
-         @title =  params[:name]
+         @title =  params[:name].titleize
        end
     else
       @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
@@ -22,7 +22,7 @@ class PostsController < ApplicationController
 
   def profile
     @bookmarked_posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order
-    @title =  current_user.username
+    @title =  current_user.username.titleize
   end
 
 
