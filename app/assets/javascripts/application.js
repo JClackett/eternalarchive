@@ -90,7 +90,7 @@ $(document).on('ready page:load', function () {
     });
 
     // toggle sidebar on click
-    button.click(function() {
+    button.on('click touchstart',function() {
         if (dimmer.is(':visible')) {
             hideSidebar();
         } else {
@@ -100,7 +100,7 @@ $(document).on('ready page:load', function () {
     });
 
     // hide sidebar on dimmer click
-    dimmer.click(function() {
+    dimmer.on('click touchstart', function() {
         hideSidebar();
     });
 
@@ -109,7 +109,7 @@ $(document).on('ready page:load', function () {
 
     $.fn.scrollGuard = function() {
         return this
-            .on( 'mousewheel', function ( e ) {
+            .on( 'scroll touchmove', function ( e ) {
                 var event = e.originalEvent;
                 var d = event.wheelDelta || -event.detail;
                 this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
