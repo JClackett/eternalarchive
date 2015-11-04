@@ -14,6 +14,12 @@
 					<%= render 'bookmark', post: post %>
 				</div>
 
+				<% if current_user.try(:admin?) %>
+				<div class="admin-edit-wrapper button">
+					<%= render 'edit_button', post: post %>
+				</div>
+				<% end %>
+
 	</div>
 
 	<div class="post-container">
