@@ -16,11 +16,14 @@
 				<div class="bookmark-wrapper button">
 					<%= render 'bookmark', post: @post %>
 				</div>
-
-				 <% if current_user.try(:admin?) %>
-				            <div class="admin-destroy button">
-				              <%= link_to 'Destroy',  { action: :destroy, id: @post.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
-				            </div>
+				
+				<% if params[:post] == "random" %>
+				<% else %>
+					 <% if current_user.try(:admin?) %>
+					            <div class="admin-destroy button">
+					              <%= link_to 'Destroy',  { action: :destroy, id: @post.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
+					            </div>
+					  <% end %>
 				  <% end %>
 
 	</div>
