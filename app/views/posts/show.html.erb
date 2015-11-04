@@ -1,3 +1,6 @@
+<% if params[:post] == "random" %>
+	<%= link_to 'Randomize Another!' , posts_random_path(post: "random") , class: 'random-button-show' %>
+<% end %>
 <div class="show-main-container">
 
 	<div class="buttons group">
@@ -13,6 +16,12 @@
 				<div class="bookmark-wrapper button">
 					<%= render 'bookmark', post: @post %>
 				</div>
+
+				 <% if current_user.try(:admin?) %>
+				            <div class="admin-destroy button">
+				              <%= link_to 'Destroy',  { action: :destroy, id: @post.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
+				            </div>
+				  <% end %>
 
 	</div>
 
@@ -35,7 +44,7 @@
 
 		<%else%>
 
-			<a class="overlay" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
+			<a class="overlay" href="<%= @post.url %>" onclick="window.open(this.href); return false;"> 
 				<div class="fader"></div>
 				<span class="post-information">
 					<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>

@@ -26,6 +26,7 @@ Rails.application.routes.draw do
 
   get 'posts/topvids', :path => "top_videos"
   get 'posts/mostrecent', :path => "latest"
+  get 'posts/random', :path => "random"
 
 
   get 'profile' => 'posts#profile'

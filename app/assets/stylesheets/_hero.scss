@@ -90,7 +90,7 @@
   }
 }
 
-.topvid-button,.mostrecent-button {
+.topvid-button,.mostrecent-button , .random-button {
   font-size:1.2rem;
   position:relative;
   padding:10px;
@@ -100,6 +100,11 @@
   border:2px solid $white;
   border-radius: 3px;
   margin-left: 0;
+  
+  &:hover {
+    background-color: $white;
+    color: $purple;
+  }
 
   @include breakpoint(small) {
     font-size:1.5rem;
@@ -159,14 +164,9 @@
     100% {-webkit-transform: scale(1)}
 }
 
-.mostrecent-button {
+.mostrecent-button , .topvid-button{
   display:inline-block;
   float: left;
   margin-right:35px
 }
 
-
-.topvid-button:hover, .mostrecent-button:hover {
-  background-color: $white;
-  color: $purple;
-}

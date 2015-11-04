@@ -92,6 +92,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def random
+      @post=Post.all.shuffle.first
+      render :show
+  end
+
   def bookmark
     @post = Post.find(params[:id])
     if Bookmark.where(user_id: current_user.id, post_id: @post.id).present?
