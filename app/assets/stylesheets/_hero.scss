@@ -108,7 +108,6 @@
 
   @include breakpoint(small) {
     font-size:1.5rem;
-    margin-left: -30px;
   }
 }
 
@@ -164,10 +163,14 @@
     100% {-webkit-transform: scale(1)}
 }
 
-.mostrecent-button , .topvid-button{
+.mostrecent-button ,  .shuffle-button{
   display:inline-block;
   float: left;
-  margin-right:35px
+  margin: 5px;
+}
+.topvid-button {
+    display:inline-block;
+    float: left;
 }
 
 @-webkit-keyframes wiggle {
@@ -207,7 +210,7 @@
 .home-light-img {
   display: none;
   z-index:-1;
-  right: 75px;
+  right: 50px;
   position: absolute;
   height:50px;
 }
