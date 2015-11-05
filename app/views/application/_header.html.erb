@@ -5,7 +5,7 @@
           <%= render 'logo' %>
         
           <%#= render 'search' %> 
-	<% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') %>
+	     <% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') or current_page?('/shuffle')%>
           		<%= render 'tags' %>
           	<% end %>
 
