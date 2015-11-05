@@ -92,7 +92,7 @@ class PostsController < ApplicationController
     end
   end
 
-  def random
+  def shuffle
       @post=Post.all.shuffle.first
       render :show
   end

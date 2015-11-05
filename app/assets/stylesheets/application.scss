@@ -1,4 +1,4 @@
-/*
+ /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -80,7 +80,6 @@
 
 .contribute-section {
   float: left;
-  margin-right: 5px;
   text-align: center;
   display: none;
   margin-top: 25%;
@@ -92,6 +91,8 @@
     display: block;
     margin-top: 0;
     margin-bottom: 0;
+    background-color: $lightpurple;
+    padding: 0 10px;
   } 
   
   a {
@@ -109,8 +110,6 @@
       @include breakpoint(small) {
         padding: 10px;
         font-size: 1rem;
-
-        
       } 
     }
 }  
@@ -145,4 +144,35 @@
 
 .extra-button:hover , .current-user:hover , .user-logout:hover , .user-login:hover {
   color:$lighterpurple;
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// --------------------------------------------------- Show Page Random --------------------------------------------------------- //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+.shuffle-section {
+      float: right;
+      text-align: center;
+      display: none;
+      height:65px;
+      line-height: 65px;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 20px;
+      background-color: $lightpurple;
+      padding: 0 10px;
+          
+
+            a {
+                text-decoration:none;
+                color:$white;
+                font-size: 1rem;
+                font-weight: 300;
+                padding: 0px;
+                cursor:pointer;
+                            
+                  &:hover {
+                    color:$lighterpurple;
+                  }
+            }
 }
