@@ -246,7 +246,7 @@ $(document).on('page:load ready', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 //jQuery is required to run this code
-$( document ).ready(function() {
+$(document).on('ready page:load', function () {
 
     scaleVideoContainer();
 
@@ -308,4 +308,6 @@ function scaleBannerVideoSize(element){
 
     });
 }
+
+
 

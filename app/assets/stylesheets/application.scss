@@ -109,7 +109,7 @@
 
       @include breakpoint(small) {
         padding: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
       } 
     }
 }  
@@ -149,23 +149,21 @@
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------- Show Page Random --------------------------------------------------------- //
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
-.shuffle-section {
-      float: right;
+.shuffle-section , .latest-section , .liked-section, .shuffle-section-header {
+      float: left;
       text-align: center;
       display: none;
       height:65px;
       line-height: 65px;
       display: block;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-right: 10px;
+      margin: 0 10px;
       // background-color: $lightpurple;
           
 
             a {
                 text-decoration:none;
                 color:$white;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 font-weight: 300;
                 padding: 0px;
                 cursor:pointer;
@@ -173,5 +171,9 @@
                   &:hover {
                     color:$lighterpurple;
                   }
+            }
+
+            .selected {
+                   text-decoration: underline overline;
             }
 }

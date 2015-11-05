@@ -29,11 +29,11 @@
 }
 
 .tag-title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   float: left;
   font-weight:300;
   display: none;
-  margin-top: 24px;
+  margin-top: 26px;
 
   @include breakpoint(small) {
     display: block;
