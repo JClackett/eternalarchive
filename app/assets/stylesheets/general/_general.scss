@@ -18,6 +18,10 @@ body {
 .wrapper {
   margin: 0;
   width:100%;
+  
+  @include breakpoint(large) {
+    width: 1280px;
+  }
 }
 
 .center {
