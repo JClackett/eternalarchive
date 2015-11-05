@@ -103,7 +103,7 @@
   
   &:hover {
     background-color: $white;
-    color: $purple;
+    color: #413186;
   }
 
   @include breakpoint(small) {
@@ -170,3 +170,49 @@
   margin-right:35px
 }
 
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform:translate(0,0);
+  }
+  50% {
+    -webkit-transform:translate(10px,0);
+  }
+  100% {
+    -webkit-transform:translate(0,0);
+  }
+}
+ 
+.wiggle:hover {
+  -webkit-animation: wiggle 0.25s 2;
+}
+
+@-webkit-keyframes shifty {
+  0% {
+    -webkit-transform:translate(0,0);
+  }
+
+  50% {
+    -webkit-transform:translate(0,-45px);
+  }
+
+  100% {
+    -webkit-transform:translate(0,0px);
+  }
+}
+
+.home-like-section {
+  position: relative;
+}
+
+.home-light-img {
+  display: none;
+  z-index:-1;
+  right: 75px;
+  position: absolute;
+  height:50px;
+}
+
+.shifty:hover .home-light-img {
+  -webkit-animation: shifty 2s 1;
+  display:block;
+}
