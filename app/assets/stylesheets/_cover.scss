@@ -41,7 +41,6 @@
   margin: 0;
   padding: 0;
   width:100%;
-  height:100%;
   opacity: 0.4;
   cursor:default;
 }
@@ -55,13 +54,13 @@
 }
 
 .cover-photo-img , .category-cover {
-      width:1500px;
+      width:100%;
       position: relative;
       top:-200px;
       z-index: -1;
 
       @include breakpoint(medium) {
-        width:1500px;
+        width:100%;
       }
 }
 
