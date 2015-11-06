@@ -13,7 +13,10 @@ module PostsHelper
 	    	elsif url.include?("vimeo")
 	    		vimeo_id = url.split("/").last
 	    		content_tag(:iframe, nil, class: "video", src: "https://player.vimeo.com/video/#{vimeo_id}?autoplay=0&color=8171B6&title=0&byline=0&portrait=0", allowfullscreen:0 )
-	    	else	
+	    	elsif url.include?("ted" && "talks")
+	    		ted_id = url.split("/").last
+	    		content_tag(:iframe, nil, class: "video", src:"https://embed-ssl.ted.com/talks/#{ted_id}.html?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&autoplay=0")
+			else	
 	    		content_tag(:img, nil, class: "video", src: url )
 	    	end
   	end

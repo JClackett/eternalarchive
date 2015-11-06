@@ -129,6 +129,7 @@ $(document).on('ready page:load', function () {
     $(object.querySelector('.overlay')).hide(200);
     object.querySelector('iframe').src =
     object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
+    object.querySelector('iframe').src.replace('autoplay ="no"','&autoplay= "yes"');
     return false;
   }
 

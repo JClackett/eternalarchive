@@ -22,9 +22,10 @@
 
 	</div>
 
+	
 	<div class="post-container">
 
-		<% if post.url.include?("youtube") || post.url.include?("vimeo") %>
+		<% if post.url.include?("youtube") || post.url.include?("vimeo") || post.url.include?("ted" && "talks") %>
 
 			<div class="post-player" onclick="play(this)">
 				<div class="overlay"> 
