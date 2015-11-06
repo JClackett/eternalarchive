@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!, except: [:index, :show, :topvids, :mostrecent, :upvote]
+    before_action :authenticate_user!, except: [:index, :show, :topvids, :mostrecent, :upvote, :shuffle]
 
     
   # GET /posts
@@ -90,6 +90,11 @@ class PostsController < ApplicationController
       end
 
     end
+  end
+
+  def shuffle
+      @post=Post.all.shuffle.first
+      render :show
   end
 
   def bookmark

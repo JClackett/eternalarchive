@@ -1,3 +1,4 @@
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Hero Section  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -75,7 +76,7 @@
       h1 {
            font-size: 3rem;
            font-weight: 200;
-      }
+  }
 }
 
 .hero-buttons{
@@ -89,7 +90,7 @@
   }
 }
 
-.topvid-button,.mostrecent-button {
+.topvid-button,.mostrecent-button , .shuffle-button {
   font-size:1.2rem;
   position:relative;
   padding:10px;
@@ -99,10 +100,14 @@
   border:2px solid $white;
   border-radius: 3px;
   margin-left: 0;
+  
+  &:hover {
+    background-color: $white;
+    color: #413186;
+  }
 
   @include breakpoint(small) {
     font-size:1.5rem;
-    margin-left: -30px;
   }
 }
 
@@ -142,7 +147,6 @@
   @include breakpoint(medium) {
     display: block;
   }
-
 }
 
 .scroll-arrow {
@@ -158,14 +162,60 @@
     100% {-webkit-transform: scale(1)}
 }
 
-.mostrecent-button {
+.mostrecent-button ,  .shuffle-button{
   display:inline-block;
   float: left;
-  margin-right:35px
+  margin: 5px;
 }
 
+.topvid-button {
+    display:inline-block;
+    float: left;
+}
 
-.topvid-button:hover, .mostrecent-button:hover {
-  background-color: $white;
-  color: $purple;
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform:translate(0,0);
+  }
+  50% {
+    -webkit-transform:translate(10px,0);
+  }
+  100% {
+    -webkit-transform:translate(0,0);
+  }
+}
+ 
+.wiggle:hover {
+  -webkit-animation: wiggle 0.25s 2;
+}
+
+@-webkit-keyframes shifty {
+  0% {
+    -webkit-transform:translate(0,0);
+  }
+
+  50% {
+    -webkit-transform:translate(0,-45px);
+  }
+
+  100% {
+    -webkit-transform:translate(0,0px);
+  }
+}
+
+.home-like-section {
+  position: relative;
+}
+
+.home-light-img {
+  display: none;
+  z-index:-1;
+  right: 50px;
+  position: absolute;
+  height:50px;
+}
+
+.shifty:hover + .home-light-img {
+  -webkit-animation: shifty 2s 1;
+  display:block;
 }

@@ -1,9 +1,11 @@
+
 <div class="header" onmouseover="document.body.style.overflow='hidden';" onmouseout="document.body.style.overflow='auto';">
+  <div class="wrapper">
       <div class="nav-down">
           <%= render 'logo' %>
         
           <%#= render 'search' %> 
-	<% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') %>
+	     <% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/top_videos') or current_page?('/latest') or current_page?('/shuffle')%>
           		<%= render 'tags' %>
           	<% end %>
 
@@ -12,6 +14,14 @@
           <%= render 'login' %>         
         
           <%= render 'submit' %>
-      
+          
+          <%= render 'latest' %>
+
+          <%= render 'liked_button' %>
+
+          <%= render 'shuffle' %>
+      </div>
       </div>
 </div>
+
+

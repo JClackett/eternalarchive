@@ -1,3 +1,4 @@
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - -  Tag Section - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -5,7 +6,7 @@
 
 .tag-container {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width:100%;
   font-size: 1.6rem;
@@ -28,11 +29,11 @@
 }
 
 .tag-title {
-  font-size: 1rem;
+  font-size: 0.8rem;
   float: left;
   font-weight:300;
   display: none;
-  margin-top: 24px;
+  margin-top: 26px;
 
   @include breakpoint(small) {
     display: block;
@@ -73,7 +74,7 @@
   
   
     ul {
-      margin: 0 0 10px 0 ;
+      margin: 0 0 0 0 ;
       padding: 0 2% 2% 2%;
       width: 96%;               // Need to decide on using vh/vw ?????
       
@@ -83,16 +84,16 @@
       li {
         list-style:none;
         display:inline-block;
-        margin: 10px 5px;
+        margin: 5px;
         
          .selected {
           color:$teal;
           background-color:$white;
         }
         a {
-          font-size: 1.2rem;
-          padding: 10px;
-          border-radius: 3px; 
+          font-size: 1rem;
+          padding: 5px 10px;
+          border-radius: 5px; 
           text-decoration:none;
           color:$white;
           background-color:$teal;

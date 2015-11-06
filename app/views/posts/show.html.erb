@@ -13,6 +13,21 @@
 				<div class="bookmark-wrapper button">
 					<%= render 'bookmark', post: @post %>
 				</div>
+				
+				<% if params[:p] == "shuffle" %>
+				<% else %>
+					 <% if current_user.try(:admin?) %>
+					            <div class="admin-destroy button">
+					              <%= link_to 'Destroy',  { action: :destroy, id: @post.id }, method: :delete, data: { confirm: 'Are you sure?' } %>
+					            </div>
+					  <% end %>
+				  <% end %>
+
+				  <% if current_user.try(:admin?) %>
+				<div class="admin-edit-wrapper button">
+					<%= render 'edit_button', post: @post %>
+				</div>
+				<% end %>
 
 	</div>
 
@@ -35,7 +50,7 @@
 
 		<%else%>
 
-			<a class="overlay" href="<%= post.url %>" onclick="window.open(this.href); return false;"> 
+			<a class="overlay" href="<%= @post.url %>" onclick="window.open(this.href); return false;"> 
 				<div class="fader"></div>
 				<span class="post-information">
 					<h5 class="show-post-description"><%= post_description_sanitize(@post.description) %></h5>

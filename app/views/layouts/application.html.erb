@@ -31,7 +31,6 @@
   
 <body>
 
-  <div class="wrapper">
   <div class="dimmer area" data-sidebar-dimmer></div>
 
 
@@ -57,11 +56,10 @@
     <%= render 'sidebar' %>
 
       
-	<div class="content group">
+	<div class="content group wrapper">
           <%= yield %>
       </div>
 
-  </div>
 
 </body>
 </html>
