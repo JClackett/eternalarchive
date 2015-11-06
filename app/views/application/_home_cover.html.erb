@@ -2,7 +2,7 @@
                 <div class="img-cover"></div>
                 <div class="homepage-hero-module">
                   <div class="video-container">
-                      <video autoplay loop class="fillWidth" poster="assets/blurred-cover-photo.jpg" >
+                      <video autoplay loop class="fillWidth" poster="/">
                           <source src="assets/bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                       </video>
                   </div>
@@ -16,7 +16,7 @@
                   <div class="hero-buttons center">
                         <%= link_to 'Latest Content' , posts_mostrecent_path , class: 'mostrecent-button' %>
                         <div class="home-like-section">
-                            <%= link_to 'Most Liked' , posts_topvids_path , class: 'topvid-button shifty' %>
+                            <%= link_to 'Most Liked' , posts_mostliked_path , class: 'mostliked-button shifty' %>
                             <%= image_tag("bulb-icon-1005064002-yellow.png", class: 'home-light-img')%>
                         </div>
                         <%= link_to 'Shuffle' , posts_shuffle_path(p: "shuffle") , class: 'shuffle-button wiggle' %>

@@ -24,7 +24,7 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'posts/topvids', :path => "top_videos"
+  get 'posts/mostliked', :path => "most_liked"
   get 'posts/mostrecent', :path => "latest"
   get 'posts/shuffle', :path => "shuffle"
 
