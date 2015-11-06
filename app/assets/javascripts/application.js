@@ -1,4 +1,3 @@
-
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
 //
@@ -90,7 +89,7 @@ $(document).on('ready page:load', function () {
     });
 
     // toggle sidebar on click
-    button.on('click touchstart',function() {
+    button.click(function() {
         if (dimmer.is(':visible')) {
             hideSidebar();
         } else {
@@ -100,7 +99,7 @@ $(document).on('ready page:load', function () {
     });
 
     // hide sidebar on dimmer click
-    dimmer.on('click touchstart', function() {
+    dimmer.click(function() {
         hideSidebar();
     });
 
@@ -109,7 +108,7 @@ $(document).on('ready page:load', function () {
 
     $.fn.scrollGuard = function() {
         return this
-            .on( 'scroll touchmove', function ( e ) {
+            .on( 'mousewheel', function ( e ) {
                 var event = e.originalEvent;
                 var d = event.wheelDelta || -event.detail;
                 this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
@@ -246,7 +245,7 @@ $(document).on('page:load ready', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 //jQuery is required to run this code
-$( document ).ready(function() {
+$(document).on('ready page:load', function () {
 
     scaleVideoContainer();
 
@@ -308,4 +307,3 @@ function scaleBannerVideoSize(element){
 
     });
 }
-
