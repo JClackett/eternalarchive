@@ -12,6 +12,8 @@
 			<h2>Nothing Bookmarked yet!</h2>
 		<% end %>
 
-		<%= will_paginate @bookmarked_posts %>
 </div>
+
+<%= will_paginate @bookmarked_posts, class: "pagination"  %>
+
 
