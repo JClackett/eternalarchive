@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     if current_user.try(:admin?)
       @post = Post.new
     else
-      redirect_to posts_path
+      redirect_to root_path
     end
   end
 
@@ -47,7 +47,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
       if @post.save
-        redirect_to posts_path 
+        redirect_to root_path 
       else
         render :new 
       end
@@ -58,7 +58,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1.json
   def update
       if @post.update(post_params)
-        redirect_to posts_path
+        redirect_to root_path
       else
          render :edit 
       end
@@ -68,7 +68,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1.json
   def destroy
     @post.destroy
-    redirect_to posts_path
+    redirect_to root_path
   end
 
       # POST /posts/:id/like
