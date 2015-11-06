@@ -460,13 +460,16 @@
 
 }
 
+.post-container {
+      overflow: hidden;
+  
+       img {
+        width:100%
+      }
 
-.post-container img {
-  width:100%
-}
-
-.post-container a {
-  text-decoration:none
+      a {
+        text-decoration:none
+      }
 }
 
 .link-container {

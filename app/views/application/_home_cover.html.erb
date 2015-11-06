@@ -17,8 +17,8 @@
 
                   <div class="hero-buttons center">
                         <%= link_to 'Latest Content' , posts_mostrecent_path , class: 'mostrecent-button' %>
-                        <div class="home-like-section shifty">
-                            <%= link_to 'Most Liked' , posts_topvids_path , class: 'topvid-button' %>
+                        <div class="home-like-section">
+                            <%= link_to 'Most Liked' , posts_topvids_path , class: 'topvid-button shifty' %>
                             <%= image_tag("bulb-icon-1005064002-yellow.png", class: 'home-light-img')%>
                         </div>
                         <%= link_to 'Shuffle' , posts_shuffle_path(p: "shuffle") , class: 'shuffle-button wiggle' %>
