@@ -2,23 +2,36 @@
 
         <div class="sidebar-buttons">
             <ul>
-              <%= render 'login_sidebar' %>         
-        
-              <%= render 'submit' %>  
+              <%= render 'login_sidebar' %>
+
+              <%= render 'submit' %>
             </ul>
             <ul class="admin">
                  <% if current_user.try(:admin?) %>
-                      <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
-                      <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
-                      <li><%= link_to 'Contributions' , contributions_path , class: 'new-post' %></li>
-                  <%end%>            
+                      <li><%= link_to 'NEW POST' , new_post_path , class: 'sidebar-links new-post-sidebar' %></li>
+                      <li><%= link_to 'NEW CATEGORY' , new_category_path , class: 'sidebar-links new-category-sidebar' %></li>
+                      <li><%= link_to 'CONTRIBUTIONS' , contributions_path , class: 'sidebar-links contributions-sidebar' %></li>
+                  <%end%>
             </ul>
+
+            <ul class="user-links">
+              <li><%= nav_link_to 'LATEST' , posts_mostrecent_path , class: 'sidebar-links latest-sidebar' %></li>
+              <li><%= nav_link_to 'MOST LIKED' , posts_mostliked_path , class: 'sidebar-links most-liked-sidebar' %></li>
+              <li>
+                <% if params[:p] == "shuffle" %>
+                  <%= nav_link_to 'SHUFFLE AGAIN!' , posts_shuffle_path(p: "shuffle") , class: 'sidebar-links shuffle-sidebar' %>
+                <% else %>
+                  <%= nav_link_to 'SHUFFLE!' , posts_shuffle_path(p: "shuffle") , class: 'sidebar-links shuffle-sidebar' %>
+                <% end %>
+              </li>
+            </ul>
+
             <ul>
                   <div class="static-links">
                     <li><div class="static-pages"><%= nav_link_to 'About', application_about_path %></div></li>
                     <li><div class="static-pages"><%= nav_link_to 'Copyright', application_copyright_path %></div> </li>
                   </div>
             </ul>
-        </div>  
-  
+        </div>
+
       </div>

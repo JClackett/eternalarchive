@@ -51,7 +51,6 @@
 .shuffle-section , .latest-section , .liked-section, .shuffle-section-header {
       float: left;
       text-align: center;
-      display: none;
       height:65px;
       line-height: 65px;
       display: block;
@@ -76,26 +75,37 @@
                    border-bottom:1px solid white;
             }
 }
+
+.shuffle-section-header, .liked-section, .latest-section {
+  display: none;
+
+  @include breakpoint(medium-large){
+    display: block;
+  }
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - Contribute Button - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .contribute-section {
-  float: right;
+  float: left;
   text-align: center;
   display: none;
-  margin-top: 25%;
+  margin-top: 20%;
   margin-bottom: 5%;
   margin-right: 10px;
 
-  @include breakpoint(small) {
+
+  @include breakpoint(medium) {
+    float: right;
     height:65px;
     line-height: 65px;
     display: block;
     margin-top: 0;
     margin-bottom: 0;
     // background-color: $lightpurple;
-  } 
+  }
 
   a {
       text-decoration:none;
@@ -112,9 +122,9 @@
       @include breakpoint(small) {
         padding: 10px;
         font-size: 0.8rem;
-      } 
+      }
     }
-}  
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -140,7 +150,7 @@
     @include breakpoint(small) {
       display: block;
       margin-right: 20px;
-    } 
+    }
 }
 
 

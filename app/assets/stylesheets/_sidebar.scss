@@ -17,7 +17,7 @@
 
   @include breakpoint(small) {
     display: block;
-  } 
+  }
 }
 
 [data-sidebar] {
@@ -30,37 +30,38 @@
 
 .sidebar-buttons {
   line-height: 10%;
-  font-size:1rem;
-  
-  
+  font-size:0.8rem;
+
+
   @include breakpoint(small) {
     line-height:20px;
   }
 
   ul {
     margin:0;
-    
+
     @include breakpoint(small) {
       float: none;
     }
 
-    
+
     .login-section {
       display: block;
-    
-      
+
+
       @include breakpoint(small) {
         display: none;
-      } 
+      }
 
     }
 
     .contribute-section {
       display: block;
-      
-      @include breakpoint(small) {
+      font-size: 0.8rem !important;
+
+      @include breakpoint(medium) {
         display: none;
-      } 
+      }
 
     }
 
@@ -74,20 +75,48 @@
 
         @include breakpoint(small) {
         padding: 10px;
-        } 
+        }
       }
     }
   }
 }
 
-.admin {
+.admin, .user-links {
   float: left;
   line-height: 5px;
+  font-size: 0.8rem;
+
 }
-.new-post {
+
+.sidebar-links {
   text-decoration:none;
   color:$white;
+  float: left;
 }
+
+.new-post-sidebar, .new-category-sidebar, .contributions-sidebar,
+.latest-sidebar, .most-liked-sidebar, .shuffle-sidebar {
+  display: block;
+  margin-top: 30px;
+}
+
+.shuffle-sidebar, .most-liked-sidebar, .latest-sidebar {
+
+  @include breakpoint(medium-large){
+    display: none;
+  }
+}
+
+.latest-sidebar {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
 
 .static-links {
   position:absolute;
