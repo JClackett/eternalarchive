@@ -1,8 +1,7 @@
 Rails.application.configure do
 
    config.action_mailer.default_url_options = {
-    host: 'eternalarchive.co.uk',
-    protocol: 'http'
+    "eternalarchive.co.uk"
   }
 
   # Settings specified here will take precedence over those in config/application.rb.
