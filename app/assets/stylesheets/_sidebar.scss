@@ -91,6 +91,10 @@
 
       .username-sidebar {
         text-align:center;
+        
+      &:hover {
+        background-color: $teal;
+      }
       }
 
       .login-links {

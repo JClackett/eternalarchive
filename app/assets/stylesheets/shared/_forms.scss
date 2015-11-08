@@ -44,15 +44,15 @@
    	margin-right:auto;
 	z-index: 9;
 	text-align: center;
-	top: 9%;
+	top: 12%;
 
 	h1 {
 		font-weight: 300;
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 
 	@include breakpoint(small) {
-
+		top:9%;
 		width: 500px;
 		padding: 20px;
 
