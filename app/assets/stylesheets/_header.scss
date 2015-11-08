@@ -48,8 +48,13 @@
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 // --------------------------------------------------- Header Nav Bar  --------------------------------------------------------------- //
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
-.shuffle-section , .latest-section , .liked-section, .shuffle-section-header {
-      float: left;
+
+.shuffle-section-header, .liked-section, .latest-section {
+  display: none;
+
+  @include breakpoint(medium-large){
+    display: block;
+    float: left;
       text-align: center;
       height:65px;
       line-height: 65px;
@@ -74,13 +79,6 @@
             .selected {
                    border-bottom:1px solid white;
             }
-}
-
-.shuffle-section-header, .liked-section, .latest-section {
-  display: none;
-
-  @include breakpoint(medium-large){
-    display: block;
   }
 }
 
@@ -88,29 +86,21 @@
 /* - - - - - - - - - - - - - - - - - - - - - - Contribute Button - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
-.contribute-section {
-  float: left;
-  text-align: center;
-  display: none;
-  margin-top: 20%;
-  margin-bottom: 5%;
-  margin-right: 10px;
+.contribute-section { //
+  display:none;
 
-
-  @include breakpoint(medium) {
+  @include breakpoint(medium) { // this is for header
     float: right;
     height:65px;
     line-height: 65px;
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
-    // background-color: $lightpurple;
-  }
-
-  a {
+    font-size: 0.8rem;
+    margin: 0 10px;
+    // background-color: $lightpurple; 
+    
+      a {
       text-decoration:none;
       color:$white;
-      font-size: 1rem;
       font-weight: 300;
       padding: 0px;
       cursor:pointer;
@@ -118,12 +108,8 @@
       &:hover  {
           color:$lighterpurple;
         }
-
-      @include breakpoint(small) {
-        padding: 10px;
-        font-size: 0.8rem;
-      }
     }
+  } 
 }
 
 

@@ -1,24 +1,6 @@
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - Sidebar Section - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-
-.sidebar {
-  height:100%;
-  right:-200px;
-  font-weight:300;
-  margin-top:65px;
-  background-color: $teal;
-
-   &:hover {
-     overflow-y: auto;
-   }
-
-  @include breakpoint(small) {
-    display: block;
-  }
-}
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// ----------------------------------------------------------- General -------------------------------------------------------------------- //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
 
 [data-sidebar] {
   display:none;
@@ -26,114 +8,6 @@
   height:100%;
   width:200px;
   z-index:12
-}
-
-.sidebar-buttons {
-  line-height: 10%;
-  font-size:0.8rem;
-
-
-  @include breakpoint(small) {
-    line-height:20px;
-  }
-
-  ul {
-    margin:0;
-
-    @include breakpoint(small) {
-      float: none;
-    }
-
-
-    .login-section {
-      display: block;
-
-
-      @include breakpoint(small) {
-        display: none;
-      }
-
-    }
-
-    .contribute-section {
-      display: block;
-      font-size: 0.8rem !important;
-
-      @include breakpoint(medium) {
-        display: none;
-      }
-
-    }
-
-    li {
-      margin-top: 30%;
-      list-style:none;
-      a {
-        text-align:center;
-        padding:0px;
-        z-index: 13;
-
-        @include breakpoint(small) {
-        padding: 10px;
-        }
-      }
-    }
-  }
-}
-
-.admin, .user-links {
-  float: left;
-  line-height: 5px;
-  font-size: 0.8rem;
-
-}
-
-.sidebar-links {
-  text-decoration:none;
-  color:$white;
-  float: left;
-}
-
-.new-post-sidebar, .new-category-sidebar, .contributions-sidebar,
-.latest-sidebar, .most-liked-sidebar, .shuffle-sidebar {
-  display: block;
-  margin-top: 30px;
-}
-
-.shuffle-sidebar, .most-liked-sidebar, .latest-sidebar {
-
-  @include breakpoint(medium-large){
-    display: none;
-  }
-}
-
-.latest-sidebar {
-  margin-right: 20px;
-}
-
-
-
-
-
-
-
-
-.static-links {
-  position:absolute;
-  bottom:100px
-}
-
-.static-links, .sidebar-buttons ul li a:hover {
-          color:$lighterpurple;
-}
-
-.selected {
-  font-weight:500;
-}
-
-.static-pages a {
-  text-decoration:none;
-  color:$white;
 }
 
 [data-sidebar-dimmer] {
@@ -146,3 +20,103 @@
   width:100%;
   z-index:11
 }
+
+
+.sidebar {   // General Styling to sidebar
+  height:100%;
+  right:-200px;
+  font-weight:300;
+  margin-top:65px;
+  display:block;
+  background-color: $teal;
+
+   &:hover {
+     overflow-y: auto;
+   }
+
+    ul {
+      padding: 0;
+      margin: 0px 0px;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 7% 0;
+        border-bottom: 1px solid $lightteal;
+        
+        &:hover {
+            background-color: $lightteal;
+        }
+        
+        @include breakpoint(small){
+            margin: 0;
+            padding: 4% 0;
+        }
+
+        a {
+          font-size: 0.8rem;
+          text-decoration: none;
+          color: $white;
+          padding-left: 30px;
+          
+          &:hover {
+            color:$lighterpurple;
+          }
+        }
+        p {
+            font-size: 1rem;
+            margin: 0;
+            font-weight: 400;
+          }
+      }
+
+      .selected {
+        font-weight: 400;
+      }
+
+
+      // Specific styling dependent on the link
+
+      .sidebar-gravatar {
+            text-align: center;
+            margin-top: 10px;
+            
+                img {
+                width: 40px;
+                height: 40px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+              }
+        }
+
+      .username-sidebar {
+        text-align:center;
+      }
+
+      .login-links {
+          @include breakpoint(small){
+            display:none;
+          }
+      }
+
+      .admin-links {
+      }
+
+      .user-links {
+          @include breakpoint(medium-large){
+            display:none;
+          }
+      }
+      .contribute-link {
+          @include breakpoint(medium){
+            display:none;
+          }
+      }
+      .static-section {
+          bottom:65px;
+          position: absolute;
+          width: 100%;
+          border-top: 1px solid $lightteal;
+          }
+    }
+ } 

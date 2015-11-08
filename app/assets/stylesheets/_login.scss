@@ -1,42 +1,30 @@
 .login-section {
-  margin-top: 10%;
-  z-index:6;
-  display: none;
-
-  img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-left: 36%;
-  }
-
+  display: none; // display none on small devices , shows via sideabar in login_sidebar html/css
+  
   @include breakpoint(small) {
     display: block;
+    z-index:1;
     float: right;
-    margin-top: 0px;
-    margin-right: 5px;
-      height: 65px;
+    margin: 0 10px;
+    height: 65px;
+    
+// Signin/Signup Text when logged out!!
+        .user-login {
+            text-decoration:none;
+            font-size: 0.8rem;
+            line-height: 65px;
+            margin: 0;
+            padding: 10px;
+            color:$white;
+            cursor:pointer;
 
-  }
+              &:hover {
+                color:$lighterpurple;
+              }
+          }
+ 
 
-    .user-login {
-      text-decoration:none;
-      font-size: 0.8rem;
-      line-height: 65px;
-      margin: 0;
-      padding: 0px;
-      color:$white;
-      cursor:pointer;
-
-        @include breakpoint(small) {
-          padding: 10px;
-        }
-
-        &:hover {
-          color:$lighterpurple;
-        }
-    }
-
+// User Avatar Image
     .current-user {
          margin-top: 12px;
 
@@ -51,78 +39,52 @@
           }
       }
 
+// The Pop up section
     .user-popup {
         display:none;
         position:absolute;
-        z-index: 6;
+        z-index: 2;
         top:65px;
         margin: 0;
-        right:40px;
-        background-color: rgba(0,0,0,0.6);
+        right:30px;
+        background-color: rgba(0,0,0,0.8);
         border-radius:0 0 5px 5px;
-        box-shadow: 0px 6px 60px -5px $black;
+        box-shadow: 1px 34px 92px -18px $black;
 
       ul {
         display: block;
         margin: 0;
-        padding: 0;
+        padding: 5px 20px;
         float: left;
 
         .popup-text {
-          margin-bottom: 10px;
           border-bottom: 1px solid $grey;
-          float:none;
         }
 
         li {
           list-style:none;
-          margin-top: 35%;
-
-          @include breakpoint(small) {
-            margin: 10px;
-          }
+          margin: 7px 0;
 
           .popup-username {
             font-weight: 500;
-            margin:0;
-            left: 0;
-            line-height: 10%;
-            height:10%;
-
-            @include breakpoint(small) {
-              margin-top: 10px;
-              margin-bottom: 10px;
-            }
           }
 
 
           p {
             text-decoration: none;
-            padding: 0;
             color: $white;
-            font-size: 1.2rem;
-
-            @include breakpoint(small) {
-              font-size: 0.8rem;
-              width: 100%;
-              margin: 0;
-              padding: 5px;
-            }
+            font-size: 0.8rem;
+            margin: 0;
           }
 
           a {
             text-decoration:none;
             color:$white;
-            padding: 0;
+            padding: 5px;
+            margin: 0;
             color: $white;
-            font-size: 1.2rem;
+            font-size: 1rem;
             margin-top: 10%;
-
-            @include breakpoint(small) {
-              font-size: 1rem;
-              width: 100%;
-              margin: 0;
-              padding: 5px;
 
               &:hover {
                 color:#ddd;
@@ -135,333 +97,7 @@
            }
         }
      }
-  }
-
-
-    .user-popup-sidebar {
-
-      ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        float: left;
-        margin-top: -10px;
-        font-size: 0.8rem;
-
-        @include breakpoint(small) {
-          margin: 0;
-        }
-
-
-        .popup-text {
-          margin-bottom: 10px;
-          border-bottom: 1px solid $grey;
-          float:none;
-        }
-
-        li {
-          list-style:none;
-          margin-top: 35%;
-
-          @include breakpoint(small) {
-            margin: 10px;
-          }
-
-          .popup-username {
-            font-weight: 500;
-            margin:0px;
-            line-height: 10%;
-            height:10%;
-
-            @include breakpoint(small) {
-              margin-top: 30px;
-              margin-bottom: 10px;
-            }
-          }
-
-
-          p {
-            text-decoration: none;
-            padding: 0;
-            color: #FFF;
-            font-size: 1.2rem;
-
-            @include breakpoint(small) {
-              font-size: 0.8rem;
-              width: 100%;
-              margin: 0;
-              padding: 5px;
-            }
-          }
-
-          a {
-            text-decoration:none;
-            color:$white;
-            padding: 0;
-            color: #FFF;
-            font-size: 1rem;
-            margin-top: 10%;
-
-            &:hover {
-                  color:$lighterpurple;
-                }
-
-            @include breakpoint(small) {
-              font-size: 1rem;
-              width: 100%;
-              margin: 0;
-              padding: 5px;
-            }
-           }
-
-            .selected {
-                font-weight:500;
-           }
-        }
-     }
-  }
+   }
 }
 
-// -------------------------------------------------------------------------------------------------------------------------------------------- //
-// ---------------------------------------------------- Side bar login ------------------------------------------------------------------ //
-// -------------------------------------------------------------------------------------------------------------------------------------------- //
-
-
-
-// .login-section-sidebar {
-//   margin-top: 10%;
-//   z-index:6;
-
-//   img{
-//     width: 40px;
-//     height: 40px;
-//     border-radius: 50%;
-//     margin-left: 36%;
-//   }
-
-//   @include breakpoint(small) {
-//     display: block;
-//     float: right;
-//     margin-top: 0px;
-//     margin-right: 5px;
-//     height: 65px;
-
-//   }
-
-//     .user-login {
-//       text-decoration:none;
-//       font-size: 1.2rem;
-//       line-height: 65px;
-//       margin: 0;
-//       padding: 0px;
-//       color:$white;
-//       cursor:pointer;
-
-//         @include breakpoint(small) {
-//           padding: 10px;
-//         }
-
-//         &:hover {
-//           color:$lighterpurple;
-//         }
-//     }
-
-//     .current-user {
-//          margin-top: 12px;
-
-//           img {
-//             cursor:pointer;
-//             display:block;
-//             height: 40px;
-//             width: 40px;
-//             padding:0;
-//             margin: 0;
-//             border-radius:50%;
-//           }
-//       }
-
-//     .user-popup {
-
-//       display: block;
-//       margin: 0;
-//       padding: 0;
-//       float: left;
-//       margin-top: -10px;
-
-//       @include breakpoint(small) {
-//         display:none;
-//         position:absolute;
-//         z-index: 6;
-//         top:65px;
-//         margin: 0;
-//         right:50px;
-//         background-color: rgba(0,0,0,0.6);
-//         border-radius:0 0 5px 5px;
-//         box-shadow: 0px 6px 60px -5px $black;
-//       }
-
-//       ul {
-//         display: block;
-//         margin: 0;
-//         padding: 0;
-//         float: left;
-
-//         .popup-text {
-//           margin-bottom: 10px;
-//           border-bottom: 1px solid $grey;
-//           float:none;
-//         }
-
-//         li {
-//           list-style:none;
-//           margin-top: 35%;
-
-//           @include breakpoint(small) {
-//             margin: 10px;
-//           }
-
-//           .popup-username {
-//             font-weight: 500;
-//             margin:0px;
-//             margin-left: 25%;
-//             line-height: 10%;
-
-//             @include breakpoint(small) {
-//               margin-top: 30px;
-//               margin-bottom: 10px;
-//             }
-//           }
-
-
-//           p {
-//             text-decoration: none;
-//             padding: 0;
-//             color: #FFF;
-//             font-size: 1.2rem;
-
-//             @include breakpoint(small) {
-//               font-size: 0.8rem;
-//               width: 100%;
-//               margin: 0;
-//               padding: 5px;
-//             }
-//           }
-
-//           a {
-//             text-decoration:none;
-//             color:$white;
-//             padding: 0;
-//             color: #FFF;
-//             font-size: 1.2rem;
-//             margin-top: 10%;
-
-//             @include breakpoint(small) {
-//               font-size: 1rem;
-//               width: 100%;
-//               margin: 0;
-//               padding: 5px;
-
-//               &:hover {
-//                 color:#ddd;
-//               }
-//             }
-
-//                 &:hover a {
-//                   font-weight:500;
-//                 }
-
-//            }
-
-//             .selected {
-//                 font-weight:500;
-//            }
-//         }
-//      }
-//   }
-
-//     .user-popup-sidebar {
-
-//       ul {
-//         display: block;
-//         margin: 0;
-//         padding: 0;
-//         float: left;
-//         margin-top: -10px;
-
-//         @include breakpoint(small) {
-//           margin: 0;
-//         }
-
-//         .popup-text {
-//           margin-bottom: 10px;
-//           border-bottom: 1px solid $grey;
-//           float:none;
-//         }
-
-//         li {
-//           list-style:none;
-//           margin-top: 35%;
-
-//           @include breakpoint(small) {
-//             margin: 10px;
-//           }
-
-//           .popup-username {
-//             font-weight: 500;
-//             margin:0px;
-//             margin-left: 44%;
-//             line-height: 10%;
-
-//             @include breakpoint(small) {
-//               margin-top: 30px;
-//               margin-bottom: 10px;
-//             }
-//           }
-
-
-//           p {
-//             text-decoration: none;
-//             padding: 0;
-//             color: #FFF;
-//             font-size: 1.2rem;
-
-//             @include breakpoint(small) {
-//               font-size: 0.8rem;
-//               width: 100%;
-//               margin: 0;
-//               padding: 5px;
-//             }
-//           }
-
-//           a {
-//             text-decoration:none;
-//             color:$white;
-//             padding: 0;
-//             color: #FFF;
-//             font-size: 1.2rem;
-//             margin-top: 10%;
-
-//             @include breakpoint(small) {
-//               font-size: 1rem;
-//               width: 100%;
-//               margin: 0;
-//               padding: 5px;
-
-//               &:hover {
-//                 color:#ddd;
-//               }
-//             }
-
-//                 &:hover a {
-//                   font-weight:500;
-//                 }
-
-//            }
-
-//             .selected {
-//                 font-weight:500;
-//            }
-//         }
-//      }
-//   }
-// }
+  

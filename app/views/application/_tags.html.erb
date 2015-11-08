@@ -6,9 +6,9 @@
         <div class="category-tags center">   
               <h3>Click on a tag to filter content!</h3>
               <ul>  
-                    <li> <%= nav_link_to 'All', root_path(name: 'all'), class: 'category-links'  %></li>
+                    <li> <%= nav_link_to 'ALL', root_path(name: 'all'), class: 'category-links'  %></li>
                     <% Category.all.each do |category|%>
-                        <li><%= nav_link_to category.name.titleize, root_path(name: category.name), class: 'category-links' %></li>
+                        <li><%= nav_link_to category.name.upcase, root_path(name: category.name), class: 'category-links' %></li>
                     <%end%>
               </ul>
         </div>
