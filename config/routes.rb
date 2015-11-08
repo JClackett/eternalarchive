@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
 
   devise_for :users
+  
   resources :contributions, except: [:show, :new]
   get 'submit' => 'contributions#new'
 

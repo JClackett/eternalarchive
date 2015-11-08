@@ -10,7 +10,7 @@
                       </div>
                       <li class="login-links"><p class="username-sidebar"><%= current_user.username %></p></li>
                       <li class="login-links"><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
-                  <%else%>
+                  <% else %>
                       <li class="login-links"><%= link_to "SIGN IN / SIGN UP" , new_user_session_path%></li>
                   <% end %>
                 
