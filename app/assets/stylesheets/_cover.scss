@@ -24,6 +24,10 @@
   position:relative;
   overflow:hidden;
   
+  img {
+    width: 100%;
+  }
+  
   @include breakpoint(small) {
     height: 100vh; 
   }
@@ -36,6 +40,10 @@
   float:left;
   position:relative;
   overflow:hidden;
+  
+   img {
+    width: 100%;
+  }
 }
 
 .img-cover , .blue-img-cover {
@@ -65,7 +73,7 @@
       z-index: -1;
 
       @include breakpoint(medium) {
-        width:1500px;
+        width:100%;
       }
 
 }
