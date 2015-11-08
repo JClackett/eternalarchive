@@ -6,6 +6,6 @@
 	<a href="https://www.facebook.com/sharer.php?u=http://www.eternalarchive.co.uk/posts/<%= post.id %>" title="Share on Facebook" target="_blank" class="btn btn-facebook">
 	<%= image_tag("F_icon.png")%>
 	
-	<a href="http://twitter.com/home?status=Check this out! http://www.eternalarchive.co.uk/posts/<%= post.id %>-<%= post.description %>" title="Share on Twitter" target="_blank" class="btn btn-twitter">
+	<a href="http://twitter.com/home?status=Check this out! http://www.eternalarchive.co.uk/posts/<%= post.id %>-<%= post.description.to_param %>" title="Share on Twitter" target="_blank" class="btn btn-twitter">
 	<%= image_tag("1445737520_square-twitter.png")%>
 </div>
