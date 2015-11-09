@@ -25,13 +25,13 @@
   }
 
       h1 {
-           font-size: 1.75rem;
+           font-size: 1.5rem;
            font-weight: 300;
            padding-right: 5%;
            padding-left: 5%;
 
            @include breakpoint(small) {
-              font-size: 3rem;
+              font-size: 2rem;
               padding-top: 5%;
             }
 
