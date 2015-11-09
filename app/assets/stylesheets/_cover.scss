@@ -24,10 +24,6 @@
   position:relative;
   overflow:hidden;
   
-  img {
-    width: 100%;
-  }
-  
   @include breakpoint(small) {
     height: 100vh; 
   }
@@ -40,10 +36,6 @@
   float:left;
   position:relative;
   overflow:hidden;
-  
-   img {
-    width: 100%;
-  }
 }
 
 .img-cover , .blue-img-cover {
@@ -73,7 +65,7 @@
       z-index: -1;
 
       @include breakpoint(medium) {
-        width:100%;
+        width:1500px;
       }
 
 }
@@ -134,5 +126,4 @@ video::-webkit-media-controls {
 .video-container video.fillWidth {
     width: 100%;
 }
-
 
