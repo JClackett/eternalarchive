@@ -37,6 +37,14 @@
     ul {
       padding: 0;
       margin: 0px 0px;
+      
+      li {
+        list-style: none;   // for the username
+      }
+      
+      // All the links 
+      a {
+        text-decoration: none;
 
       li {
         list-style: none;
@@ -53,23 +61,15 @@
             padding: 8% 0;
         }
 
-        a {
+        p {
           font-size: 0.8rem;
           text-decoration: none;
           color: $white;
-          padding-left: 30px;
-          
-          &:hover {
-            color:$lighterpurple;
-          }
+          padding-left:  30px;
+          margin: 0;
         }
-        p {
-            font-size: 1rem;
-            margin: 0;
-            font-weight: 400;
-          }
       }
-
+    }
       .selected {
         font-weight: 400;
       }
@@ -79,7 +79,7 @@
 
       .sidebar-gravatar {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 20px;
             
                 img {
                 width: 40px;
@@ -92,9 +92,9 @@
       .username-sidebar {
         text-align:center;
         
-      &:hover {
-        background-color: $teal;
-      }
+        p {
+          margin: 5px 0;
+        }
       }
 
       .login-links {
@@ -115,6 +115,10 @@
           @include breakpoint(medium){
             display:none;
           }
+      }
+
+      .login-section-sidebar {
+          border-top: 1px solid $lightteal;
       }
       .static-section {
           bottom:65px;
