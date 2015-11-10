@@ -59,7 +59,7 @@
 // --------------------------------------------------- Header Nav Bar  --------------------------------------------------------------- //
 // -------------------------------------------------------------------------------------------------------------------------------------------- //
 
-.shuffle-section-header, .liked-section, .latest-section {
+ .liked-section, .latest-section {
   display: none;
 
   @include breakpoint(medium-large){
@@ -91,6 +91,40 @@
             }
   }
 }
+
+.shuffle-section-header {
+    display: none;
+
+  @include breakpoint(small){
+    display: block;
+    float: left;
+      text-align: center;
+      height:65px;
+      line-height: 65px;
+      display: block;
+      margin: 0 10px;
+      // background-color: $lightpurple;
+
+
+            a {
+                text-decoration:none;
+                color:$white;
+                font-size: 0.8rem;
+                font-weight: 300;
+                padding-bottom: 5px;
+                cursor:pointer;
+
+                  &:hover {
+                    color:$lighterpurple;
+                  }
+            }
+
+            .selected {
+                   border-bottom:1px solid white;
+            }
+  }
+}
+  
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - Contribute Button - - - - - - - - - - - - - - - - - - - - - - - - - - -  */

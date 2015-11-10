@@ -658,7 +658,7 @@ iframe {
   width: 100%;
   background-color: rgba(0,0,0, 0.5);
   position: absolute;
-  top:19%;
+  top:25%;
   left:0;
   right:0;
   margin-left:auto;
@@ -685,7 +685,7 @@ iframe {
   
       @include breakpoint(small) {
           width: 80%;
-          top:16%;
+          top:18%;
           
            .show-post-description {
               font-size: 2rem;
