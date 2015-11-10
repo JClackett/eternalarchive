@@ -1,7 +1,7 @@
  <div class="sidebar area" data-sidebar >  
             <ul>
                   <!-- Login Section -->
-
+              <div class="login-section-sidebar group"> 
                  <% if user_signed_in? %>
                       <div class="sidebar-gravatar login-links">
                              <%= link_to profile_path do %>
@@ -19,6 +19,7 @@
                             <li class="login-links"><p>SIGN IN / SIGN UP</p></li>
                       <% end %>
                   <% end %>
+                </div>
                 
                   <!-- Nav Button Section -->
 

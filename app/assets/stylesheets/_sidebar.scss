@@ -21,13 +21,19 @@
   z-index:11
 }
 
+.side-up {
+  margin-top: 0px;
+}
+
+.side-down {
+  margin-top: 65px;
+}
 
 .sidebar {   // General Styling to sidebar
   position: fixed;
   height:100%;
   right:-200px;
   font-weight:300;
-  margin-top:65px;
   display:block;
   top:0;
   background-color: $teal;
@@ -128,5 +134,9 @@
           width: 100%;
           border-top: 1px solid $lightteal;
           }
+    }
+
+    .login-section-sidebar {
+      height: 28.5714%
     }
  } 
