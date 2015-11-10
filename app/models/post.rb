@@ -27,12 +27,12 @@ class Post < ActiveRecord::Base
 		else
 		end
 
-   		if self.url.include?("youtube") || self.url.include?("vimeo") || self.url.include?("ted" &&"talks")
+   		if self.url.include?("youtube") || self.url.include?("vimeo") || self.url.include?("ted" && "talks")
  		else
 			if image_url.blank?
-		           	self.assign_attributes(image_url: @article.images.best.to_s)
-		           end
-    		end
+           		self.assign_attributes(image_url: @article.images.best.to_s)
+           	end
+    	end
 
     		self.assign_attributes(keywords: @article.meta_tag['name']['keywords'])
 	end

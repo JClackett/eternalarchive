@@ -22,7 +22,7 @@
 .about-content, .contact-content, .help-content , .copyright-content {
       position: absolute;
       width:90%;
-      font-size: 1rem;
+      font-size: 0.9rem;
       top:100px;
       text-align: center;
       left:0;
@@ -32,13 +32,12 @@
       font-weight: 200;
       
       @include breakpoint(small) {
-            width:55%
-
+            width:55%;
+            font-size: 1rem;
       }
 }
 
 .mail-to-about {
       color:$purple;
       text-decoration: none;
-      
 }

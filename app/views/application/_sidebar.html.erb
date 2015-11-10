@@ -1,24 +1,73 @@
- <div class="sidebar area" data-sidebar >
+ <div class="sidebar area" data-sidebar >  
+            <ul>
+                  <!-- Login Section -->
 
-        <div class="sidebar-buttons">
-            <ul>
-              <%= render 'login_sidebar' %>         
-        
-              <%= render 'submit' %>  
-            </ul>
-            <ul class="admin">
+                 <% if user_signed_in? %>
+                      <div class="sidebar-gravatar login-links">
+                             <%= link_to profile_path do %>
+                                  <%= gravatar_image_tag(current_user.email.gsub('spam', 'mdeering'), :alt => current_user.username) %>
+                              <% end %>
+                      </div>
+                      <li class="login-links username-sidebar"><p><%= current_user.username %></p></li>
+
+                      <%= link_to destroy_user_session_path, method: :delete do %>
+                            <li class="login-links login-section-sidebar"><p>LOGOUT</p></li>
+                      <% end %>
+
+                  <% else %>
+                      <%= link_to new_user_session_path do%>
+                            <li class="login-links"><p>SIGN IN / SIGN UP</p></li>
+                      <% end %>
+                  <% end %>
+                
+                  <!-- Nav Button Section -->
+
+                 <%= nav_link_to posts_mostrecent_path  do %>
+                      <li class="user-links"><p>LATEST</p></li>
+                 <% end %>
+
+                 <%= nav_link_to posts_mostliked_path do %>
+                      <li class="user-links"><p>MOST LIKED</p></li>
+                 <% end %>
+
+                 <% if params[:p] == "shuffle" %>
+                      <%= nav_link_to posts_shuffle_path(p: "shuffle") do %>
+                            <li class="user-links"><p>SHUFFLE AGAIN!</p></li>
+                      <% end %>
+                 <% else %>
+                      <%= nav_link_to posts_shuffle_path(p: "shuffle") do %>
+                            <li class="user-links"><p>SHUFFLE!</p></li>
+                      <% end %>
+                 <% end %>
+
+                  <!-- Contribute Section -->
+                 <%= link_to submit_path do %>
+                       <li class="contribute-link"><p>CONTRIBUTE</p></li>
+                  <% end %>
+
+                  <!-- Admin Section -->
+
                  <% if current_user.try(:admin?) %>
-                      <li><%= link_to 'New Post' , new_post_path , class: 'new-post' %></li>
-                      <li><%= link_to 'New Category' , new_category_path , class: 'new-post' %></li>
-                      <li><%= link_to 'Contributions' , contributions_path , class: 'new-post' %></li>
-                  <%end%>            
-            </ul>
-            <ul>
-                  <div class="static-links">
-                    <li><div class="static-pages"><%= nav_link_to 'About', application_about_path %></div></li>
-                    <li><div class="static-pages"><%= nav_link_to 'Copyright', application_copyright_path %></div> </li>
+                      <%= link_to new_post_path  do %>
+                             <li class="admin-links"><p>NEW POST</p></li>
+                      <% end %>
+                      <%= link_to new_category_path  do %>
+                             <li class="admin-links"><p>NEW CATEGORY</p></li>
+                      <% end %>
+                      <%= link_to contributions_path  do %>
+                             <li class="admin-links"><p>CONTRIBUTIONS</p></li>
+                      <% end %>
+                  <%end%>
+
+
+                  <!-- Static Section -->
+                  <div class="static-section">
+                      <%= nav_link_to application_about_path do %>
+                              <li class="static-links"><p>ABOUT</p></li>
+                      <% end %>
+                      <%= nav_link_to application_copyright_path do %>
+                              <li class="static-links"><p>COPYRIGHT</p></li>
+                      <% end %>
                   </div>
             </ul>
-        </div>  
-  
-      </div>
+</div>

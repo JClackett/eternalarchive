@@ -1,24 +1,6 @@
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - Sidebar Section - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
-
-.sidebar {
-  height:100%;
-  right:-200px;
-  font-weight:300;
-  margin-top:65px;
-  background-color: $teal;
-
-   &:hover {
-     overflow-y: auto;
-   }
-
-  @include breakpoint(small) {
-    display: block;
-  } 
-}
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// ----------------------------------------------------------- General -------------------------------------------------------------------- //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
 
 [data-sidebar] {
   display:none;
@@ -26,85 +8,6 @@
   height:100%;
   width:200px;
   z-index:12
-}
-
-.sidebar-buttons {
-  line-height: 10%;
-  font-size:1rem;
-  
-  
-  @include breakpoint(small) {
-    line-height:20px;
-  }
-
-  ul {
-    margin:0;
-    
-    @include breakpoint(small) {
-      float: none;
-    }
-
-    
-    .login-section {
-      display: block;
-    
-      
-      @include breakpoint(small) {
-        display: none;
-      } 
-
-    }
-
-    .contribute-section {
-      display: block;
-      
-      @include breakpoint(small) {
-        display: none;
-      } 
-
-    }
-
-    li {
-      margin-top: 30%;
-      list-style:none;
-      a {
-        text-align:center;
-        padding:0px;
-        z-index: 13;
-
-        @include breakpoint(small) {
-        padding: 10px;
-        } 
-      }
-    }
-  }
-}
-
-.admin {
-  float: left;
-  line-height: 5px;
-}
-.new-post {
-  text-decoration:none;
-  color:$white;
-}
-
-.static-links {
-  position:absolute;
-  bottom:100px
-}
-
-.static-links, .sidebar-buttons ul li a:hover {
-          color:$lighterpurple;
-}
-
-.selected {
-  font-weight:500;
-}
-
-.static-pages a {
-  text-decoration:none;
-  color:$white;
 }
 
 [data-sidebar-dimmer] {
@@ -117,3 +20,111 @@
   width:100%;
   z-index:11
 }
+
+
+.sidebar {   // General Styling to sidebar
+  height:100%;
+  right:-200px;
+  font-weight:300;
+  margin-top:65px;
+  display:block;
+  background-color: $teal;
+
+   &:hover {
+     overflow-y: auto;
+   }
+
+    ul {
+      padding: 0;
+      margin: 0px 0px;
+      
+      li {
+        list-style: none;   // for the username
+      }
+      
+      // All the links 
+      a {
+        text-decoration: none;
+
+      li {
+        list-style: none;
+        margin: 0;
+        padding: 4% 0;
+        border-bottom: 1px solid $lightteal;
+        
+        &:hover {
+            background-color: $lightteal;
+        }
+        
+        @include breakpoint(small){
+            margin: 0;
+            padding: 8% 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          text-decoration: none;
+          color: $white;
+          padding-left:  30px;
+          margin: 0;
+        }
+      }
+    }
+      .selected {
+        font-weight: 400;
+      }
+
+
+      // Specific styling dependent on the link
+
+      .sidebar-gravatar {
+            text-align: center;
+            margin-top: 20px;
+            
+                img {
+                width: 40px;
+                height: 40px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+              }
+        }
+
+      .username-sidebar {
+        text-align:center;
+        
+        p {
+          margin: 5px 0;
+        }
+      }
+
+      .login-links {
+          @include breakpoint(small){
+            display:none;
+          }
+      }
+
+      .admin-links {
+      }
+
+      .user-links {
+          @include breakpoint(medium-large){
+            display:none;
+          }
+      }
+      .contribute-link {
+          @include breakpoint(medium){
+            display:none;
+          }
+      }
+
+      .login-section-sidebar {
+          border-top: 1px solid $lightteal;
+      }
+      .static-section {
+          bottom:65px;
+          position: absolute;
+          width: 100%;
+          border-top: 1px solid $lightteal;
+          }
+    }
+ } 

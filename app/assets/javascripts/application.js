@@ -144,12 +144,6 @@ $(document).on('ready page:load', function () {
         });
 });
 
-// $(document).on('ready page:load', function () {
-//   $(".category-links").click(function() {
-//     $('html,body').animate({
-//         scrollTop: $(".main-container").offset().top},1000,'easeOutQuart')
-//     });
-// });
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Popup JS - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -182,15 +176,6 @@ $(document).on('ready page:load', function () {
     });
 });
 
-/* Toggle category item */
-// $('#category-wrapper').load(link.attr('href'),function(responseText, textStatus, XMLHttpRequest){
-//  $('#category-nav a').removeClass('active');
-//  link.addClass('active');
-//     $('.share-network').on('click','.toggle-item',function(e){
-//          e.preventDefault();
-//         $(this).parent().next('.share').toggle();
-//     });
-// });
 
 $(document).on('page:load ready', function () {
     $('body').on('click','.share-wrapper',function(e){
@@ -199,46 +184,7 @@ $(document).on('page:load ready', function () {
     });
 });
 
-// $(document).on('page:load ready', function () {
-//     $(".share-wrapper").click(function(e) {
-//         $(this).find(".share").toggle();
-//         
-//     });
 
-//     $(".share-wrapper").click(function(e) {
-//         $(this).toggleClass( "share-selected" )
-//         e.stopPropagation();
-//     });
-    
-//     $(document).click(function(e) {
-//         if (!$(e.target).is('.share, .share*')) {
-//             $(".share").hide();
-//         }
-//     });
-// });
-
-// -------------------------------------------------------------------------------------------------------------------------------------------- //
-// ------------------------------------------------------  Panel Adding ---------------------------------------------------------------- //
-// -------------------------------------------------------------------------------------------------------------------------------------------- //
-
-// $(document).on('ready page:load', function () {
-
-    //         $('.main-container:nth-child(9n)').after('
-            
-    //                 <div class="main-container panel-wrapper">
-    // <div class="post-container panel-container">
-    //         <a class="overlay" href="/submit"> 
-    //             <div class="fader"></div>
-    //             <span class="panel-information">
-    //                 <h5 class="panel-description">Seen something worth sharing?</h5>
-    //                 <h4 class="panel-description-two">Contribute it to the Archive!</h4>
-    //             </span>
-    //         </a>
-    //         <div class="link-container">
-    //         </div>  
-    // </div>
-
-// </div>
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Cover  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -307,4 +253,3 @@ function scaleBannerVideoSize(element){
 
     });
 }
-
