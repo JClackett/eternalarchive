@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!, except: [:index, :show, :topvids, :mostrecent, :upvote, :shuffle]
+    before_action :authenticate_user!, except: [:index, :show, :mostliked, :mostrecent, :upvote, :shuffle]
 
     
   # GET /posts
