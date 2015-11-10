@@ -87,7 +87,7 @@
         margin: 5px;
         
          .selected {
-          color:$teal;
+          color:$purple;
           background-color:$white;
         }
         a {
@@ -96,12 +96,12 @@
           border-radius: 5px; 
           text-decoration:none;
           color:$white;
-          background-color:$teal;
+          background-color:$purple;
         }
       }
     }
 }
 
 .category-tags a:hover {
-      background-color:$lightteal;
+      background-color:$lightpurple;
 }
