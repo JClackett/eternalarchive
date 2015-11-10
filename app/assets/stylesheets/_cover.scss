@@ -94,6 +94,10 @@
     width: 100%;
     overflow: hidden;
     background: #000;
+    opacity: 0.8;
+    video::-webkit-media-controls {
+    display:none !important;
+}
 }
 .video-container .poster img {
     width: 100%;
@@ -114,6 +118,3 @@
     width: 100%;
 }
 
-video::-webkit-media-controls {
-    display:none !important;
-}
