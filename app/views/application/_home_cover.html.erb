@@ -1,31 +1,31 @@
-<div class="hero-cover">
-                <div class="img-cover"></div>
-                <div class="homepage-hero-module">
-                  <div class="video-container">
-                      <video autoplay loop class="fillWidth" poster="assets/cover-photo.jpg" >
-                          <source src="assets/bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                      </video>
-                  </div>
+  <div class="hero-cover"> 
+    <div class="img-cover"></div>
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <!-- <div class="filter"></div> -->
+            <video autoplay loop class="fillWidth" poster="assets/Dancing-Bulbs.jpg">
+                <source src="assets/Dancing-Bulbs.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="assets/Dancing-Bulbs.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="assets/Dancing-Bulbs.ogv" type="video/ogv" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+        </div>
+    </div>
+      <div class="hero-title">
+        <h1><%= @title %> </h1>
+        <h3><%= @slogan %> </h3>
+      </div>
 
-                </div>
-                  <div class="hero-title">
-                    <h1><%= @title %> </h1>
-                    <h3><%= @slogan %> </h3>
-                  </div>
+      <div class="hero-buttons center">
+            <%= link_to 'Latest Content' , posts_mostrecent_path , class: 'mostrecent-button' %>
+            <div class="home-like-section">
+                <%= link_to 'Most Liked' , posts_mostliked_path , class: 'mostliked-button shifty' %>
+                <%= image_tag("bulb-icon-1005064002-yellow.png", class: 'home-light-img')%>
+            </div>
+            <%= link_to 'Shuffle' , posts_shuffle_path(p: "shuffle") , class: 'shuffle-button wiggle' %>
+      </div>
 
-                  <div class="hero-buttons center">
-                        <%= link_to 'Latest Content' , posts_mostrecent_path , class: 'mostrecent-button' %>
-                        <div class="home-like-section">
-                            <%= link_to 'Most Liked' , posts_mostliked_path , class: 'mostliked-button shifty' %>
-                            <%= image_tag("bulb-icon-1005064002-yellow.png", class: 'home-light-img')%>
-                        </div>
-                        <%= link_to 'Shuffle' , posts_shuffle_path(p: "shuffle") , class: 'shuffle-button wiggle' %>
-                  </div>
-
-                  <div class="start-watching center">Start watching now</div>
-                  <div class="scroll-to-content">
-                        <i class="fa fa-angle-double-down scroll-arrow"></i>
-                  </div>
+      <div class="start-watching center">Start watching now</div>
+      <div class="scroll-to-content">
+            <i class="fa fa-angle-double-down scroll-arrow"></i>
+      </div>
 </div>
-
-

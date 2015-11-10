@@ -23,11 +23,13 @@
 
 
 .sidebar {   // General Styling to sidebar
+  position: fixed;
   height:100%;
   right:-200px;
   font-weight:300;
   margin-top:65px;
   display:block;
+  top:0;
   background-color: $teal;
 
    &:hover {
