@@ -22,16 +22,16 @@
 }
 
 .side-up {
-  margin-top: 0px;
+  height:100%;
 }
 
 .side-down {
+  height: calc(100% - 65px);
   margin-top: 65px;
 }
 
 .sidebar {   // General Styling to sidebar
   position: fixed;
-  height:100%;
   right:-200px;
   font-weight:300;
   display:block;
@@ -39,7 +39,7 @@
   background-color: $teal;
 
    &:hover {
-     overflow-y: auto;
+     overflow-y: none;
    }
 
     ul {
@@ -129,9 +129,9 @@
           border-top: 1px solid $lightteal;
       }
       .static-section {
-          bottom:65px;
           position: absolute;
           width: 100%;
+          bottom: 0;
           border-top: 1px solid $lightteal;
           }
     }

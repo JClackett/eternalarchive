@@ -104,21 +104,21 @@ $(document).on('ready page:load', function () {
     });
 
 
- // Stop page scrolling when side bar is up
+ //Stop page scrolling when side bar is up
 
-    // $.fn.scrollGuard = function() {
-    //     return this
-    //         .on( 'mousewheel', function ( e ) {
-    //             var event = e.originalEvent;
-    //             var d = event.wheelDelta || -event.detail;
-    //             this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
-    //             e.preventDefault();
-    //         });
-    // };    
+    $.fn.scrollGuard = function() {
+        return this
+            .on( 'mousewheel', function ( e ) {
+                var event = e.originalEvent;
+                var d = event.wheelDelta || -event.detail;
+                this.scrollTop += ( d < 0 ? 1 : -1 ) * 30;
+                e.preventDefault();
+            });
+    };    
 
-    // $(function(){
-    //     $( '.area' ).scrollGuard();
-    // });
+    $(function(){
+        $( '.sidebar' ).scrollGuard();
+    });
 });
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
