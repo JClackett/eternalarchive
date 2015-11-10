@@ -38,6 +38,10 @@
 }
 
 .mail-to-about {
-      color:$purple;
+      color:$teal;
       text-decoration: none;
+      
+      &:hover {
+            text-decoration: underline;
+      }
 }
