@@ -120,6 +120,12 @@
             display:none;
           }
       }
+
+      .shuffle-link {
+        @include breakpoint(small){
+            display:none;
+          }
+      }
       .contribute-link {
           @include breakpoint(medium){
             display:none;
