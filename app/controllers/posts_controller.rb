@@ -6,7 +6,7 @@
   # GET /posts
   def index
      if params[:name].present?
-        if params[:name] == "all" 
+        if params[:name] == "All" 
           @posts = Post.uniq.paginate(:page => params[:page], :per_page =>10).reverse_order
           @title =  "All Content"
         else
@@ -93,7 +93,7 @@
   end
 
   def shuffle
-      if params[:p] == "shuffle" 
+      if params[:p] == "All" 
         @post=Post.all.shuffle.first
       else  
         @post=Post.joins(:categories).where(categories: { name: params[:p] } ).shuffle.first
