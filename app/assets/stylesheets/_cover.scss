@@ -84,6 +84,8 @@
     position: relative;
 }
 
+
+
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
@@ -99,7 +101,7 @@ video::-webkit-media-controls {
 }
 
 .video-container {
-    position: relative;
+    position: absolute;
     bottom: 0%;
     left: 0%;
     height: 100%;
