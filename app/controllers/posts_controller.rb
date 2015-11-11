@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+ class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     before_action :authenticate_user!, except: [:index, :show, :mostliked, :mostrecent, :upvote, :shuffle]
 
@@ -93,7 +93,11 @@ class PostsController < ApplicationController
   end
 
   def shuffle
-      @post=Post.all.shuffle.first
+      if params[:p] == "shuffle" 
+        @post=Post.all.shuffle.first
+      else  
+        @post=Post.joins(:categories).where(categories: { name: params[:p] } ).shuffle.first
+      end
       render :show
   end
 

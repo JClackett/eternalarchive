@@ -1,8 +1,11 @@
 <div class="shuffle-section-header">
-        <% if params[:p] == "shuffle" %>
-              <%= nav_link_to 'SHUFFLE AGAIN!' , posts_shuffle_path(p: "shuffle")%>
-
-        <% else %>
-              <%= nav_link_to 'SHUFFLE!' , posts_shuffle_path(p: "shuffle")%>
-         <% end %>
+      	<%  if params[:p].present? %>
+	        <% if params[:p] == "shuffle" %>
+	              <%= nav_link_to 'SHUFFLE AGAIN!' , posts_shuffle_path(p: "shuffle")%>
+	        <% else %>
+	              <%= nav_link_to "SHUFFLE #{params[:p].upcase}!", posts_shuffle_path(p: params[:p])%>
+	        <% end %>
+	<% else %>
+	       <%= nav_link_to 'SHUFFLE!' , posts_shuffle_path(p: "shuffle")%>
+       	<% end %>
 </div>

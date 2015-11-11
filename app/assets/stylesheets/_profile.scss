@@ -1,5 +1,7 @@
 
 .profile-header {
+	text-align: center;
+	
 
 	img {
 	    position: absolute;
@@ -22,7 +24,6 @@
 		position: absolute;
 	    	top: 22%;
 	   	left: 0;
-	   	width:300px;
 	   	text-align:center;
 		margin-left: auto;
 		margin-right: auto;
@@ -30,8 +31,7 @@
 		font-size: 2em;
 		font-weight:300;
 		color:$white;
-		border-bottom:2px solid $white;
-		border-top:2px solid $white;
+
 		
 		@include breakpoint(small) {
 		                font-size: 3rem;
