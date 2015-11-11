@@ -6,6 +6,11 @@
 	              <%= nav_link_to "SHUFFLE #{params[:p].upcase}!", posts_shuffle_path(p: params[:p])%>
 	        <% end %>
 	<% else %>
-	       <%= nav_link_to 'SHUFFLE!' , posts_shuffle_path(p: "All")%>
+		<% if params[:name].present?  %>
+	       		<%= nav_link_to 'SHUFFLE ALL!' , posts_shuffle_path(p: "All")%>
+	       	<% else %>
+	       		<%= nav_link_to 'SHUFFLE!' , posts_shuffle_path(p: "All")%>
+	       	<% end %>
+
        	<% end %>
 </div>
