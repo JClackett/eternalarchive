@@ -57,7 +57,6 @@
 .cover-photo-img , .category-cover {
       width:1500px;
       position: relative;
-      top:-200px;
       z-index: -1;
 
       @include breakpoint(medium) {
