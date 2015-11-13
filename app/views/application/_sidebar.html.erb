@@ -31,12 +31,12 @@
                       <li class="user-links"><p>MOST LIKED</p></li>
                  <% end %>
 
-                 <% if params[:p] == "shuffle" %>
-                      <%= nav_link_to posts_shuffle_path(p: "shuffle") do %>
+                 <% if params[:p] == "All" %>
+                      <%= nav_link_to posts_shuffle_path(p: "All") do %>
                             <li class="user-links shuffle-link"><p>SHUFFLE AGAIN!</p></li>
                       <% end %>
                  <% else %>
-                      <%= nav_link_to posts_shuffle_path(p: "shuffle") do %>
+                      <%= nav_link_to posts_shuffle_path(p: "All") do %>
                             <li class="user-links shuffle-link"><p>SHUFFLE!</p></li>
                       <% end %>
                  <% end %>

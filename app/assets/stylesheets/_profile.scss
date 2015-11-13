@@ -4,6 +4,7 @@
 	
 
 	img {
+
 	    position: absolute;
 	    top: 15%;
 	    left: 0;
@@ -13,16 +14,27 @@
 	    margin-right: auto;
 	    right: 0;
 	    border-radius: 50%;
+
 	    
-	    	@include breakpoint(small) {
-		           width: 100px;
-	    		height: 100px;
-              	}
+	   	@include breakpoint(small) {
+		    width: 100px;
+	    	height: 100px;
+      	}
+
+      		    @include screen-height(320px, 680px, landscape) {
+    		width: 60px;
+    		height: 60px;
+    		top: 22%;
+			left: -15%;
+    	}
+	    
 	}
 
 	h4 {
+		
+
 		position: absolute;
-	    	top: 22%;
+	    top: 22%;
 	   	left: 0;
 	   	text-align:center;
 		margin-left: auto;
@@ -34,26 +46,51 @@
 
 		
 		@include breakpoint(small) {
-		                font-size: 3rem;
-              	}
+		    font-size: 3rem;
+		    top: 22%;
+        }
+
+
+		 @include screen-height(320px, 680px, landscape) {
+			font-size: 1.2em;
+		    top: 19.5%;
+		    left: 80px;
+	    }
 		
 	}
 	
 	.profile-small-header {
 		position: absolute;
-	    	top: 43%;
+	  	top: 43%;
 	   	left: 0;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
 		right: 0;
 		color:$white;
-
+		
+		@include screen-height(320px, 680px, landscape) {
+			top: 44%;
+			left: 0%;
+	    }
 
 		h6 {
+
 			font-size: 1.5rem;
 			font-weight:300;
 			margin: 0;
+
+	    	@include breakpoint(small) {
+		        font-size: 1.5rem;
+            }
+
+            
+			 @include screen-height(320px, 680px, landscape) {
+				font-size: 0.75em;
+				top: 25%;
+				left: 15%;
+	    	}
+
 		}
 	}
 }
