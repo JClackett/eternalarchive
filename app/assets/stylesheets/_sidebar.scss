@@ -21,17 +21,26 @@
   z-index:11
 }
 
+.side-up {
+  height:100%;
+  margin-top: 0;
+}
+
+.side-down {
+  height: calc(100% - 65px);
+  margin-top: 65px;
+}
 
 .sidebar {   // General Styling to sidebar
-  height:100%;
+  position: fixed;
   right:-200px;
   font-weight:300;
-  margin-top:65px;
   display:block;
+  top:0;
   background-color: $teal;
 
    &:hover {
-     overflow-y: auto;
+     overflow-y: none;
    }
 
     ul {
@@ -111,6 +120,12 @@
             display:none;
           }
       }
+
+      .shuffle-link {
+        @include breakpoint(small){
+            display:none;
+          }
+      }
       .contribute-link {
           @include breakpoint(medium){
             display:none;
@@ -121,10 +136,14 @@
           border-top: 1px solid $lightteal;
       }
       .static-section {
-          bottom:65px;
           position: absolute;
           width: 100%;
+          bottom: 0;
           border-top: 1px solid $lightteal;
           }
+    }
+
+    .login-section-sidebar {
+      height: 28.5714%
     }
  } 

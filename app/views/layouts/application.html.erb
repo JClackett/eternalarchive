@@ -38,23 +38,26 @@
   <div class="dimmer area" data-sidebar-dimmer></div>
 
 
-    <% if current_page?("/about") || current_page?("/contact_us") || current_page?("/help") || current_page?("/copyright") %>
-      <%= render 'static_header' %>
-      <%= render 'cover' %>
+      <% if current_page?("/about") || current_page?("/copyright") %>
+          <%= render 'static_header' %>
+          <%= render 'other_cover' %>
       <% else %>
           <%= render 'header' %>
+
           <% if flash.any? %>
               <div class="content-wrap">
                   <%= render 'shared/flash_messages' %>
               </div>
-        <% end %>
+          <% end %>
+
           <% if params[:name].present? || current_page?("/most_liked") || current_page?("/latest") || current_page?('/profile') %>
                 <%= render 'short_cover' %>
           <% elsif current_page?("/") || current_page?("/posts") %>
                 <%= render 'home_cover' %>
           <% else %>
-                <%= render 'cover' %>
+                <%= render 'other_cover' %>
           <% end  %>
+          
     <% end %>
 
     <%= render 'sidebar' %>

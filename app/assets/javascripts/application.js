@@ -104,7 +104,7 @@ $(document).on('ready page:load', function () {
     });
 
 
- // Stop page scrolling when side bar is up
+ //Stop page scrolling when side bar is up
 
     $.fn.scrollGuard = function() {
         return this
@@ -117,7 +117,7 @@ $(document).on('ready page:load', function () {
     };    
 
     $(function(){
-        $( '.area' ).scrollGuard();
+        $( '.sidebar' ).scrollGuard();
     });
 });
 
@@ -189,7 +189,6 @@ $(document).on('page:load ready', function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - -  Cover  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-
 //jQuery is required to run this code
 $(document).on('ready page:load', function () {
 

@@ -1,4 +1,3 @@
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Hero Section  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
@@ -12,12 +11,12 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  top:33%;
+  top:20%;
   color:$white;
   z-index: 1;
   
   @include breakpoint(small) {
-      top:15%;
+      top:10%;
   }
 
   @include breakpoint(medium) {
@@ -90,7 +89,7 @@
 .hero-buttons {
   position: absolute;
   z-index:7;
-  top:70%;
+  top:35%;
   width: 100%;
 
   @include breakpoint(medium) {
@@ -212,6 +211,20 @@
   }
 }
 
+@-webkit-keyframes shifty-small {
+  0% {
+    -webkit-transform:translate(0,0);
+  }
+
+  50% {
+    -webkit-transform:translate(0,-25px);
+  }
+
+  100% {
+    -webkit-transform:translate(0,0px);
+  }
+}
+
 .home-like-section {
   position: relative;
 }
@@ -219,12 +232,25 @@
 .home-light-img {
   display: none;
   z-index:-1;
-  right: 50px;
+  right: 30px;
   position: absolute;
-  height:50px;
+  height:30px;
+  
+      @include breakpoint(small) {
+            height:50px;   
+            right: 50px;
+      }
 }
 
+
 .shifty:hover + .home-light-img {
-  -webkit-animation: shifty 2s 1;
+  -webkit-animation: shifty-small 2s 1;
   display:block;
 }
+
+@include breakpoint(small) {
+      .shifty:hover + .home-light-img {
+        -webkit-animation: shifty 2s 1;
+        display:block;
+      }
+} 
