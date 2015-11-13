@@ -21,7 +21,7 @@
 	    	height: 100px;
       	}
 
-      		    @include screen-height(320px, 680px, landscape) {
+      	@include screen-height(320px, 500px, landscape) {
     		width: 60px;
     		height: 60px;
     		top: 22%;
@@ -51,10 +51,10 @@
         }
 
 
-		 @include screen-height(320px, 680px, landscape) {
+		 @include screen-height(320px, 500px, landscape) {
 			font-size: 1.2em;
 		    top: 19.5%;
-		    left: 80px;
+		    left: 11%;
 	    }
 		
 	}
@@ -69,7 +69,7 @@
 		right: 0;
 		color:$white;
 		
-		@include screen-height(320px, 680px, landscape) {
+		@include screen-height(320px, 500px, landscape) {
 			top: 44%;
 			left: 0%;
 	    }
@@ -85,7 +85,7 @@
             }
 
             
-			 @include screen-height(320px, 680px, landscape) {
+			 @include screen-height(320px, 500px, landscape) {
 				font-size: 0.75em;
 				top: 25%;
 				left: 15%;
