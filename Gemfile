@@ -48,6 +48,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # tzinfo gem to enable rails to run server
 gem 'tzinfo-data'
 
+gem 'seed_dump'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
