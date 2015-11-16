@@ -11832,6 +11832,7 @@ var didScroll;
 var lastScrollTop = 600;
 var delta = 5;
 var navbarHeight = $('.header').outerHeight();
+var sidebarHeight = $('.sidebar').outerHeight();
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -11862,7 +11863,22 @@ function hasScrolled() {
             $('.header').removeClass('nav-up').addClass('nav-down');
         }
     }
+
+
+
+    // -------------------------------------------------------------------------------------------------------------------------------------------- //
+    // ----------------------------------------------------------- SideBar movement --------------------------------------------------- //
+    // -------------------------------------------------------------------------------------------------------------------------------------------- //
     
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.sidebar').removeClass('side-down').addClass('side-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.sidebar').removeClass('side-up').addClass('side-down');
+        }
+    }
     lastScrollTop = st;
 }
 ;
@@ -11981,7 +11997,7 @@ $(document).on('ready page:load', function () {
     });
 
 
- // Stop page scrolling when side bar is up
+ //Stop page scrolling when side bar is up
 
     $.fn.scrollGuard = function() {
         return this
@@ -11994,7 +12010,7 @@ $(document).on('ready page:load', function () {
     };    
 
     $(function(){
-        $( '.area' ).scrollGuard();
+        $( '.sidebar' ).scrollGuard();
     });
 });
 
@@ -12006,7 +12022,6 @@ $(document).on('ready page:load', function () {
     $(object.querySelector('.overlay')).hide(200);
     object.querySelector('iframe').src =
     object.querySelector('iframe').src.replace('autoplay=0','&autoplay=1');
-    object.querySelector('iframe').src.replace('autoplay ="no"','&autoplay= "yes"');
     return false;
   }
 

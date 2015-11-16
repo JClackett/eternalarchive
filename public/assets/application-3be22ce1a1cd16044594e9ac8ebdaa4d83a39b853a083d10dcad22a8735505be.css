@@ -15,7 +15,7 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - -  General  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 body {
   background-color: #001;
   color: #fff;
@@ -25,18 +25,18 @@ body {
   font-weight: 300;
 }
 
-/* line 14, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 14, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 18, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 18, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 .wrapper {
   margin: 0;
   width: 100%;
 }
 
-/* line 28, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 28, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 .center {
   display: -webkit-box;
   display: -moz-box;
@@ -55,12 +55,12 @@ body {
   align-items: center;
 }
 
-/* line 46, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 46, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 .dimmer {
   background-color: #000;
 }
 
-/* line 50, /Users/JClackett/Sites/tea/app/assets/stylesheets/general/_general.scss */
+/* line 50, /var/www/tea/app/assets/stylesheets/general/_general.scss */
 .group:after {
   display: table;
   content: "";
@@ -70,7 +70,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Main - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .form {
   width: 80%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -85,21 +85,21 @@ body {
   -moz-box-shadow: 0px 0px 180px -34px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 180px -34px rgba(0, 0, 0, 0.75);
 }
-/* line 19, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 19, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .form h3 {
   text-align: center;
   font-weight: 300;
   font-size: 1rem;
 }
 @media (min-width: 37.5em) {
-  /* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 5, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .form {
     width: 400px;
     padding: 20px;
   }
 }
 
-/* line 34, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 34, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .form-title {
   position: absolute;
   width: 80%;
@@ -115,36 +115,36 @@ body {
   text-align: center;
   top: 12%;
 }
-/* line 49, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 49, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .form-title h1 {
   font-weight: 300;
   font-size: 1.6rem;
 }
 @media (min-width: 37.5em) {
-  /* line 34, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 34, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .form-title {
     top: 9%;
     width: 500px;
     padding: 20px;
   }
-  /* line 59, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 59, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .form-title h1 {
     font-size: 2.5rem;
   }
 }
 
-/* line 65, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 65, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .field {
   text-align: center;
   padding: 10px;
 }
 
-/* line 70, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 70, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .field ::-webkit-input-placeholder {
   color: #888;
 }
 
-/* line 74, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 74, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .input {
   width: 90%;
   height: 30px;
@@ -156,7 +156,7 @@ body {
   background-color: #eee;
 }
 
-/* line 85, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 85, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .submit {
   width: 50%;
   height: 50px;
@@ -171,7 +171,7 @@ body {
   -webkit-appearance: none;
 }
 
-/* line 99, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 99, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .submit:hover {
   background-color: #9181C6;
 }
@@ -185,32 +185,32 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - Contribution - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 135, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 135, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .recommend-wrap {
   text-align: center;
 }
 
-/* line 139, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 139, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .contribute-new-tag {
   text-decoration: none;
   width: 230px;
   margin: 10px auto;
 }
 
-/* line 144, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 144, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .checkbox-field {
   padding: 0;
   margin: 10px 0 30px 0;
 }
 
-/* line 150, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 150, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .field input[type=checkbox] {
   display: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 156, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 156, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .field .checkbox_label {
   display: inline-block;
   height: 20px;
@@ -227,12 +227,12 @@ body {
   background-color: #00AAA3;
 }
 
-/* line 173, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 173, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .field .checkbox_label:hover {
   background-color: #30BAB3;
 }
 
-/* line 177, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 177, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .check_box:checked + .checkbox_label {
   color: #8171B6;
   background-color: #fff;
@@ -241,12 +241,12 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sign In - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 193, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 193, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .new_user {
   margin-top: 20px;
 }
 
-/* line 197, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 197, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .forgot-password {
   color: #fff;
   text-decoration: none;
@@ -255,7 +255,7 @@ body {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Signup Tab - - - - - - - - - - - - - - -  - - - - - - - - - -  */
-/* line 206, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 206, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .signup-form-title {
   position: absolute;
   width: 100%;
@@ -266,7 +266,7 @@ body {
   text-align: center;
   top: 132px;
 }
-/* line 216, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 216, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .signup-form-title a {
   text-decoration: none;
   color: #fff;
@@ -278,25 +278,25 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 37.5em) {
-  /* line 216, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 216, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .signup-form-title a {
     width: 220px;
   }
 }
-/* line 234, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 234, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .signup-form-title .login-a {
   left: 0;
 }
-/* line 237, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 237, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .signup-form-title .login-b {
   right: 0;
 }
-/* line 241, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 241, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .signup-form-title .selected {
   background-color: #00AAA3;
 }
 @media (min-width: 37.5em) {
-  /* line 206, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 206, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .signup-form-title {
     width: 440px;
   }
@@ -308,7 +308,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Errors - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 271, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 271, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-message {
   display: inline-block;
   position: absolute;
@@ -317,7 +317,7 @@ body {
   text-align: center;
 }
 
-/* line 280, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 280, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
   background-color: #fff;
   left: 20%;
@@ -328,70 +328,70 @@ body {
   border-radius: 2px;
 }
 @media (min-width: 37.5em) {
-  /* line 280, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 280, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
     left: 28%;
   }
 }
 @media (min-width: 50em) {
-  /* line 280, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 280, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .url-error, .url-error-duplicate, .tag-error, .tag-error-blank {
     left: 36%;
   }
 }
 
-/* line 298, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 298, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .url-error, .url-error-duplicate {
   top: 210px;
 }
 @media (min-width: 37.5em) {
-  /* line 298, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 298, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .url-error, .url-error-duplicate {
     top: 176px;
   }
 }
 @media (min-width: 50em) {
-  /* line 298, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 298, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .url-error, .url-error-duplicate {
     top: 176px;
   }
 }
 
-/* line 311, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 311, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .tag-error {
   top: 470px;
 }
 @media (min-width: 37.5em) {
-  /* line 311, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 311, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .tag-error {
     top: 443px;
   }
 }
 @media (min-width: 50em) {
-  /* line 311, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 311, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .tag-error {
     top: 443px;
   }
 }
 
-/* line 326, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 326, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .tag-error-blank {
   top: 318px;
 }
 @media (min-width: 37.5em) {
-  /* line 326, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 326, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .tag-error-blank {
     top: 288px;
   }
 }
 @media (min-width: 50em) {
-  /* line 326, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 326, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .tag-error-blank {
     top: 288px;
   }
 }
 
-/* line 340, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 340, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-triangle, .error-triangle2, .error-triangle3, .error-triangle4 {
   width: 0;
   height: 0;
@@ -403,98 +403,98 @@ body {
   left: 25%;
 }
 @media (min-width: 37.5em) {
-  /* line 340, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 340, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle, .error-triangle2, .error-triangle3, .error-triangle4 {
     left: 35%;
   }
 }
 @media (min-width: 50em) {
-  /* line 340, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 340, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle, .error-triangle2, .error-triangle3, .error-triangle4 {
     left: 41%;
   }
 }
 
-/* line 360, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 360, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-triangle {
   top: 235px;
 }
 @media (min-width: 37.5em) {
-  /* line 360, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 360, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle {
     top: 205px;
   }
 }
 @media (min-width: 50em) {
-  /* line 360, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 360, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle {
     top: 205px;
   }
 }
 
-/* line 374, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 374, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-triangle2 {
   top: 498px;
 }
 @media (min-width: 37.5em) {
-  /* line 374, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 374, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle2 {
     top: 472px;
   }
 }
 @media (min-width: 50em) {
-  /* line 374, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 374, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle2 {
     top: 472px;
   }
 }
 
-/* line 389, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 389, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-triangle3 {
   top: 340px;
 }
 @media (min-width: 37.5em) {
-  /* line 389, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 389, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle3 {
     top: 317px;
   }
 }
 @media (min-width: 50em) {
-  /* line 389, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 389, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle3 {
     top: 317px;
   }
 }
 
-/* line 402, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+/* line 402, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
 .error-triangle4 {
   top: 72px;
 }
 @media (min-width: 37.5em) {
-  /* line 402, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 402, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle4 {
     top: 39px;
   }
 }
 @media (min-width: 50em) {
-  /* line 402, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_forms.scss */
+  /* line 402, /var/www/tea/app/assets/stylesheets/shared/_forms.scss */
   .error-triangle4 {
     top: 39px;
   }
 }
 
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
 .flash {
   padding: 15px;
 }
-/* line 8, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+/* line 8, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
 .flash ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-/* line 15, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+/* line 15, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
 .flash-cont {
   background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
@@ -509,12 +509,12 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
-/* line 30, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+/* line 30, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
 .flash-notice {
   display: none;
 }
 
-/* line 36, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+/* line 36, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
 .flash-alert {
   position: absolute;
   background-color: #fff;
@@ -528,14 +528,14 @@ body {
   color: #000;
 }
 @media (min-width: 37.5em) {
-  /* line 36, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+  /* line 36, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
   .flash-alert {
     left: 28%;
     top: 196px;
   }
 }
 @media (min-width: 50em) {
-  /* line 36, /Users/JClackett/Sites/tea/app/assets/stylesheets/shared/_flash_messages.scss */
+  /* line 36, /var/www/tea/app/assets/stylesheets/shared/_flash_messages.scss */
   .flash-alert {
     left: 36%;
   }
@@ -544,7 +544,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Header - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/_header.scss */
 .header {
   width: 100%;
   height: 65px;
@@ -557,29 +557,29 @@ body {
   width: 100%;
 }
 
-/* line 18, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 18, /var/www/tea/app/assets/stylesheets/_header.scss */
 .nav-up {
   top: -70px;
 }
 
-/* line 29, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 29, /var/www/tea/app/assets/stylesheets/_header.scss */
 .header .logo {
   float: left;
   margin: 0;
   padding: 0;
 }
-/* line 34, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 34, /var/www/tea/app/assets/stylesheets/_header.scss */
 .header .logo a {
   text-decoration: none;
 }
-/* line 36, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 36, /var/www/tea/app/assets/stylesheets/_header.scss */
 .header .logo a h2 {
   color: #fff;
   height: 25px;
   margin: 0;
   padding: 20px;
 }
-/* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 44, /var/www/tea/app/assets/stylesheets/_header.scss */
 .header .logo img {
   height: 30px;
   padding: 18px 15px;
@@ -588,19 +588,19 @@ body {
   margin: 0;
 }
 @media (min-width: 37.5em) {
-  /* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 44, /var/www/tea/app/assets/stylesheets/_header.scss */
   .header .logo img {
     height: 40px;
     padding: 13px 15px;
   }
 }
 
-/* line 62, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 62, /var/www/tea/app/assets/stylesheets/_header.scss */
 .liked-section, .latest-section {
   display: none;
 }
 @media (min-width: 56em) {
-  /* line 62, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 62, /var/www/tea/app/assets/stylesheets/_header.scss */
   .liked-section, .latest-section {
     display: block;
     float: left;
@@ -610,7 +610,7 @@ body {
     display: block;
     margin: 0 10px;
   }
-  /* line 76, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 76, /var/www/tea/app/assets/stylesheets/_header.scss */
   .liked-section a, .latest-section a {
     text-decoration: none;
     color: #fff;
@@ -619,22 +619,22 @@ body {
     padding-bottom: 5px;
     cursor: pointer;
   }
-  /* line 84, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 84, /var/www/tea/app/assets/stylesheets/_header.scss */
   .liked-section a:hover, .latest-section a:hover {
     color: #E1D1F9;
   }
-  /* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 89, /var/www/tea/app/assets/stylesheets/_header.scss */
   .liked-section .selected, .latest-section .selected {
     border-bottom: 1px solid white;
   }
 }
 
-/* line 95, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 95, /var/www/tea/app/assets/stylesheets/_header.scss */
 .shuffle-section-header {
   display: none;
 }
 @media (min-width: 37.5em) {
-  /* line 95, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 95, /var/www/tea/app/assets/stylesheets/_header.scss */
   .shuffle-section-header {
     display: block;
     float: left;
@@ -644,7 +644,7 @@ body {
     display: block;
     margin: 0 10px;
   }
-  /* line 109, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 109, /var/www/tea/app/assets/stylesheets/_header.scss */
   .shuffle-section-header a {
     text-decoration: none;
     color: #fff;
@@ -653,11 +653,11 @@ body {
     padding-bottom: 5px;
     cursor: pointer;
   }
-  /* line 117, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 117, /var/www/tea/app/assets/stylesheets/_header.scss */
   .shuffle-section-header a:hover {
     color: #E1D1F9;
   }
-  /* line 122, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 122, /var/www/tea/app/assets/stylesheets/_header.scss */
   .shuffle-section-header .selected {
     border-bottom: 1px solid white;
   }
@@ -666,12 +666,12 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - Contribute Button - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 133, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 133, /var/www/tea/app/assets/stylesheets/_header.scss */
 .contribute-section {
   display: none;
 }
 @media (min-width: 50em) {
-  /* line 133, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 133, /var/www/tea/app/assets/stylesheets/_header.scss */
   .contribute-section {
     float: right;
     height: 65px;
@@ -680,7 +680,7 @@ body {
     font-size: 0.8rem;
     margin: 0 10px;
   }
-  /* line 145, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 145, /var/www/tea/app/assets/stylesheets/_header.scss */
   .contribute-section a {
     text-decoration: none;
     color: #fff;
@@ -688,7 +688,7 @@ body {
     padding: 0px;
     cursor: pointer;
   }
-  /* line 152, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 152, /var/www/tea/app/assets/stylesheets/_header.scss */
   .contribute-section a:hover {
     color: #E1D1F9;
   }
@@ -697,7 +697,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Extra Button - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 165, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 165, /var/www/tea/app/assets/stylesheets/_header.scss */
 .extra-button {
   top: 0;
   right: 0;
@@ -709,19 +709,19 @@ body {
   z-index: 13;
   color: #fff;
 }
-/* line 176, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 176, /var/www/tea/app/assets/stylesheets/_header.scss */
 .extra-button i {
   font-size: 1.8rem;
 }
 @media (min-width: 37.5em) {
-  /* line 165, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+  /* line 165, /var/www/tea/app/assets/stylesheets/_header.scss */
   .extra-button {
     display: block;
     margin-right: 20px;
   }
 }
 
-/* line 187, /Users/JClackett/Sites/tea/app/assets/stylesheets/_header.scss */
+/* line 187, /var/www/tea/app/assets/stylesheets/_header.scss */
 .extra-button:hover, .current-user:hover, .user-logout:hover, .user-login:hover {
   color: #E1D1F9;
 }
@@ -729,7 +729,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - Contribution Admin view - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 6, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 6, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view {
   background-color: rgba(0, 0, 0, 0.5);
   width: 90%;
@@ -744,7 +744,7 @@ body {
   -moz-box-shadow: 0px 0px 180px -34px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 180px -34px rgba(0, 0, 0, 0.75);
 }
-/* line 21, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 21, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers {
   left: 0;
   right: 0;
@@ -753,41 +753,41 @@ body {
   text-align: center;
   margin: 0;
 }
-/* line 29, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 29, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
 }
-/* line 35, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 35, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .table-wrap {
   border-bottom: 1px solid #fff;
 }
-/* line 39, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 39, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-header {
   width: 35%;
   height: 30px;
   line-height: 30px;
   float: left;
 }
-/* line 45, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 45, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-header h2 {
   margin: 0;
   color: #8171B6;
 }
-/* line 51, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 51, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-header-small {
   width: 15%;
   height: 30px;
   line-height: 30px;
   float: left;
 }
-/* line 57, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 57, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-header-small h2 {
   margin: 0;
   color: #8171B6;
 }
-/* line 64, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 64, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-column {
   width: 35%;
   height: 40px;
@@ -795,11 +795,11 @@ body {
   float: left;
   overflow: hidden;
 }
-/* line 71, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 71, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-column .view-url:hover {
   text-decoration: underline;
 }
-/* line 75, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 75, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-column-small {
   width: 15%;
   height: 40px;
@@ -807,7 +807,7 @@ body {
   float: left;
   overflow: hidden;
 }
-/* line 83, /Users/JClackett/Sites/tea/app/assets/stylesheets/_contributions.scss */
+/* line 83, /var/www/tea/app/assets/stylesheets/_contributions.scss */
 .main-view .column-headers .view-column-small .view-url:hover {
   text-decoration: underline;
 }
@@ -815,7 +815,7 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - -  Tag Section - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 7, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 7, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .tag-container {
   position: absolute;
   top: 0;
@@ -826,24 +826,24 @@ body {
   color: #fff;
 }
 
-/* line 17, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 17, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .tag-wrap {
   cursor: pointer;
 }
 
-/* line 21, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 21, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .tag-wrap:hover {
   color: #E1D1F9;
 }
 
-/* line 25, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 25, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .tags-button {
   padding: 21px 5px;
   margin: 0;
   float: left;
 }
 
-/* line 31, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 31, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .tag-title {
   font-size: 0.8rem;
   float: left;
@@ -852,13 +852,13 @@ body {
   margin-top: 26px;
 }
 @media (min-width: 37.5em) {
-  /* line 31, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+  /* line 31, /var/www/tea/app/assets/stylesheets/_tags.scss */
   .tag-title {
     display: block;
   }
 }
 
-/* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 44, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags {
   display: none;
   position: absolute;
@@ -873,20 +873,20 @@ body {
   box-shadow: 0px 6px 60px -5px rgba(0, 0, 0, 0.4);
 }
 @media (min-width: 37.5em) {
-  /* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+  /* line 44, /var/www/tea/app/assets/stylesheets/_tags.scss */
   .category-tags {
     left: 20%;
     right: 20%;
   }
 }
 @media (min-width: 56em) {
-  /* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+  /* line 44, /var/www/tea/app/assets/stylesheets/_tags.scss */
   .category-tags {
     left: 30%;
     right: 30%;
   }
 }
-/* line 67, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 67, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags h3 {
   font-size: 1rem;
   margin: 10px 0 0 0;
@@ -894,24 +894,24 @@ body {
   font-weight: 300;
   color: #fff;
 }
-/* line 76, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 76, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags ul {
   margin: 0 0 0 0;
   padding: 0 2% 2% 2%;
   width: 96%;
 }
-/* line 84, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 84, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags ul li {
   list-style: none;
   display: inline-block;
   margin: 5px;
 }
-/* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 89, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags ul li .selected {
   color: #8171B6;
   background-color: #fff;
 }
-/* line 93, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 93, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags ul li a {
   font-size: 0.9rem;
   padding: 8px 15px;
@@ -921,7 +921,7 @@ body {
   background-color: #8171B6;
 }
 
-/* line 105, /Users/JClackett/Sites/tea/app/assets/stylesheets/_tags.scss */
+/* line 105, /var/www/tea/app/assets/stylesheets/_tags.scss */
 .category-tags a:hover {
   background-color: #9181C6;
 }
@@ -929,12 +929,12 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  Post  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .pagination {
   display: none;
 }
 
-/* line 9, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 9, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .contentBox {
   width: 100%;
   float: left;
@@ -943,7 +943,7 @@ body {
   background-color: #000;
 }
 
-/* line 17, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 17, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container {
   cursor: pointer;
   width: 100%;
@@ -955,462 +955,462 @@ body {
   border-radius: 0;
   z-index: 3;
 }
-/* line 28, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 28, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 33, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 33, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 39, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 39, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 45, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 45, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 17, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 17, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container {
     width: 50%;
   }
-  /* line 54, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 54, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 59, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 59, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 
-/* line 66, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 66, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n) {
   width: 100%;
 }
-/* line 69, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 69, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n) .post-description {
   font-size: 1.28rem;
   line-height: 1.28rem;
 }
-/* line 74, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 74, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 66, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 66, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) {
     width: 100%;
   }
-  /* line 82, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 82, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 87, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 87, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 66, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 66, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) {
     width: 50%;
   }
-  /* line 96, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 96, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 101, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 101, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 66, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 66, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) {
     width: 66.6666666666667%;
   }
-  /* line 109, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 109, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .post-description {
     font-size: 1.73rem;
     line-height: 1.73rem;
   }
-  /* line 114, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 114, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n) .created-at {
     font-size: 1.06rem;
     line-height: 1.06rem;
   }
 }
 
-/* line 120, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 120, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+10) {
   width: 100%;
 }
-/* line 123, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 123, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+10) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 128, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 128, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+10) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 120, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 120, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) {
     width: 100%;
   }
-  /* line 136, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 136, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 141, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 141, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 120, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 120, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) {
     width: 50%;
   }
-  /* line 151, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 151, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 156, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 156, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 120, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 120, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) {
     width: 33.3333333333333%;
   }
-  /* line 164, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 164, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .post-description {
     font-size: 0.87rem;
     line-height: 0.87rem;
   }
-  /* line 169, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 169, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+10) .created-at {
     font-size: 0.53rem;
     line-height: 0.53rem;
   }
 }
 
-/* line 175, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 175, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+11) {
   width: 100%;
 }
-/* line 178, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 178, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+11) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 183, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 183, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+11) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 175, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 175, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) {
     width: 100%;
   }
-  /* line 191, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 191, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 196, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 196, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 175, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 175, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) {
     width: 50%;
   }
-  /* line 205, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 205, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 210, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 210, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 175, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 175, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) {
     width: 33.3333333333333%;
   }
-  /* line 218, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 218, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .post-description {
     font-size: 0.87rem;
     line-height: 0.87rem;
   }
-  /* line 223, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 223, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+11) .created-at {
     font-size: 0.53rem;
     line-height: 0.53rem;
   }
 }
 
-/* line 230, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 230, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+5) {
   width: 100%;
   float: right;
 }
-/* line 234, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 234, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+5) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 239, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 239, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+5) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 230, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 230, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) {
     width: 100%;
   }
-  /* line 247, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 247, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 253, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 253, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 230, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 230, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) {
     width: 50%;
   }
-  /* line 262, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 262, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 267, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 267, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 230, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 230, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) {
     width: 66.6666666666667%;
   }
-  /* line 275, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 275, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .post-description {
     font-size: 1.73rem;
     line-height: 1.73rem;
   }
-  /* line 280, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 280, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+5) .created-at {
     font-size: 1.06rem;
     line-height: 1.06rem;
   }
 }
 
-/* line 286, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 286, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+4) {
   width: 100%;
 }
-/* line 288, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 288, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+4) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 293, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 293, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+4) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 286, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 286, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) {
     width: 100%;
   }
-  /* line 301, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 301, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 306, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 306, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 286, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 286, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) {
     width: 50%;
   }
-  /* line 315, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 315, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 320, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 320, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 286, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 286, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) {
     width: 33.3333333333333%;
   }
-  /* line 328, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 328, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .post-description {
     font-size: 0.87rem;
     line-height: 0.87rem;
   }
-  /* line 333, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 333, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+4) .created-at {
     font-size: 0.53rem;
     line-height: 0.53rem;
   }
 }
 
-/* line 339, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 339, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+6) {
   width: 100%;
 }
-/* line 342, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 342, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+6) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 347, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 347, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+6) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 339, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 339, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) {
     width: 100%;
   }
-  /* line 355, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 355, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 360, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 360, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .created-at {
     font-size: 1.24rem;
     line-height: 1.24rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 339, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 339, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) {
     width: 50%;
   }
-  /* line 368, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 368, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .post-description {
     font-size: 1.3rem;
     line-height: 1.3rem;
   }
-  /* line 373, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 373, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .created-at {
     font-size: 0.8rem;
     line-height: 0.8rem;
   }
 }
 @media (min-width: 64em) {
-  /* line 339, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 339, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) {
     width: 33.3333333333333%;
   }
-  /* line 381, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 381, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .post-description {
     font-size: 0.87rem;
     line-height: 0.87rem;
   }
-  /* line 386, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 386, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+6) .created-at {
     font-size: 0.53rem;
     line-height: 0.53rem;
   }
 }
 
-/* line 393, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 393, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+3) {
   width: 100%;
 }
-/* line 396, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 396, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+3) .post-description {
   font-size: 1.18rem;
   line-height: 1.18rem;
 }
-/* line 401, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 401, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .main-container:nth-child(9n+3) .created-at {
   font-size: 0.726rem;
   line-height: 0.726rem;
 }
 @media (min-width: 37.5em) {
-  /* line 408, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 408, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .post-description {
     font-size: 2.02rem;
     line-height: 2.02rem;
   }
-  /* line 413, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 413, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .created-at {
     font-size: 1.43rem;
     line-height: 1.43rem;
   }
 }
 @media (min-width: 50em) {
-  /* line 421, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 421, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .post-description {
     font-size: 2.6rem;
     line-height: 2.6rem;
   }
-  /* line 426, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 426, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .created-at {
     font-size: 1.6rem;
     line-height: 1.6rem;
   }
-  /* line 431, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 431, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .arrow-left {
     width: 0;
     height: 0;
@@ -1423,7 +1423,7 @@ body {
     left: 101%;
     bottom: 11px;
   }
-  /* line 444, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 444, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .main-container:nth-child(9n+3) .vote-number {
     position: relative;
     bottom: 28px;
@@ -1441,20 +1441,20 @@ body {
   }
 }
 
-/* line 463, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 463, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .post-container {
   overflow: hidden;
 }
-/* line 466, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 466, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .post-container img {
   width: 100%;
 }
-/* line 470, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 470, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .post-container a {
   text-decoration: none;
 }
 
-/* line 475, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 475, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .link-container {
   width: 100%;
   height: 0;
@@ -1463,7 +1463,7 @@ body {
   padding-bottom: 56.15%;
 }
 
-/* line 483, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 483, /var/www/tea/app/assets/stylesheets/_posts.scss */
 iframe {
   width: 100%;
   height: 100%;
@@ -1473,7 +1473,7 @@ iframe {
   top: 0;
 }
 
-/* line 493, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 493, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .button {
   position: absolute;
   z-index: 6;
@@ -1485,23 +1485,23 @@ iframe {
   left: 1.5%;
 }
 @media (min-width: 50em) {
-  /* line 506, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 506, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .button:hover {
     background-color: #8171B6;
   }
 }
 @media only screen and (min-width: 50em) and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 512, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 512, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .button:hover {
     background-color: rgba(50, 50, 50, 0.8);
   }
 }
 
-/* line 519, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 519, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .vote-wrapper {
   top: 13%;
 }
-/* line 522, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 522, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .vote-wrapper img {
   position: absolute;
   top: 5%;
@@ -1510,7 +1510,7 @@ iframe {
   width: 90%;
 }
 
-/* line 531, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 531, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .arrow-left {
   width: 0;
   height: 0;
@@ -1524,7 +1524,7 @@ iframe {
   bottom: 11px;
 }
 
-/* line 544, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 544, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .vote-number {
   position: relative;
   bottom: 28px;
@@ -1541,16 +1541,16 @@ iframe {
   border-radius: 5px;
 }
 
-/* line 560, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 560, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .vote-wrapper a {
   text-decoration: none;
 }
 
-/* line 564, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 564, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper {
   top: 2%;
 }
-/* line 567, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 567, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .share-network img {
   position: absolute;
   top: 10%;
@@ -1559,37 +1559,37 @@ iframe {
   height: 80%;
   width: 80%;
 }
-/* line 576, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 576, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .share {
   display: none;
 }
-/* line 580, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 580, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .btn-facebook {
   position: absolute;
   left: 111%;
   width: 100%;
 }
-/* line 585, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 585, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .btn-facebook img {
   width: 100%;
 }
-/* line 590, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 590, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .btn-twitter {
   position: absolute;
   left: 222%;
   width: 100%;
 }
-/* line 594, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 594, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-wrapper .btn-twitter img {
   width: 100%;
 }
 
-/* line 600, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 600, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .share-selected {
   background-color: #8171B6;
 }
 
-/* line 605, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 605, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .overlay {
   position: absolute;
   cursor: pointer;
@@ -1600,11 +1600,11 @@ iframe {
   z-index: 4;
   line-height: 1em;
 }
-/* line 615, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 615, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .overlay:hover .fader {
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 619, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 619, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .overlay .fader {
   position: absolute;
   cursor: pointer;
@@ -1616,7 +1616,7 @@ iframe {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 631, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 631, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .post-information {
   display: block;
   position: absolute;
@@ -1628,20 +1628,20 @@ iframe {
   line-height: 0.6em;
 }
 
-/* line 642, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 642, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .post-description {
   font-weight: 500;
   margin: 0;
   padding: 0;
 }
 
-/* line 648, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 648, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .created-at {
   padding: 0;
   font-size: 0.5em;
 }
 
-/* line 657, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 657, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .show-main-container {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1657,31 +1657,31 @@ iframe {
   box-shadow: 0px 0px 180px -34px rgba(0, 0, 0, 0.75);
   cursor: pointer;
 }
-/* line 672, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 672, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .show-main-container .show-post-description {
   font-size: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
 }
-/* line 678, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 678, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .show-main-container .show-created-at {
   font-size: 0.75rem;
   line-height: 0.75rem;
   margin: 0;
 }
 @media (min-width: 37.5em) {
-  /* line 657, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 657, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .show-main-container {
     width: 80%;
     top: 18%;
   }
-  /* line 690, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 690, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .show-main-container .show-post-description {
     font-size: 2rem;
     line-height: 2rem;
     margin: 0;
   }
-  /* line 696, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 696, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .show-main-container .show-created-at {
     font-size: 1rem;
     line-height: 1rem;
@@ -1689,7 +1689,7 @@ iframe {
   }
 }
 @media (min-width: 50em) {
-  /* line 657, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+  /* line 657, /var/www/tea/app/assets/stylesheets/_posts.scss */
   .show-main-container {
     top: 13%;
   }
@@ -1698,12 +1698,12 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - -  - - - -  Post Panel  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 710, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 710, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .panel-container {
   background-color: #8171B6;
 }
 
-/* line 714, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 714, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .panel-information {
   display: block;
   position: absolute;
@@ -1715,7 +1715,7 @@ iframe {
   opacity: 1;
   color: #fff;
 }
-/* line 725, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 725, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .panel-information .panel-description {
   font-weight: 200;
   position: relative;
@@ -1724,7 +1724,7 @@ iframe {
   padding: 0;
   font-size: 1.5rem;
 }
-/* line 733, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 733, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .panel-information .panel-description-two {
   font-weight: 200;
   position: relative;
@@ -1737,11 +1737,11 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - Bookmark  - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 748, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 748, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .bookmark-wrapper {
   top: 24%;
 }
-/* line 751, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 751, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .bookmark-wrapper img {
   height: 90%;
   width: 90%;
@@ -1750,33 +1750,33 @@ iframe {
   right: 6%;
 }
 
-/* line 761, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 761, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .archive-title {
   color: #fff;
 }
 
-/* line 765, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 765, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .archive-container {
   width: 100%;
   height: 100%;
 }
 
-/* line 775, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 775, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .admin-edit-wrapper {
   top: 35%;
 }
-/* line 778, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 778, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .admin-edit-wrapper a {
   line-height: 40px;
   color: #fff;
   text-decoration: none;
 }
 
-/* line 789, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 789, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .admin-destroy {
   top: 46%;
 }
-/* line 792, /Users/JClackett/Sites/tea/app/assets/stylesheets/_posts.scss */
+/* line 792, /var/www/tea/app/assets/stylesheets/_posts.scss */
 .admin-destroy a {
   line-height: 45px;
   color: #fff;
@@ -1786,7 +1786,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Hero Section  - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-title {
   position: absolute;
   cursor: default;
@@ -1801,18 +1801,18 @@ iframe {
   z-index: 1;
 }
 @media (min-width: 37.5em) {
-  /* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 5, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-title {
     top: 10%;
   }
 }
 @media (min-width: 50em) {
-  /* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 5, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-title {
     top: 20%;
   }
 }
-/* line 26, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 26, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-title h1 {
   font-size: 1.5rem;
   font-weight: 300;
@@ -1820,14 +1820,14 @@ iframe {
   padding-left: 5%;
 }
 @media (min-width: 37.5em) {
-  /* line 26, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 26, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-title h1 {
     font-size: 2rem;
     padding-top: 5%;
   }
 }
 @media (min-width: 50em) {
-  /* line 26, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 26, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-title h1 {
     font-size: 3rem;
     padding-right: 0;
@@ -1835,7 +1835,7 @@ iframe {
     padding-top: 0;
   }
 }
-/* line 45, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 45, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-title h3 {
   font-size: 1rem;
   font-weight: 200;
@@ -1845,7 +1845,7 @@ iframe {
   display: none;
 }
 @media (min-width: 50em) {
-  /* line 45, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 45, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-title h3 {
     font-size: 2rem;
     padding-right: 0;
@@ -1855,7 +1855,7 @@ iframe {
   }
 }
 
-/* line 63, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 63, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-phrase {
   position: absolute;
   cursor: default;
@@ -1869,24 +1869,60 @@ iframe {
   color: #fff;
 }
 @media (min-width: 37.5em) {
-  /* line 63, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 63, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-phrase {
     top: 35%;
   }
 }
-/* line 79, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 79, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-phrase h1 {
   font-size: 2rem;
   font-weight: 200;
+  margin: 0;
 }
 @media (min-width: 37.5em) {
-  /* line 79, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 79, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-phrase h1 {
     font-size: 3rem;
   }
 }
+/* line 89, /var/www/tea/app/assets/stylesheets/_hero.scss */
+.hero-phrase .shuffle-category {
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+}
+/* line 98, /var/www/tea/app/assets/stylesheets/_hero.scss */
+.hero-phrase .shuffle-category a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 103, /var/www/tea/app/assets/stylesheets/_hero.scss */
+.hero-phrase .shuffle-category a h2 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 5px;
+}
+/* line 110, /var/www/tea/app/assets/stylesheets/_hero.scss */
+.hero-phrase .shuffle-category a h2:hover {
+  background-color: #fff;
+  color: #8171B6;
+}
+@media (min-width: 37.5em) {
+  /* line 103, /var/www/tea/app/assets/stylesheets/_hero.scss */
+  .hero-phrase .shuffle-category a h2 {
+    font-size: 1.2rem;
+  }
+}
 
-/* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 125, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .hero-buttons {
   position: absolute;
   z-index: 7;
@@ -1894,13 +1930,13 @@ iframe {
   width: 100%;
 }
 @media (min-width: 50em) {
-  /* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 125, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .hero-buttons {
     top: 65%;
   }
 }
 
-/* line 100, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 136, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .mostliked-button, .mostrecent-button, .shuffle-button {
   font-size: 1rem;
   position: relative;
@@ -1912,20 +1948,20 @@ iframe {
   border-radius: 3px;
   margin-left: 0;
 }
-/* line 111, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 147, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .mostliked-button:hover, .mostrecent-button:hover, .shuffle-button:hover {
   background-color: #fff;
   color: #413186;
 }
 @media (min-width: 37.5em) {
-  /* line 100, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 136, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .mostliked-button, .mostrecent-button, .shuffle-button {
     font-size: 1.5rem;
     padding: 10px;
   }
 }
 
-/* line 122, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 158, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .start-watching {
   font-size: 2rem;
   width: 100%;
@@ -1941,13 +1977,13 @@ iframe {
   display: none;
 }
 @media (min-width: 50em) {
-  /* line 122, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 158, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .start-watching {
     display: flex;
   }
 }
 
-/* line 141, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 177, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .scroll-to-content {
   font-size: 4rem;
   width: 100%;
@@ -1963,13 +1999,13 @@ iframe {
   display: none;
 }
 @media (min-width: 50em) {
-  /* line 141, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 177, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .scroll-to-content {
     display: block;
   }
 }
 
-/* line 160, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 196, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .scroll-arrow {
   cursor: pointer;
   padding: 10px;
@@ -1988,14 +2024,14 @@ iframe {
     -webkit-transform: scale(1);
   }
 }
-/* line 173, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 209, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .mostrecent-button, .shuffle-button {
   display: inline-block;
   float: left;
   margin: 5px;
 }
 
-/* line 179, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 215, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .mostliked-button {
   display: inline-block;
   float: left;
@@ -2012,7 +2048,7 @@ iframe {
     -webkit-transform: translate(0, 0);
   }
 }
-/* line 196, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 232, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .wiggle:hover {
   -webkit-animation: wiggle 0.25s 2;
 }
@@ -2039,12 +2075,12 @@ iframe {
     -webkit-transform: translate(0, 0px);
   }
 }
-/* line 228, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 264, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .home-like-section {
   position: relative;
 }
 
-/* line 232, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 268, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .home-light-img {
   display: none;
   z-index: -1;
@@ -2053,21 +2089,21 @@ iframe {
   height: 30px;
 }
 @media (min-width: 37.5em) {
-  /* line 232, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 268, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .home-light-img {
     height: 50px;
     right: 50px;
   }
 }
 
-/* line 246, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+/* line 282, /var/www/tea/app/assets/stylesheets/_hero.scss */
 .shifty:hover + .home-light-img {
   -webkit-animation: shifty-small 2s 1;
   display: block;
 }
 
 @media (min-width: 37.5em) {
-  /* line 252, /Users/JClackett/Sites/tea/app/assets/stylesheets/_hero.scss */
+  /* line 288, /var/www/tea/app/assets/stylesheets/_hero.scss */
   .shifty:hover + .home-light-img {
     -webkit-animation: shifty 2s 1;
     display: block;
@@ -2076,7 +2112,7 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - -  Search Section - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 6, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 6, /var/www/tea/app/assets/stylesheets/_search.scss */
 .search-button {
   display: none;
   margin: 0 0 0 20px;
@@ -2088,7 +2124,7 @@ iframe {
   line-height: 65px;
   background-color: #9181C6;
 }
-/* line 16, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 16, /var/www/tea/app/assets/stylesheets/_search.scss */
 .search-button i {
   margin-top: 20px;
   font-size: 1.5rem;
@@ -2096,13 +2132,13 @@ iframe {
   color: #fff;
 }
 @media (min-width: 50em) {
-  /* line 6, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+  /* line 6, /var/www/tea/app/assets/stylesheets/_search.scss */
   .search-button {
     display: none;
   }
 }
 
-/* line 28, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 28, /var/www/tea/app/assets/stylesheets/_search.scss */
 .search-input {
   position: absolute;
   color: #fff;
@@ -2117,19 +2153,19 @@ iframe {
   line-height: 65px;
 }
 
-/* line 42, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 42, /var/www/tea/app/assets/stylesheets/_search.scss */
 ::-webkit-input-placeholder {
   font-family: 'Roboto',sans-serif;
   color: #fff;
   font-weight: 200;
 }
 
-/* line 48, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 48, /var/www/tea/app/assets/stylesheets/_search.scss */
 .search-input:focus {
   outline: none;
 }
 
-/* line 52, /Users/JClackett/Sites/tea/app/assets/stylesheets/_search.scss */
+/* line 52, /var/www/tea/app/assets/stylesheets/_search.scss */
 .search-button:hover {
   color: #fff;
 }
@@ -2137,19 +2173,19 @@ iframe {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - -  Cover Pic  - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* line 6, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 6, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .hero-cover {
   overflow: hidden;
   height: 60vh;
 }
 @media (min-width: 50em) {
-  /* line 6, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+  /* line 6, /var/www/tea/app/assets/stylesheets/_cover.scss */
   .hero-cover {
     height: 100%;
   }
 }
 
-/* line 15, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 15, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .hero-cover-other {
   width: 100%;
   height: 140vh;
@@ -2159,13 +2195,13 @@ iframe {
   overflow: hidden;
 }
 @media (min-width: 37.5em) {
-  /* line 15, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+  /* line 15, /var/www/tea/app/assets/stylesheets/_cover.scss */
   .hero-cover-other {
     height: 100vh;
   }
 }
 
-/* line 28, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 28, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .short-hero-cover {
   width: 100%;
   height: 50vh;
@@ -2175,7 +2211,7 @@ iframe {
   overflow: hidden;
 }
 
-/* line 37, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 37, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .img-cover, .blue-img-cover {
   position: absolute;
   top: 0;
@@ -2188,50 +2224,49 @@ iframe {
   cursor: default;
 }
 
-/* line 49, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 49, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .img-cover {
   background-color: #000;
 }
 
-/* line 53, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 53, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .blue-img-cover {
   background-color: #81B6DB;
 }
 
-/* line 57, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 57, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .cover-photo-img, .category-cover {
   width: 1500px;
   position: relative;
-  top: -200px;
   z-index: -1;
 }
 @media (min-width: 50em) {
-  /* line 57, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+  /* line 57, /var/www/tea/app/assets/stylesheets/_cover.scss */
   .cover-photo-img, .category-cover {
-    width: 1500px;
+    width: 100%;
   }
 }
 
-/* line 75, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 74, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .homepage-hero-module {
   border-right: none;
   border-left: none;
   position: relative;
 }
 
-/* line 81, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 80, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .no-video .video-container video,
 .touch .video-container video {
   display: none;
 }
 
-/* line 85, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 84, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .no-video .video-container .poster,
 .touch .video-container .poster {
   display: block !important;
 }
 
-/* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 88, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container {
   position: relative;
   bottom: 0%;
@@ -2242,38 +2277,38 @@ iframe {
   background: #000;
   opacity: 0.8;
 }
-/* line 98, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 97, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container video::-webkit-media-controls {
   display: none !important;
 }
 
-/* line 102, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 101, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container .poster img {
   width: 100%;
   top: 0;
   position: absolute;
 }
 
-/* line 107, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 106, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container .filter {
   position: absolute;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
 }
 
-/* line 112, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 111, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container video {
   position: absolute;
   z-index: 0;
   bottom: 0;
 }
 
-/* line 117, /Users/JClackett/Sites/tea/app/assets/stylesheets/_cover.scss */
+/* line 116, /var/www/tea/app/assets/stylesheets/_cover.scss */
 .video-container video.fillWidth {
   width: 100%;
 }
 
-/* line 5, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 5, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 [data-sidebar] {
   display: none;
   position: fixed;
@@ -2282,7 +2317,7 @@ iframe {
   z-index: 12;
 }
 
-/* line 13, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 13, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 [data-sidebar-dimmer] {
   display: none;
   position: fixed;
@@ -2294,19 +2329,19 @@ iframe {
   z-index: 11;
 }
 
-/* line 24, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 24, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .side-up {
   height: 100%;
   margin-top: 0;
 }
 
-/* line 29, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 29, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .side-down {
   height: calc(100% - 65px);
   margin-top: 65px;
 }
 
-/* line 34, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 34, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar {
   position: fixed;
   right: -200px;
@@ -2315,42 +2350,42 @@ iframe {
   top: 0;
   background-color: #00AAA3;
 }
-/* line 42, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 42, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar:hover {
   overflow-y: none;
 }
-/* line 46, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 46, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul {
   padding: 0;
   margin: 0px 0px;
 }
-/* line 50, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 50, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul li {
   list-style: none;
 }
-/* line 55, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 55, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul a {
   text-decoration: none;
 }
-/* line 58, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 58, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul a li {
   list-style: none;
   margin: 0;
   padding: 4% 0;
   border-bottom: 1px solid #30BAB3;
 }
-/* line 64, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 64, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul a li:hover {
   background-color: #30BAB3;
 }
 @media (min-width: 37.5em) {
-  /* line 58, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+  /* line 58, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
   .sidebar ul a li {
     margin: 0;
     padding: 8% 0;
   }
 }
-/* line 73, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 73, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul a li p {
   font-size: 0.8rem;
   text-decoration: none;
@@ -2358,76 +2393,76 @@ iframe {
   padding-left: 30px;
   margin: 0;
 }
-/* line 82, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 82, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .selected {
   font-weight: 400;
 }
-/* line 89, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 89, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .sidebar-gravatar {
   text-align: center;
   margin-top: 20px;
 }
-/* line 93, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 93, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .sidebar-gravatar img {
   width: 40px;
   height: 40px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 101, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 101, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .username-sidebar {
   text-align: center;
 }
-/* line 104, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 104, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .username-sidebar p {
   margin: 5px 0;
 }
 @media (min-width: 37.5em) {
-  /* line 109, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+  /* line 109, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
   .sidebar ul .login-links {
     display: none;
   }
 }
 @media (min-width: 56em) {
-  /* line 118, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+  /* line 118, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
   .sidebar ul .user-links {
     display: none;
   }
 }
 @media (min-width: 37.5em) {
-  /* line 124, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+  /* line 124, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
   .sidebar ul .shuffle-link {
     display: none;
   }
 }
 @media (min-width: 50em) {
-  /* line 129, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+  /* line 129, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
   .sidebar ul .contribute-link {
     display: none;
   }
 }
-/* line 135, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 135, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .login-section-sidebar {
   border-top: 1px solid #30BAB3;
 }
-/* line 138, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 138, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar ul .static-section {
   position: absolute;
   width: 100%;
   bottom: 0;
   border-top: 1px solid #30BAB3;
 }
-/* line 146, /Users/JClackett/Sites/tea/app/assets/stylesheets/_sidebar.scss */
+/* line 146, /var/www/tea/app/assets/stylesheets/_sidebar.scss */
 .sidebar .login-section-sidebar {
   height: 28.5714%;
 }
 
-/* line 1, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+/* line 1, /var/www/tea/app/assets/stylesheets/_login.scss */
 .login-section {
   display: none;
 }
 @media (min-width: 37.5em) {
-  /* line 1, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 1, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section {
     display: block;
     z-index: 1;
@@ -2435,7 +2470,7 @@ iframe {
     margin: 0 10px;
     height: 65px;
   }
-  /* line 12, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 12, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-login {
     text-decoration: none;
     font-size: 0.8rem;
@@ -2445,15 +2480,15 @@ iframe {
     color: #fff;
     cursor: pointer;
   }
-  /* line 21, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 21, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-login:hover {
     color: #E1D1F9;
   }
-  /* line 28, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 28, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .current-user {
     margin-top: 12px;
   }
-  /* line 31, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 31, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .current-user img {
     cursor: pointer;
     display: block;
@@ -2463,7 +2498,7 @@ iframe {
     margin: 0;
     border-radius: 50%;
   }
-  /* line 43, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 43, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup {
     display: none;
     position: absolute;
@@ -2476,34 +2511,34 @@ iframe {
     border-radius: 0 0 5px 5px;
     box-shadow: 1px 34px 92px -18px #000;
   }
-  /* line 55, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 55, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul {
     display: block;
     margin: 0;
     padding: 5px 20px;
     float: left;
   }
-  /* line 61, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 61, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul .popup-text {
     border-bottom: 1px solid #888;
   }
-  /* line 65, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 65, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul li {
     list-style: none;
     margin: 7px 0;
   }
-  /* line 69, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 69, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul li .popup-username {
     font-weight: 500;
   }
-  /* line 74, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 74, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul li p {
     text-decoration: none;
     color: #fff;
     font-size: 0.8rem;
     margin: 0;
   }
-  /* line 81, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 81, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul li a {
     text-decoration: none;
     color: #fff;
@@ -2513,17 +2548,21 @@ iframe {
     font-size: 1rem;
     margin-top: 10%;
   }
-  /* line 90, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 90, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul li a:hover {
     color: #ddd;
   }
-  /* line 96, /Users/JClackett/Sites/tea/app/assets/stylesheets/_login.scss */
+  /* line 96, /var/www/tea/app/assets/stylesheets/_login.scss */
   .login-section .user-popup ul .selected {
     font-weight: 500;
   }
 }
 
-/* line 4, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+/* line 2, /var/www/tea/app/assets/stylesheets/_profile.scss */
+.profile-header {
+  text-align: center;
+}
+/* line 6, /var/www/tea/app/assets/stylesheets/_profile.scss */
 .profile-header img {
   position: absolute;
   top: 15%;
@@ -2536,18 +2575,17 @@ iframe {
   border-radius: 50%;
 }
 @media (min-width: 37.5em) {
-  /* line 4, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+  /* line 6, /var/www/tea/app/assets/stylesheets/_profile.scss */
   .profile-header img {
     width: 100px;
     height: 100px;
   }
 }
-/* line 21, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+/* line 23, /var/www/tea/app/assets/stylesheets/_profile.scss */
 .profile-header h4 {
   position: absolute;
   top: 22%;
   left: 0;
-  width: 300px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -2555,16 +2593,14 @@ iframe {
   font-size: 2em;
   font-weight: 300;
   color: #fff;
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
 }
 @media (min-width: 37.5em) {
-  /* line 21, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+  /* line 23, /var/www/tea/app/assets/stylesheets/_profile.scss */
   .profile-header h4 {
     font-size: 3rem;
   }
 }
-/* line 42, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+/* line 42, /var/www/tea/app/assets/stylesheets/_profile.scss */
 .profile-header .profile-small-header {
   position: absolute;
   top: 43%;
@@ -2575,14 +2611,14 @@ iframe {
   right: 0;
   color: #fff;
 }
-/* line 53, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+/* line 53, /var/www/tea/app/assets/stylesheets/_profile.scss */
 .profile-header .profile-small-header h6 {
   font-size: 1.5rem;
   font-weight: 300;
   margin: 0;
 }
 
-/* line 63, /Users/JClackett/Sites/tea/app/assets/stylesheets/_profile.scss */
+/* line 63, /var/www/tea/app/assets/stylesheets/_profile.scss */
 .profile-content h2 {
   position: absolute;
   top: 60%;
@@ -2596,7 +2632,7 @@ iframe {
   font-weight: 300;
 }
 
-/* line 2, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+/* line 2, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
 .static-page-header {
   position: absolute;
   width: 50%;
@@ -2612,13 +2648,13 @@ iframe {
   font-weight: 300;
 }
 
-/* line 17, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+/* line 17, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
 .static-content {
   background-color: rgba(5, 5, 5, 0.5);
   padding: 20px;
 }
 
-/* line 22, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+/* line 22, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
 .about-content, .contact-content, .help-content, .copyright-content {
   position: absolute;
   width: 90%;
@@ -2632,19 +2668,19 @@ iframe {
   font-weight: 200;
 }
 @media (min-width: 37.5em) {
-  /* line 22, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+  /* line 22, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
   .about-content, .contact-content, .help-content, .copyright-content {
     width: 55%;
     font-size: 1rem;
   }
 }
 
-/* line 40, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+/* line 40, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
 .mail-to-about {
   color: #00AAA3;
   text-decoration: none;
 }
-/* line 44, /Users/JClackett/Sites/tea/app/assets/stylesheets/_static_pages.scss */
+/* line 44, /var/www/tea/app/assets/stylesheets/_static_pages.scss */
 .mail-to-about:hover {
   text-decoration: underline;
 }
