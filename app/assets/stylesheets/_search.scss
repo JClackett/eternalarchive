@@ -4,45 +4,48 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .search-button {
-  display:none;
-  margin: 0 0 0 20px;
+  margin: 0;
   cursor:pointer;
   padding: 0;
   float: left;
-  width:200px;
+  width:130px;
   height:65px;
+  font-size: 0.8rem;
+  background-color: rgba(255,255,255,0.08);
+  font-weight: 300;
   line-height: 65px;
-  background-color:$lightpurple;
+  padding-left: 10px;
     i {
       margin-top:20px;
       font-size:1.5rem;
-      padding-left: 20px;
       color:$white;
     }
+  @include breakpoint(medium-large) {
+    float: right;
+  }
 
   @include breakpoint(medium) {
-    display:none;
+    display:block;
   }
 }
 
 .search-input {
   position: absolute;
   color:$white;
-  padding-left:10px;
+  padding:0 10px;
+  line-height: 65px;
+  background-color: rgba(0,0,0,0);
   border:none;
   font-family:'Roboto',sans-serif;
-  background-color: rgba(0,0,0,0);
-  font-size: 1.2rem;
-  height:65px;
-  width:130px;
+  font-size: 0.8rem;
+  width:90px;
   margin: 0;
-  line-height:65px;
 }
 
 ::-webkit-input-placeholder {
    font-family:'Roboto',sans-serif;
    color: $white;
-   font-weight:200;
+   font-weight:300;
 }
 
 .search-input:focus {

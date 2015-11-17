@@ -4,22 +4,29 @@
       <div class="nav-down">
           <%= render 'logo' %>
         
-          <%#= render 'search' %> 
-	     <% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/most_liked') or current_page?('/latest') or current_page?('/shuffle')%>
-          		<%= render 'tags' %>
-          	<% end %>
+	     
+       <!-- Right-->
 
           <%= render 'extra' %>
 
           <%= render 'login' %>         
         
           <%= render 'submit' %>
-          
+
+          <%#= render 'search' %> 
+
+      <!--  Left -->
+
           <%= render 'latest' %>
 
           <%= render 'liked_button' %>
 
           <%= render 'shuffle' %>
+
+          <% if current_page?('/') or current_page?('/posts') or current_page?('/profile') or current_page?('/most_liked') or current_page?('/latest') or current_page?('/shuffle')%>
+              <%= render 'tags' %>
+          <% end %>
+
       </div>
       </div>
 </div>

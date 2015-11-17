@@ -119,7 +119,6 @@ GEM
     minitest (5.7.0)
     multi_json (1.11.2)
     multipart-post (2.0.0)
-    mysql2 (0.3.20)
     nav_lynx (1.1.1)
       rails (>= 3.1.0)
     nokogiri (1.6.6.2)
@@ -179,7 +178,6 @@ GEM
     seed_dump (3.2.2)
       activerecord (~> 4)
       activesupport (~> 4)
-    spring (1.4.1)
     sprockets (3.2.0)
       rack (~> 1.0)
     sprockets-rails (2.3.2)
@@ -237,13 +235,11 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   metainspector
-  mysql2
   nav_lynx
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   seed_dump
-  spring
   sqlite3
   turbolinks
   tzinfo-data
@@ -251,6 +247,3 @@ DEPENDENCIES
   video_info
   web-console (~> 2.0)
   will_paginate
-
-BUNDLED WITH
-   1.10.6
