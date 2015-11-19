@@ -49,10 +49,10 @@
 	h1 {
 		font-weight: 300;
 		font-size: 1.6rem;
+		margin: 0;
 	}
 
 	@include breakpoint(small) {
-		top:9%;
 		width: 500px;
 		padding: 20px;
 
