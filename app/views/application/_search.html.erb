@@ -1,7 +1,7 @@
 <div class="search-button">
     	<i class="fa fa-search search-icon"></i>
 	<form action="<%= search_path %>" method="get" class="search-input" >
-		<%= text_field_tag :q, params[:s], placeholder: "SEARCH TEA", class: "search-input"%>
+		<%= text_field_tag :q, params[:s], placeholder: "SEARCH", class: "search-input"%>
 		<%= submit_tag "Search", :style => "display: none;", :name  => nil %>
 	</form>
 </div> 
