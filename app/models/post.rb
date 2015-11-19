@@ -37,8 +37,8 @@ class Post < ActiveRecord::Base
     		self.assign_attributes(keywords: @article.meta_tag['name']['keywords'])
 	end
 
-	def self.search(query)
-  		where("email like ?", "%#{query}%") 
+	def self.search(search)
+  		where("description LIKE ? OR keywords LIKE ?", "%#{search}%","%#{search}%")
 	end
 
 end	

@@ -7,9 +7,9 @@
   margin: 0;
   cursor:pointer;
   padding: 0;
-  float: left;
+  display:none;
   width:130px;
-  height:65px;
+  height:67px;
   font-size: 0.8rem;
   background-color: rgba(255,255,255,0.08);
   font-weight: 300;
@@ -20,6 +20,11 @@
       font-size:1.5rem;
       color:$white;
     }
+
+  @include breakpoint(small-medium) {
+    display: block;
+    float: left;
+  }
   @include breakpoint(medium-large) {
     float: right;
   }
@@ -31,15 +36,17 @@
 
 .search-input {
   position: absolute;
+  top: 0;
   color:$white;
   padding:0 10px;
   line-height: 65px;
+  text-transform: uppercase;
   background-color: rgba(0,0,0,0);
   border:none;
   font-family:'Roboto',sans-serif;
   font-size: 0.8rem;
   width:90px;
-  margin: 0;
+  margin: 0 5px;
 }
 
 ::-webkit-input-placeholder {

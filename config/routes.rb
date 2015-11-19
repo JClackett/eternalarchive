@@ -30,6 +30,8 @@ Rails.application.routes.draw do
   get 'posts/shuffle', :path => "shuffle"
 
   get 'profile' => 'posts#profile'
+  get 'search' => 'posts#search'
+
 
   # resources :users, only: [:show]
 

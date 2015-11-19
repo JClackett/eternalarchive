@@ -1,6 +1,6 @@
  class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
-    before_action :authenticate_user!, except: [:index, :show, :mostliked, :mostrecent, :upvote, :shuffle]
+    before_action :authenticate_user!, except: [:index, :show, :mostliked, :mostrecent, :upvote, :shuffle, :search]
 
     
   # GET /posts
@@ -25,6 +25,10 @@
     @title =  current_user.username.titleize
   end
 
+  def search
+      @posts = Post.search(params[:q]).order("created_at DESC")
+      @title  = "Searching for #{params[:q]}"
+  end
 
   # GET /posts/1
   def show
