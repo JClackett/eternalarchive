@@ -24,8 +24,8 @@
 }
 
 .tags-button {
-  padding:21px 5px;
-  margin: 0;
+  margin:19px 5px;
+  padding: 0;
   float: left;
 }
 
@@ -34,7 +34,7 @@
   float: left;
   font-weight:300;
   display: none;
-  margin-top: 26px;
+  margin: 25px 0;
 
   @include breakpoint(small) {
     display: block;
