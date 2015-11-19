@@ -85,7 +85,7 @@
       li {
         list-style:none;
         display:inline-block;
-        margin: 5px;
+        margin: 5px 1px;
         
          .selected {
           color:$purple;
@@ -94,7 +94,7 @@
         a {
           font-size: 0.9rem;
           padding: 8px 15px;
-          border-radius: 5px; 
+          border-radius: 3px; 
           text-decoration:none;
           color:$white;
           background-color:$purple;
