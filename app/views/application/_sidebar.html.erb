@@ -43,21 +43,21 @@
                  <%  if params[:p].present? %>
                        <% if params[:p] == "All" %>
                             <%= nav_link_to posts_shuffle_path(p: "All") do %>
-                                  <li class="user-links shuffle-link"><p>SHUFFLE AGAIN!</p></li>
+                                  <li class="user-links shuffle-link"><p>SHUFFLE AGAIN</p></li>
                             <% end %>
                         <% else %>
                             <%= nav_link_to posts_shuffle_path(p: params[:p]) do %>
-                                  <li class="user-links shuffle-link"><p>SHUFFLE <%= params[:p].upcase %>!</p></li>
+                                  <li class="user-links shuffle-link"><p>SHUFFLE <%= params[:p].upcase %></p></li>
                             <% end %>
                         <% end %>
                  <% else %>
                         <% if params[:name].present?  %>
                             <%= nav_link_to posts_shuffle_path(p: "All") do %>
-                                  <li class="user-links shuffle-link"><p>SHUFFLE ALL!</p></li>
+                                  <li class="user-links shuffle-link"><p>SHUFFLE ALL</p></li>
                             <% end %>
                         <% else %>
                             <%= nav_link_to posts_shuffle_path(p: "All") do %>
-                                  <li class="user-links shuffle-link"><p>SHUFFLE!</p></li>
+                                  <li class="user-links shuffle-link"><p>SHUFFLE</p></li>
                             <% end %>
                         <% end %>
                  <% end %>

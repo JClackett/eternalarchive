@@ -41,4 +41,5 @@ class Post < ActiveRecord::Base
   		where("description LIKE ? OR keywords LIKE ?", "%#{search}%","%#{search}%")
 	end
 
+
 end	

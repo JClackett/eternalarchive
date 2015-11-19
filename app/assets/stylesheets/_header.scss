@@ -98,12 +98,12 @@
   @include breakpoint(small){
     display: block;
     float: left;
-      text-align: center;
-      height:65px;
-      line-height: 65px;
-      display: block;
-      margin: 0 2px;
-      // background-color: $lightpurple;
+    text-align: center;
+    height:65px;
+    line-height: 63px;
+    display: block;
+    margin: 0 2px;
+    // background-color: $lightpurple;
 
 
             a {
@@ -122,6 +122,10 @@
             .selected {
                    border-bottom:1px solid white;
             }
+  }
+
+  @include breakpoint(medium-large) {
+    float: right;
   }
 }
   

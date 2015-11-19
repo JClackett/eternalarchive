@@ -26,8 +26,21 @@
   end
 
   def search
-      @posts = Post.search(params[:q]).order("created_at DESC")
-      @title  = "Searching for #{params[:q]}"
+      @posts = Post.search(params[:q]).uniq.paginate(:page => params[:page], :per_page => 10).reverse
+
+      if @posts.empty?
+        @title  = "We couldn't find anything."
+        @description = "Try a more general search"
+
+      else
+          if params[:q] == ""
+            @title = "You didn't search anything!"
+            @description = "Try again but type something in!"
+          else
+          @title  = "Searching for #{params[:q]}"
+          @posts_size = "#{@posts.size} found"
+         end
+      end
   end
 
   # GET /posts/1

@@ -13,15 +13,16 @@
         
           <%= render 'submit' %>
 
+      <!--  Left -->
           <%= render 'search' %> 
 
-      <!--  Left -->
-
+          <%= render 'shuffle' %>
+          
           <%= render 'latest' %>
 
           <%= render 'liked_button' %>
 
-          <%= render 'shuffle' %>
+          
 
           <% if current_page?('/') || current_page?('/posts') || current_page?('/profile') || current_page?('/most_liked') || current_page?('/latest') || current_page?('/shuffle') || current_page?('/search') %>
               <%= render 'tags' %>

@@ -1,6 +1,5 @@
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* - - - - - - - - - - - - - - - - - - - - - - - -  Search Section - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - -  Search Section in header- - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 .search-button {
@@ -8,13 +7,14 @@
   cursor:pointer;
   padding: 0;
   display:none;
-  width:130px;
+  width:125px;
   height:65px;
   font-size: 0.8rem;
   background-color: rgba(255,255,255,0.08);
   font-weight: 300;
   line-height: 65px;
   padding-left: 10px;
+  margin-right: 5px;
     i {
       margin-top:20px;
       font-size:1.5rem;
@@ -25,13 +25,7 @@
     display: block;
     float: left;
   }
-  @include breakpoint(medium-large) {
-    float: right;
-  }
 
-  @include breakpoint(medium) {
-    display:block;
-  }
 }
 
 .search-input {
@@ -61,4 +55,17 @@
 
 .search-button:hover{
   color:$white;
+}
+
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+// ----------------------------------------------------- Search Block ------------------------------------------------------------------ //
+// -------------------------------------------------------------------------------------------------------------------------------------------- //
+
+.search-section-block {
+  
+  h3 {
+    color:$white;
+    margin: 0;
+    
+  }
 }
