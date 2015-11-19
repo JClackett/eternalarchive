@@ -26,6 +26,10 @@
   end
 
   def search
+
+      @posts = Post.search(params[:q])
+      @posts_initial_size = @posts.size
+
       @posts = Post.search(params[:q]).uniq.paginate(:page => params[:page], :per_page => 10).reverse
 
       if @posts.empty?
@@ -38,7 +42,7 @@
             @description = "Try again but type something in!"
           else
           @title  = "Searching for #{params[:q]}"
-          @posts_size = "#{@posts.size} found"
+          @posts_size = "#{@posts_initial_size} found"
          end
       end
   end
