@@ -124,7 +124,7 @@
             }
   }
 
-  @include breakpoint(medium-large) {
+  @include breakpoint(small-medium) {
     float: right;
   }
 }
