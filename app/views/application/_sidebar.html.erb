@@ -1,13 +1,6 @@
  <div class="sidebar area side-down" data-sidebar >  
             <ul>
                   
-                <!-- Search Section  -->
-            
-                    <form action="<%= search_path %>" method="get" class="search-input-sidebar" >
-                      <%= text_field_tag :q, params[:s], placeholder: "SEARCH TEA ...", class: "search-input-sidebar-field"%>
-                      <%= submit_tag "Search", :style => "display: none;", :name  => nil %>
-                    </form>
-
                   <!-- Login Section -->
               <div class="login-section-sidebar group"> 
                  <% if user_signed_in? %>
@@ -80,6 +73,14 @@
                              <li class="admin-links"><p>CONTRIBUTIONS</p></li>
                       <% end %>
                   <%end%>
+
+                  <!-- Search Section  -->
+            
+                    <form action="<%= search_path %>" method="get" class="search-input-sidebar" >
+                      <%= text_field_tag :q, params[:s], placeholder: "SEARCH TEA ...", class: "search-input-sidebar-field"%>
+                      <%= submit_tag "Search", :style => "display: none;", :name  => nil %>
+                    </form>
+
 
 
                   <!-- Static Section -->

@@ -132,6 +132,10 @@
           }
       }
 
+      .login-section-sidebar {
+          border-top: 1px solid $lightteal;
+      }
+
       .static-section {
           position: absolute;
           width: 100%;
@@ -139,11 +143,6 @@
           border-top: 1px solid $lightteal;
           }
     }
-
-    .login-section-sidebar {
-      height: 28.5714%
-    }
-
 
     /////////// SEARCH SECTION //////////
 
@@ -165,6 +164,10 @@
         @include breakpoint(small-medium){
             display: none;
         }
+
+        &:hover {
+          background-color: $lightteal;
+        }
       }
 
       .search-input-sidebar-field {
@@ -176,6 +179,7 @@
         border:none;
         font-family:'Roboto',sans-serif;
         font-size: 0.8rem;
+        cursor: pointer;
 
       }
 
