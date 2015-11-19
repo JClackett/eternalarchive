@@ -21,7 +21,7 @@
   end
 
   def profile
-    @bookmarked_posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 10).reverse_order   
+    @bookmarked_posts =  Post.joins(:bookmarks).where(bookmarks: { user_id: current_user} ).uniq.paginate(:page => params[:page], :per_page => 33).reverse_order   
     @title =  current_user.username.titleize
   end
 
@@ -29,8 +29,7 @@
 
       @posts = Post.search(params[:q])
       @posts_initial_size = @posts.size
-
-      @posts = Post.search(params[:q]).uniq.paginate(:page => params[:page], :per_page => 10).reverse
+      @posts = Post.search(params[:q]).uniq.paginate(:page => params[:page], :per_page => 33).reverse_order
 
       if @posts.empty?
         @title  = "We couldn't find anything."
