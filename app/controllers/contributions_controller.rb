@@ -6,7 +6,7 @@ class ContributionsController < ApplicationController
   # GET /contributions
   def index
     if current_user.try(:admin?)
-      @contributions = Contribution.all
+      @contributions = Contribution.all.reverse_order
     else
       redirect_to root_path 
     end
